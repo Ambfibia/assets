@@ -1,0 +1,594 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "launcher_symbol",
+    "root_node": "launcher_symbol",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/launcher_symbol.glb",
+    "glb_blake3": "9cd48cf1e55f3e8cb53aae84ddcba80cbc513ba4f89fa72649da5ab446292176",
+    "source": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 7,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "8ca44390b69c372527ffa89fc4486452da2edd3e57008203f6f2747d9cd45427",
+      "geometrySha256": "d20f3068377b44eb7d50c4481c9723e15e7420565eba6b845e0ab8a64d0c496e",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "6ac6603b9c779e4b278c9d9e71a941c09cae9e81e8a2a5a5c73a0c2d3ad30eb2"
+    },
+    "emitted": {
+      "hierarchySha256": "8ca44390b69c372527ffa89fc4486452da2edd3e57008203f6f2747d9cd45427",
+      "geometrySha256": "d20f3068377b44eb7d50c4481c9723e15e7420565eba6b845e0ab8a64d0c496e",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "6ac6603b9c779e4b278c9d9e71a941c09cae9e81e8a2a5a5c73a0c2d3ad30eb2"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.20000000298023224,
+        -0.20000000298023224,
+        -1.9073505086453224e-07
+      ],
+      "max": [
+        0.20000000298023224,
+        0.20000000298023224,
+        -1.9073505086453224e-07
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.20000000298023224,
+        -0.005392909049987793,
+        -1.822285042862859e-07
+      ],
+      "max": [
+        0.20000000298023224,
+        0.3946070969104767,
+        -1.822285042862859e-07
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "k_testing_fx",
+      "launcher_symbol-standard_2-launcher_symbol_1.dds",
+      "launcher_symbol-standard_2sda-launcher_symbol_2.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 3,
+    "textureCount": 3,
+    "samplerCount": 3,
+    "materials": [
+      {
+        "name": "k_testing_fx",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      },
+      {
+        "name": "launcher_symbol-standard_2sda-launcher_symbol_2.dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha_zwriteOff",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha_zwriteOff",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha_zwriteOff",
+        "shaderSha256": "8fb0ee96359b8467de9ac0191284f702d187a64299c5f893b26b168d5a95bd72",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "launcher_symbol-standard_2-launcher_symbol_1.dds",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "k_testing_fx.dds",
+        "uri": "../../../../../effects/shared/textures/k_testing_fx.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 72785,
+        "sha256": "13fd52d7ebe1e674900e7cb436235e7fb74559d9d41a342a0c3e88dab8773346",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "6922f923b89022c58f9a7c9f86614c700c3824ab271041361549c542132cd75a",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "8d4886b35110141e33c4d410df9eda8a34fec13fba7cbfc5aff1ee981b58ecd6",
+            "pngByteLength": 72785,
+            "pngSha256": "13fd52d7ebe1e674900e7cb436235e7fb74559d9d41a342a0c3e88dab8773346"
+          },
+          {
+            "level": 1,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "126b7ab45b7e9c3e69bb0c45a3bdefddc26bdc8244a92b0ac0913a75b57df7c9",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "556be8bfae1f77a46d914f25ffc79f239d807d789cd7e1e4c1ed37efac8dab67",
+            "pngByteLength": 20574,
+            "pngSha256": "0cdee9e17f0820457a11ab1cd8a94bbf47a9093bf486547b1af7923ee81d7224"
+          },
+          {
+            "level": 2,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "63fdc40671733a9269d62b9dd28af4c36210ce6c898e3afbfb7a8f77917836a0",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "ae7435cf94f2b2c7327009ee01fb494c2fcd880c7f456aa2dd02657bfab99a9c",
+            "pngByteLength": 6573,
+            "pngSha256": "d7f66b3fca57bb101f199f95c3a965f8eb5fb77e5fc659bf760e24da879edc3e"
+          },
+          {
+            "level": 3,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "50b8bcef5940b669287c549cc56aae4e61fee00e6338ffed46136c676d49a23c",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "1c1e26cfdb790cb15743b4eaf51e07f214f9163529a3feec90ce74107d1de893",
+            "pngByteLength": 2131,
+            "pngSha256": "7e71816c4548ecb628bc865e9a26da0231d3b97bb1ffe8868b22f81bc6cfac8e"
+          },
+          {
+            "level": 4,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "1c37e85586dff11becaf75e69b7d32ebcea859eb7162f2f76d2f94020fa2ed4e",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "65958e3e0044f2589a1c7d6597e88ca6edffb9c86d1f3d7ffe4762731ed066f3",
+            "pngByteLength": 779,
+            "pngSha256": "f6cc82f1e00acd604ca4304124a4e756e4b3f14bd637ab5f58ce0f04aa0aa149"
+          },
+          {
+            "level": 5,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "43f20c599d113d8d5d42c0a4067e0594a3f5d673559f2c2d9136cca014b99a5a",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "f0e7d39a9aecb06edad625909a71bd8fc2311bb2d5f72101e055fa9433f2bf95",
+            "pngByteLength": 324,
+            "pngSha256": "e2bdda9c92f366841bbcb1a639cb6aa795fb4b1e5ee7934f24a4a0c1d6c8ecb8"
+          },
+          {
+            "level": 6,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "6cee748aa4b142c11f482ae13f0029d324f10314179777f300e40bf1200f663b",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "e70b484d7d2c7735fc097d558679ebc1e3a048c2617879c917d1b1a415624d40",
+            "pngByteLength": 136,
+            "pngSha256": "c981efd6ffc7b2c5e87df515a235b572846cc4524b9953088a1187df07221586"
+          },
+          {
+            "level": 7,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "f40cf4e4dd5bff936a493f7c6cc94d7e96e83efc964d7fc40a113614dc11dd87",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "513ea822d98eabda779cdcddcb2d81eb2d004444bcb49132c63cec6ccf85b6e8",
+            "pngByteLength": 86,
+            "pngSha256": "748ca5daef58b56f918fd250b31b46d8b1b93e60ff5f7c6d75e54b440a97f92d"
+          },
+          {
+            "level": 8,
+            "uri": "../../../../../effects/shared/textures/k_testing_fx.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "461a70acb4f37da12c09733d4caa7db2d097174be0afaac527e9f7c880e1aecf",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "4bf8a37e96bfdb486bbf80e717d5131e716ad622ee35d29917738b88ea80a3b4",
+            "pngByteLength": 73,
+            "pngSha256": "aaf391286180fd71d99854385c4216f921ecd9dd78467e153bdefe3feeb4d930"
+          }
+        ]
+      },
+      {
+        "sourceName": "launcher_symbol_2.dds",
+        "uri": "launcher_symbol.textures/launcher_symbol_2.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 3241,
+        "sha256": "092a1dfc173c7f176c9ca3e49d3767ed5bb6d9584656ed6fbdbd30cd9645cf05",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "7ea97d664ef0c104a04bb2d195d38f9b1f30e8350431ea961af6b478e8a3956b",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "6cc17a0cffd7cb87b76704fa9cfd56552fd8512d27c0a8dc7d59f877dc4bef4c",
+            "pngByteLength": 3241,
+            "pngSha256": "092a1dfc173c7f176c9ca3e49d3767ed5bb6d9584656ed6fbdbd30cd9645cf05"
+          },
+          {
+            "level": 1,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "7f671d473f419a14ccb8a31e8f4364097eadba1d46d258070c5fc8907eb2c531",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "59d01fe59e7de167d2bd25dd3613becc4ba05d2d8ab0a91e88336a242f3b5486",
+            "pngByteLength": 1436,
+            "pngSha256": "c68d1d96e50302071aa8ee9f7af839b3fa09aaa28f55f853071889b3275ee2e3"
+          },
+          {
+            "level": 2,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "ce6e2e52d4ba020f5afad00978ad557a80ea4293deda232d768af9b5da660f3f",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "383047bf5a306e859e2e6261dd1d0f152000104f00a863334f79169c15a8ed54",
+            "pngByteLength": 668,
+            "pngSha256": "11300a5094b6abd104090025a0862561f654d1c54ba5ee4089274d692aaa4a63"
+          },
+          {
+            "level": 3,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "8555b0a87dd21b05480bacc6b60a0c85b9a3a6e8e686d521876d2291fa8f0a67",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "239c7c4d7b6ddbfcd9157c66eca41207102dcecaac8f6ba8c42ad9229963f8fa",
+            "pngByteLength": 342,
+            "pngSha256": "1a53b71c3c6e4eb5cd1d5343a65d4a52788e7f1758dba59075c5861214c6efa9"
+          },
+          {
+            "level": 4,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "38fb732109f438fccb699d4dfbf1ab751ad6271559b500e375e1c5b91e59a40b",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "a78a3a16efc494d669914e9b0a39597a1755a96e0034a04c2aafc3240ca6cb03",
+            "pngByteLength": 191,
+            "pngSha256": "294dc205d86fbc2a43e538bdaeed1cdd6c1b19fab6469766965fd40d8785e401"
+          },
+          {
+            "level": 5,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "188b226408bafeb7cbb8dd5ef2f3fa995ea4bd2bfd8ee006c2efb35ff370fc29",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "771a11c42be5449e3dcab66ae36bd989a47f635aa2610f480e62e288d75b4055",
+            "pngByteLength": 136,
+            "pngSha256": "322a0a187906836d1b8407324c156f57d32e7b7667e4ffa052e76c158ec4d11e"
+          },
+          {
+            "level": 6,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "61fcf765e1ac8c4ac7008ea8f36c4d7a16152477b661c099ad6a9c724bee218c",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "bdd521c5a775b22d26033e819dd4745868e0812271dd2270c03df95f6bcecd4f",
+            "pngByteLength": 86,
+            "pngSha256": "b50655399ea6b084af0ee333f6e45707fa1b08621c353ecb1ffb2ebbad31a72d"
+          },
+          {
+            "level": 7,
+            "uri": "launcher_symbol.textures/launcher_symbol_2.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "514669772a93b673f8c5e3d76799a34fc959b0de65d5254127f2089d686eb9e0",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "21548c66b44347d877e7b405a250121cda87cd494b122f0324f7df3b6cd75f86",
+            "pngByteLength": 73,
+            "pngSha256": "11a6721b31796be10bdaa1be4d7fd0859fabb1b95b02ca4d85ccf19a5e832ac6"
+          }
+        ]
+      },
+      {
+        "sourceName": "launcher_symbol_1.dds",
+        "uri": "launcher_symbol.textures/launcher_symbol_1.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 7233,
+        "sha256": "3196af132045a674121d1c83a0fd7b94f387a274433b8c558024bb0cf41cf8df",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "89b3b51bf843718ecaff626186a9bfc6f817399775c4fc6e9a1eb2dc02d2b790",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "961e9ca140418b203e5678a58aa8f25ab579636e437b92e196ff25fdb24ce453",
+            "pngByteLength": 7233,
+            "pngSha256": "3196af132045a674121d1c83a0fd7b94f387a274433b8c558024bb0cf41cf8df"
+          },
+          {
+            "level": 1,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 8192,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "2d0615ff1d9bf34e199bf22eca9c0756daa89150fc55635afa63518efb3c1589",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "f29e135d76337b3d12e9b0082f091ace13cfd39fd21879921b1c283f1f8d1f24",
+            "pngByteLength": 2570,
+            "pngSha256": "3908305c977ac2866c6efddea1df42d37ead601bf80550d895ec4909578d5789"
+          },
+          {
+            "level": 2,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 10240,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "3573d29240300b973552f35b68b5872a86df066e7ffc0745c3ca832ec590895e",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "10721528fe8ef63846e30c83ff83a8f5ab8001912f5b358ddef35efeb033c367",
+            "pngByteLength": 1048,
+            "pngSha256": "d0fb4d41450a6ac66d550567951d4ec96d29a2fb9ec8ec8ecdfc58fc823e28d1"
+          },
+          {
+            "level": 3,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 10752,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "e5bde5f87bc1404d698e4d656461bfd13c1a9052c82f5d3b884112dbded4dd04",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "31c88ec541ce0e9583c1d2b702dfcd0f0794224f63957e751e047b739fc395d1",
+            "pngByteLength": 467,
+            "pngSha256": "bca427be7a3ede58659a74e54857a37ef7546aa7ece923183047c9f6a7edd0f4"
+          },
+          {
+            "level": 4,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 10880,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "85d894b48692c4f499cea674eb50b03ef5ae0a5341f9c1b503c51c5f595225c1",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "e63da027c0d3466e0df4ee30529302d37efbf00a39da0b97a63edc058621c48b",
+            "pngByteLength": 199,
+            "pngSha256": "416a100bf9a4e9b163d2fca359c06746e5b2f4b3bd5231cf94ad7712a9e86055"
+          },
+          {
+            "level": 5,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 10912,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "91330356be5ca1419d04c158609a7e0111ef83ded654a0a5665132fc8ace8392",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "708e84790c8f37445af52963548000435c4e7116dc341f3ef1ea6a26b75a19a2",
+            "pngByteLength": 136,
+            "pngSha256": "99480e9e91611fdbba3281e2cc761c52382c7b846d3a2368a6e8b7f49e316373"
+          },
+          {
+            "level": 6,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 10920,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "e28137802685cc5c2d27e350263a02775deb15c418af0c18abc4ed0eebb38ebe",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "f96c00232ca88743b7c6602cc9dec36b049958b51aa7dc1ff1b0568ce1a71a6d",
+            "pngByteLength": 86,
+            "pngSha256": "e0def5d8959fa5d6b9ac20ef5e00a6bb86c4cf626fd0e2c7895ecf52a19e157b"
+          },
+          {
+            "level": 7,
+            "uri": "launcher_symbol.textures/launcher_symbol_1.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 10928,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "31177da7fd77be0274b1aa55b02cda9d468ca2ee185ff4a9f858b98fccfe0b36",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "09b416aeb00484eb0d8334d2b9cfb2a14b4b0bbf8942fe950508dc65f07bae0b",
+            "pngByteLength": 73,
+            "pngSha256": "49b2f0c8b1cb7a54f223b869efb157b14bd720dd57b570d2248588e4c7e00996"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/launcher_symbol.publish.json"
+}

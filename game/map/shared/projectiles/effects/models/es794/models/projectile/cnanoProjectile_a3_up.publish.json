@@ -1,0 +1,468 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "cnanoProjectile_a3_up",
+    "root_node": "cnanoProjectile_a3_up",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/cnanoProjectile_a3_up.glb",
+    "glb_blake3": "b311587c26cf6b7137f604793b6010a90767eba841b4067a691ca93e4487b80e",
+    "source": {
+      "nodes": 21,
+      "mesh_parts": 10,
+      "material_slots": 10,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 21,
+      "mesh_parts": 10,
+      "material_slots": 10,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 21,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "d46e11dd4ab4406413a54ea97999d8bdf28d2768881042d9f5c17596c3a1263e",
+      "geometrySha256": "e2ff5bc57d759beb2d991b6a3e6940d8e4dfc9ca0f14f21330e3f7ef688f2c3f",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "cc5fca5f3829cfedad21a183baba36005e35fc08da0509099ff679eac3bdd70e"
+    },
+    "emitted": {
+      "hierarchySha256": "d46e11dd4ab4406413a54ea97999d8bdf28d2768881042d9f5c17596c3a1263e",
+      "geometrySha256": "e2ff5bc57d759beb2d991b6a3e6940d8e4dfc9ca0f14f21330e3f7ef688f2c3f",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "cc5fca5f3829cfedad21a183baba36005e35fc08da0509099ff679eac3bdd70e"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.5,
+        -0.5,
+        -4.768376129504759e-7
+      ],
+      "max": [
+        0.5,
+        0.5,
+        -4.768376129504759e-7
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.433566153049469,
+        0.00001161848285846645,
+        -0.4033907651901245
+      ],
+      "max": [
+        0.4489240050315857,
+        0.000024354623747058213,
+        0.43657219409942627
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "bubble_tie_02",
+      "hit_05"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 2,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "bubble_tie_02",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      },
+      {
+        "name": "hit_05",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "bubble_tie_02.DDS",
+        "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 37258,
+        "sha256": "0ab4219968ccaca0df29f5596ba8aae646a0cc6d28eace71d1103411dbf2bcfa",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 32768,
+            "sourceByteSha256": "117666f18ac2878a4bb674fb09385512c199828ee7ab40623b56b28dead2d370",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "432b1ffa32604dd3fafe9168fa3f16394273ec46be7f8a64b2a4e4c2d386573b",
+            "pngByteLength": 37258,
+            "pngSha256": "0ab4219968ccaca0df29f5596ba8aae646a0cc6d28eace71d1103411dbf2bcfa"
+          },
+          {
+            "level": 1,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 32768,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "b6cac1ec9d4542bf6598a4735244af36777481a640aa7d4418a1611cebf8438f",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "c1c04a0aeb4c734db5275e12f3742531c21be62c9354c5b9b2b6d5de30188f71",
+            "pngByteLength": 11964,
+            "pngSha256": "13d9f752c45ee4103649d27991c83ad87559b2082bdcfab33a699a894779fdfc"
+          },
+          {
+            "level": 2,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 40960,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "e350f69529ac37b3deb02e63b80a0ec94aad0229d1229141d469429e4c3a745d",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "bd62b074764f282439063c767b1a738eeca6466af53caba995ebd3916205c236",
+            "pngByteLength": 3419,
+            "pngSha256": "d19cb9ad6bc5a5fc373425b2e423448042bac256047df2f0ecc3ffc16b4b8be0"
+          },
+          {
+            "level": 3,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 43008,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "f74e1d6d5ff5347a79f98fec07429134b16a5a781badb65693d0799beea53457",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "5403472eeb61b4cd7e6154d953c3beeb18f4209de4e0e5f8725a5d15a0dc8c95",
+            "pngByteLength": 1118,
+            "pngSha256": "3d909057cc8cfd9321531f09eae1ad976462db807beeba8e82333edbf912a174"
+          },
+          {
+            "level": 4,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 43520,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "e0198a8c6b44a9726438a004719675be3f0a50323b6976b973ff9ebc648301d1",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "b98be96c55ab5d49efe6c43b31ca29e869969ab7c61168bca77a8452a2db3883",
+            "pngByteLength": 431,
+            "pngSha256": "11be42326b0cdf8ec5192f2e73c1cc94e8ded87e9fc041358b2cded6497c5d58"
+          },
+          {
+            "level": 5,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 43648,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "dfe8dc8ced2975b060d27767d48e8a09464185b80837315ae820dcab8c6546c7",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "7dc225556b4f56ffcb1b846587159881e9e1019dcd0dabc2c33fc2e7d46570c1",
+            "pngByteLength": 205,
+            "pngSha256": "92b846421ba55159724918daba80f9d8270218919e6e823c31f47854544e6651"
+          },
+          {
+            "level": 6,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 43680,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "3998f8e6e5df5990020bfec332a89ae461a63572ce03403c4e283779cd040178",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "cf85198f0a18ae738533c577ae04d04197c5e0284836edd6d8beaa0abc524459",
+            "pngByteLength": 136,
+            "pngSha256": "4fa80f358deb2fbe75d9f5b0f72ed1c724a073c7320c1b4a07eeb7f702cea3f1"
+          },
+          {
+            "level": 7,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 43688,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "ae95064afd8da39fe47ebfe4793877948d3db7aa0951c33e32c0db4d3992e8ad",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "2d9d6c546432cacef979265ecaed9333d6de7016ca5e6235a19bda92e39b7808",
+            "pngByteLength": 86,
+            "pngSha256": "4f48d6c5ec68acbc5b27ea88bc5ab6a7d953f844b1b2d7e02c8cac6d028bac2a"
+          },
+          {
+            "level": 8,
+            "uri": "cnanoProjectile_a3_up.textures/bubble_tie_02.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 43696,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "b1549cf120aa14eebd2fd82b68b333eca79e3ca66f633c36302880ec9f188ff3",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "2ecd7ca90935fe1f0d5467ba5eba5d913c68eff9c70057978d4cc35770b0a86c",
+            "pngByteLength": 73,
+            "pngSha256": "4833a8a7d503f52911b632911b7bf31446790f8267aec0b6bb090236a4b2b78a"
+          }
+        ]
+      },
+      {
+        "sourceName": "hit_05",
+        "uri": "cnanoProjectile_a3_up.textures/hit_05.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 20491,
+        "sha256": "e4751714298a2b86cdd7135aeaa654bb6b67c3c7b65048659f2d21bb593e5cf5",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "a9420cc0ef118ca59b755d2e75ae3a57d79105ad63e32af164a37cf680c3d1b4",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "923d9bcc7847bcea37c12e63f9469df719d23adb9403c4fefa9c6ab208aec8d1",
+            "pngByteLength": 20491,
+            "pngSha256": "e4751714298a2b86cdd7135aeaa654bb6b67c3c7b65048659f2d21bb593e5cf5"
+          },
+          {
+            "level": 1,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "68f84a9af29457b71e1e166edb846605e416bb2fc383385263a0512c95757c38",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "93bfa03717ad6b7b2a10543aa4178cedb907b45f00015ae5dfd3002562a6aee4",
+            "pngByteLength": 6474,
+            "pngSha256": "d076575e30092b96fc869323250f44d9ad7077ebb8eb6440e8f2dce4691bd583"
+          },
+          {
+            "level": 2,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "3fac4542346e40f138c0dcff8f549ee84455bdbe5225c4cc7543b68b314f9fdc",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "940b76b8c6d3cf897a1d4d928b85530a2fb7c896dd54bbf95aeac9788662738f",
+            "pngByteLength": 2239,
+            "pngSha256": "f8a34432407f849646c5e57586cd580faaa6590545ffc3d5ece10b71fc7e2332"
+          },
+          {
+            "level": 3,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "f5909cdde0b2edaf7ad0c67bd8195811b4f02951f566fbbe2be3e741dd79db0e",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "24d00be77d8d5b912405124413d50e4587a5a5ad957d7171d277825209925a0d",
+            "pngByteLength": 790,
+            "pngSha256": "c479830ac077d9ce8d55ffff6c61ea6720e1cc6ae842f9e543f360595912f550"
+          },
+          {
+            "level": 4,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "a047ec977c5ad47f36023b9d3ea2bd5fc2aaf1f3ced035830dde8a0fda1dd4db",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "12f099be47192bff674eaa2fed3c6571f1c3aefd370b97a2485eaa0986ab039b",
+            "pngByteLength": 332,
+            "pngSha256": "a2eb927f2939e91b868951851bf5aa6cf2160d07c9ebce4ac601ba8cddceb9cc"
+          },
+          {
+            "level": 5,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "379dc82266c3d66f130b52e7de61322dcb3549fd06718c588ea19c6d89c25b18",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "53831e80cb8d183068411576cd4b469e4e08836055e006d462467f7461506132",
+            "pngByteLength": 136,
+            "pngSha256": "e7abb529b0815ccd54cabf5c3e57492799ea49dbe7fb6b14e216c01b813353ae"
+          },
+          {
+            "level": 6,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "701c429375b14967481fc11d92c9261f0941a6cb43943531f02d5b5c2e089dc4",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "e698797db3c5e3d7f443da7012d45d999df03c1a1a03559fcd2cac09771487b6",
+            "pngByteLength": 86,
+            "pngSha256": "c89f630f0c36c517f81b0ca33b8fe88ed4f77ae90c48932f2fca10a0ac03f7ed"
+          },
+          {
+            "level": 7,
+            "uri": "cnanoProjectile_a3_up.textures/hit_05.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "8297ead2f8fe66c3dbb7469ea9b6fcaf15fab222c8b5fa4ea23bf80edc31f927",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "9a491048d9b8669dec538d1f73aa0c66830d4a924f9265db909b455f3ca9e461",
+            "pngByteLength": 73,
+            "pngSha256": "f6c87f0f6cf59fa97c5b79cf36efddb0e18a6d31368ca69c2edae988cf021820"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/cnanoProjectile_a3_up.publish.json"
+}

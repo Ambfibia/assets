@@ -1,0 +1,53 @@
+{
+  "schema": "ffone.native-character-collision.v1",
+  "glb": "characters/npcs/npc_bubbie2/npc_gubbie.glb",
+  "glbBlake3": "b979cd948291eedf61bfdc9cadf47466eb4da7e95711f933ad7b682393846619",
+  "source": {
+    "alias": "primary",
+    "rawContainer": {
+      "relativePath": "DongResources_08_12.resourceFile",
+      "bytes": 732542,
+      "sha256": "1162248fb798762c2bd259cc8f3428875dc027b0d2ea538f5010235917a9a711"
+    },
+    "serializedAsset": {
+      "name": "CustomAssetBundle-8b565be45089541fcaca667432652147",
+      "bytes": 3601421,
+      "sha256": "01ab5cb12f353b61428843bc49c760b05c7ad44c8e59be175bb2278264388dcc"
+    },
+    "exactContainerRoute": "mob/npc_bubbie.kfm",
+    "sourceGeometrySha256": "b33f4215a8a0c4d30e4a94b340814f09806ed658b012cb65882d4e346e3487d1",
+    "meshCollider": {
+      "gameObjectPathId": 256,
+      "transformPathId": 255,
+      "componentPathId": 261,
+      "componentClassId": 64,
+      "meshFileId": 0,
+      "meshPathId": 216,
+      "meshFilterMeshPathId": 258,
+      "convex": false,
+      "isTrigger": false,
+      "smoothSphereCollisions": false,
+      "physicsMaterialFileId": 0,
+      "physicsMaterialPathId": 0
+    },
+    "intentionalDivergence": "None. The native sidecar materializes the exact non-trigger, non-convex Unity MeshCollider on the preserved collision node and uses the MeshCollider's serialized meshPathId 216, not the disabled MeshFilter debug meshPathId 258."
+  },
+  "conversion": {
+    "toolVersion": "ff-client-editor 0.1.0 + ffone-asset-pipeline 0.1.0",
+    "command": "ff-client-editor fusionforge dump-object DongResources_08_12.resourceFile 256|261; ffone-asset-pipeline publish-logical-model npc_bubbie.primary.source.json npc bubbie-restoration-candidate-v4 --texture-rebinds bubbie.reviewed-texture-rebinds.json",
+    "nativeRepresentation": "Adjacent JSON sidecar decoded by Bevy into AuthoredTriMeshCollider; GLB remains the visual, skeleton and animation payload."
+  },
+  "colliders": [
+    {
+      "id": "body",
+      "name": "Bubbie source MeshCollider",
+      "node": "collision",
+      "mesh": 0,
+      "primitive": 0,
+      "expectedVertexCount": 1019,
+      "expectedIndexCount": 4020,
+      "isTrigger": false,
+      "convex": false
+    }
+  ]
+}

@@ -1,0 +1,2331 @@
+{
+  "colliders": [
+    {
+      "expectedIndexCount": 3252,
+      "expectedVertexCount": 770,
+      "isTrigger": false,
+      "kind": "triangleMesh",
+      "mesh": 0,
+      "model": "map-geometry-de72b54d7bf5044c5647b55f93e05c389775068d4de5a0c82881fdede096f712",
+      "name": "ffWater [BuildPlayer-Map_01_03#491 collision]",
+      "primitive": 0,
+      "transform": {
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "translation": [
+          -512.0,
+          0.0,
+          1536.0
+        ]
+      }
+    }
+  ],
+  "coordinateContract": {
+    "basis": "H=diag(-1,1,1)",
+    "gameplayFacingRotationApplied": false,
+    "originPolicy": "source-trs-unchanged-no-auto-centering",
+    "schema": "ffone.native-coordinate-contract.v1",
+    "space": "native",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit"
+  },
+  "coverage": "native-heightmap+exact-static-scene",
+  "models": [
+    {
+      "blake3": "2e411a1ccb5c8866533d51ee355757221a794a2e6bcdc49533c33c2a74930634",
+      "id": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "path": "objects/collections/default_water_e01/models/plane01_variant_0005/visual.glb",
+      "rootName": "Plane01"
+    },
+    {
+      "blake3": "558a9997f03bf92fb1a3cf11c3d8c46a89f70599c0c5242c105ab6f37cb7eefc",
+      "id": "map-geometry-4a16ba2fec428cb2bc00c4a9a97435545ee95a03ac9215be57dffa43d61d8203",
+      "path": "objects/unclassified/ffpoison/models/ffwater_variant_0023/visual.glb",
+      "rootName": "ffWater"
+    },
+    {
+      "blake3": "0b4e01178a665be0aa52d92f575f202359faec0349c376d8b2a2d988915f8dd7",
+      "id": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "path": "objects/collections/default_water_e01/models/editable_mesh_variant_0003/visual.glb",
+      "rootName": "Editable Mesh"
+    },
+    {
+      "blake3": "b06c8dfb29968c7c765d20a5c190cf78b6b6bf4794fdc3bc46719c24de323573",
+      "id": "map-geometry-de72b54d7bf5044c5647b55f93e05c389775068d4de5a0c82881fdede096f712",
+      "path": "objects/unclassified/ffpoison/models/ffwater_variant_0023/collision.glb",
+      "rootName": "ffWater"
+    }
+  ],
+  "name": "map_01_03",
+  "nativeTerrain": {
+    "blake3": "6749bb4efb6cefd52f81b56fe7f12aaa95a8d0b3ff9d29d75f70357db3364a0e",
+    "environment": {
+      "blake3": "c7729aff3f4d68bf489f07d869f69eb19e94a19be0e28116156eb0379767ad83",
+      "path": "map/tiles/map_01_03/terrain/environment/environment.json",
+      "schema": "ffone.native-terrain-environment.v1",
+      "status": "complete"
+    },
+    "name": "TerrainData_01_03",
+    "parentTransformPathId": 125,
+    "path": "map/tiles/map_01_03/terrain/terrain.json",
+    "rootChain": {
+      "canonicalJsonBlake3": "blake3:5cd622ace5fedc632398edf6f568187e80987bfba47216f4f3dbfe2f8c500da3",
+      "compositionOrderTransformPathIds": [
+        125
+      ],
+      "includesOwnerTransform": false,
+      "mapTileRootTransformPathId": 125,
+      "nodes": [
+        {
+          "assetName": "BuildPlayer-Map_01_03",
+          "gameObject": {
+            "assetName": "BuildPlayer-Map_01_03",
+            "pathId": 579,
+            "trueName": "Map_01_03"
+          },
+          "nativeLocalTransform": {
+            "rotation": [
+              0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "translation": [
+              -512.0,
+              0.0,
+              1536.0
+            ]
+          },
+          "parentPointer": null,
+          "transformPathId": 125,
+          "unityLocalTransform": {
+            "rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "translation": [
+              512.0,
+              0.0,
+              1536.0
+            ]
+          }
+        }
+      ],
+      "order": "immediateParentToRoot"
+    },
+    "sourceGameObjectTrueName": "",
+    "terrainColliderPathId": 591,
+    "terrainComponentPathId": 590,
+    "terrainDataPathId": 7,
+    "terrainGameObjectPathId": 589,
+    "terrainRenderContract": {
+      "selection": "owner component whose m_TerrainData resolves to the exact routed TerrainData",
+      "serializedFields": {
+        "m_CastShadows": 1,
+        "m_DebugDrawMainCamera": 0,
+        "m_DetailObjectDistance": 80.0,
+        "m_Enabled": true,
+        "m_HeightmapMaximumLOD": 0,
+        "m_HeightmapPixelError": 20.0,
+        "m_RenderMode": 1,
+        "m_SplatMapDistance": 150.0,
+        "m_TreeBillboardDistance": 50.0,
+        "m_TreeCrossFadeLength": 5.0,
+        "m_TreeDistance": 5000.0,
+        "m_TreeMaximumFullLODCount": 50,
+        "m_UseLightmap": 0
+      }
+    },
+    "terrainTransformPathId": 127,
+    "transform": {
+      "rotation": [
+        0.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        0.0,
+        -300.0,
+        -0.0
+      ]
+    },
+    "trueName": "TerrainData_01_03"
+  },
+  "root": {
+    "rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "schema": "ffone.native-world-scene.v2",
+  "scope": "worldMap",
+  "tile": [
+    1,
+    3
+  ],
+  "visuals": [
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#233 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00002-235-a0bea0c148d1.glb",
+      "transform": {
+        "rotation": [
+          -0.4221041798591614,
+          0.5630051493644714,
+          0.5809763669967651,
+          0.40904733538627625
+        ],
+        "scale": [
+          0.9999998211860657,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -984.7651977539062,
+          -60.94295883178711,
+          1939.43701171875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#236 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00003-238-5bc8f9c3a140.glb",
+      "transform": {
+        "rotation": [
+          -0.23952394723892212,
+          0.665303111076355,
+          0.6653031706809998,
+          0.23952391743659973
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1021.6121215820312,
+          -60.9749755859375,
+          1907.959228515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#239 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00004-241-67e0f6ed1975.glb",
+      "transform": {
+        "rotation": [
+          -0.23952394723892212,
+          0.665303111076355,
+          0.6653031706809998,
+          0.23952391743659973
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1021.6121215820312,
+          -60.9749755859375,
+          1907.959228515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#242 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00005-244-b1d3485ecafc.glb",
+      "transform": {
+        "rotation": [
+          -0.21850799024105072,
+          0.6724984645843506,
+          0.6724985837936401,
+          0.21850796043872833
+        ],
+        "scale": [
+          1.3299998044967651,
+          1.3300000429153442,
+          1.3299998044967651
+        ],
+        "translation": [
+          -1017.0640258789062,
+          -60.9653205871582,
+          1910.7056884765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#245 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00006-247-c7960fcbce90.glb",
+      "transform": {
+        "rotation": [
+          -0.21850799024105072,
+          0.6724984645843506,
+          0.6724985837936401,
+          0.21850796043872833
+        ],
+        "scale": [
+          1.3299998044967651,
+          1.3300000429153442,
+          1.3299998044967651
+        ],
+        "translation": [
+          -1017.0640258789062,
+          -60.9653205871582,
+          1910.7056884765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#248 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00007-250-dc6e8283d41c.glb",
+      "transform": {
+        "rotation": [
+          -0.2909846901893616,
+          0.6444593667984009,
+          0.6444594264030457,
+          0.2909846305847168
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1013.054443359375,
+          -60.990413665771484,
+          1914.082763671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#251 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00008-253-f5318ca852f5.glb",
+      "transform": {
+        "rotation": [
+          -0.2909846901893616,
+          0.6444593667984009,
+          0.6444594264030457,
+          0.2909846305847168
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1013.054443359375,
+          -60.990413665771484,
+          1914.082763671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#254 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00009-256-26772eeead76.glb",
+      "transform": {
+        "rotation": [
+          -0.1972765326499939,
+          0.6790301203727722,
+          0.6790302395820618,
+          0.1972765028476715
+        ],
+        "scale": [
+          0.9999997615814209,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1010.4804077148438,
+          -60.9860954284668,
+          1916.7425537109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#257 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00010-259-fcaf66f48c09.glb",
+      "transform": {
+        "rotation": [
+          -0.1972765326499939,
+          0.6790301203727722,
+          0.6790302395820618,
+          0.1972765028476715
+        ],
+        "scale": [
+          0.9999997615814209,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1010.4804077148438,
+          -60.9860954284668,
+          1916.7425537109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#260 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00011-262-1e8a3f09dffb.glb",
+      "transform": {
+        "rotation": [
+          -0.09963220357894897,
+          0.7000523805618286,
+          0.7000524997711182,
+          0.09963218867778778
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1006.677001953125,
+          -60.98772048950195,
+          1918.0091552734375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#263 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00012-265-d463ef0077b9.glb",
+      "transform": {
+        "rotation": [
+          -0.09963220357894897,
+          0.7000523805618286,
+          0.7000524997711182,
+          0.09963218867778778
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1006.677001953125,
+          -60.98772048950195,
+          1918.0091552734375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#266 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00013-268-73c4f40e5d5e.glb",
+      "transform": {
+        "rotation": [
+          -0.12157223373651505,
+          0.6965774297714233,
+          0.6965775489807129,
+          0.12157221883535385
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1001.9559936523438,
+          -60.973533630371094,
+          1919.226318359375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#269 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00014-271-8ddbd1280f00.glb",
+      "transform": {
+        "rotation": [
+          -0.12157223373651505,
+          0.6965774297714233,
+          0.6965775489807129,
+          0.12157221883535385
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -1001.9559936523438,
+          -60.973533630371094,
+          1919.226318359375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#272 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00015-274-42baa53601ee.glb",
+      "transform": {
+        "rotation": [
+          -0.16764329373836517,
+          0.6766846179962158,
+          0.6982844471931458,
+          0.1624576300382614
+        ],
+        "scale": [
+          0.9999997615814209,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -997.3165893554688,
+          -60.941162109375,
+          1920.9141845703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#275 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00016-277-11b83263f004.glb",
+      "transform": {
+        "rotation": [
+          -0.16764329373836517,
+          0.6766846179962158,
+          0.6982844471931458,
+          0.1624576300382614
+        ],
+        "scale": [
+          0.9999997615814209,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -997.3165893554688,
+          -60.941162109375,
+          1920.9141845703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#278 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00017-280-02aa683728f7.glb",
+      "transform": {
+        "rotation": [
+          -0.23261374235153198,
+          0.6583928465843201,
+          0.6794087886810303,
+          0.22541837394237518
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -993.7919311523438,
+          -60.96769714355469,
+          1923.3775634765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#281 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00018-283-922dccc5fe46.glb",
+      "transform": {
+        "rotation": [
+          -0.23261374235153198,
+          0.6583928465843201,
+          0.6794087886810303,
+          0.22541837394237518
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -993.7919311523438,
+          -60.96769714355469,
+          1923.3775634765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#284 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00019-286-ef02310314d8.glb",
+      "transform": {
+        "rotation": [
+          -0.3057633936405182,
+          0.6296806335449219,
+          0.6497800946235657,
+          0.2963052988052368
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -990.6031494140625,
+          -60.9478759765625,
+          1926.8421630859375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#287 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00020-289-5b82d715397a.glb",
+      "transform": {
+        "rotation": [
+          -0.3057633936405182,
+          0.6296806335449219,
+          0.6497800946235657,
+          0.2963052988052368
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -990.6031494140625,
+          -60.9478759765625,
+          1926.8421630859375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#290 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00021-292-2fbf6819c408.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -988.2066650390625,
+          -60.96042251586914,
+          1930.820556640625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#293 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00022-295-380b18323895.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -988.2066650390625,
+          -60.96042251586914,
+          1930.820556640625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#296 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00023-298-9775a99cc14f.glb",
+      "transform": {
+        "rotation": [
+          -0.40364697575569153,
+          0.5755758285522461,
+          0.5939483046531677,
+          0.39116108417510986
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.000000238418579
+        ],
+        "translation": [
+          -986.2756958007812,
+          -60.95623779296875,
+          1935.223388671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#299 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00024-301-562a034318e7.glb",
+      "transform": {
+        "rotation": [
+          -0.40364697575569153,
+          0.5755758285522461,
+          0.5939483046531677,
+          0.39116108417510986
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.000000238418579
+        ],
+        "translation": [
+          -986.2756958007812,
+          -60.95623779296875,
+          1935.223388671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#302 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00025-304-0577e6bb4016.glb",
+      "transform": {
+        "rotation": [
+          -0.39426785707473755,
+          0.5816489458084106,
+          0.6002151966094971,
+          0.3820720911026001
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -983.2211303710938,
+          -60.94365310668945,
+          1943.24853515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#305 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00026-307-7b945066aa66.glb",
+      "transform": {
+        "rotation": [
+          -0.39426785707473755,
+          0.5816489458084106,
+          0.6002151966094971,
+          0.3820720911026001
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -983.2211303710938,
+          -60.94365310668945,
+          1943.24853515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#308 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00027-310-8025f3fc2716.glb",
+      "transform": {
+        "rotation": [
+          -0.38479143381118774,
+          0.5875784754753113,
+          0.6063340306282043,
+          0.37288880348205566
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -981.4522705078125,
+          -60.94847869873047,
+          1946.9873046875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#311 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00028-313-9a17978b4077.glb",
+      "transform": {
+        "rotation": [
+          -0.38479143381118774,
+          0.5875784754753113,
+          0.6063340306282043,
+          0.37288880348205566
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -981.4522705078125,
+          -60.94847869873047,
+          1946.9873046875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#314 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00029-316-50ade0300c08.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -979.53955078125,
+          -60.96198654174805,
+          1950.879150390625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#317 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00030-319-92a9d96decbf.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -979.53955078125,
+          -60.96198654174805,
+          1950.879150390625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#320 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00031-322-522094a2155b.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -977.653564453125,
+          -60.945518493652344,
+          1954.53857421875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#323 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00032-325-408834e7f3f8.glb",
+      "transform": {
+        "rotation": [
+          -0.37522009015083313,
+          0.5933631062507629,
+          0.6123033165931702,
+          0.3636135160923004
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -977.653564453125,
+          -60.945518493652344,
+          1954.53857421875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#326 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00033-328-2351bc1e87f3.glb",
+      "transform": {
+        "rotation": [
+          -0.33603280782699585,
+          0.6150237321853638,
+          0.6346553564071655,
+          0.32563838362693787
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -975.7487182617188,
+          -60.95991516113281,
+          1958.3717041015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#329 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00034-331-30e8d36ac69d.glb",
+      "transform": {
+        "rotation": [
+          -0.33603280782699585,
+          0.6150237321853638,
+          0.6346553564071655,
+          0.32563838362693787
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -975.7487182617188,
+          -60.95991516113281,
+          1958.3717041015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#332 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00035-334-4d0df0bd0dbf.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -973.8184814453125,
+          -60.964332580566406,
+          1960.5198974609375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#335 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00036-337-cde047d56793.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -973.8184814453125,
+          -60.964332580566406,
+          1960.5198974609375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#338 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00037-340-3979c6c5cb70.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -970.5577392578125,
+          -60.964454650878906,
+          1963.331787109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#341 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00038-343-f9251fe26636.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -970.5577392578125,
+          -60.964454650878906,
+          1963.331787109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#344 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00039-346-9a75c0d1afff.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -966.7880859375,
+          -60.95460891723633,
+          1965.8233642578125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#347 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00040-349-e7914f8a4738.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -966.7880859375,
+          -60.95460891723633,
+          1965.8233642578125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#350 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00041-352-6f52485e9c5b.glb",
+      "transform": {
+        "rotation": [
+          -0.2111584097146988,
+          0.6651484370231628,
+          0.6863800287246704,
+          0.20462669432163239
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -963.4611206054688,
+          -60.966705322265625,
+          1968.4798583984375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#353 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00042-355-7082d0065a08.glb",
+      "transform": {
+        "rotation": [
+          -0.2111584097146988,
+          0.6651484370231628,
+          0.6863800287246704,
+          0.20462669432163239
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -963.4611206054688,
+          -60.966705322265625,
+          1968.4798583984375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#356 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00043-358-79b1798b90c6.glb",
+      "transform": {
+        "rotation": [
+          -0.20035117864608765,
+          0.6682805418968201,
+          0.689612090587616,
+          0.1941537708044052
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -959.4173583984375,
+          -60.94014358520508,
+          1971.0322265625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#359 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00044-361-6ebcd65fc713.glb",
+      "transform": {
+        "rotation": [
+          -0.20035117864608765,
+          0.6682805418968201,
+          0.689612090587616,
+          0.1941537708044052
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -959.4173583984375,
+          -60.94014358520508,
+          1971.0322265625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#362 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00045-364-9286a89e67a3.glb",
+      "transform": {
+        "rotation": [
+          -0.16764423251152039,
+          0.6766843795776367,
+          0.6982842087745667,
+          0.16245855391025543
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -955.5106811523438,
+          -60.956443786621094,
+          1973.1495361328125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#365 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00046-367-1bb1d5bfce3c.glb",
+      "transform": {
+        "rotation": [
+          -0.16764423251152039,
+          0.6766843795776367,
+          0.6982842087745667,
+          0.16245855391025543
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -955.5106811523438,
+          -60.956443786621094,
+          1973.1495361328125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#368 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00047-370-f5283c3b3138.glb",
+      "transform": {
+        "rotation": [
+          -0.20035117864608765,
+          0.6682805418968201,
+          0.689612090587616,
+          0.1941537708044052
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -952.26904296875,
+          -60.966182708740234,
+          1975.3331298828125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#371 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00048-373-c0428c6fc948.glb",
+      "transform": {
+        "rotation": [
+          -0.20035117864608765,
+          0.6682805418968201,
+          0.689612090587616,
+          0.1941537708044052
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -952.26904296875,
+          -60.966182708740234,
+          1975.3331298828125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#374 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00049-376-980367087762.glb",
+      "transform": {
+        "rotation": [
+          -0.16764423251152039,
+          0.6766843795776367,
+          0.6982842087745667,
+          0.16245855391025543
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -948.3377685546875,
+          -60.95833206176758,
+          1977.096435546875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#377 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00050-379-c72acdd5db33.glb",
+      "transform": {
+        "rotation": [
+          -0.16764423251152039,
+          0.6766843795776367,
+          0.6982842087745667,
+          0.16245855391025543
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.000000238418579
+        ],
+        "translation": [
+          -948.3377685546875,
+          -60.95833206176758,
+          1977.096435546875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#380 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00051-382-137fc7dd9fb0.glb",
+      "transform": {
+        "rotation": [
+          -0.2111584097146988,
+          0.6651484370231628,
+          0.6863800287246704,
+          0.20462669432163239
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -944.5047607421875,
+          -60.95949935913086,
+          1979.1416015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#383 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00052-385-9f66ffebe3e6.glb",
+      "transform": {
+        "rotation": [
+          -0.2111584097146988,
+          0.6651484370231628,
+          0.6863800287246704,
+          0.20462669432163239
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.000000238418579
+        ],
+        "translation": [
+          -944.5047607421875,
+          -60.95949935913086,
+          1979.1416015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#386 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00053-388-fef413307ae3.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -940.5585327148438,
+          -60.95603942871094,
+          1981.78662109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#389 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00054-391-a394b9418054.glb",
+      "transform": {
+        "rotation": [
+          -0.2326139360666275,
+          0.6583927869796753,
+          0.6794087290763855,
+          0.2254185527563095
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -940.5585327148438,
+          -60.95603942871094,
+          1981.78662109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#392 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00055-394-005e4bf7dafc.glb",
+      "transform": {
+        "rotation": [
+          -0.2852027118206024,
+          0.6386770009994507,
+          0.6590636372566223,
+          0.27638059854507446
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -937.001220703125,
+          -60.95664978027344,
+          1985.0906982421875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#395 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00056-397-4c724119d417.glb",
+      "transform": {
+        "rotation": [
+          -0.2852027118206024,
+          0.6386770009994507,
+          0.6590636372566223,
+          0.27638059854507446
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -937.001220703125,
+          -60.95664978027344,
+          1985.0906982421875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#398 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00057-400-348e8229fd57.glb",
+      "transform": {
+        "rotation": [
+          -0.31593286991119385,
+          0.6249483823776245,
+          0.6448968052864075,
+          0.30616021156311035
+        ],
+        "scale": [
+          0.9999998211860657,
+          0.9999999403953552,
+          1.000000238418579
+        ],
+        "translation": [
+          -934.1259765625,
+          -60.963035583496094,
+          1988.6329345703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#401 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00058-403-9cb015e2bd32.glb",
+      "transform": {
+        "rotation": [
+          -0.31593286991119385,
+          0.6249483823776245,
+          0.6448968052864075,
+          0.30616021156311035
+        ],
+        "scale": [
+          0.9999998211860657,
+          0.9999999403953552,
+          1.000000238418579
+        ],
+        "translation": [
+          -934.1259765625,
+          -60.963035583496094,
+          1988.6329345703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#404 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00059-406-2014f09a7928.glb",
+      "transform": {
+        "rotation": [
+          -0.23922254145145416,
+          0.6650010347366333,
+          0.6659433841705322,
+          0.23888403177261353
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.000000238418579
+        ],
+        "translation": [
+          -931.2479248046875,
+          -60.98424530029297,
+          1991.8883056640625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#407 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00060-409-1e17fef9f222.glb",
+      "transform": {
+        "rotation": [
+          -0.23922254145145416,
+          0.6650010347366333,
+          0.6659433841705322,
+          0.23888403177261353
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.000000238418579
+        ],
+        "translation": [
+          -931.2479248046875,
+          -60.98424530029297,
+          1991.8883056640625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#410 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00061-412-b507ff20ffa9.glb",
+      "transform": {
+        "rotation": [
+          -0.2496538609266281,
+          0.6611665487289429,
+          0.6621034741401672,
+          0.24930058419704437
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -927.8328857421875,
+          -60.98217010498047,
+          1994.955322265625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#413 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00062-415-a95de02d4483.glb",
+      "transform": {
+        "rotation": [
+          -0.2496538609266281,
+          0.6611665487289429,
+          0.6621034741401672,
+          0.24930058419704437
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -927.8328857421875,
+          -60.98217010498047,
+          1994.955322265625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#416 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00063-418-fd595d112de4.glb",
+      "transform": {
+        "rotation": [
+          -0.27032724022865295,
+          0.653009831905365,
+          0.6539351940155029,
+          0.2699446976184845
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -924.8382568359375,
+          -60.97499465942383,
+          1997.6644287109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#419 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00064-421-406fc7055adb.glb",
+      "transform": {
+        "rotation": [
+          -0.27032724022865295,
+          0.653009831905365,
+          0.6539351940155029,
+          0.2699446976184845
+        ],
+        "scale": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -924.8382568359375,
+          -60.97499465942383,
+          1997.6644287109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#422 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00065-424-ef900c392b62.glb",
+      "transform": {
+        "rotation": [
+          -0.39732038974761963,
+          0.5847007036209106,
+          0.5855292677879333,
+          0.39675816893577576
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -922.4022216796875,
+          -60.976139068603516,
+          2001.32763671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#425 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00066-427-eb977b5b23b7.glb",
+      "transform": {
+        "rotation": [
+          -0.39732038974761963,
+          0.5847007036209106,
+          0.5855292677879333,
+          0.39675816893577576
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -922.4022216796875,
+          -60.976139068603516,
+          2001.32763671875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#428 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00067-430-21e10dbbded4.glb",
+      "transform": {
+        "rotation": [
+          -0.5,
+          0.4999989867210388,
+          0.5007075071334839,
+          0.4992924630641937
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.322265625,
+          -60.97892379760742,
+          2006.1839599609375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#431 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00068-433-70e688274b53.glb",
+      "transform": {
+        "rotation": [
+          -0.5,
+          0.4999989867210388,
+          0.5007075071334839,
+          0.4992924630641937
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.322265625,
+          -60.97892379760742,
+          2006.1839599609375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#434 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00069-436-1997ceae5f53.glb",
+      "transform": {
+        "rotation": [
+          0.530453085899353,
+          -0.46766147017478943,
+          -0.4683241844177246,
+          -0.5297024846076965
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.5386962890625,
+          -60.9763069152832,
+          2010.732666015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#437 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00070-439-2b67a5f42a6d.glb",
+      "transform": {
+        "rotation": [
+          0.530453085899353,
+          -0.46766147017478943,
+          -0.4683241844177246,
+          -0.5297024846076965
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.5386962890625,
+          -60.9763069152832,
+          2010.732666015625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#440 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00071-442-d2e9f1c40765.glb",
+      "transform": {
+        "rotation": [
+          -0.4420356750488281,
+          0.5517690181732178,
+          0.5525509119033813,
+          0.4414101541042328
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.4249267578125,
+          -60.99031448364258,
+          2014.9913330078125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#443 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00072-445-6569d754fb8c.glb",
+      "transform": {
+        "rotation": [
+          -0.4420356750488281,
+          0.5517690181732178,
+          0.5525509119033813,
+          0.4414101541042328
+        ],
+        "scale": [
+          1.0,
+          1.000000238418579,
+          1.0000001192092896
+        ],
+        "translation": [
+          -921.4249267578125,
+          -60.99031448364258,
+          2014.9913330078125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#446 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00073-448-87bcdc56489b.glb",
+      "transform": {
+        "rotation": [
+          -0.4064684510231018,
+          0.5783966183662415,
+          0.5792162418365479,
+          0.4058932662010193
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.0000001192092896
+        ],
+        "translation": [
+          -920.3199462890625,
+          -60.986141204833984,
+          2017.38037109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#449 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00074-451-f795f654c2a6.glb",
+      "transform": {
+        "rotation": [
+          -0.4064684510231018,
+          0.5783966183662415,
+          0.5792162418365479,
+          0.4058932662010193
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.000000238418579,
+          1.0000001192092896
+        ],
+        "translation": [
+          -920.3199462890625,
+          -60.986141204833984,
+          2017.38037109375
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#452 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00075-454-cd5e5823d561.glb",
+      "transform": {
+        "rotation": [
+          0.5230315327644348,
+          -0.47592398524284363,
+          -0.4765984117984772,
+          -0.5222914218902588
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -919.4196166992188,
+          -60.98194122314453,
+          2022.1220703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#455 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00076-457-8d432ddaa4df.glb",
+      "transform": {
+        "rotation": [
+          0.5230315327644348,
+          -0.47592398524284363,
+          -0.4765984117984772,
+          -0.5222914218902588
+        ],
+        "scale": [
+          1.0,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -919.4196166992188,
+          -60.98194122314453,
+          2022.1220703125
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#458 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00077-460-c72f240bfb65.glb",
+      "transform": {
+        "rotation": [
+          0.55881267786026,
+          -0.43347838521003723,
+          -0.4340926706790924,
+          -0.5580219030380249
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000003576278687,
+          1.000000238418579
+        ],
+        "translation": [
+          -920.1709594726562,
+          -60.96328353881836,
+          2026.4459228515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#461 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00078-463-1c70add6f3ab.glb",
+      "transform": {
+        "rotation": [
+          0.55881267786026,
+          -0.43347838521003723,
+          -0.4340926706790924,
+          -0.5580219030380249
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000003576278687,
+          1.000000238418579
+        ],
+        "translation": [
+          -920.1709594726562,
+          -60.96328353881836,
+          2026.4459228515625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#464 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00079-466-15d5f2426a39.glb",
+      "transform": {
+        "rotation": [
+          -0.4840256869792938,
+          0.5154354572296143,
+          0.5161658525466919,
+          0.4833407402038574
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -920.3884887695312,
+          -60.958316802978516,
+          2030.7535400390625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#467 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00080-469-425c62e484ba.glb",
+      "transform": {
+        "rotation": [
+          -0.4840256869792938,
+          0.5154354572296143,
+          0.5161658525466919,
+          0.4833407402038574
+        ],
+        "scale": [
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896
+        ],
+        "translation": [
+          -920.3884887695312,
+          -60.958316802978516,
+          2030.7535400390625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#470 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00081-472-1450dbd7f5f6.glb",
+      "transform": {
+        "rotation": [
+          -0.3880748152732849,
+          0.5908602476119995,
+          0.5916975140571594,
+          0.38752567768096924
+        ],
+        "scale": [
+          1.7899997234344482,
+          1.7899999618530273,
+          1.7899997234344482
+        ],
+        "translation": [
+          -917.870361328125,
+          -60.90449142456055,
+          2035.6900634765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#473 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00082-475-976dd2a4ed47.glb",
+      "transform": {
+        "rotation": [
+          -0.3880748152732849,
+          0.5908602476119995,
+          0.5916975140571594,
+          0.38752567768096924
+        ],
+        "scale": [
+          1.7899997234344482,
+          1.7899999618530273,
+          1.7899997234344482
+        ],
+        "translation": [
+          -917.870361328125,
+          -60.90449142456055,
+          2035.6900634765625
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-22013f32786dab6f9e01a5bc6c53cc91eb3e534ba916985bae4b65403c70c2a9",
+      "name": "Plane01 [BuildPlayer-Map_01_03#476 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00083-478-6da5ca1ab5d7.glb",
+      "transform": {
+        "rotation": [
+          0.6144019961357117,
+          -0.350527822971344,
+          -0.3510245680809021,
+          -0.613532543182373
+        ],
+        "scale": [
+          1.7899993658065796,
+          1.7899994850158691,
+          1.7899997234344482
+        ],
+        "translation": [
+          -918.1743774414062,
+          -60.954689025878906,
+          2044.752685546875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#479 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00084-481-34e9932e4a1a.glb",
+      "transform": {
+        "rotation": [
+          0.6144019961357117,
+          -0.350527822971344,
+          -0.3510245680809021,
+          -0.613532543182373
+        ],
+        "scale": [
+          1.7899993658065796,
+          1.7899994850158691,
+          1.7899997234344482
+        ],
+        "translation": [
+          -918.1743774414062,
+          -60.954689025878906,
+          2044.752685546875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 12,
+      "model": "map-geometry-8fad6c1ea1c7992823db93ae74bd0de9001c6503531c81e38fe0b70abe7e1a9a",
+      "name": "Editable Mesh [BuildPlayer-Map_01_03#482 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00085-484-58c142f2129a.glb",
+      "transform": {
+        "rotation": [
+          -0.4221041798591614,
+          0.5630051493644714,
+          0.5809763669967651,
+          0.40904733538627625
+        ],
+        "scale": [
+          0.9999998211860657,
+          1.0,
+          1.0000001192092896
+        ],
+        "translation": [
+          -984.7651977539062,
+          -60.94295883178711,
+          1939.43701171875
+        ]
+      }
+    },
+    {
+      "legacyLayer": 0,
+      "model": "map-geometry-4a16ba2fec428cb2bc00c4a9a97435545ee95a03ac9215be57dffa43d61d8203",
+      "name": "ffWater [BuildPlayer-Map_01_03#491 visual]",
+      "scene": 0,
+      "sourceModelPath": "models/world/maps/map_01_03/v-00087-493-46d20e876017.glb",
+      "transform": {
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "translation": [
+          -512.0,
+          0.0,
+          1536.0
+        ]
+      }
+    }
+  ]
+}

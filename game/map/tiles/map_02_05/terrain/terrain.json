@@ -1,0 +1,1871 @@
+{
+  "detailAndTrees": {
+    "patchGrid": {
+      "densityRaw": {
+        "blake3": "blake3:0ac7073448c1256c59c4bfce0dbe9c305bd0e12e51d3cd3091e861bea96fd22f",
+        "byteLength": 1048576,
+        "path": "details/patch-density.raw.bin"
+      },
+      "densityResolution": 512,
+      "layerIndicesRaw": {
+        "blake3": "blake3:19b822fb469ac895ab68f089e3e55b40b7c67e0b828c48bd66bccbdf45a57883",
+        "byteLength": 16384,
+        "path": "details/patch-layer-indices.bin"
+      },
+      "layoutEvidence": "layer-major patchSamples*patchSamples blocks in layerIndices order; patch grid and local sample order retained verbatim in raw sidecars",
+      "patchCount": 64,
+      "patchSamples": 8,
+      "patches": 4096
+    },
+    "preloadTextureAtlasData": {
+      "entries": [
+        {
+          "index": 0,
+          "matchingPrototypeIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "coveredByPrototypeTextureExport"
+        },
+        {
+          "index": 1,
+          "matchingPrototypeIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "coveredByPrototypeTextureExport"
+        },
+        {
+          "index": 2,
+          "matchingPrototypeIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "coveredByPrototypeTextureExport"
+        },
+        {
+          "index": 3,
+          "matchingPrototypeIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "coveredByPrototypeTextureExport"
+        }
+      ],
+      "orderedDuplicatesPreserved": true,
+      "serializedRaw": [
+        {
+          "fileId": 2,
+          "pathId": 71
+        },
+        {
+          "fileId": 2,
+          "pathId": 71
+        },
+        {
+          "fileId": 2,
+          "pathId": 71
+        },
+        {
+          "fileId": 2,
+          "pathId": 71
+        }
+      ],
+      "status": "complete"
+    },
+    "prototypes": [
+      {
+        "density": {
+          "canonicalRawBlake3": "blake3:3ba0777e5b5d394bfbb3e26f6c15bbf98615649b403f2e87197e57767eedec9f",
+          "densityTotal": 34,
+          "height": 512,
+          "layoutStatus": "typedInferenceFromSerializedPatchShapeAndUnityAPIIndexing",
+          "nonzeroSampleCount": 34,
+          "path": "details/density/layer_00.png",
+          "pixelOrder": "row-major z rows; patchIndex = patchZ * patchCount + patchX; localIndex = z * patchSamples + x",
+          "pngBlake3": "blake3:1911b10605584be3570af24398a138e9887aa9218166d5a9bd64ea479269bf06",
+          "pngColorType": "Gray8",
+          "rawEncoding": "u8",
+          "width": 512
+        },
+        "index": 0,
+        "prototypeMeshRoot": {
+          "status": "notSerialized"
+        },
+        "prototypeTexture": {
+          "documentBlake3": "blake3:73d79f9d93a619ff7c590a8f2ba95dff39bd2b93c5b9245d99c050c587cf6a4f",
+          "documentPath": "map/shared/terrain/details/etc_plant_20/texture.json",
+          "path": "map/shared/terrain/details/etc_plant_20/mips/mip_00.png",
+          "resolvedAssetName": "CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+          "resolvedPathId": 71,
+          "serializedObjectRawBlake3": "blake3:fbf7098a9adeefdd2bc1a6eb690c1205b31e9605fb31cfd29ffa323792e8dd94",
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "sharedTextureReference",
+          "trueTextureName": "ETC_plant_20"
+        },
+        "serialized": {
+          "bendFactor": 0.10000000149011612,
+          "dryColor": {
+            "a": 1.0,
+            "b": 0.10196078568696976,
+            "g": 0.7372549176216125,
+            "r": 0.8039215803146362
+          },
+          "grayscaleLighting": 0,
+          "healthyColor": {
+            "a": 1.0,
+            "b": 0.16470588743686676,
+            "g": 0.9764705896377563,
+            "r": 0.26274511218070984
+          },
+          "lightmapFactor": 1.0,
+          "maxHeight": 0.5,
+          "maxWidth": 0.5,
+          "minHeight": 1.0,
+          "minWidth": 1.0,
+          "noiseSpread": 0.10000000149011612,
+          "prototype": {
+            "fileId": 0,
+            "pathId": 0
+          },
+          "prototypeTexture": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "renderMode": 0,
+          "usePrototypeMesh": 0
+        }
+      },
+      {
+        "density": {
+          "canonicalRawBlake3": "blake3:0b0df0b60fa76c6e3b7693eed66f0ebf46e654210563ace0797a348999e430be",
+          "densityTotal": 63,
+          "height": 512,
+          "layoutStatus": "typedInferenceFromSerializedPatchShapeAndUnityAPIIndexing",
+          "nonzeroSampleCount": 63,
+          "path": "details/density/layer_01.png",
+          "pixelOrder": "row-major z rows; patchIndex = patchZ * patchCount + patchX; localIndex = z * patchSamples + x",
+          "pngBlake3": "blake3:4394e367c2375f88b2eea8e4b8e0155506b8d8966eed95d216a96d8a24a1e6be",
+          "pngColorType": "Gray8",
+          "rawEncoding": "u8",
+          "width": 512
+        },
+        "index": 1,
+        "prototypeMeshRoot": {
+          "status": "notSerialized"
+        },
+        "prototypeTexture": {
+          "documentBlake3": "blake3:73d79f9d93a619ff7c590a8f2ba95dff39bd2b93c5b9245d99c050c587cf6a4f",
+          "documentPath": "map/shared/terrain/details/etc_plant_20/texture.json",
+          "path": "map/shared/terrain/details/etc_plant_20/mips/mip_00.png",
+          "resolvedAssetName": "CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+          "resolvedPathId": 71,
+          "serializedObjectRawBlake3": "blake3:fbf7098a9adeefdd2bc1a6eb690c1205b31e9605fb31cfd29ffa323792e8dd94",
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "sharedTextureReference",
+          "trueTextureName": "ETC_plant_20"
+        },
+        "serialized": {
+          "bendFactor": 0.10000000149011612,
+          "dryColor": {
+            "a": 1.0,
+            "b": 0.10196078568696976,
+            "g": 0.7372549176216125,
+            "r": 0.8039215803146362
+          },
+          "grayscaleLighting": 0,
+          "healthyColor": {
+            "a": 1.0,
+            "b": 0.16470588743686676,
+            "g": 0.9764705896377563,
+            "r": 0.26274511218070984
+          },
+          "lightmapFactor": 1.0,
+          "maxHeight": 1.0,
+          "maxWidth": 1.0,
+          "minHeight": 1.0,
+          "minWidth": 1.0,
+          "noiseSpread": 0.10000000149011612,
+          "prototype": {
+            "fileId": 0,
+            "pathId": 0
+          },
+          "prototypeTexture": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "renderMode": 0,
+          "usePrototypeMesh": 0
+        }
+      },
+      {
+        "density": {
+          "canonicalRawBlake3": "blake3:f5222cef71ff6ce792e7bcc45ac96330110d2e2d4f428e442f8ea509407fd4ff",
+          "densityTotal": 27,
+          "height": 512,
+          "layoutStatus": "typedInferenceFromSerializedPatchShapeAndUnityAPIIndexing",
+          "nonzeroSampleCount": 27,
+          "path": "details/density/layer_02.png",
+          "pixelOrder": "row-major z rows; patchIndex = patchZ * patchCount + patchX; localIndex = z * patchSamples + x",
+          "pngBlake3": "blake3:d102b9f78193e61cb213468416c64e7e482299335d61b74f8779f73632af5f07",
+          "pngColorType": "Gray8",
+          "rawEncoding": "u8",
+          "width": 512
+        },
+        "index": 2,
+        "prototypeMeshRoot": {
+          "status": "notSerialized"
+        },
+        "prototypeTexture": {
+          "documentBlake3": "blake3:73d79f9d93a619ff7c590a8f2ba95dff39bd2b93c5b9245d99c050c587cf6a4f",
+          "documentPath": "map/shared/terrain/details/etc_plant_20/texture.json",
+          "path": "map/shared/terrain/details/etc_plant_20/mips/mip_00.png",
+          "resolvedAssetName": "CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+          "resolvedPathId": 71,
+          "serializedObjectRawBlake3": "blake3:fbf7098a9adeefdd2bc1a6eb690c1205b31e9605fb31cfd29ffa323792e8dd94",
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "sharedTextureReference",
+          "trueTextureName": "ETC_plant_20"
+        },
+        "serialized": {
+          "bendFactor": 0.10000000149011612,
+          "dryColor": {
+            "a": 1.0,
+            "b": 0.10196078568696976,
+            "g": 0.7372549176216125,
+            "r": 0.8039215803146362
+          },
+          "grayscaleLighting": 0,
+          "healthyColor": {
+            "a": 1.0,
+            "b": 0.16470588743686676,
+            "g": 0.9764705896377563,
+            "r": 0.26274511218070984
+          },
+          "lightmapFactor": 1.0,
+          "maxHeight": 1.5,
+          "maxWidth": 1.5,
+          "minHeight": 1.0,
+          "minWidth": 1.0,
+          "noiseSpread": 0.10000000149011612,
+          "prototype": {
+            "fileId": 0,
+            "pathId": 0
+          },
+          "prototypeTexture": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "renderMode": 0,
+          "usePrototypeMesh": 0
+        }
+      },
+      {
+        "density": {
+          "canonicalRawBlake3": "blake3:86bb2b521a10612d5a1d38204fac4fa632466d1866144d8a6a7e3afc050ce7ae",
+          "densityTotal": 0,
+          "height": 512,
+          "layoutStatus": "typedInferenceFromSerializedPatchShapeAndUnityAPIIndexing",
+          "nonzeroSampleCount": 0,
+          "path": "details/density/layer_03.png",
+          "pixelOrder": "row-major z rows; patchIndex = patchZ * patchCount + patchX; localIndex = z * patchSamples + x",
+          "pngBlake3": "blake3:a6906a010af30538be69e4c37f7cb85cbbe54fd02bcf6c537b8a11893b035dd4",
+          "pngColorType": "Gray8",
+          "rawEncoding": "u8",
+          "width": 512
+        },
+        "index": 3,
+        "prototypeMeshRoot": {
+          "status": "notSerialized"
+        },
+        "prototypeTexture": {
+          "documentBlake3": "blake3:73d79f9d93a619ff7c590a8f2ba95dff39bd2b93c5b9245d99c050c587cf6a4f",
+          "documentPath": "map/shared/terrain/details/etc_plant_20/texture.json",
+          "path": "map/shared/terrain/details/etc_plant_20/mips/mip_00.png",
+          "resolvedAssetName": "CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+          "resolvedPathId": 71,
+          "serializedObjectRawBlake3": "blake3:fbf7098a9adeefdd2bc1a6eb690c1205b31e9605fb31cfd29ffa323792e8dd94",
+          "sourcePointer": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "status": "sharedTextureReference",
+          "trueTextureName": "ETC_plant_20"
+        },
+        "serialized": {
+          "bendFactor": 0.10000000149011612,
+          "dryColor": {
+            "a": 1.0,
+            "b": 0.10196078568696976,
+            "g": 0.7372549176216125,
+            "r": 0.8039215803146362
+          },
+          "grayscaleLighting": 0,
+          "healthyColor": {
+            "a": 1.0,
+            "b": 0.16470588743686676,
+            "g": 0.9764705896377563,
+            "r": 0.26274511218070984
+          },
+          "lightmapFactor": 1.0,
+          "maxHeight": 2.0,
+          "maxWidth": 2.0,
+          "minHeight": 1.0,
+          "minWidth": 1.0,
+          "noiseSpread": 0.10000000149011612,
+          "prototype": {
+            "fileId": 0,
+            "pathId": 0
+          },
+          "prototypeTexture": {
+            "fileId": 2,
+            "pathId": 71
+          },
+          "renderMode": 0,
+          "usePrototypeMesh": 0
+        }
+      }
+    ],
+    "randomRotations": [],
+    "status": "serializedAssetClosureExported",
+    "textures": [
+      {
+        "documentBlake3": "blake3:73d79f9d93a619ff7c590a8f2ba95dff39bd2b93c5b9245d99c050c587cf6a4f",
+        "documentPath": "map/shared/terrain/details/etc_plant_20/texture.json",
+        "path": "map/shared/terrain/details/etc_plant_20/mips/mip_00.png",
+        "resolvedAssetName": "CustomAssetBundle-eb3e0153c75d642be888dac9b6af516e",
+        "resolvedPathId": 71,
+        "serializedObjectRawBlake3": "blake3:fbf7098a9adeefdd2bc1a6eb690c1205b31e9605fb31cfd29ffa323792e8dd94",
+        "trueTextureName": "ETC_plant_20"
+      }
+    ],
+    "trees": {
+      "instanceCount": 0,
+      "instances": [],
+      "prototypeCount": 0,
+      "prototypes": [],
+      "runtimeStatus": "empty"
+    },
+    "wavingGrass": {
+      "amount": 0.5,
+      "speed": 0.5,
+      "strength": 0.5,
+      "tint": {
+        "a": 0.0,
+        "b": 0.5,
+        "g": 0.6000000238418579,
+        "r": 0.699999988079071
+      }
+    }
+  },
+  "dimensions": {
+    "height": 129,
+    "sampleCount": 16641,
+    "width": 129
+  },
+  "environment": {
+    "blake3": "blake3:f1fb302108e897e56f5d656b3ff66d1a2cca53ca4a64ee5dc5458265820521b0",
+    "path": "environment/environment.json",
+    "schema": "ffone.native-terrain-environment.v1",
+    "status": "complete"
+  },
+  "gameplayAttributes": {
+    "height": 129,
+    "path": "gameplay/attributes.png",
+    "pixelOrder": "row-major: index = row * width + column",
+    "pngBlake3": "blake3:e6760e5cfb764e30138aa4d9725d4594e71da666a7a8fd2bc19acea2c0b19405",
+    "pngColorType": "Gray8",
+    "rawBlake3": "blake3:ee89e0c48fa3e8ad1cf4d6d0930cd1f0261889a64b6ff609c0dde1afaac5afab",
+    "rawEncoding": "u8",
+    "rawPath": "gameplay/attributes.bin",
+    "sampleCount": 16641,
+    "width": 129
+  },
+  "heightmap": {
+    "canonicalOrderRawBlake3": "blake3:e92bd74171c412fa829fa04e7afd10fb6e0dba07b354218f2fc9d181ef0d6886",
+    "path": "heightmap.png",
+    "pixelOrder": "row-major: pixelIndex = row * width + column",
+    "pngBlake3": "blake3:3411da4a184d024e1bc85f76ff23f44dd0243ddba7adbc21d571898aea048582",
+    "pngColorType": "Gray16",
+    "pngSampleByteOrder": "big-endian per PNG; image decoders return host-endian u16",
+    "rawEncoding": "u16",
+    "rawHashByteOrder": "little-endian",
+    "rawMax": 19348,
+    "rawMin": 12970,
+    "sourceOrderRawBlake3": "blake3:793351e61b6352f87c6ea7d3bbc10943fcfc5ad680718700feb17b885ecb0bdb"
+  },
+  "lightmap": {
+    "canonicalRgbaBlake3": "blake3:3caa003a43283d43e4bc35813ae8b00bb226089bf292dc18abffb899de9bd557",
+    "canonicalTransform": "flipY",
+    "colorSpace": "srgb",
+    "height": 1024,
+    "mips": [
+      {
+        "canonicalRgbaBlake3": "blake3:3caa003a43283d43e4bc35813ae8b00bb226089bf292dc18abffb899de9bd557",
+        "canonicalTransform": "flipY",
+        "height": 1024,
+        "level": 0,
+        "path": "lightmap/lightmap.png",
+        "pngBlake3": "blake3:55d288b4868689fd6c8b5b224307959696aee61b7338c99214e152e69c38acba",
+        "pngColorType": "RGBA8",
+        "width": 1024
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:2838460d54b9c8d2bc502598ea4f77f9b4c39b0e4f6f86b0c643231e1d8fdead",
+        "canonicalTransform": "flipY",
+        "height": 512,
+        "level": 1,
+        "path": "lightmap/mips/mip_01.png",
+        "pngBlake3": "blake3:7ced584c0807aa7e34db125b969095af7ed217999c5466b1817c55d11f37a91b",
+        "pngColorType": "RGBA8",
+        "width": 512
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:c4ba8898aa0c686055ebda662fe02200ca15caa32cf5aa75d38a54b5710dd3a7",
+        "canonicalTransform": "flipY",
+        "height": 256,
+        "level": 2,
+        "path": "lightmap/mips/mip_02.png",
+        "pngBlake3": "blake3:d326835e78dbe79c83a680e00853b3d6d26f8dacb42d906d5f2bde57d82efb73",
+        "pngColorType": "RGBA8",
+        "width": 256
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:b33b74ae2b947cdeaddc9a6d2842cd125c1448d69cae007c67c5b99c9eea0014",
+        "canonicalTransform": "flipY",
+        "height": 128,
+        "level": 3,
+        "path": "lightmap/mips/mip_03.png",
+        "pngBlake3": "blake3:9cf1850a9575004d7b63c836e47f60851fff4c2dde54f2eb61cf0d71bdeee0df",
+        "pngColorType": "RGBA8",
+        "width": 128
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:6984369bfa14e348d3fa46e1a493f19a068bb88dd5e7bcf4db3106d35fb25428",
+        "canonicalTransform": "flipY",
+        "height": 64,
+        "level": 4,
+        "path": "lightmap/mips/mip_04.png",
+        "pngBlake3": "blake3:87ebf46ab21237553dcb09fa9a647149690321641cdaadc374d4c05d0d8ed2f0",
+        "pngColorType": "RGBA8",
+        "width": 64
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:cae439fdc3fe2ef81495378f1eedf2241e6a0034d17a913a4ed9069ce3f1dc34",
+        "canonicalTransform": "flipY",
+        "height": 32,
+        "level": 5,
+        "path": "lightmap/mips/mip_05.png",
+        "pngBlake3": "blake3:ea1ccf624ee833e86bd3d41aedf6fa631d733822dc69639ca5c8e585b15212cb",
+        "pngColorType": "RGBA8",
+        "width": 32
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:0460675243fd060a38a9de025431fd96894e0e7180cd947567484095181536f6",
+        "canonicalTransform": "flipY",
+        "height": 16,
+        "level": 6,
+        "path": "lightmap/mips/mip_06.png",
+        "pngBlake3": "blake3:ef7535af2753b6e41bcf7927994f734a3b63b1226b58875065ad46acf76f9f92",
+        "pngColorType": "RGBA8",
+        "width": 16
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:4c4c5ddff40396c3ae4e1fd40959c4372a97254c26daa650bb395b2847cad0c2",
+        "canonicalTransform": "flipY",
+        "height": 8,
+        "level": 7,
+        "path": "lightmap/mips/mip_07.png",
+        "pngBlake3": "blake3:aa6613f3999da39cc5a4e73176ebdb1724bd3a1469a3f8b239e116aadac7ca91",
+        "pngColorType": "RGBA8",
+        "width": 8
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:549c6f34bcbf852275c4b3df30cfef4a4507ce7f9d69641e1c1ea0af062b8715",
+        "canonicalTransform": "flipY",
+        "height": 4,
+        "level": 8,
+        "path": "lightmap/mips/mip_08.png",
+        "pngBlake3": "blake3:47031b9c749a35909eded9e84051db5c062110d997f32dbb30bc9b91efd3c9f2",
+        "pngColorType": "RGBA8",
+        "width": 4
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:35f3dcb741e6f2d2dfdf429437b93b33e62ece27d0c7358228823a2ae5cf22b4",
+        "canonicalTransform": "flipY",
+        "height": 2,
+        "level": 9,
+        "path": "lightmap/mips/mip_09.png",
+        "pngBlake3": "blake3:bf1f7bc3273bdd80a1076111c64c6a9605f0f3ed339a06113f25b82d0de88beb",
+        "pngColorType": "RGBA8",
+        "width": 2
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:a16645458bf5a65ea3346989c45cad1995b4a50a6eaa86d68c4b236dc67413b8",
+        "canonicalTransform": "flipY",
+        "height": 1,
+        "level": 10,
+        "path": "lightmap/mips/mip_10.png",
+        "pngBlake3": "blake3:4f28ed00705ec79f70d690f620292af44d3ca2c29139d060f820995dca4478e1",
+        "pngColorType": "RGBA8",
+        "width": 1
+      }
+    ],
+    "path": "lightmap/lightmap.png",
+    "pngBlake3": "blake3:55d288b4868689fd6c8b5b224307959696aee61b7338c99214e152e69c38acba",
+    "sampler": {
+      "alphaIsTransparencyFlag": {
+        "runtimeContract": "preserve decoded RGBA alpha exactly",
+        "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+      },
+      "anisoLevel": 1,
+      "colorSpaceFlag": {
+        "runtimeInterpretationSource": "terrain texture role",
+        "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+      },
+      "filterMode": {
+        "serializedValue": 1,
+        "unityName": "Bilinear"
+      },
+      "mipBias": 0.0,
+      "mipCount": 11,
+      "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+      "mipMap": true,
+      "serializedAuxiliary": {
+        "completeImageSize": 699064,
+        "imageCount": 1,
+        "limit": null,
+        "touchable": null
+      },
+      "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+      "textureFormat": 10,
+      "usageColorSpace": "srgb",
+      "wrapMode": {
+        "axisSource": "legacy single m_WrapMode applies to both axes",
+        "serializedValue": 1,
+        "u": "Clamp",
+        "unityName": "Clamp",
+        "v": "Clamp"
+      }
+    },
+    "status": "exported",
+    "width": 1024
+  },
+  "nativeGeometry": {
+    "cellIndices": {
+      "i00": "row * width + column",
+      "i01": "i00 + width",
+      "i10": "i00 + 1",
+      "i11": "i01 + 1"
+    },
+    "cellTriangleOrder": "[i00, i10, i01], [i10, i11, i01]",
+    "columnStep": [
+      -4.0,
+      0.0,
+      0.0
+    ],
+    "frontFace": "counterClockwise",
+    "geometricFrontNormal": "+nativeY",
+    "heightAxis": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "localBounds": {
+      "max": [
+        0.0,
+        354.2832728049562,
+        512.0
+      ],
+      "min": [
+        -512.0,
+        237.49504074221016,
+        0.0
+      ]
+    },
+    "localOrigin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rowStep": [
+      0.0,
+      0.0,
+      4.0
+    ],
+    "vertexFormula": "[-column * sampleSpacingX, rawU16 / 32767 * heightScale, row * sampleSpacingZ]"
+  },
+  "orientation": {
+    "canonicalColumns": "-nativeX",
+    "canonicalHeightIndex": "z * width + x",
+    "canonicalHeightLayout": "row-major-z",
+    "canonicalRows": "+nativeZ",
+    "runtimeRequiresUnityOrientationFixup": false,
+    "sourceHeightIndex": "x * height + z",
+    "sourceHeightLayout": "x-major",
+    "weightMapTransform": "flipY"
+  },
+  "scale": {
+    "extentX": 512.0,
+    "extentZ": 512.0,
+    "heightNormalizationDenominator": 32767,
+    "heightScale": 600.0,
+    "sampleSpacingX": 4.0,
+    "sampleSpacingZ": 4.0
+  },
+  "schema": "ffone.native-terrain.v1",
+  "splat": {
+    "baseMapResolution": 512,
+    "layers": [
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:6cd6fcf3b6dc56b29e58b05e8ef3b2884e5e1e5a3287042ba3c995a547bd2eca",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:6cd6fcf3b6dc56b29e58b05e8ef3b2884e5e1e5a3287042ba3c995a547bd2eca",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/map01/mips/mip_00.png",
+              "pngBlake3": "blake3:f80af70a3839a3a80c8b3c526527301f461940af53d4e6725e7033f925694545",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:69e4e8a88b9a620f0fa3c4584cb6290face59c88af934f8db0fed08a4228bc41",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/map01/mips/mip_01.png",
+              "pngBlake3": "blake3:510d28cbcdffc9311bc4e3b9e1d452fffcd48cf5c30b379872ad1606856624f3",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:e5b49eb7b1212a408d90e0d283cdf98d93cdc9f25428202ec090e0d7e9c7734f",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/map01/mips/mip_02.png",
+              "pngBlake3": "blake3:ba42fb1bce2200ae5efe90c807bf1e3410a29eba4775ef4f2fe46ee42ac84fd8",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:33b55180bd039862cd3f0149a7656909a6aa5a466d8fc8a235fda8ffd06af4df",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/map01/mips/mip_03.png",
+              "pngBlake3": "blake3:2629b383ec914fb3f5af5f3836a734b2288ddb88e48d118dc2bd4e22a56f6c02",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:57afe872427d29d3fffc54ab8ce6a65e59dec65e173cfda0d517e60d46fa247c",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/map01/mips/mip_04.png",
+              "pngBlake3": "blake3:8a32a8713a4bd3ded2ddb6a1096a6cfcccd128b24c43b22870de033964ce2681",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:b6d75e172b1826abed98c19c4ee961f4af2b6a58348c5e244d8b5410564b7e7f",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/map01/mips/mip_05.png",
+              "pngBlake3": "blake3:a366a27b9bbaec361a38b061e71c461e1162770aca09cb467e35983d3e269265",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:9012a362dcb70828d985a384d69ae3ad4166b7178b797072336ca11bd86dccaa",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/map01/mips/mip_06.png",
+              "pngBlake3": "blake3:4cdb7707889742610dfe321e063bf89f4f70572da6801d783e7fce878e193ba2",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:c8802f62d5c4d0e2614e0b94734356230c917e1b3dcb8e40d78376f3905774bf",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/map01/mips/mip_07.png",
+              "pngBlake3": "blake3:243ccbdfa01d12b13dc98e742889c0a3564fed9a6c874c59bfc651195c00ece0",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:1aabc8810eccf04b3769ea80615cce759119cb46c5fd7dbba910b6e78f35c0c6",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/map01/mips/mip_08.png",
+              "pngBlake3": "blake3:aaa561c22400a308a4a04aa7c3b4532bc3dc27e2df62913bd24445ef2e67f870",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/map01/mips/mip_00.png",
+          "pngBlake3": "blake3:f80af70a3839a3a80c8b3c526527301f461940af53d4e6725e7033f925694545",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 0,
+        "mode": 0,
+        "tileSize": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "trueTextureName": "map01",
+        "weight": {
+          "channel": "r",
+          "channelIndex": 0,
+          "mapIndex": 0,
+          "mapPath": "weights/weights_00.png"
+        }
+      },
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:048765f2b6c985bc4f09457af2c9386e970bf1fe11bded0018fb31e4858065e4",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:048765f2b6c985bc4f09457af2c9386e970bf1fe11bded0018fb31e4858065e4",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_00.png",
+              "pngBlake3": "blake3:ae1bcf15062b4f2b207fd3073515c023cb68538c21c7bb5d147eae3155567da6",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:b8291214958e28fa69011487f3da5ed19b7bf5c553ba2c9ebceb1cd829d46355",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_01.png",
+              "pngBlake3": "blake3:bf7e25b7a093a5f49a630c2f5da7259c35503f59a57ee824b8e14571797ce4d6",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:824fabeeaffadac3be9e3c4c53d20ead629997eb6556481ce3e5637bde374b0a",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_02.png",
+              "pngBlake3": "blake3:13f1dee84bbd067ffff37e2d9084e520ce541f9ee650d4079cd5a66246c85cde",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:8b161c585c7f87bb37eb6421bc32e7ef02c2a4c408aa4dfeb658fe2497fbd325",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_03.png",
+              "pngBlake3": "blake3:fe822d70ffd471425d8e6c8e6494abb588c98d40cc2c79b05fb936008b387231",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:4365813345ce6abd2afb409a43c1a7a97fc0c5088ae502cb038bcf2b716d8906",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_04.png",
+              "pngBlake3": "blake3:4a6f9c984b7084aaaf62cc33703ea3d4f5b45350ec3d5abdbb3bd36306663fa8",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:f81b176265881f25027173aba07a7a5cfd1b044338a84e449413fe90c97a7a2f",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_05.png",
+              "pngBlake3": "blake3:3a7f7542eed6c2be415416708e2d1509ca7928e31e901278ce29f56f212f4056",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:8097d4dc24fbb063ca79cc29a2755d61071f895266a8e8389d7c600957a0e638",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_06.png",
+              "pngBlake3": "blake3:c383bb5678af308f12cda9c7f5a58cafb90952edad10e2509621f75ffca371aa",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:4871aca2a424303e22b1dd70bbde26e8e76105af2424a412f69789c37f2d2b8a",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_07.png",
+              "pngBlake3": "blake3:f80bf7ba741b0664c7b3895bc89bfa7a3bfd563fb6e27bcebd47ddf5645b1fb9",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:1d2b60c46dae2b03ec0f8d5550a7471d57d1a88712ef2b30642003bf3d23dcc1",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/ruins_ston/mips/mip_08.png",
+              "pngBlake3": "blake3:56526ebfed756523ba20dd1cac8e7adc1b0d2884fee2ed12687acca53d0ce97e",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/ruins_ston/mips/mip_00.png",
+          "pngBlake3": "blake3:ae1bcf15062b4f2b207fd3073515c023cb68538c21c7bb5d147eae3155567da6",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 1,
+        "mode": 0,
+        "tileSize": {
+          "x": 16.0,
+          "y": 16.0
+        },
+        "trueTextureName": "ruins_ston",
+        "weight": {
+          "channel": "g",
+          "channelIndex": 1,
+          "mapIndex": 0,
+          "mapPath": "weights/weights_00.png"
+        }
+      },
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:865eb762d8f3f13fabcaa5b72f1a3f739b1c2bb011576bcd0c639fba03f71134",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:865eb762d8f3f13fabcaa5b72f1a3f739b1c2bb011576bcd0c639fba03f71134",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_00.png",
+              "pngBlake3": "blake3:383c672bdfc775a1bc7593d7de7e90241d448171ab125fb6a9a7bb2e3b4bbe9b",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:0dc6c5de0d677fbe4ca436b3920f639993ded1c0dfa2a701b6844b25a7b12580",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_01.png",
+              "pngBlake3": "blake3:596070f3e27a8090c8059979aa2635f7fa6e1be9e06d54ca46b2187750e6ca5f",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:82117cb6706f33bb4f590006f2b00f1ff046153bb4045323599f29ab9ab7e169",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_02.png",
+              "pngBlake3": "blake3:df50d377b7f166fce28e7083381bd71ffe39555115d04fb7c44765d25ea5cefd",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:0793fd68481cf10d736324348ba03ab9d244fb5978d9315a3e6e2f619509f542",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_03.png",
+              "pngBlake3": "blake3:4b188a62af92e59ac8001134cd076f742b02c7d8a549464666fde0a11c0797e3",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:8e431859af68241027aa1f5cc0c95a3e3358c1ae80fbf0fe854762a2f265faa7",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_04.png",
+              "pngBlake3": "blake3:46d6f9c8c0848d7222a34497faa754d8df74d0e963237b3893dd3a70b3498bc1",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:d0d0a015bc0f9bf539a22a65bd52b65366c2a1e838f70715dd852bcdf7ad4289",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_05.png",
+              "pngBlake3": "blake3:4662f26aa832bd1c7f2e09f58db55d2f417c543a5a3d5dddc64d2397dd9b68df",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:7891714f8951c6ef3e7addec465140c97e2e1821706e6eca1e723d1e45771c41",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_06.png",
+              "pngBlake3": "blake3:c0664042c233eea07cb41e279cd8e476988aa057a80eb2b113ef09c82a9a7ce2",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:9791f6219cc6825f8325806307b39badbeea602c2de268699c162d4efeb19776",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_07.png",
+              "pngBlake3": "blake3:155ce8465c6ef88ed18be79bd61ff4cd82002b738573e99e3c64208cb4119e18",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:a8ac7e8dd207cb026b9b6056217a1c77caa664f7be8db24604358fff9c5082ef",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_08.png",
+              "pngBlake3": "blake3:db37723c6ac07707974f593ebcb65be7c63bce66e12c1f884be35506c5b8a71e",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/wd_naturetile_08/mips/mip_00.png",
+          "pngBlake3": "blake3:383c672bdfc775a1bc7593d7de7e90241d448171ab125fb6a9a7bb2e3b4bbe9b",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 2,
+        "mode": 0,
+        "tileSize": {
+          "x": 4.0,
+          "y": 4.0
+        },
+        "trueTextureName": "WD_natureTile_08",
+        "weight": {
+          "channel": "b",
+          "channelIndex": 2,
+          "mapIndex": 0,
+          "mapPath": "weights/weights_00.png"
+        }
+      },
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:782d869b72f8b66bba208e7ee50c3757e2e9ec6e1e72d588d0cf3fec1598ecaf",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:782d869b72f8b66bba208e7ee50c3757e2e9ec6e1e72d588d0cf3fec1598ecaf",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_00.png",
+              "pngBlake3": "blake3:910f7920acf9e99dfed3f3e2c760c3f9977e0d69258738ee68ce2075bf3fe6d7",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:ffbf114120d22d37a74b8ffd190374d228c533484854774777e2a6bcec75f3f0",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_01.png",
+              "pngBlake3": "blake3:fe2f3f5c6b27f65a2c459ae6d9a34efd53fba236ef44dcba3444853f3bc1e66f",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:95689ce368d4b126869ecaf2a4ec6566772931b4028ca8b10bd4f0783392378f",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_02.png",
+              "pngBlake3": "blake3:0d69049e298be370d961c524a5e975ba719891e000614ca25f9587a2c8578861",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:42724c018b8323b22379fde0f74aeefe0bb40173350aa24e5909d3ca80374364",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_03.png",
+              "pngBlake3": "blake3:620aafef4c192b2669a6ba9cdaff394fb994837a39bf6aa2a4b727a0c6c2ea12",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:3beb8d42b78a243d6a6dfb310f36005fa046f4e21e43a2a56d29bc552d2d48bf",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_04.png",
+              "pngBlake3": "blake3:59ac1ec3b38a7f92ef4338abfb5b589807f7400184b899524d8cc2668ba4e540",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:8d8844666fd1a70e2dd1745e6d6f3dc627d453f90063700ed9c0ee192eda1830",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_05.png",
+              "pngBlake3": "blake3:4fae00dff3e607cce867360f6909d318ddf39deab9b61231a93e50396c4671cc",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:3658f6b243bd1ff72a2b1d5c201f05a69898514e6993e2248fa8b41a688dfae8",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_06.png",
+              "pngBlake3": "blake3:fe105f162b2507b7bfdac4d6c131228c10048f967a505b02b255babe3ac50863",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:6f7214f4908618e2fc0d7eebb52ac334d4b654a427f4ffad0dd7cb2158250b46",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_07.png",
+              "pngBlake3": "blake3:75f15fc128d7dcea3a51adef832e7f52fba8017e03f408beee991031e9ab5114",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:cdd680942b1ff30a63b8b9586857096e42e98d69eb622872e35d255fc02a473c",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_08.png",
+              "pngBlake3": "blake3:2f7ee912065091951ab4efeb265f3fa5a0ee153f5d9eb6d6df386924440f6b93",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/wd_naturetile_07/mips/mip_00.png",
+          "pngBlake3": "blake3:910f7920acf9e99dfed3f3e2c760c3f9977e0d69258738ee68ce2075bf3fe6d7",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 3,
+        "mode": 0,
+        "tileSize": {
+          "x": 8.0,
+          "y": 8.0
+        },
+        "trueTextureName": "WD_natureTile_07",
+        "weight": {
+          "channel": "a",
+          "channelIndex": 3,
+          "mapIndex": 0,
+          "mapPath": "weights/weights_00.png"
+        }
+      },
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:09744788bade6a3c2f868ecb9c6643045a0d4fe22e4b0bf9506f1c7ebe948bcf",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:09744788bade6a3c2f868ecb9c6643045a0d4fe22e4b0bf9506f1c7ebe948bcf",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_00.png",
+              "pngBlake3": "blake3:3a176c1cd15dd01ff939ae9bed3d98797db870eb35df85592dd09519842bf0b6",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:3f348ef5f7f31551d5ccac38ef1ea91b6183fee1c8189edcf75d3392a4f8e2ee",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_01.png",
+              "pngBlake3": "blake3:18880774663071134c9d3452aa6ca0fa7a31a2a0cc244ef3ac174522e84f233c",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:3892d5a29cb1b7a94011c7b6c666c76e5306b56705f74e6b994fa3e1d0657fa6",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_02.png",
+              "pngBlake3": "blake3:f73e76e272f7997bfa0714c5294c319229a429e4c98699802c50f3c7f2137d57",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:2d16bce8b064e140b9050428a20e17c61f87f5bc8afffdaec1a5ad41533f1c43",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_03.png",
+              "pngBlake3": "blake3:6d2f2debab97fd6e730897e6ee976d8214dcc336432d7d3a0066488074b0b8cf",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:e8ab0d00d3b472327732da9d3eb7d76f36effd1569f9be4fe0f7c3f7463389fc",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_04.png",
+              "pngBlake3": "blake3:524ad1cb2d37b2fc29551decfd3a5de04564c19abeb4e0840ed91b9c68617a71",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:584d1b396552a749f35d9f2864310ef32ec714580ed38106f458377bc4327ff5",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_05.png",
+              "pngBlake3": "blake3:cc93128f8b0b34fde5791afb72eb8755cf7dd1dfec5da8385a4fc0e17e97dbda",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:591f1242b73e9f46c4ad1b502545d2cf91b2fea40d6e806de121dbaf0bcf287c",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_06.png",
+              "pngBlake3": "blake3:52a8c9fb12c0a191f8969d0a26703e6b0abfebc87348d27d2af8686aa003f802",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:ad000e833d9eb164cf09bd1c664b47cdd123a32250602de1991955dac17f7fd7",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_07.png",
+              "pngBlake3": "blake3:334dbb987ed23971a8469c86fd9ef0db933ddb31e2cd794065440b629c5cff9f",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:27f724281ff8a88d5237a6c6bdddb3b86a505864943acbd28a19f183c05080fd",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_08.png",
+              "pngBlake3": "blake3:f5a1b44824b35f25f35686aa9fdce9261387d62a32da6d1f30bce71bba055db9",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/wd_naturetile_05/mips/mip_00.png",
+          "pngBlake3": "blake3:3a176c1cd15dd01ff939ae9bed3d98797db870eb35df85592dd09519842bf0b6",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 4,
+        "mode": 0,
+        "tileSize": {
+          "x": 8.0,
+          "y": 8.0
+        },
+        "trueTextureName": "WD_natureTile_05",
+        "weight": {
+          "channel": "r",
+          "channelIndex": 0,
+          "mapIndex": 1,
+          "mapPath": "weights/weights_01.png"
+        }
+      },
+      {
+        "albedo": {
+          "canonicalRgbaBlake3": "blake3:b80c5d588f7dbd04b370d9e256a03f1720da023e77332b1b030f09eec2e847ce",
+          "colorSpace": "srgb",
+          "height": 256,
+          "mips": [
+            {
+              "canonicalRgbaBlake3": "blake3:b80c5d588f7dbd04b370d9e256a03f1720da023e77332b1b030f09eec2e847ce",
+              "canonicalTransform": "flipY",
+              "height": 256,
+              "level": 0,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_00.png",
+              "pngBlake3": "blake3:aa78a091707fdacc0398d5522c16fc41acec2bfe297c2bbc340ad615e1b19909",
+              "pngColorType": "RGBA8",
+              "width": 256
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:98b36ea18fd461fe294c9c208452f99e9a8930225e08b0272eca1787629753b2",
+              "canonicalTransform": "flipY",
+              "height": 128,
+              "level": 1,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_01.png",
+              "pngBlake3": "blake3:995f113b20349f0089366626567b835ad0e2027b30be83e1ca1e6b6fa65c4191",
+              "pngColorType": "RGBA8",
+              "width": 128
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:2c2e01e32ce1468f8ba596f59b799a7f78e2ee9883f0410b76776139043ca580",
+              "canonicalTransform": "flipY",
+              "height": 64,
+              "level": 2,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_02.png",
+              "pngBlake3": "blake3:305a47f41ea222516c13b3173f46c997057987a412f2161b155b1ebde49b986d",
+              "pngColorType": "RGBA8",
+              "width": 64
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:acefd8a6d0d637b1de98b447f0bbd948910fde66d3934e83c8346f68a8ecfb1f",
+              "canonicalTransform": "flipY",
+              "height": 32,
+              "level": 3,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_03.png",
+              "pngBlake3": "blake3:52895d692eb46586547c531af761759c288b9118dc074a0e0522cb764f8045d4",
+              "pngColorType": "RGBA8",
+              "width": 32
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:1f398cfb41b7b53c4b931b46ce4195473ec8d408cb61bd014bfd5ea946fe79fb",
+              "canonicalTransform": "flipY",
+              "height": 16,
+              "level": 4,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_04.png",
+              "pngBlake3": "blake3:586c80f193ffcee75cdbe89c6bb90576a224975947e1781b1af8f52292e79433",
+              "pngColorType": "RGBA8",
+              "width": 16
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:1aa502320f17df02f5529634ec001f89732c62efdf7c5d327036b960870e4936",
+              "canonicalTransform": "flipY",
+              "height": 8,
+              "level": 5,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_05.png",
+              "pngBlake3": "blake3:39c0e940f31c05b7034a61808d5a6ecf0a8b66183aa817e74f6fd52dc07ab5cc",
+              "pngColorType": "RGBA8",
+              "width": 8
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:f4aef9228841d7530734ef06376bcf3237ee197f6ee0eb2a5e4fce3bda880358",
+              "canonicalTransform": "flipY",
+              "height": 4,
+              "level": 6,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_06.png",
+              "pngBlake3": "blake3:e6930c6d7dfe305ddea3cf203e3bb41075ac3793610a7ac5b08fb25749cde963",
+              "pngColorType": "RGBA8",
+              "width": 4
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:2ed910e58d6f5be065be2b6f1c612210388c1afe97fa538fa1d94345f8da9986",
+              "canonicalTransform": "flipY",
+              "height": 2,
+              "level": 7,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_07.png",
+              "pngBlake3": "blake3:f186c0ccdd2adffd60465a1d31666bde39a766f65dc4e5fe48639e9c1693ce3e",
+              "pngColorType": "RGBA8",
+              "width": 2
+            },
+            {
+              "canonicalRgbaBlake3": "blake3:d4da69e7b99e6da2b5570ca3dc2a8da70888a72cff5ef398454bd352795ffa7a",
+              "canonicalTransform": "flipY",
+              "height": 1,
+              "level": 8,
+              "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_08.png",
+              "pngBlake3": "blake3:9eca8f9f25ca2ce9060cda72d568ccb4dc85e4472135db2069f872f65f918b17",
+              "pngColorType": "RGBA8",
+              "width": 1
+            }
+          ],
+          "orientation": {
+            "canonicalTransform": "flipY",
+            "sourceDecodedRows": "unityTextureRows"
+          },
+          "path": "map/shared/terrain/layers/tile_ground_01/mips/mip_00.png",
+          "pngBlake3": "blake3:aa78a091707fdacc0398d5522c16fc41acec2bfe297c2bbc340ad615e1b19909",
+          "sampler": {
+            "alphaIsTransparencyFlag": {
+              "runtimeContract": "preserve decoded RGBA alpha exactly",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "anisoLevel": 1,
+            "colorSpaceFlag": {
+              "runtimeInterpretationSource": "terrain texture role",
+              "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+            },
+            "filterMode": {
+              "serializedValue": 1,
+              "unityName": "Bilinear"
+            },
+            "mipBias": 0.0,
+            "mipCount": 9,
+            "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+            "mipMap": true,
+            "serializedAuxiliary": {
+              "completeImageSize": 43704,
+              "imageCount": 1,
+              "limit": -1,
+              "touchable": true
+            },
+            "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+            "textureFormat": 10,
+            "usageColorSpace": "srgb",
+            "wrapMode": {
+              "axisSource": "legacy single m_WrapMode applies to both axes",
+              "serializedValue": 0,
+              "u": "Repeat",
+              "unityName": "Repeat",
+              "v": "Repeat"
+            }
+          },
+          "width": 256
+        },
+        "index": 5,
+        "mode": 0,
+        "tileSize": {
+          "x": 8.0,
+          "y": 8.0
+        },
+        "trueTextureName": "Tile_Ground_01",
+        "weight": {
+          "channel": "g",
+          "channelIndex": 1,
+          "mapIndex": 1,
+          "mapPath": "weights/weights_01.png"
+        }
+      }
+    ],
+    "resolution": 256,
+    "weightMaps": [
+      {
+        "canonicalRgbaBlake3": "blake3:7e454f18656347f1d2c6ead0b09f1da0b1927ae9b798be7e15295e4b753dace0",
+        "colorSpace": "linear",
+        "height": 256,
+        "index": 0,
+        "mips": [
+          {
+            "canonicalRgbaBlake3": "blake3:7e454f18656347f1d2c6ead0b09f1da0b1927ae9b798be7e15295e4b753dace0",
+            "canonicalTransform": "flipY",
+            "height": 256,
+            "level": 0,
+            "path": "weights/weights_00.png",
+            "pngBlake3": "blake3:0cd48a9a6f6d823847d43b9046d3b8fa722d259aa4e50b95d16ea3d319c413eb",
+            "pngColorType": "RGBA8",
+            "width": 256
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:c7e3bc926798423e2765a93c0e42befb7e90b711b8daedfc11f29e5ab49723ef",
+            "canonicalTransform": "flipY",
+            "height": 128,
+            "level": 1,
+            "path": "weights/weights_00_mips/mip_01.png",
+            "pngBlake3": "blake3:317ed83cd2983ec9b79f9d472620a8abc5b5baf376ff42d2c6aad795573082d0",
+            "pngColorType": "RGBA8",
+            "width": 128
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:482c7f502426ae802e33a313615b692e507354751ed31a9d99096ea6030afe40",
+            "canonicalTransform": "flipY",
+            "height": 64,
+            "level": 2,
+            "path": "weights/weights_00_mips/mip_02.png",
+            "pngBlake3": "blake3:f5c312294d6a4dd73baa3b0a7597d2e4316532bf0b662cf458f2e23113fe7635",
+            "pngColorType": "RGBA8",
+            "width": 64
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:9f1a5fc4fa0e273f8e66087441b0fc5e1dd9c1a5264eecbe309195978dc2b50d",
+            "canonicalTransform": "flipY",
+            "height": 32,
+            "level": 3,
+            "path": "weights/weights_00_mips/mip_03.png",
+            "pngBlake3": "blake3:9e5675887f8481e6df3b2c1637c1dbe08fd117423b53f6b3ebdcb48d530216e4",
+            "pngColorType": "RGBA8",
+            "width": 32
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:00b25c6dab1a1264a855db015521112dcac429c6f5c80ff273e72fcd621bdedf",
+            "canonicalTransform": "flipY",
+            "height": 16,
+            "level": 4,
+            "path": "weights/weights_00_mips/mip_04.png",
+            "pngBlake3": "blake3:72b5e67b6153c19cc77b8673835c4715e345dc199b5c0b758ddff43730cf400d",
+            "pngColorType": "RGBA8",
+            "width": 16
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:0660b452fd72f53fd9a0565ef803bf386f32b24324e153c07a9d01efef8404e3",
+            "canonicalTransform": "flipY",
+            "height": 8,
+            "level": 5,
+            "path": "weights/weights_00_mips/mip_05.png",
+            "pngBlake3": "blake3:0b82a9590625cef8fafeb6f2d6d3b8c143e4671d32eb0da577dc78779edcd8ff",
+            "pngColorType": "RGBA8",
+            "width": 8
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:a45ac572c0eaa9f9330be29b73c990d49be2819ea86d9241d56551d1d6360e5a",
+            "canonicalTransform": "flipY",
+            "height": 4,
+            "level": 6,
+            "path": "weights/weights_00_mips/mip_06.png",
+            "pngBlake3": "blake3:b97534ab0846d579ce4bcdd647e5713c33bd33e7c278bc790ac6c6a8630c9f65",
+            "pngColorType": "RGBA8",
+            "width": 4
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:97ab74221cd593600b6ee58e27f40f395a314fcbcf206eebe2c9c3c97c601a56",
+            "canonicalTransform": "flipY",
+            "height": 2,
+            "level": 7,
+            "path": "weights/weights_00_mips/mip_07.png",
+            "pngBlake3": "blake3:530d4beade95d2a760e8f262c65de36366bbccd2f14ffc3532101c6063a16e54",
+            "pngColorType": "RGBA8",
+            "width": 2
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:6bcffb491669a0111f32a859aeac5ce020bae3b39fde1b06cb3e67617e9d38cb",
+            "canonicalTransform": "flipY",
+            "height": 1,
+            "level": 8,
+            "path": "weights/weights_00_mips/mip_08.png",
+            "pngBlake3": "blake3:c12bc4aa395d600f0967da140609e3919f49ff86a6ec83c57e764e40f73b743f",
+            "pngColorType": "RGBA8",
+            "width": 1
+          }
+        ],
+        "orientation": {
+          "canonicalTransform": "flipY",
+          "canonicalUv": {
+            "u": "+heightColumn (-nativeX)",
+            "v": "+heightRow (+nativeZ)"
+          },
+          "sourceDecodedRows": "unityTextureRows"
+        },
+        "path": "weights/weights_00.png",
+        "pngBlake3": "blake3:0cd48a9a6f6d823847d43b9046d3b8fa722d259aa4e50b95d16ea3d319c413eb",
+        "sampler": {
+          "alphaIsTransparencyFlag": {
+            "runtimeContract": "preserve decoded RGBA alpha exactly",
+            "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+          },
+          "anisoLevel": 1,
+          "colorSpaceFlag": {
+            "runtimeInterpretationSource": "terrain texture role",
+            "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+          },
+          "filterMode": {
+            "serializedValue": 1,
+            "unityName": "Bilinear"
+          },
+          "mipBias": 0.0,
+          "mipCount": 9,
+          "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+          "mipMap": true,
+          "serializedAuxiliary": {
+            "completeImageSize": 349524,
+            "imageCount": 1,
+            "limit": null,
+            "touchable": null
+          },
+          "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+          "textureFormat": 5,
+          "usageColorSpace": "linear",
+          "wrapMode": {
+            "axisSource": "legacy single m_WrapMode applies to both axes",
+            "serializedValue": 1,
+            "u": "Clamp",
+            "unityName": "Clamp",
+            "v": "Clamp"
+          }
+        },
+        "width": 256
+      },
+      {
+        "canonicalRgbaBlake3": "blake3:35715d3c344ca26bc0a085e7e911f2afcdb9bc1bf3d092ccd9867591758fd2e6",
+        "colorSpace": "linear",
+        "height": 256,
+        "index": 1,
+        "mips": [
+          {
+            "canonicalRgbaBlake3": "blake3:35715d3c344ca26bc0a085e7e911f2afcdb9bc1bf3d092ccd9867591758fd2e6",
+            "canonicalTransform": "flipY",
+            "height": 256,
+            "level": 0,
+            "path": "weights/weights_01.png",
+            "pngBlake3": "blake3:dc85f46fa9e744a4fe929715b04f050816060eaddeb00eb84707d585a287698e",
+            "pngColorType": "RGBA8",
+            "width": 256
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:4072fbf2f83102fdb747e4c6aa46724d67b91c1fe508eeac4b5a70661120d9e5",
+            "canonicalTransform": "flipY",
+            "height": 128,
+            "level": 1,
+            "path": "weights/weights_01_mips/mip_01.png",
+            "pngBlake3": "blake3:10f15cae2fbe004cccf8ba83219d756c9cff1549a3d746e7e045139d1d603922",
+            "pngColorType": "RGBA8",
+            "width": 128
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:4482b1392642037092a4b26d89c19802e2e21907bb1c319e78088e91848041ca",
+            "canonicalTransform": "flipY",
+            "height": 64,
+            "level": 2,
+            "path": "weights/weights_01_mips/mip_02.png",
+            "pngBlake3": "blake3:6d953fe77eea4af6be5e1ca5373234ea61d998e6286c39a828a25802d3e472bf",
+            "pngColorType": "RGBA8",
+            "width": 64
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:be5366704ca1ec9cac990c2252ebd42d37c78d5f197e52da30cdf5f4875b3b3e",
+            "canonicalTransform": "flipY",
+            "height": 32,
+            "level": 3,
+            "path": "weights/weights_01_mips/mip_03.png",
+            "pngBlake3": "blake3:b662d1fe09be43968b6614b3cf29de06ef04a0c09a1160c502c7dda1778c2117",
+            "pngColorType": "RGBA8",
+            "width": 32
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:51f4e62781be973f9da6b9af94584c88e8db453f79ce401d235f639862fce824",
+            "canonicalTransform": "flipY",
+            "height": 16,
+            "level": 4,
+            "path": "weights/weights_01_mips/mip_04.png",
+            "pngBlake3": "blake3:0d31ba218234d27cde41c117684b450d165e2d85d19113b32b6481e6060bbd39",
+            "pngColorType": "RGBA8",
+            "width": 16
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:49f50685df604b73455b0fe90cffda3f0a3c210913c0a1d8b1dd67fde78fd7d1",
+            "canonicalTransform": "flipY",
+            "height": 8,
+            "level": 5,
+            "path": "weights/weights_01_mips/mip_05.png",
+            "pngBlake3": "blake3:363a42d343e3cc7f67fc6f1b87a5a164921fb97b8d15f72f9d339052ea0c15a8",
+            "pngColorType": "RGBA8",
+            "width": 8
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:62f2a97e1a553ada191a1677a5a4bf77428441bc97f74826fb173f50f144a7ad",
+            "canonicalTransform": "flipY",
+            "height": 4,
+            "level": 6,
+            "path": "weights/weights_01_mips/mip_06.png",
+            "pngBlake3": "blake3:78d73af6ac88dd3e4032a6ba9b2cb88a5ec432fdeb7197ac1a0af242c07f587f",
+            "pngColorType": "RGBA8",
+            "width": 4
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:cc531d6fd3575d6ea1b1706cf0b699b4e25ac2a6cd11bde1e51d0cfb4b6be1b9",
+            "canonicalTransform": "flipY",
+            "height": 2,
+            "level": 7,
+            "path": "weights/weights_01_mips/mip_07.png",
+            "pngBlake3": "blake3:fcae412817fcbca33dc6aeb3db58e6adb03ad318e5447d18dacdceb8f38612e2",
+            "pngColorType": "RGBA8",
+            "width": 2
+          },
+          {
+            "canonicalRgbaBlake3": "blake3:cabb163ea8b383114bab0450f2ea4bdf6f97d50dc22e57b50903db81e30bce47",
+            "canonicalTransform": "flipY",
+            "height": 1,
+            "level": 8,
+            "path": "weights/weights_01_mips/mip_08.png",
+            "pngBlake3": "blake3:382b39070edccf587233372c967f94e0984a6b7cc2c260fd9ae27742815e105d",
+            "pngColorType": "RGBA8",
+            "width": 1
+          }
+        ],
+        "orientation": {
+          "canonicalTransform": "flipY",
+          "canonicalUv": {
+            "u": "+heightColumn (-nativeX)",
+            "v": "+heightRow (+nativeZ)"
+          },
+          "sourceDecodedRows": "unityTextureRows"
+        },
+        "path": "weights/weights_01.png",
+        "pngBlake3": "blake3:dc85f46fa9e744a4fe929715b04f050816060eaddeb00eb84707d585a287698e",
+        "sampler": {
+          "alphaIsTransparencyFlag": {
+            "runtimeContract": "preserve decoded RGBA alpha exactly",
+            "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+          },
+          "anisoLevel": 1,
+          "colorSpaceFlag": {
+            "runtimeInterpretationSource": "terrain texture role",
+            "serializedStatus": "notPresentInUnity2.5.5Texture2DTypeTree"
+          },
+          "filterMode": {
+            "serializedValue": 1,
+            "unityName": "Bilinear"
+          },
+          "mipBias": 0.0,
+          "mipCount": 9,
+          "mipCountSource": "all serialized levels decoded from the contiguous Texture2D image payload",
+          "mipMap": true,
+          "serializedAuxiliary": {
+            "completeImageSize": 349524,
+            "imageCount": 1,
+            "limit": null,
+            "touchable": null
+          },
+          "sourceSchema": "Unity 2.5.5 Texture2D serialized type tree",
+          "textureFormat": 5,
+          "usageColorSpace": "linear",
+          "wrapMode": {
+            "axisSource": "legacy single m_WrapMode applies to both axes",
+            "serializedValue": 1,
+            "u": "Clamp",
+            "unityName": "Clamp",
+            "v": "Clamp"
+          }
+        },
+        "width": 256
+      }
+    ]
+  },
+  "trueName": "TerrainData_02_05"
+}

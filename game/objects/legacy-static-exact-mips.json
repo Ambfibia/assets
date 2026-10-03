@@ -1,0 +1,500 @@
+{
+  "extractor": {
+    "command": "ff-client-editor fusionforge export-exact-texture <primary>/Tutorial.resourceFile <pathId> <out.json>",
+    "name": "FFClientEditor",
+    "version": "0.1.0"
+  },
+  "publisher": {
+    "command": "cargo run -p ffone-asset-pipeline --bin publish_exact_texture_mips -- <exact-report.json> <existing-base.png>",
+    "name": "ffone-asset-pipeline/publish_exact_texture_mips",
+    "version": "0.1.0"
+  },
+  "schema": "ffone.legacy-static-exact-mips.v1",
+  "source": {
+    "alias": "primary",
+    "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+    "byteLength": 27003826,
+    "relativeContainerPath": "Tutorial.resourceFile",
+    "sha256": "49a684ff4236848d0b882a5d725ffbe99d5cfb5d2090dc8705350e97dd3fd024"
+  },
+  "textures": [
+    {
+      "binding": {
+        "colorSpace": "srgb",
+        "mipLevels": [
+          {
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "5af13b71b8ca5e8d9a01aeabf2a8e89b26c3b609df70b9a54da51765705a9f33",
+            "height": 64,
+            "level": 0,
+            "pngByteLength": 4298,
+            "pngSha256": "6ea549035086a2e311c584d46f77da0bf76642da63ad01bb659aae13d520aa0f",
+            "sourceByteLength": 2048,
+            "sourceByteOffset": 0,
+            "sourceByteSha256": "fdc2d2d8ab01be04301ef3f74dbe6c67a15725087c6e72f85939665943903b4c",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.png",
+            "width": 64
+          },
+          {
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "6780bf40687c2b84d97116ce9e85aafeffdb598964cd92efda1a88479ae1b0b1",
+            "height": 32,
+            "level": 1,
+            "pngByteLength": 1697,
+            "pngSha256": "92b22208c39eeae596301e87c46ffd9269bb76a954df2a41fc4150dbf6691a79",
+            "sourceByteLength": 512,
+            "sourceByteOffset": 2048,
+            "sourceByteSha256": "5e1dfa610e5bd3818c9677288442d39a8b232b125f17f175d0befb42f006682b",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-01.png",
+            "width": 32
+          },
+          {
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "5624c6571959042e209b0c8bacfb1f6df424b2d85b1fca1c54411d8304d45135",
+            "height": 16,
+            "level": 2,
+            "pngByteLength": 652,
+            "pngSha256": "cb43296e595a1ac75d8113541b53b6f4e18681d79b4ad121cfaf86f5412be416",
+            "sourceByteLength": 128,
+            "sourceByteOffset": 2560,
+            "sourceByteSha256": "090a1e1935d17c27b15c0f04d42edfabe7684009892008b2e37aa8fec4288280",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-02.png",
+            "width": 16
+          },
+          {
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "edaca40b140dc51f42752b644e61fea62ba93ef6c6a72565af29117c5ef60fa2",
+            "height": 8,
+            "level": 3,
+            "pngByteLength": 289,
+            "pngSha256": "ce523766fce3e4bb5460ffd6c2cd5227a9ec038737c6c3464b3546eaea067807",
+            "sourceByteLength": 32,
+            "sourceByteOffset": 2688,
+            "sourceByteSha256": "d5de75d0b39f72ab7ca78d0186e14310d82d1e5f7ef9096bfdaac16e7fc2ddf4",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-03.png",
+            "width": 8
+          },
+          {
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "c1031a4eb466382c2b75ebc989033302504aa2efa2917dcdc9ff435a1b44ab98",
+            "height": 4,
+            "level": 4,
+            "pngByteLength": 136,
+            "pngSha256": "25fc65cebd0d98574bb852a86a877926cb43aaede104d2d46dc6dbb0ac4a32ee",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 2720,
+            "sourceByteSha256": "307105bf834f5e4e06a14f3213205bd3edfefab36fffc39a152348edfe7ee408",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-04.png",
+            "width": 4
+          },
+          {
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "169b7558fac34fbe89a1d0e769495b544bcf6786edf49196044dad05052790f7",
+            "height": 2,
+            "level": 5,
+            "pngByteLength": 86,
+            "pngSha256": "4990dd605fb3f9c8ee80c2be58af1b8dfaa0f843fa6a04f8d6753588c20c54e2",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 2728,
+            "sourceByteSha256": "944e1e0c31fa0bc061ed3e3843f80ae7fab31103daad762c49b7a6b2766948a7",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-05.png",
+            "width": 2
+          },
+          {
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "7daec710a307cef535c13c81b9e67732b7e313a64c2cb16893f66680ae581047",
+            "height": 1,
+            "level": 6,
+            "pngByteLength": 73,
+            "pngSha256": "03821cf95f7452608bd4c66f38357c7877d84ee67f6b5db608a76d5809b49e88",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 2736,
+            "sourceByteSha256": "304084de7eab4d7317be5de1f2a5506b0cdeac3c26e659cef999e3dfa4f267b1",
+            "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.mips/mip-06.png",
+            "width": 1
+          }
+        ],
+        "mipProvenance": {
+          "publishedPixelTransform": "vertical-flip-only-for-png-top-left-origin",
+          "publishedPolicy": "exactSourceLevels",
+          "sourceChainByteLength": 2744,
+          "sourceChainComplete": true,
+          "sourceChainSha256": "98389968d0d6868ce1e787cacdc40e3d0da6817ca3871013e3c17c63b7ae9880",
+          "sourceLayout": "largestToSmallestContiguous",
+          "sourceMipCount": 7,
+          "sourceTextureFormat": 10,
+          "sourceTextureFormatName": "DXT1"
+        },
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.0,
+          0.0
+        ],
+        "rotation": 0.0,
+        "sampler": {
+          "descriptor": {
+            "anisotropyLevel": 1,
+            "legacyFilterMode": 1,
+            "legacyWrapMode": 0,
+            "magFilter": "linear",
+            "minFilter": "linearMipmapNearest",
+            "mipMapBias": 0.0,
+            "name": "forcefieldgenerator1.dds",
+            "wrapS": "repeat",
+            "wrapT": "repeat"
+          },
+          "index": 0
+        },
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "slot": "_MainTex",
+        "sourceName": "forcefieldgenerator1.dds",
+        "texture": 119,
+        "uri": "effects/epbarrier1_03_defaultsd_forcefieldgenerator1/textures/texture.png"
+      },
+      "sourceObjectPathId": 119,
+      "textureId": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a:119"
+    },
+    {
+      "binding": {
+        "colorSpace": "srgb",
+        "mipLevels": [
+          {
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "16b638b8b79cc6f10db7a0662b480230477ec7f5fc2a88033cd3ce723d0d0305",
+            "height": 128,
+            "level": 0,
+            "pngByteLength": 15051,
+            "pngSha256": "7ab6e40f1c492df22a025344a3ec9847d67ab886ff07290d6f752b0aebbeafc2",
+            "sourceByteLength": 16384,
+            "sourceByteOffset": 0,
+            "sourceByteSha256": "02aefed46ee318645bb9f531f16b34c957645c5ccac6d624ba9bbc0a21d136b5",
+            "uri": "vehicles/motttt/textures/texture.png",
+            "width": 128
+          },
+          {
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "94d18a6f11a0434262ecaab62539914d2e460d9a1698d06e2700bad8da1acc8e",
+            "height": 64,
+            "level": 1,
+            "pngByteLength": 5057,
+            "pngSha256": "7e55be50618d22aee775e7b643308ca8adf89bf27d511904d7b9822a07e6be8c",
+            "sourceByteLength": 4096,
+            "sourceByteOffset": 16384,
+            "sourceByteSha256": "40704a0bf16cce4d750e922940a357bc09a961137d703201a2f7a46f9657aa61",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-01.png",
+            "width": 64
+          },
+          {
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "49354434512063f88b3fe705989cbe3b22acea721df883f28cf5ec8d9ff463dc",
+            "height": 32,
+            "level": 2,
+            "pngByteLength": 1809,
+            "pngSha256": "e550327e4d747141c8b70390e958f8b85c98acd682de5467735dc06265d6b75f",
+            "sourceByteLength": 1024,
+            "sourceByteOffset": 20480,
+            "sourceByteSha256": "b383e94b152dccf5d2962864666be1e568faf0012da7f7843c782b8a8ec03b0d",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-02.png",
+            "width": 32
+          },
+          {
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "827e50e9f241cc106d08e5374326e384e89e4fde5a7613a5013c7d16f3a1abce",
+            "height": 16,
+            "level": 3,
+            "pngByteLength": 726,
+            "pngSha256": "3ab03a1ddde681a958b8a886bcd114496d60ba05ba1825ae22a6d7d0926ba9b0",
+            "sourceByteLength": 256,
+            "sourceByteOffset": 21504,
+            "sourceByteSha256": "6adf4d1d5ff876eb8bfd97623e3fda6c71b3a79ce0de657bacc8e2efe21270ee",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-03.png",
+            "width": 16
+          },
+          {
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "63077b89c1929711681b2eaa423debdc3dcbeea5c77548d977ac03e66ffa52cc",
+            "height": 8,
+            "level": 4,
+            "pngByteLength": 277,
+            "pngSha256": "6ee18d484e27951d6326560a658388331dc9934d1ae04e88c87244736c6c339e",
+            "sourceByteLength": 64,
+            "sourceByteOffset": 21760,
+            "sourceByteSha256": "473e278dccba5be487fc2c1d4589059dfd77b32910a5ce35dc4179eec55b8913",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-04.png",
+            "width": 8
+          },
+          {
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "ce91e76045d40f2571d67a1a049eca016d3d850929ebc9a344c249ebb99c9139",
+            "height": 4,
+            "level": 5,
+            "pngByteLength": 136,
+            "pngSha256": "f120223a1a1a0041bb7fef6bbd63819581670e291ec84e8618edf9274170521f",
+            "sourceByteLength": 16,
+            "sourceByteOffset": 21824,
+            "sourceByteSha256": "d8e4fb1e6163468f323179352197bd80011c1867cebc2770ccae73e99f691168",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-05.png",
+            "width": 4
+          },
+          {
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "c442d54a09291e51ac55d2288e6a0e3217f7ac62ffed6267d035597aa66d45ee",
+            "height": 2,
+            "level": 6,
+            "pngByteLength": 86,
+            "pngSha256": "f18d989b077aeae6d1ddce155878761753746f30e803f0e47f7bff566e5a6f7d",
+            "sourceByteLength": 16,
+            "sourceByteOffset": 21840,
+            "sourceByteSha256": "6babc8bb4ffc7b3c6ed75132147a7ef485b99ff993dcefa6a0222948c60f8321",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-06.png",
+            "width": 2
+          },
+          {
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "d854dbcc0b649506b5a43c4f103eae1d0f96888d66976b31a3e92e65e6c4af3c",
+            "height": 1,
+            "level": 7,
+            "pngByteLength": 73,
+            "pngSha256": "7df2a41d72c526200beb0c23848e4f3e4aeeeac9631bc055382dfe88894893ff",
+            "sourceByteLength": 16,
+            "sourceByteOffset": 21856,
+            "sourceByteSha256": "bea77a171e30ad0fae495b0645a6cc23cb4dd590b04294bad246eae2dfcaad01",
+            "uri": "vehicles/motttt/textures/texture.mips/mip-07.png",
+            "width": 1
+          }
+        ],
+        "mipProvenance": {
+          "publishedPixelTransform": "vertical-flip-only-for-png-top-left-origin",
+          "publishedPolicy": "exactSourceLevels",
+          "sourceChainByteLength": 21872,
+          "sourceChainComplete": true,
+          "sourceChainSha256": "ea166e37fc90d038ee8cf021e68645fea72fb272437e8c28b0eea2ef3087c52c",
+          "sourceLayout": "largestToSmallestContiguous",
+          "sourceMipCount": 8,
+          "sourceTextureFormat": 12,
+          "sourceTextureFormatName": "DXT5"
+        },
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.0,
+          0.0
+        ],
+        "rotation": 0.0,
+        "sampler": {
+          "descriptor": {
+            "anisotropyLevel": 1,
+            "legacyFilterMode": 1,
+            "legacyWrapMode": 0,
+            "magFilter": "linear",
+            "minFilter": "linearMipmapNearest",
+            "mipMapBias": 0.0,
+            "name": "motttt.dds",
+            "wrapS": "repeat",
+            "wrapT": "repeat"
+          },
+          "index": 0
+        },
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "slot": "_MainTex",
+        "sourceName": "motttt.dds",
+        "texture": 131,
+        "uri": "vehicles/motttt/textures/texture.png"
+      },
+      "sourceObjectPathId": 131,
+      "textureId": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a:131"
+    },
+    {
+      "binding": {
+        "colorSpace": "srgb",
+        "mipLevels": [
+          {
+            "decodedRgba8ByteLength": 1048576,
+            "decodedRgba8Sha256": "7f41b4f6aee3575aa646847a461ca1a96c2c0ddfda5ac5fb36ed101d50d4793a",
+            "height": 512,
+            "level": 0,
+            "pngByteLength": 190015,
+            "pngSha256": "9ad35b33a27b1c3b66d36a7e84ec9ebaae0def27865280b696a6b94562ab2c99",
+            "sourceByteLength": 131072,
+            "sourceByteOffset": 0,
+            "sourceByteSha256": "bdca88fcf12861e2af3171b8cb35be35a8693e35b48912ae321e46027df5323a",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.png",
+            "width": 512
+          },
+          {
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "7f948c838ce258aa9eaf3d8f42db87c3febca8b3acbe6482e1b4338c7083ee3d",
+            "height": 256,
+            "level": 1,
+            "pngByteLength": 60980,
+            "pngSha256": "4e610178241bfb3458a65da55a56c0ebf4b2a2b444ba948a86e76584e5683a10",
+            "sourceByteLength": 32768,
+            "sourceByteOffset": 131072,
+            "sourceByteSha256": "aee45dc14602922d33c3a83eaa6653f74fd83a3f5264c91dfb507f3163870868",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-01.png",
+            "width": 256
+          },
+          {
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "1ddfe010365ba3eae9922d705ec3818188b063cf8a4e3a99500d8d179b461e2f",
+            "height": 128,
+            "level": 2,
+            "pngByteLength": 18964,
+            "pngSha256": "f50536e97078e1d567820342a26b943550cacb006078615f5d3e9278558a0662",
+            "sourceByteLength": 8192,
+            "sourceByteOffset": 163840,
+            "sourceByteSha256": "661108b7767f403c946e0d027038cf0698e154748f3b7cb9213db8958d248748",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-02.png",
+            "width": 128
+          },
+          {
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "a8c6301b9408405a5cc9a4d914475b18ac8817fbe11f3ce00bd81ad517601771",
+            "height": 64,
+            "level": 3,
+            "pngByteLength": 5716,
+            "pngSha256": "0e31935944ba58b7d6945397117ec2ac44a1c93f15130c789b8195e481deaa6c",
+            "sourceByteLength": 2048,
+            "sourceByteOffset": 172032,
+            "sourceByteSha256": "09a74b42b7ef1b2ba14298c24733a0c6740dccd9bf35d093eb6b105f7cb00118",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-03.png",
+            "width": 64
+          },
+          {
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "ec52c5571db1c3051185463339acfedee6a0dac2a6f3d5844d8122dc234b57eb",
+            "height": 32,
+            "level": 4,
+            "pngByteLength": 1844,
+            "pngSha256": "6599889aaa82d797461fbac88fb47be719e26b296b9d86883ab55b5c019272e6",
+            "sourceByteLength": 512,
+            "sourceByteOffset": 174080,
+            "sourceByteSha256": "d1968765e9da1787f24eb7dbc869660deb4591ca841e0bf0023626949cc89d42",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-04.png",
+            "width": 32
+          },
+          {
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "9b25a7b3503f8e404267cf7a54339c0086848ec0be5b13116f90587040da9a2d",
+            "height": 16,
+            "level": 5,
+            "pngByteLength": 658,
+            "pngSha256": "a63a43c6e12b27762ec291c6386468cab2ea9516062d6345bf9a299cbca3744d",
+            "sourceByteLength": 128,
+            "sourceByteOffset": 174592,
+            "sourceByteSha256": "e131307c0b3b13cc4eda5ad9e06abb92547c65c9aaf6d538f4fbdd02d5e4b500",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-05.png",
+            "width": 16
+          },
+          {
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "6afca9e07ca511f32e0d497aa3c860bedae39185174dd6feb5c3e5e22cd4c991",
+            "height": 8,
+            "level": 6,
+            "pngByteLength": 292,
+            "pngSha256": "c69d59c7983edee8643d2919949eccd81dd152dab89bbb79fb12e80d18d1d6f6",
+            "sourceByteLength": 32,
+            "sourceByteOffset": 174720,
+            "sourceByteSha256": "07939849532b9e0c4ab5bacc3bc7bb2f99b9cd9fda6416fdf255d1bd5b63a38d",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-06.png",
+            "width": 8
+          },
+          {
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "20572686e1796ada0f722e5ba8ca17af6f3e910d5ca099e97d174d9994f86abf",
+            "height": 4,
+            "level": 7,
+            "pngByteLength": 136,
+            "pngSha256": "cfb51bd21e10b9c5a8ee367460217a6b8ac8256c2559264ea73838a49dd0c16a",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 174752,
+            "sourceByteSha256": "0bf94f80bc5cf98c3877b949bfa3df700672a5d320484a7d71c39abf7bead775",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-07.png",
+            "width": 4
+          },
+          {
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "df1e9805d61c465af50ccb944400194738d5e2257b76f138b28426442a7db3a2",
+            "height": 2,
+            "level": 8,
+            "pngByteLength": 86,
+            "pngSha256": "4923cb07400f0421c9ef42aa0d7606b0003ef50fe2a843a11f8c9cebc6d33ee6",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 174760,
+            "sourceByteSha256": "209e99a87aac00af6ed0227e1fbe26a903cb545f5704776c70c36cd9e6a8fee0",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-08.png",
+            "width": 2
+          },
+          {
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "209db059825fa16d1db9c6372e022703e6334794069bc592b169a6d25d69e5ca",
+            "height": 1,
+            "level": 9,
+            "pngByteLength": 73,
+            "pngSha256": "addf0b9fa158c861186cdfcb8f9592052afe289eef16ae0a97eb657afa117a9c",
+            "sourceByteLength": 8,
+            "sourceByteOffset": 174768,
+            "sourceByteSha256": "432a50e05189a30f943fcb6ba1de5f51401a6e81facff9998fe622f791eae538",
+            "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.mips/mip-09.png",
+            "width": 1
+          }
+        ],
+        "mipProvenance": {
+          "publishedPixelTransform": "vertical-flip-only-for-png-top-left-origin",
+          "publishedPolicy": "exactSourceLevels",
+          "sourceChainByteLength": 174776,
+          "sourceChainComplete": true,
+          "sourceChainSha256": "d5489986a424e9289442249a18f34132fe8fe44071c1c1c1ce0a242686de882d",
+          "sourceLayout": "largestToSmallestContiguous",
+          "sourceMipCount": 10,
+          "sourceTextureFormat": 10,
+          "sourceTextureFormatName": "DXT1"
+        },
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.0,
+          0.0
+        ],
+        "rotation": 0.0,
+        "sampler": {
+          "descriptor": {
+            "anisotropyLevel": 1,
+            "legacyFilterMode": 1,
+            "legacyWrapMode": 0,
+            "magFilter": "linear",
+            "minFilter": "linearMipmapNearest",
+            "mipMapBias": 0.0,
+            "name": "forcefieldgenerator.dds",
+            "wrapS": "repeat",
+            "wrapT": "repeat"
+          },
+          "index": 0
+        },
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "slot": "_MainTex",
+        "sourceName": "forcefieldgenerator.dds",
+        "texture": 76,
+        "uri": "effects/epbarrier1_03_default_forcefieldgenerator/textures/texture.png"
+      },
+      "sourceObjectPathId": 76,
+      "textureId": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a:76"
+    }
+  ]
+}

@@ -1,0 +1,4133 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 751,
+  "containerRoute": "prefabs/particle/effectscripts/es[751].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9466,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 427,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "bubble_win_01.DDS",
+      "canonicalBlake3": "9bccf932f740134f73c3c503f624a5826054fd2011cc9bb3745ed6a0fbb6bd23",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 21872
+        },
+        "m_CompleteImageSize": 21872,
+        "m_Height": 128,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "bubble_win_01.DDS",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 128
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 710,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Poly1",
+      "canonicalBlake3": "65238c71a8b6881bc93434481644ceb71a05bf0eb9b80bd9f9b0f2517a1a1280",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          14,
+          13,
+          40,
+          14,
+          40,
+          47,
+          47,
+          40,
+          38,
+          47,
+          38,
+          46,
+          46,
+          38,
+          36,
+          46,
+          36,
+          45,
+          45,
+          36,
+          34,
+          45,
+          34,
+          44,
+          44,
+          34,
+          32,
+          44,
+          32,
+          43,
+          43,
+          32,
+          30,
+          43,
+          30,
+          42,
+          42,
+          30,
+          26,
+          42,
+          26,
+          25,
+          25,
+          26,
+          24,
+          25,
+          24,
+          23,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          1,
+          21,
+          1,
+          20,
+          20,
+          1,
+          3,
+          20,
+          3,
+          19,
+          19,
+          3,
+          5,
+          19,
+          5,
+          18,
+          18,
+          5,
+          7,
+          18,
+          7,
+          17,
+          17,
+          7,
+          9,
+          17,
+          9,
+          16,
+          16,
+          9,
+          11,
+          16,
+          11,
+          15,
+          15,
+          11,
+          13,
+          15,
+          13,
+          14,
+          12,
+          13,
+          11,
+          12,
+          11,
+          10,
+          10,
+          11,
+          9,
+          10,
+          9,
+          8,
+          8,
+          9,
+          7,
+          8,
+          7,
+          6,
+          6,
+          7,
+          5,
+          6,
+          5,
+          4,
+          4,
+          5,
+          3,
+          4,
+          3,
+          2,
+          2,
+          3,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          22,
+          0,
+          22,
+          27,
+          27,
+          22,
+          24,
+          27,
+          24,
+          28,
+          28,
+          24,
+          26,
+          28,
+          26,
+          29,
+          29,
+          26,
+          30,
+          29,
+          30,
+          31,
+          31,
+          30,
+          32,
+          31,
+          32,
+          33,
+          33,
+          32,
+          34,
+          33,
+          34,
+          35,
+          35,
+          34,
+          36,
+          35,
+          36,
+          37,
+          37,
+          36,
+          38,
+          37,
+          38,
+          39,
+          39,
+          38,
+          40,
+          39,
+          40,
+          41,
+          41,
+          40,
+          13,
+          41,
+          13,
+          12
+        ],
+        "m_CollisionVertexCount": 48,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 0.0,
+            "m_Start": 0.0
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "AMK/AgD8AQ==",
+              "bytes": 7
+            },
+            "m_NumItems": 51
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "oF3ZJKts9U2ufv9/q5H1sKCg2dmRq7D1fq5//36ukaugoKuRrn6rbKBdkVKvCX5PfwBsUk4JkVJ+T2xSJSVdXQlOUmwAf09+Ca9SkSTZXaBN9WyrXV1SbE9+UpFdoGyrfq5//36u",
+              "bytes": 102
+            },
+            "m_NumItems": 102,
+            "m_Range": 1.9999847412109375,
+            "m_Start": -0.9999923706054688
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 104,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 12,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 6,
+            "m_Data": {
+              "base64": "cQyjr+mSrciCq6dqGXZZVUANUyEdUQItT+M4TcMsSoIcRkEMQgBYG8ZpnfeBoTiSpXmiaSwD",
+              "bytes": 54
+            },
+            "m_NumItems": 71
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "/59PAf+fGmb/r08B/68aZv+/TwH/vxpm/89PAf/PGmb/308B/98aZv/vTwH/7xpm//9PAf//Gmb//+PK/+/jyv/f48r/z+PK/7/jyv+v48r/n+PK/4/jyv+PGmb/f+PK/38aZv9v48r/bxpm/49PAf9/TwH/b08B/18aZv9fTwH/Txpm/09PAf8/Gmb/P08B/y8aZv8vTwH/Hxpm/x9PAf8PGmb/D08B/1/jyv9P48r/P+PK/y/jyv8f48r/D+PKAADjygAAGmYAAE8B",
+              "bytes": 204
+            },
+            "m_NumItems": 102,
+            "m_Range": 0.9999998211860657,
+            "m_Start": 0.10115974396467209
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "IArrXU9DRFmC2tdXgs2rq/gLrmVDRKlB9kPwhM2rb0z8/39DRPn/////h82rq/jrUZpDRKlB9rsPi82rIAoLorBDRFmC2iWojc2rHqW5ir9DRLn7sBpkj82r///3xsRDRPn/f///j82r///3xsRtNexRmqv421bDIAoLorBtNbyKvx6l2VbDb0z8/39tNbyKv+Ba1lbDIArrXU9tNexRmlMH1FbDuw87vgnYvPr/f4+z01bD//8HAADYvAquZVMH1FbDQ/BEvgnYvOpRmlMHNESU///3ODtDRAmuZVMHNESU11dyfSXYvOpdT971NESU45swBE/YvDp1QOBaNkSUAADw/3/YvPo4O///N0SU5Juw+7DYvDp1QB6lOUSU11dSgtrYvOpdTyAKO0SUQ/CkQfbYvAquZav4O0SU3vXkXU9tNTx1QOBa1lbDj7Pz/39tNTx1QB6l2VbD3vUEorBtNQyuZav421bD///3xsRtNfz/f///j82r///3xsRDRAk=",
+              "bytes": 383
+            },
+            "m_NumItems": 153,
+            "m_Range": 2.5117220878601074,
+            "m_Start": -1.2558610439300537
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.42977026104927063
+          },
+          "m_Extent": {
+            "x": 1.2558610439300537,
+            "y": 1.2558610439300537,
+            "z": 0.2309257686138153
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Poly1",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 71,
+            "isTriStrip": 2,
+            "triangleCount": 64
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 836,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Poly",
+      "canonicalBlake3": "f59c5fab833a361e9a67a346eb451881a2c0ae556efff037baadecf25ccfd8a3",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          14,
+          13,
+          40,
+          14,
+          40,
+          47,
+          47,
+          40,
+          38,
+          47,
+          38,
+          46,
+          46,
+          38,
+          36,
+          46,
+          36,
+          45,
+          45,
+          36,
+          34,
+          45,
+          34,
+          44,
+          44,
+          34,
+          32,
+          44,
+          32,
+          43,
+          43,
+          32,
+          30,
+          43,
+          30,
+          42,
+          42,
+          30,
+          26,
+          42,
+          26,
+          25,
+          25,
+          26,
+          24,
+          25,
+          24,
+          23,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          1,
+          21,
+          1,
+          20,
+          20,
+          1,
+          3,
+          20,
+          3,
+          19,
+          19,
+          3,
+          5,
+          19,
+          5,
+          18,
+          18,
+          5,
+          7,
+          18,
+          7,
+          17,
+          17,
+          7,
+          9,
+          17,
+          9,
+          16,
+          16,
+          9,
+          11,
+          16,
+          11,
+          15,
+          15,
+          11,
+          13,
+          15,
+          13,
+          14,
+          12,
+          13,
+          11,
+          12,
+          11,
+          10,
+          10,
+          11,
+          9,
+          10,
+          9,
+          8,
+          8,
+          9,
+          7,
+          8,
+          7,
+          6,
+          6,
+          7,
+          5,
+          6,
+          5,
+          4,
+          4,
+          5,
+          3,
+          4,
+          3,
+          2,
+          2,
+          3,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          22,
+          0,
+          22,
+          27,
+          27,
+          22,
+          24,
+          27,
+          24,
+          28,
+          28,
+          24,
+          26,
+          28,
+          26,
+          29,
+          29,
+          26,
+          30,
+          29,
+          30,
+          31,
+          31,
+          30,
+          32,
+          31,
+          32,
+          33,
+          33,
+          32,
+          34,
+          33,
+          34,
+          35,
+          35,
+          34,
+          36,
+          35,
+          36,
+          37,
+          37,
+          36,
+          38,
+          37,
+          38,
+          39,
+          39,
+          38,
+          40,
+          39,
+          40,
+          41,
+          41,
+          40,
+          13,
+          41,
+          13,
+          12
+        ],
+        "m_CollisionVertexCount": 48,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 0.0,
+            "m_Start": 0.0
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "AMK/AgD8AQ==",
+              "bytes": 7
+            },
+            "m_NumItems": 51
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "oF3ZJKts9U2ufv9/q5H1sKCg2dmRq7D1fq5//36ukaugoKuRrn6rbKBdkVKvCX5PfwBsUk4JkVJ+T2xSJSVdXQlOUmwAf09+Ca9SkSTZXaBN9WyrXV1SbE9+UpFdoGyrfq5//36u",
+              "bytes": 102
+            },
+            "m_NumItems": 102,
+            "m_Range": 1.9999847412109375,
+            "m_Start": -0.9999923706054688
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 104,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 12,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 6,
+            "m_Data": {
+              "base64": "cQyjr+mSrciCq6dqGXZZVUANUyEdUQItT+M4TcMsSoIcRkEMQgBYG8ZpnfeBoTiSpXmiaSwD",
+              "bytes": 54
+            },
+            "m_NumItems": 71
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "/59PAf+fGmb/r08B/68aZv+/TwH/vxpm/89PAf/PGmb/308B/98aZv/vTwH/7xpm//9PAf//Gmb//+PK/+/jyv/f48r/z+PK/7/jyv+v48r/n+PK/4/jyv+PGmb/f+PK/38aZv9v48r/bxpm/49PAf9/TwH/b08B/18aZv9fTwH/Txpm/09PAf8/Gmb/P08B/y8aZv8vTwH/Hxpm/x9PAf8PGmb/D08B/1/jyv9P48r/P+PK/y/jyv8f48r/D+PKAADjygAAGmYAAE8B",
+              "bytes": 204
+            },
+            "m_NumItems": 102,
+            "m_Range": 0.9999998211860657,
+            "m_Start": 0.10115974396467209
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "IArrXU9DRFmC2tdXgs2rq/gLrmVDRKlB9kPwhM2rb0z8/39DRPn/////h82rq/jrUZpDRKlB9rsPi82rIAoLorBDRFmC2iWojc2rHqW5ir9DRLn7sBpkj82r///3xsRDRPn/f///j82r///3xsRtNexRmqv421bDIAoLorBtNbyKvx6l2VbDb0z8/39tNbyKv+Ba1lbDIArrXU9tNexRmlMH1FbDuw87vgnYvPr/f4+z01bD//8HAADYvAquZVMH1FbDQ/BEvgnYvOpRmlMHNESU///3ODtDRAmuZVMHNESU11dyfSXYvOpdT971NESU45swBE/YvDp1QOBaNkSUAADw/3/YvPo4O///N0SU5Juw+7DYvDp1QB6lOUSU11dSgtrYvOpdTyAKO0SUQ/CkQfbYvAquZav4O0SU3vXkXU9tNTx1QOBa1lbDj7Pz/39tNTx1QB6l2VbD3vUEorBtNQyuZav421bD///3xsRtNfz/f///j82r///3xsRDRAk=",
+              "bytes": 383
+            },
+            "m_NumItems": 153,
+            "m_Range": 2.5117220878601074,
+            "m_Start": -1.2558610439300537
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.42977026104927063
+          },
+          "m_Extent": {
+            "x": 1.2558610439300537,
+            "y": 1.2558610439300537,
+            "z": 0.2309257686138153
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Poly",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 71,
+            "isTriStrip": 2,
+            "triangleCount": 64
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 837,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "PolyMesh",
+      "canonicalBlake3": "859885bb0f4e250a7e911537d9e13bdacdfa625f41950a43de733cb6933dcfac",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          14,
+          13,
+          40,
+          14,
+          40,
+          47,
+          47,
+          40,
+          38,
+          47,
+          38,
+          46,
+          46,
+          38,
+          36,
+          46,
+          36,
+          45,
+          45,
+          36,
+          34,
+          45,
+          34,
+          44,
+          44,
+          34,
+          32,
+          44,
+          32,
+          43,
+          43,
+          32,
+          30,
+          43,
+          30,
+          42,
+          42,
+          30,
+          26,
+          42,
+          26,
+          25,
+          25,
+          26,
+          24,
+          25,
+          24,
+          23,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          1,
+          21,
+          1,
+          20,
+          20,
+          1,
+          3,
+          20,
+          3,
+          19,
+          19,
+          3,
+          5,
+          19,
+          5,
+          18,
+          18,
+          5,
+          7,
+          18,
+          7,
+          17,
+          17,
+          7,
+          9,
+          17,
+          9,
+          16,
+          16,
+          9,
+          11,
+          16,
+          11,
+          15,
+          15,
+          11,
+          13,
+          15,
+          13,
+          14,
+          12,
+          13,
+          11,
+          12,
+          11,
+          10,
+          10,
+          11,
+          9,
+          10,
+          9,
+          8,
+          8,
+          9,
+          7,
+          8,
+          7,
+          6,
+          6,
+          7,
+          5,
+          6,
+          5,
+          4,
+          4,
+          5,
+          3,
+          4,
+          3,
+          2,
+          2,
+          3,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          22,
+          0,
+          22,
+          27,
+          27,
+          22,
+          24,
+          27,
+          24,
+          28,
+          28,
+          24,
+          26,
+          28,
+          26,
+          29,
+          29,
+          26,
+          30,
+          29,
+          30,
+          31,
+          31,
+          30,
+          32,
+          31,
+          32,
+          33,
+          33,
+          32,
+          34,
+          33,
+          34,
+          35,
+          35,
+          34,
+          36,
+          35,
+          36,
+          37,
+          37,
+          36,
+          38,
+          37,
+          38,
+          39,
+          39,
+          38,
+          40,
+          39,
+          40,
+          41,
+          41,
+          40,
+          13,
+          41,
+          13,
+          12
+        ],
+        "m_CollisionVertexCount": 48,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 0.0,
+            "m_Start": 0.0
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "AMK/AgD8AQ==",
+              "bytes": 7
+            },
+            "m_NumItems": 51
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "oF3ZJKts9U2ufv9/q5H1sKCg2dmRq7D1fq5//36ukaugoKuRrn6rbKBdkVKvCX5PfwBsUk4JkVJ+T2xSJSVdXQlOUmwAf09+Ca9SkSTZXaBN9WyrXV1SbE9+UpFdoGyrfq5//36u",
+              "bytes": 102
+            },
+            "m_NumItems": 102,
+            "m_Range": 1.9999847412109375,
+            "m_Start": -0.9999923706054688
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 104,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 12,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 6,
+            "m_Data": {
+              "base64": "cQyjr+mSrciCq6dqGXZZVUANUyEdUQItT+M4TcMsSoIcRkEMQgBYG8ZpnfeBoTiSpXmiaSwD",
+              "bytes": 54
+            },
+            "m_NumItems": 71
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "/59PAf+fGmb/r08B/68aZv+/TwH/vxpm/89PAf/PGmb/308B/98aZv/vTwH/7xpm//9PAf//Gmb//+PK/+/jyv/f48r/z+PK/7/jyv+v48r/n+PK/4/jyv+PGmb/f+PK/38aZv9v48r/bxpm/49PAf9/TwH/b08B/18aZv9fTwH/Txpm/09PAf8/Gmb/P08B/y8aZv8vTwH/Hxpm/x9PAf8PGmb/D08B/1/jyv9P48r/P+PK/y/jyv8f48r/D+PKAADjygAAGmYAAE8B",
+              "bytes": 204
+            },
+            "m_NumItems": 102,
+            "m_Range": 0.9999998211860657,
+            "m_Start": 0.10115974396467209
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "IArrXU9DRFmC2tdXgs2rq/gLrmVDRKlB9kPwhM2rb0z8/39DRPn/////h82rq/jrUZpDRKlB9rsPi82rIAoLorBDRFmC2iWojc2rHqW5ir9DRLn7sBpkj82r///3xsRDRPn/f///j82r///3xsRtNexRmqv421bDIAoLorBtNbyKvx6l2VbDb0z8/39tNbyKv+Ba1lbDIArrXU9tNexRmlMH1FbDuw87vgnYvPr/f4+z01bD//8HAADYvAquZVMH1FbDQ/BEvgnYvOpRmlMHNESU///3ODtDRAmuZVMHNESU11dyfSXYvOpdT971NESU45swBE/YvDp1QOBaNkSUAADw/3/YvPo4O///N0SU5Juw+7DYvDp1QB6lOUSU11dSgtrYvOpdTyAKO0SUQ/CkQfbYvAquZav4O0SU3vXkXU9tNTx1QOBa1lbDj7Pz/39tNTx1QB6l2VbD3vUEorBtNQyuZav421bD///3xsRtNfz/f///j82r///3xsRDRAk=",
+              "bytes": 383
+            },
+            "m_NumItems": 153,
+            "m_Range": 2.5117220878601074,
+            "m_Start": -1.2558610439300537
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.42977026104927063
+          },
+          "m_Extent": {
+            "x": 1.2558610439300537,
+            "y": 1.2558610439300537,
+            "z": 0.2309257686138153
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "PolyMesh",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 71,
+            "isTriStrip": 2,
+            "triangleCount": 64
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1994,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "03236ff1031e3770e2afa49a7487f4d3710686a4c4c7b477279107c725304e07",
+      "value": {
+        "m_CompressedRotationCurves": [
+          {
+            "m_Path": "Cylinder02",
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_Slopes": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "bh9E7A9M3/d93/d9",
+                "bytes": 12
+              },
+              "m_NumItems": 16,
+              "m_Range": 0.14268825948238373,
+              "m_Start": -0.07429087162017822
+            },
+            "m_Times": {
+              "m_BitSize": 7,
+              "m_Data": {
+                "base64": "gC6qAQ==",
+                "bytes": 4
+              },
+              "m_NumItems": 4
+            },
+            "m_Values": {
+              "m_Data": {
+                "base64": "x0wWq/9MmKIHbRiiB20Yog==",
+                "bytes": 16
+              },
+              "m_NumItems": 4
+            }
+          }
+        ],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176469802856445,
+                  "outSlope": 10.176469802856445,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.739201545715332,
+                  "outSlope": 9.739201545715332,
+                  "time": 0.1666666716337204,
+                  "value": 0.6784312725067139
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.20000000298023224,
+                  "value": 0.6492800712585449
+                },
+                {
+                  "inSlope": -3.498162269592285,
+                  "outSlope": -3.498162269592285,
+                  "time": 0.3333333432674408,
+                  "value": 0.2146599292755127
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.4000000059604645,
+                  "value": 0.029151439666748047
+                },
+                {
+                  "inSlope": -0.8745396733283997,
+                  "outSlope": -0.8745396733283997,
+                  "time": 0.4333333373069763,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176469802856445,
+                  "outSlope": 10.176469802856445,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.739201545715332,
+                  "outSlope": 9.739201545715332,
+                  "time": 0.1666666716337204,
+                  "value": 0.6784312725067139
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.20000000298023224,
+                  "value": 0.6492800712585449
+                },
+                {
+                  "inSlope": -3.498162269592285,
+                  "outSlope": -3.498162269592285,
+                  "time": 0.3333333432674408,
+                  "value": 0.2146599292755127
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.4000000059604645,
+                  "value": 0.029151439666748047
+                },
+                {
+                  "inSlope": -0.8745396733283997,
+                  "outSlope": -0.8745396733283997,
+                  "time": 0.4333333373069763,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176469802856445,
+                  "outSlope": 10.176469802856445,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.739201545715332,
+                  "outSlope": 9.739201545715332,
+                  "time": 0.1666666716337204,
+                  "value": 0.6784312725067139
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.20000000298023224,
+                  "value": 0.6492800712585449
+                },
+                {
+                  "inSlope": -3.498162269592285,
+                  "outSlope": -3.498162269592285,
+                  "time": 0.3333333432674408,
+                  "value": 0.2146599292755127
+                },
+                {
+                  "inSlope": -1.590071678161621,
+                  "outSlope": -1.590071678161621,
+                  "time": 0.4000000059604645,
+                  "value": 0.029151439666748047
+                },
+                {
+                  "inSlope": -0.8745396733283997,
+                  "outSlope": -0.8745396733283997,
+                  "time": 0.4333333373069763,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588235855102539,
+                  "outSlope": 9.588235855102539,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.176240921020508,
+                  "outSlope": 9.176240921020508,
+                  "time": 0.1666666716337204,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981622695922852,
+                  "outSlope": -1.4981622695922852,
+                  "time": 0.20000000298023224,
+                  "value": 0.6117494106292725
+                },
+                {
+                  "inSlope": -3.2959556579589844,
+                  "outSlope": -3.2959556579589844,
+                  "time": 0.3333333432674408,
+                  "value": 0.20225179195404053
+                },
+                {
+                  "inSlope": -1.4981613159179688,
+                  "outSlope": -1.4981613159179688,
+                  "time": 0.4000000059604645,
+                  "value": 0.027466297149658203
+                },
+                {
+                  "inSlope": -0.8239889740943909,
+                  "outSlope": -0.8239889740943909,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588235855102539,
+                  "outSlope": 9.588235855102539,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.176240921020508,
+                  "outSlope": 9.176240921020508,
+                  "time": 0.1666666716337204,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981622695922852,
+                  "outSlope": -1.4981622695922852,
+                  "time": 0.20000000298023224,
+                  "value": 0.6117494106292725
+                },
+                {
+                  "inSlope": -3.2959556579589844,
+                  "outSlope": -3.2959556579589844,
+                  "time": 0.3333333432674408,
+                  "value": 0.20225179195404053
+                },
+                {
+                  "inSlope": -1.4981613159179688,
+                  "outSlope": -1.4981613159179688,
+                  "time": 0.4000000059604645,
+                  "value": 0.027466297149658203
+                },
+                {
+                  "inSlope": -0.8239889740943909,
+                  "outSlope": -0.8239889740943909,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.10000000894069672,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588235855102539,
+                  "outSlope": 9.588235855102539,
+                  "time": 0.13333334028720856,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.176240921020508,
+                  "outSlope": 9.176240921020508,
+                  "time": 0.1666666716337204,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981622695922852,
+                  "outSlope": -1.4981622695922852,
+                  "time": 0.20000000298023224,
+                  "value": 0.6117494106292725
+                },
+                {
+                  "inSlope": -3.2959556579589844,
+                  "outSlope": -3.2959556579589844,
+                  "time": 0.3333333432674408,
+                  "value": 0.20225179195404053
+                },
+                {
+                  "inSlope": -1.4981613159179688,
+                  "outSlope": -1.4981613159179688,
+                  "time": 0.4000000059604645,
+                  "value": 0.027466297149658203
+                },
+                {
+                  "inSlope": -0.8239889740943909,
+                  "outSlope": -0.8239889740943909,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.13333334028720856,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": -2.587172269821167,
+                  "outSlope": -2.587172269821167,
+                  "time": 0.20000000298023224,
+                  "value": 0.6918075680732727
+                },
+                {
+                  "inSlope": -5.326531410217285,
+                  "outSlope": -5.326531410217285,
+                  "time": 0.30000001192092896,
+                  "value": 0.2124198079109192
+                },
+                {
+                  "inSlope": -2.5871732234954834,
+                  "outSlope": -2.5871732234954834,
+                  "time": 0.36666667461395264,
+                  "value": -0.08180761337280273
+                },
+                {
+                  "inSlope": -1.4457751512527466,
+                  "outSlope": -1.4457751512527466,
+                  "time": 0.4000000059604645,
+                  "value": -0.13000011444091797
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 3.0018357244365745e-10,
+                  "outSlope": 3.0018357244365745e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.823537349700928,
+                  "outSlope": 7.823537349700928,
+                  "time": 1.166666865348816,
+                  "value": 2.0012219312248725e-11
+                },
+                {
+                  "inSlope": 7.487368106842041,
+                  "outSlope": 7.487368106842041,
+                  "time": 1.2000001668930054,
+                  "value": 0.5215686559677124
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.2333334684371948,
+                  "value": 0.4991573989391327
+                },
+                {
+                  "inSlope": -2.6893391609191895,
+                  "outSlope": -2.6893391609191895,
+                  "time": 1.3666666746139526,
+                  "value": 0.1650276780128479
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.4333332777023315,
+                  "value": 0.0224112868309021
+                },
+                {
+                  "inSlope": -0.6723392605781555,
+                  "outSlope": -0.6723392605781555,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 3.0018357244365745e-10,
+                  "outSlope": 3.0018357244365745e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.823537349700928,
+                  "outSlope": 7.823537349700928,
+                  "time": 1.166666865348816,
+                  "value": 2.0012219312248725e-11
+                },
+                {
+                  "inSlope": 7.487368106842041,
+                  "outSlope": 7.487368106842041,
+                  "time": 1.2000001668930054,
+                  "value": 0.5215686559677124
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.2333334684371948,
+                  "value": 0.4991573989391327
+                },
+                {
+                  "inSlope": -2.6893391609191895,
+                  "outSlope": -2.6893391609191895,
+                  "time": 1.3666666746139526,
+                  "value": 0.1650276780128479
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.4333332777023315,
+                  "value": 0.0224112868309021
+                },
+                {
+                  "inSlope": -0.6723392605781555,
+                  "outSlope": -0.6723392605781555,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 3.0018357244365745e-10,
+                  "outSlope": 3.0018357244365745e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.823537349700928,
+                  "outSlope": 7.823537349700928,
+                  "time": 1.166666865348816,
+                  "value": 2.0012219312248725e-11
+                },
+                {
+                  "inSlope": 7.487368106842041,
+                  "outSlope": 7.487368106842041,
+                  "time": 1.2000001668930054,
+                  "value": 0.5215686559677124
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.2333334684371948,
+                  "value": 0.4991573989391327
+                },
+                {
+                  "inSlope": -2.6893391609191895,
+                  "outSlope": -2.6893391609191895,
+                  "time": 1.3666666746139526,
+                  "value": 0.1650276780128479
+                },
+                {
+                  "inSlope": -1.2224295139312744,
+                  "outSlope": -1.2224295139312744,
+                  "time": 1.4333332777023315,
+                  "value": 0.0224112868309021
+                },
+                {
+                  "inSlope": -0.6723392605781555,
+                  "outSlope": -0.6723392605781555,
+                  "time": 1.466666579246521,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 4.085204952097854e-10,
+                  "outSlope": 4.085204952097854e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.647068977355957,
+                  "outSlope": 10.647068977355957,
+                  "time": 1.166666865348816,
+                  "value": 2.7234672850262598e-11
+                },
+                {
+                  "inSlope": 10.189576148986816,
+                  "outSlope": 10.189576148986816,
+                  "time": 1.2000001668930054,
+                  "value": 0.7098039388656616
+                },
+                {
+                  "inSlope": -1.6636077165603638,
+                  "outSlope": -1.6636077165603638,
+                  "time": 1.2333334684371948,
+                  "value": 0.6793044209480286
+                },
+                {
+                  "inSlope": -3.659926414489746,
+                  "outSlope": -3.659926414489746,
+                  "time": 1.3666666746139526,
+                  "value": 0.22458654642105103
+                },
+                {
+                  "inSlope": -1.663606882095337,
+                  "outSlope": -1.663606882095337,
+                  "time": 1.4333332777023315,
+                  "value": 0.030499696731567383
+                },
+                {
+                  "inSlope": -0.9149882197380066,
+                  "outSlope": -0.9149882197380066,
+                  "time": 1.466666579246521,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 4.085204952097854e-10,
+                  "outSlope": 4.085204952097854e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.647068977355957,
+                  "outSlope": 10.647068977355957,
+                  "time": 1.166666865348816,
+                  "value": 2.7234672850262598e-11
+                },
+                {
+                  "inSlope": 10.189576148986816,
+                  "outSlope": 10.189576148986816,
+                  "time": 1.2000001668930054,
+                  "value": 0.7098039388656616
+                },
+                {
+                  "inSlope": -1.6636077165603638,
+                  "outSlope": -1.6636077165603638,
+                  "time": 1.2333334684371948,
+                  "value": 0.6793044209480286
+                },
+                {
+                  "inSlope": -3.659926414489746,
+                  "outSlope": -3.659926414489746,
+                  "time": 1.3666666746139526,
+                  "value": 0.22458654642105103
+                },
+                {
+                  "inSlope": -1.663606882095337,
+                  "outSlope": -1.663606882095337,
+                  "time": 1.4333332777023315,
+                  "value": 0.030499696731567383
+                },
+                {
+                  "inSlope": -0.9149882197380066,
+                  "outSlope": -0.9149882197380066,
+                  "time": 1.466666579246521,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 4.085204952097854e-10,
+                  "outSlope": 4.085204952097854e-10,
+                  "time": 1.1333335638046265,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.647068977355957,
+                  "outSlope": 10.647068977355957,
+                  "time": 1.166666865348816,
+                  "value": 2.7234672850262598e-11
+                },
+                {
+                  "inSlope": 10.189576148986816,
+                  "outSlope": 10.189576148986816,
+                  "time": 1.2000001668930054,
+                  "value": 0.7098039388656616
+                },
+                {
+                  "inSlope": -1.6636077165603638,
+                  "outSlope": -1.6636077165603638,
+                  "time": 1.2333334684371948,
+                  "value": 0.6793044209480286
+                },
+                {
+                  "inSlope": -3.659926414489746,
+                  "outSlope": -3.659926414489746,
+                  "time": 1.3666666746139526,
+                  "value": 0.22458654642105103
+                },
+                {
+                  "inSlope": -1.663606882095337,
+                  "outSlope": -1.663606882095337,
+                  "time": 1.4333332777023315,
+                  "value": 0.030499696731567383
+                },
+                {
+                  "inSlope": -0.9149882197380066,
+                  "outSlope": -0.9149882197380066,
+                  "time": 1.466666579246521,
+                  "value": 1.1920928955078125e-7
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.166666865348816,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": -2.5871782302856445,
+                  "outSlope": -2.5871782302856445,
+                  "time": 1.2333334684371948,
+                  "value": 0.6918073296546936
+                },
+                {
+                  "inSlope": -5.326531410217285,
+                  "outSlope": -5.326531410217285,
+                  "time": 1.3333333730697632,
+                  "value": 0.21241992712020874
+                },
+                {
+                  "inSlope": -2.587179183959961,
+                  "outSlope": -2.587179183959961,
+                  "time": 1.399999976158142,
+                  "value": -0.08180737495422363
+                },
+                {
+                  "inSlope": -1.4457836151123047,
+                  "outSlope": -1.4457836151123047,
+                  "time": 1.4333332777023315,
+                  "value": -0.13000011444091797
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/PolyMesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 1.100000262260437,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.561850648812424e-9,
+                  "outSlope": 1.561850648812424e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176462173461914,
+                  "outSlope": 10.176462173461914,
+                  "time": 0.8333336114883423,
+                  "value": 1.0412345985422178e-10
+                },
+                {
+                  "inSlope": 9.73918342590332,
+                  "outSlope": 9.73918342590332,
+                  "time": 0.8666669726371765,
+                  "value": 0.6784313917160034
+                },
+                {
+                  "inSlope": -1.5900872945785522,
+                  "outSlope": -1.5900872945785522,
+                  "time": 0.9000003337860107,
+                  "value": 0.6492794752120972
+                },
+                {
+                  "inSlope": -3.498157262802124,
+                  "outSlope": -3.498157262802124,
+                  "time": 1.033333659172058,
+                  "value": 0.21465879678726196
+                },
+                {
+                  "inSlope": -2.7826192378997803,
+                  "outSlope": -2.7826192378997803,
+                  "time": 1.0666669607162476,
+                  "value": 0.10600405931472778
+                },
+                {
+                  "inSlope": -2.305593252182007,
+                  "outSlope": -2.305593252182007,
+                  "time": 1.100000262260437,
+                  "value": 0.02915102243423462
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.561850648812424e-9,
+                  "outSlope": 1.561850648812424e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176462173461914,
+                  "outSlope": 10.176462173461914,
+                  "time": 0.8333336114883423,
+                  "value": 1.0412345985422178e-10
+                },
+                {
+                  "inSlope": 9.73918342590332,
+                  "outSlope": 9.73918342590332,
+                  "time": 0.8666669726371765,
+                  "value": 0.6784313917160034
+                },
+                {
+                  "inSlope": -1.5900872945785522,
+                  "outSlope": -1.5900872945785522,
+                  "time": 0.9000003337860107,
+                  "value": 0.6492794752120972
+                },
+                {
+                  "inSlope": -3.498157262802124,
+                  "outSlope": -3.498157262802124,
+                  "time": 1.033333659172058,
+                  "value": 0.21465879678726196
+                },
+                {
+                  "inSlope": -2.7826192378997803,
+                  "outSlope": -2.7826192378997803,
+                  "time": 1.0666669607162476,
+                  "value": 0.10600405931472778
+                },
+                {
+                  "inSlope": -2.305593252182007,
+                  "outSlope": -2.305593252182007,
+                  "time": 1.100000262260437,
+                  "value": 0.02915102243423462
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.561850648812424e-9,
+                  "outSlope": 1.561850648812424e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 10.176462173461914,
+                  "outSlope": 10.176462173461914,
+                  "time": 0.8333336114883423,
+                  "value": 1.0412345985422178e-10
+                },
+                {
+                  "inSlope": 9.73918342590332,
+                  "outSlope": 9.73918342590332,
+                  "time": 0.8666669726371765,
+                  "value": 0.6784313917160034
+                },
+                {
+                  "inSlope": -1.5900872945785522,
+                  "outSlope": -1.5900872945785522,
+                  "time": 0.9000003337860107,
+                  "value": 0.6492794752120972
+                },
+                {
+                  "inSlope": -3.498157262802124,
+                  "outSlope": -3.498157262802124,
+                  "time": 1.033333659172058,
+                  "value": 0.21465879678726196
+                },
+                {
+                  "inSlope": -2.7826192378997803,
+                  "outSlope": -2.7826192378997803,
+                  "time": 1.0666669607162476,
+                  "value": 0.10600405931472778
+                },
+                {
+                  "inSlope": -2.305593252182007,
+                  "outSlope": -2.305593252182007,
+                  "time": 1.100000262260437,
+                  "value": 0.02915102243423462
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.4715704210743752e-9,
+                  "outSlope": 1.4715704210743752e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588227272033691,
+                  "outSlope": 9.588227272033691,
+                  "time": 0.8333336114883423,
+                  "value": 9.810477430427511e-11
+                },
+                {
+                  "inSlope": 9.176224708557129,
+                  "outSlope": 9.176224708557129,
+                  "time": 0.8666669726371765,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981751441955566,
+                  "outSlope": -1.4981751441955566,
+                  "time": 0.9000003337860107,
+                  "value": 0.6117488741874695
+                },
+                {
+                  "inSlope": -3.2959516048431396,
+                  "outSlope": -3.2959516048431396,
+                  "time": 1.033333659172058,
+                  "value": 0.20225071907043457
+                },
+                {
+                  "inSlope": -2.6217761039733887,
+                  "outSlope": -2.6217761039733887,
+                  "time": 1.0666669607162476,
+                  "value": 0.09987664222717285
+                },
+                {
+                  "inSlope": -2.1723268032073975,
+                  "outSlope": -2.1723268032073975,
+                  "time": 1.100000262260437,
+                  "value": 0.0274658203125
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.4715704210743752e-9,
+                  "outSlope": 1.4715704210743752e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588227272033691,
+                  "outSlope": 9.588227272033691,
+                  "time": 0.8333336114883423,
+                  "value": 9.810477430427511e-11
+                },
+                {
+                  "inSlope": 9.176224708557129,
+                  "outSlope": 9.176224708557129,
+                  "time": 0.8666669726371765,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981751441955566,
+                  "outSlope": -1.4981751441955566,
+                  "time": 0.9000003337860107,
+                  "value": 0.6117488741874695
+                },
+                {
+                  "inSlope": -3.2959516048431396,
+                  "outSlope": -3.2959516048431396,
+                  "time": 1.033333659172058,
+                  "value": 0.20225071907043457
+                },
+                {
+                  "inSlope": -2.6217761039733887,
+                  "outSlope": -2.6217761039733887,
+                  "time": 1.0666669607162476,
+                  "value": 0.09987664222717285
+                },
+                {
+                  "inSlope": -2.1723268032073975,
+                  "outSlope": -2.1723268032073975,
+                  "time": 1.100000262260437,
+                  "value": 0.0274658203125
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.7666668891906738,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 1.4715704210743752e-9,
+                  "outSlope": 1.4715704210743752e-9,
+                  "time": 0.8000002503395081,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 9.588227272033691,
+                  "outSlope": 9.588227272033691,
+                  "time": 0.8333336114883423,
+                  "value": 9.810477430427511e-11
+                },
+                {
+                  "inSlope": 9.176224708557129,
+                  "outSlope": 9.176224708557129,
+                  "time": 0.8666669726371765,
+                  "value": 0.6392157077789307
+                },
+                {
+                  "inSlope": -1.4981751441955566,
+                  "outSlope": -1.4981751441955566,
+                  "time": 0.9000003337860107,
+                  "value": 0.6117488741874695
+                },
+                {
+                  "inSlope": -3.2959516048431396,
+                  "outSlope": -3.2959516048431396,
+                  "time": 1.033333659172058,
+                  "value": 0.20225071907043457
+                },
+                {
+                  "inSlope": -2.6217761039733887,
+                  "outSlope": -2.6217761039733887,
+                  "time": 1.0666669607162476,
+                  "value": 0.09987664222717285
+                },
+                {
+                  "inSlope": -2.1723268032073975,
+                  "outSlope": -2.1723268032073975,
+                  "time": 1.100000262260437,
+                  "value": 0.0274658203125
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.8333336114883423,
+                  "value": 0.7400000095367432
+                },
+                {
+                  "inSlope": -2.5871939659118652,
+                  "outSlope": -2.5871939659118652,
+                  "time": 0.9000003337860107,
+                  "value": 0.6918066740036011
+                },
+                {
+                  "inSlope": -5.326526641845703,
+                  "outSlope": -5.326526641845703,
+                  "time": 1.0000003576278687,
+                  "value": 0.21241790056228638
+                },
+                {
+                  "inSlope": -4.413398742675781,
+                  "outSlope": -4.413398742675781,
+                  "time": 1.033333659172058,
+                  "value": 0.042476654052734375
+                },
+                {
+                  "inSlope": -3.7285547256469727,
+                  "outSlope": -3.7285547256469727,
+                  "time": 1.0666669607162476,
+                  "value": -0.08180838823318481
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03/Editable Poly1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.029895005747675896,
+                    "y": -0.2465951293706894,
+                    "z": -1.788139229574881e-6
+                  },
+                  "outSlope": {
+                    "x": 0.029895005747675896,
+                    "y": -0.2465951293706894,
+                    "z": -1.788139229574881e-6
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 0.3570886254310608,
+                    "y": 1.5167425870895386,
+                    "z": 0.6667880415916443
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.029894983395934105,
+                    "y": -0.24659135937690735,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.029894983395934105,
+                    "y": -0.24659135937690735,
+                    "z": 0.0
+                  },
+                  "time": 0.933333694934845,
+                  "value": {
+                    "x": 0.3849909007549286,
+                    "y": 1.2865893840789795,
+                    "z": 0.6667880415916443
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 1.2333334684371948,
+                  "value": {
+                    "x": 0.38598740100860596,
+                    "y": 1.2783697843551636,
+                    "z": 0.6667880415916443
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 1.466666579246521,
+                  "value": {
+                    "x": 0.38598740100860596,
+                    "y": 1.2783697843551636,
+                    "z": 0.6667880415916443
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02"
+          }
+        ],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": -0.01773834228515625,
+                    "y": -0.01773834228515625,
+                    "z": -0.01773834228515625
+                  },
+                  "outSlope": {
+                    "x": -0.01773834228515625,
+                    "y": -0.01773834228515625,
+                    "z": -0.01773834228515625
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.9890733957290649,
+                    "y": 0.9890733957290649,
+                    "z": 0.9890733957290649
+                  },
+                  "outSlope": {
+                    "x": 0.9890733957290649,
+                    "y": 0.9890733957290649,
+                    "z": 0.9890733957290649
+                  },
+                  "time": 0.23333333432674408,
+                  "value": {
+                    "x": 1.0715583562850952,
+                    "y": 1.0715583562850952,
+                    "z": 1.0715583562850952
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.4169851839542389,
+                    "y": 0.4169851839542389,
+                    "z": 0.4169851839542389
+                  },
+                  "outSlope": {
+                    "x": 0.4169851839542389,
+                    "y": 0.4169851839542389,
+                    "z": 0.4169851839542389
+                  },
+                  "time": 0.4000000059604645,
+                  "value": {
+                    "x": 1.2287757396697998,
+                    "y": 1.2287757396697998,
+                    "z": 1.2287757396697998
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.2262890487909317,
+                    "y": 0.2262890487909317,
+                    "z": 0.2262890487909317
+                  },
+                  "outSlope": {
+                    "x": 0.2262890487909317,
+                    "y": 0.2262890487909317,
+                    "z": 0.2262890487909317
+                  },
+                  "time": 0.4333333373069763,
+                  "value": {
+                    "x": 1.2363187074661255,
+                    "y": 1.2363187074661255,
+                    "z": 1.2363187074661255
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01"
+          },
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0002038478705799207,
+                    "y": 0.0002038478705799207,
+                    "z": 0.0002038478705799207
+                  },
+                  "outSlope": {
+                    "x": 0.0002038478705799207,
+                    "y": 0.0002038478705799207,
+                    "z": 0.0002038478705799207
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0394463911652565,
+                    "y": 0.0394463911652565,
+                    "z": 0.0394463911652565
+                  },
+                  "outSlope": {
+                    "x": 0.0394463911652565,
+                    "y": 0.0394463911652565,
+                    "z": 0.0394463911652565
+                  },
+                  "time": 1.166666865348816,
+                  "value": {
+                    "x": 1.0180041790008545,
+                    "y": 1.0180041790008545,
+                    "z": 1.0180041790008545
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.8983030319213867,
+                    "y": 0.8983030319213867,
+                    "z": 0.8983030319213867
+                  },
+                  "outSlope": {
+                    "x": 0.8983030319213867,
+                    "y": 0.8983030319213867,
+                    "z": 0.8983030319213867
+                  },
+                  "time": 1.2666667699813843,
+                  "value": {
+                    "x": 1.0548009872436523,
+                    "y": 1.0548009872436523,
+                    "z": 1.0548009872436523
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.5007742643356323,
+                    "y": 0.5007742643356323,
+                    "z": 0.5007742643356323
+                  },
+                  "outSlope": {
+                    "x": 0.5007742643356323,
+                    "y": 0.5007742643356323,
+                    "z": 0.5007742643356323
+                  },
+                  "time": 1.4333332777023315,
+                  "value": {
+                    "x": 1.2271463871002197,
+                    "y": 1.2271463871002197,
+                    "z": 1.2271463871002197
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.27516987919807434,
+                    "y": 0.27516987919807434,
+                    "z": 0.27516987919807434
+                  },
+                  "outSlope": {
+                    "x": 0.27516987919807434,
+                    "y": 0.27516987919807434,
+                    "z": 0.27516987919807434
+                  },
+                  "time": 1.466666579246521,
+                  "value": {
+                    "x": 1.2363187074661255,
+                    "y": 1.2363187074661255,
+                    "z": 1.2363187074661255
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02"
+          },
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0004148482985328883,
+                    "y": 0.0004148482985328883,
+                    "z": 0.0004148482985328883
+                  },
+                  "outSlope": {
+                    "x": 0.0004148482985328883,
+                    "y": 0.0004148482985328883,
+                    "z": 0.0004148482985328883
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.05317743122577667,
+                    "y": 0.05317743122577667,
+                    "z": 0.05317743122577667
+                  },
+                  "outSlope": {
+                    "x": 0.05317743122577667,
+                    "y": 0.05317743122577667,
+                    "z": 0.05317743122577667
+                  },
+                  "time": 0.8333336114883423,
+                  "value": {
+                    "x": 1.0175198316574097,
+                    "y": 1.0175198316574097,
+                    "z": 1.0175198316574097
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 4.417616367340088,
+                    "y": 4.417616367340088,
+                    "z": 4.417616367340088
+                  },
+                  "outSlope": {
+                    "x": 4.417616367340088,
+                    "y": 4.417616367340088,
+                    "z": 4.417616367340088
+                  },
+                  "time": 0.8666669726371765,
+                  "value": {
+                    "x": 1.0193500518798828,
+                    "y": 1.0193500518798828,
+                    "z": 1.0193500518798828
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 14.909479141235352,
+                    "y": 14.909479141235352,
+                    "z": 14.909479141235352
+                  },
+                  "outSlope": {
+                    "x": 14.909479141235352,
+                    "y": 14.909479141235352,
+                    "z": 14.909479141235352
+                  },
+                  "time": 0.9000003337860107,
+                  "value": {
+                    "x": 1.3120278120040894,
+                    "y": 1.3120278120040894,
+                    "z": 1.3120278120040894
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 16.661083221435547,
+                    "y": 16.661083221435547,
+                    "z": 16.661083221435547
+                  },
+                  "outSlope": {
+                    "x": 16.661083221435547,
+                    "y": 16.661083221435547,
+                    "z": 16.661083221435547
+                  },
+                  "time": 1.0000003576278687,
+                  "value": {
+                    "x": 3.6039936542510986,
+                    "y": 3.6039936542510986,
+                    "z": 3.6039936542510986
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -21.085887908935547,
+                    "y": -21.085887908935547,
+                    "z": -21.085887908935547
+                  },
+                  "outSlope": {
+                    "x": -21.085887908935547,
+                    "y": -21.085887908935547,
+                    "z": -21.085887908935547
+                  },
+                  "time": 1.0666669607162476,
+                  "value": {
+                    "x": 3.7159314155578613,
+                    "y": 3.7159314155578613,
+                    "z": 3.7159314155578613
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -34.41409683227539,
+                    "y": -34.41409683227539,
+                    "z": -34.41409683227539
+                  },
+                  "outSlope": {
+                    "x": -34.41409683227539,
+                    "y": -34.41409683227539,
+                    "z": -34.41409683227539
+                  },
+                  "time": 1.100000262260437,
+                  "value": {
+                    "x": 2.568795919418335,
+                    "y": 2.568795919418335,
+                    "z": 2.568795919418335
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder03"
+          }
+        ],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2220,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "e441dae67904ae1c00252e6c997208f9a94e02964bea35a29e08b86ea1341ed7",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendOneOne_cullOff\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\" = \"Transparent\"}\n\tBlend One One \n\tColorMask RGB\n\tCull Off\n\tFog {Mode Off}\n\t\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2888,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "bubble_win_01",
+      "canonicalBlake3": "3b489c9880a18c2a719d8584047429cf51f5e7b85f770f1ac221ebb786e13eba",
+      "value": {
+        "m_Name": "bubble_win_01",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 427
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 0,
+          "pathId": 2220
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7277,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "afac410c18a08e6a7b1b7dda79365f97ad98c1c9fb91596166ad5adcd44fd0b3",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7319
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7772
+        },
+        "m_LocalPosition": {
+          "x": -2.317576530685983e-8,
+          "y": 2.0274169010292553e-9,
+          "z": -0.6335136294364929
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.4740748405456543,
+          "y": 1.4740748405456543,
+          "z": 1.4740748405456543
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7279,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "82aac37ae5b070027b0e5df2ff0d401021d2698d4248689f8b7ebab372dd8cff",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7320
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7774
+        },
+        "m_LocalPosition": {
+          "x": -6.824659948279077e-8,
+          "y": 6.333457314156021e-9,
+          "z": -0.6335136294364929
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.4740749597549438,
+          "y": 1.4740749597549438,
+          "z": 1.4740749597549438
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7281,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "42afee0ba984841066351759afb3fd5d2aee0e546a8b3f44527ba33e59785bb9",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7321
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7775
+        },
+        "m_LocalPosition": {
+          "x": -2.695686696085886e-8,
+          "y": 2.0889960872239044e-9,
+          "z": -0.6335136294364929
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.4740747213363647,
+          "y": 1.4740747213363647,
+          "z": 1.4740747213363647
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7317,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "9a568c34a0bd2cba115b44009f3a88658b170afa141e180a8094d0ac2dacef03",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9466
+        },
+        "m_LocalPosition": {
+          "x": 7510.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7318,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "9fa3aeabe2a12c9f6ca95522b27ceb768ec3f3a3706d4512fba67b73d0722a31",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7319
+          },
+          {
+            "fileId": 0,
+            "pathId": 7320
+          },
+          {
+            "fileId": 0,
+            "pathId": 7321
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9546
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7319,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "a4f31c81c0f01d11f56c42051b1b39b1ffe3cbe35bfc63858219e1984b750af3",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7277
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7318
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9547
+        },
+        "m_LocalPosition": {
+          "x": 0.5343452095985413,
+          "y": 1.0066457986831665,
+          "z": 0.6594724655151367
+        },
+        "m_LocalRotation": {
+          "w": 0.7372819185256958,
+          "x": -0.6753308773040771,
+          "y": -0.016694458201527596,
+          "z": 0.008059554733335972
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7320,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "4340912178ca41ddca47dfdace500517dd472ed52090d3503c003e031201351b",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7279
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7318
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9548
+        },
+        "m_LocalPosition": {
+          "x": 0.3570886254310608,
+          "y": 1.5167425870895386,
+          "z": 0.6667880415916443
+        },
+        "m_LocalRotation": {
+          "w": 0.6591207981109619,
+          "x": -0.5993629693984985,
+          "y": 0.30222630500793457,
+          "z": -0.3390916585922241
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7321,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "378750491a86446eddb7b25cfbe7f3a331d97a63cc01154e4e62b57dcac730b4",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7281
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7318
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9549
+        },
+        "m_LocalPosition": {
+          "x": 0.5093616247177124,
+          "y": 0.8690746426582336,
+          "z": 0.6594724655151367
+        },
+        "m_LocalRotation": {
+          "w": -0.16508162021636963,
+          "x": 0.21053534746170044,
+          "y": 0.5470243692398071,
+          "z": -0.7932132482528687
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7772,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Poly",
+      "canonicalBlake3": "db1bbfac1aa0c0cb15763d7ce1e42280a853d63d7d42424fe2b80ee8df43397c",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7277
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13663
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13664
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Editable Poly",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7774,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PolyMesh",
+      "canonicalBlake3": "220c11fdc8aacf6cf0a7ca352fff51d1ef04b387efc7eaa55a5cf9e6bd5dd617",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7279
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13665
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13666
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "PolyMesh",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7775,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Poly1",
+      "canonicalBlake3": "32037545dea44376af044a2cc246107c50a8243cf837144ec2b9594ff1750fea",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7281
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13667
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13668
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Editable Poly1",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9466,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[751]",
+      "canonicalBlake3": "17e2c817bc60ede9ce0d3a8e9b4723cc71c543be1b84495782367bcc004ba752",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7317
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15655
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[751]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9546,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "npc_samuraijack_event_eff",
+      "canonicalBlake3": "2c03e14baecdbbd96dbb334a4ca7d4a4f990a89d59d5269028cf794d211d162d",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7318
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 13985
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "npc_samuraijack_event_eff",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9547,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Cylinder01",
+      "canonicalBlake3": "bf55df18af81d11708edc1946cf19fe49493956e10476943bbc69cecd638dcfd",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7319
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Cylinder01",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9548,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Cylinder02",
+      "canonicalBlake3": "038ef23f1b762416d072a30b0c05f6aa6318377951895328160cf508ec9f76e4",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7320
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Cylinder02",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9549,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Cylinder03",
+      "canonicalBlake3": "d1564b80eef7722f4bf3a8eaf60f5060259b65eae06c6a7dda5175a06c9d41be",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7321
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Cylinder03",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13663,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "398d73e6cc59582c9eea22a240120e057488a3e0b49781e2d9e8a977a51e6055",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7772
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 836
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13664,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "b98c72661d25fb80cc64914be6b5939f24de00151f588c7e646ad4a73613e665",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7772
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2888
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13665,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "1561b67f737ac2605e7fe530e65f8040f93263103cd2aa977ab59ff2764903b4",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7774
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 837
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13666,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "a68180449048ddd8d0e41e6a7a16e10be0f976984ae0cb3fcc43d0078db1a54c",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7774
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2888
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13667,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "260588043c3bd011ee1de20a6ba4d55a5f7dd961b4cffbaea78e2c044eda0eec",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7775
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 710
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13668,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "a650d32ee6260f1e0a033af96b030a2091b560acd035f93f88aec5858870255b",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7775
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2888
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13985,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "1efef190addc6f436812e1eb43b5c290c717f6a1942c83e3e6423c70483e6ec5",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 1994
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 1994
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9546
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15655,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "90866dc236097ba06452f61de1dacb7f1fc7884763f71420cd97c49956e2cbc7",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "npc_samuraijack_event_eff",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9466
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 2.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 9546
+        },
+        "particles": [],
+        "priority": 0
+      }
+    }
+  ]
+}

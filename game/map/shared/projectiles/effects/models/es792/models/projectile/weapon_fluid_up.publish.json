@@ -1,0 +1,468 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "weapon_fluid_up",
+    "root_node": "weapon_fluid_up",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/weapon_fluid_up.glb",
+    "glb_blake3": "3c077ef8be215eb25322e069ce56cce88cdce3d6e4731f805b3e63ae813ffb52",
+    "source": {
+      "nodes": 3,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 0,
+      "float_curves": 1,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 3,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 0,
+      "float_curves": 1,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 3,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "50cb59973de0f2ac7594a5fbe649a55b12489f6de2931a0a80971efe8d447933",
+      "geometrySha256": "eb7af448d1a2ce0ef3fe622ecfb405dddb375a008e5ee3daebe8008a7a281750",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "d71d44502e6c9353996a73b49ed92fee98192e03d9515bbc5ba3a7501f966865",
+      "materialsSha256": "13f0082fe859b2e89e2a83743fd718a742b92eb9037e036e4c256f4d3f2fe0ec"
+    },
+    "emitted": {
+      "hierarchySha256": "50cb59973de0f2ac7594a5fbe649a55b12489f6de2931a0a80971efe8d447933",
+      "geometrySha256": "eb7af448d1a2ce0ef3fe622ecfb405dddb375a008e5ee3daebe8008a7a281750",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "d71d44502e6c9353996a73b49ed92fee98192e03d9515bbc5ba3a7501f966865",
+      "materialsSha256": "13f0082fe859b2e89e2a83743fd718a742b92eb9037e036e4c256f4d3f2fe0ec"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.40850234031677246,
+        -0.40850022435188293,
+        -1.2246819734573364
+      ],
+      "max": [
+        0.4084908664226532,
+        0.4084929823875427,
+        -0.28808465600013733
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.1691015213727951,
+        -0.16744975745677948,
+        -0.20891863107681274
+      ],
+      "max": [
+        0.16770805418491364,
+        0.16935981810092926,
+        0.17719833552837372
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "ep_potal_e01",
+      "fluid_03"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 2,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "ep_potal_e01",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "shaderSha256": "94cf3af0dd3ecfe6f8f7e0f009a403dc6a8d41bf7eabbab6a0656f541b3f5d23",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      },
+      {
+        "name": "fluid_03",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "shaderSha256": "94cf3af0dd3ecfe6f8f7e0f009a403dc6a8d41bf7eabbab6a0656f541b3f5d23",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "ep_potal_e01.dds",
+        "uri": "weapon_fluid_up.textures/ep_potal_e01.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 109402,
+        "sha256": "5a2d523c87aa9b0f846ddc53020b60ad0bfaa222761d25a01c32132d8734af64",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "a05375242c37ff29fe2fc32f2e765a69633647563347a5afaea7d72516e4daf4",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "5d9fe182a55858b480acdeec45448a477d18a78f16a6ff73c39b415b1748057d",
+            "pngByteLength": 109402,
+            "pngSha256": "5a2d523c87aa9b0f846ddc53020b60ad0bfaa222761d25a01c32132d8734af64"
+          },
+          {
+            "level": 1,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "a30b04b66e1147ae99a3bd7dcefcff3e946e0d4324628e3d2985d8d0d232b3b8",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "31097b4201b3db10bcc6ee86fd4458bffa376ebf7f3d836e0dfa65e49798ade6",
+            "pngByteLength": 33787,
+            "pngSha256": "37bedf853286acdefb85c07395b7b7eb1c989c97c0008d7a4a5cae990e0e3a5c"
+          },
+          {
+            "level": 2,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "f8bbb17280a80ff4203b9e397798fefa360c4785e81d89a16e8fe6ae9d51ff80",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "af857e56088ed8916bb01e33c3498cb497a8f0dedc82fd88928735088ca9602e",
+            "pngByteLength": 9806,
+            "pngSha256": "4653a530721f61fcf4334fec27ffbd6e2c139d5f86f5661ce75e53c69be89217"
+          },
+          {
+            "level": 3,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "516a9cebcc340c2f0052c8ae6663761ff98ba5da76cda192fce5be685dac3ab1",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "33d2a7d56c76601e9cd0494fb1e01c31ba3dd04e0780b53722b9976e35935637",
+            "pngByteLength": 2656,
+            "pngSha256": "f9f8ef038118b13052eb5cb33a61402aa2bacbf78c0b0b7de8dcf9546d3da9d1"
+          },
+          {
+            "level": 4,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "6dc2d7960cb9dd79529d929ca730cecd7e39554e365988e15d63254d54be097f",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "2352f177c8135763170f22820d010aa13b20d409b8d187a6790bb1b13bec4ee9",
+            "pngByteLength": 855,
+            "pngSha256": "ef87b3374e2a0619f6839e56d7d590ec666b9f21d07f606fb64be86b1adbb66e"
+          },
+          {
+            "level": 5,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "369673d3a71f4ba367de3cd202d2e315ff5463e7207825f9147d88c3b64ee64d",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "f28c6f7f9a42825d5d8ae6c64ae68848b7706778ab78f369ba6a299cdb49305f",
+            "pngByteLength": 332,
+            "pngSha256": "ebb05087a3c2ad7a3efaf3b35dfce402ec726041aed0e07bc44a22baaeb351d0"
+          },
+          {
+            "level": 6,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "85f8286b27c086aa2ce9f1f3d1870de0cca8c25d722f818e36d79e678e2aa53c",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "6d09bf39287e24fac459609c0d40ce69d267dfb1c3ec1ff01f7aff0a5a493665",
+            "pngByteLength": 136,
+            "pngSha256": "1688294154ff81241bf63017a60ffb376e91dd225ee65586817c5cc4b0e84fb6"
+          },
+          {
+            "level": 7,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "0ece038cde28c04e3aa23635dc467450fb327d6e44209d71cd1abaa714fb6ab9",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "4643355c7b35c950ef3f1b72357dc20676cb1f9c91ec2f9e27d5558d9a76c3cb",
+            "pngByteLength": 86,
+            "pngSha256": "e5508a97a8c177e4d792b5862991847ca0b578db8aedceb9d6796317461b20f7"
+          },
+          {
+            "level": 8,
+            "uri": "weapon_fluid_up.textures/ep_potal_e01.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "18fa68e34f88edd8e8c7a0d4c3452fe23fb331b52220e50cfc7246cb8eed9cd7",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "8009af026ec08753e7e4bfc9e56e70494e6292926f4d8938c3a1ecd60366f40d",
+            "pngByteLength": 73,
+            "pngSha256": "b84ea9397e808b3e64afeeb4604744ffeb5eefdefe01e7d5167ccc47339a3f01"
+          }
+        ]
+      },
+      {
+        "sourceName": "fluid_03.dds",
+        "uri": "weapon_fluid_up.textures/fluid_03.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 28186,
+        "sha256": "99e2c468f23f29dd62d3f9f3ad7bf82fc1592b7449cdc8c9b4b14e598f07c09b",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "weapon_fluid_up.textures/fluid_03.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "b8b6997e2c8083709b8880866568b993d38918cf289e1996022f0020936eea72",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "31723d5ad5c8c222e7cea93fcbc8eee744c346afb47d940eb831dde2d15b75b6",
+            "pngByteLength": 28186,
+            "pngSha256": "99e2c468f23f29dd62d3f9f3ad7bf82fc1592b7449cdc8c9b4b14e598f07c09b"
+          },
+          {
+            "level": 1,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "2ebce1f53dbe08814b18fe7f22e7cd2d09e3d57f34fbb90012302577edcdf0ea",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "3d39cefae5cac0c59baba285ad406b96354a82bd5c957c79e5064c12071ec033",
+            "pngByteLength": 8639,
+            "pngSha256": "663158585c0cbd56d3e7571fbee34e7f8232d4cc3184893483b270e64eb7a086"
+          },
+          {
+            "level": 2,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "7afda078626f4948466f7dab14328c80f40faddb1417c8e4def5ab0c131cf788",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "1cae46b9d494294e13737d6480a543a5e6155d49da20371e5ee5e841d84499ef",
+            "pngByteLength": 2602,
+            "pngSha256": "4dcb884a5aa865af0db2173b06561ad36cb93736353323efd5dcc445268309f4"
+          },
+          {
+            "level": 3,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "07b9bf52944f58a6454c717f1c1086192537ac6c8915402e6aaa814937bc79da",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "521d46b7eadd911275db6192980b12c4350e957495664ea8b6712325aa521d25",
+            "pngByteLength": 915,
+            "pngSha256": "84e29387cd0db0f1182ace6eab1ba0bb7aa54af3833c602fe52854b194fb2958"
+          },
+          {
+            "level": 4,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "cc7658e357bc6af3030af536fb3108998d37441a3c1450908b7c705a93320ef9",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "53139fa5132bbb775583efeb56e817c609d6c30b5fd325707c871ccceb1fd3f0",
+            "pngByteLength": 332,
+            "pngSha256": "edb054a60ac7c57c1ebefaee8ae77e664446a6db1ac06348d4f07bdef013950d"
+          },
+          {
+            "level": 5,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "f5f412a7f85dcb38dfad03de1587051ceaee57aa5a101245cfa9ad1cbe2ed385",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "6a76d724f2376260bfea1950c621176ef8ee7960e45acb5fcad897c8036d5719",
+            "pngByteLength": 136,
+            "pngSha256": "859cde2e3674f93135f4599745861637aa92c65633524b5de973c6dbe02f4209"
+          },
+          {
+            "level": 6,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "237cfa85a19e766c948bc71021746f4fa80ab7db53a6d9e52b512790e4deffe3",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "7c4bc4f3b6c558c5a3888d67cfac5ef002efb58c8ccb94dd40d21db4fcdf3193",
+            "pngByteLength": 86,
+            "pngSha256": "0563c70854aea82d373664201b1d40a107e645c0bf79dd6c87869e9be75481a1"
+          },
+          {
+            "level": 7,
+            "uri": "weapon_fluid_up.textures/fluid_03.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "27a9b784d5cc21602e91001955c115c2349b683ad0b839ec5c4266399c27ba1f",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "47bbca635fa05c223b148a8d89cf6c2b07539c3874f337e0f32c86c06d24f965",
+            "pngByteLength": 73,
+            "pngSha256": "93ee66a5f3ef9cc6b33704c151bf0ac0b7dd338b5bad5211d26f07ed4c4e49b0"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/weapon_fluid_up.publish.json"
+}

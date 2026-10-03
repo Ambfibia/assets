@@ -1,0 +1,1161 @@
+{
+  "schema": "ffone.native-particle-effects.v1",
+  "effects": [
+    {
+      "id": 397,
+      "name": "pickup",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "shineni_ap",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.6000000238418579,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 2.0,
+          "number_per_generation": 2.0,
+          "lifetime": 0.5,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              -1.0
+            ],
+            [
+              1.0,
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ],
+          "height_curve": [
+            [
+              0.0,
+              0.30000001192092896,
+              0.0,
+              0.699999988079071
+            ],
+            [
+              1.0,
+              1.0,
+              0.699999988079071,
+              0.0
+            ]
+          ],
+          "rotation_curve": [],
+          "render_mode": 5,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/heal_05.png",
+            "effects/shinies/textures/heal_05.mip1.png",
+            "effects/shinies/textures/heal_05.mip2.png",
+            "effects/shinies/textures/heal_05.mip3.png",
+            "effects/shinies/textures/heal_05.mip4.png",
+            "effects/shinies/textures/heal_05.mip5.png",
+            "effects/shinies/textures/heal_05.mip6.png",
+            "effects/shinies/textures/heal_05.mip7.png"
+          ]
+        },
+        {
+          "name": "shineni_bp",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": false
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.9372549019607843,
+              0.9372549019607843,
+              0.9372549019607843,
+              1.0
+            ],
+            [
+              0.6235294117647059,
+              0.6235294117647059,
+              0.6235294117647059,
+              1.0
+            ],
+            [
+              0.3137254901960784,
+              0.3137254901960784,
+              0.3137254901960784,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.10000000149011612,
+              0.0,
+              0.0,
+              19.999998092651367
+            ],
+            [
+              0.15000000596046448,
+              1.0,
+              19.999998092651367,
+              3.529411792755127
+            ],
+            [
+              1.0,
+              4.0,
+              3.529411792755127,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.10000000149011612,
+              0.0,
+              0.0,
+              229.18310546875
+            ],
+            [
+              0.15000000596046448,
+              11.459156036376953,
+              229.18310546875,
+              0.0
+            ],
+            [
+              1.0,
+              11.459156036376953,
+              0.0,
+              0.0
+            ]
+          ],
+          "render_mode": 4,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/attack_hit_02.png",
+            "effects/shinies/textures/attack_hit_02.mip1.png",
+            "effects/shinies/textures/attack_hit_02.mip2.png",
+            "effects/shinies/textures/attack_hit_02.mip3.png",
+            "effects/shinies/textures/attack_hit_02.mip4.png",
+            "effects/shinies/textures/attack_hit_02.mip5.png",
+            "effects/shinies/textures/attack_hit_02.mip6.png",
+            "effects/shinies/textures/attack_hit_02.mip7.png"
+          ]
+        },
+        {
+          "name": "shineni_dp",
+          "generation": 11,
+          "random_position": 1.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.30000001192092896,
+          "generator_velocity": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "generator_plane": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 3.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            -2.5,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.6431372549019608,
+              0.6431372549019608,
+              0.6431372549019608,
+              1.0
+            ],
+            [
+              0.28627450980392155,
+              0.28627450980392155,
+              0.28627450980392155,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ],
+            [
+              0.15000000596046448,
+              0.30000001192092896,
+              2.0,
+              -0.3529411852359772
+            ],
+            [
+              1.0,
+              0.0,
+              -0.3529411852359772,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/k_star_02.png",
+            "effects/shinies/textures/k_star_02.mip1.png",
+            "effects/shinies/textures/k_star_02.mip2.png",
+            "effects/shinies/textures/k_star_02.mip3.png",
+            "effects/shinies/textures/k_star_02.mip4.png",
+            "effects/shinies/textures/k_star_02.mip5.png"
+          ]
+        },
+        {
+          "name": "k_testing_f",
+          "generation": 2,
+          "random_position": 0.3499999940395355,
+          "random_angle": 0.30000001192092896,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.20000000298023224,
+            0.0
+          ],
+          "generator_plane": [
+            0.800000011920929,
+            0.5,
+            0.5
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 3.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            -0.20000000298023224,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              0.7333333333333333,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.5490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.3686274509803922,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.1843137254901961,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.800000011920929
+            ],
+            [
+              0.5,
+              0.4000000059604645,
+              0.800000011920929,
+              -0.800000011920929
+            ],
+            [
+              1.0,
+              0.0,
+              -0.800000011920929,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/heal_02.png",
+            "effects/shinies/textures/heal_02.mip1.png",
+            "effects/shinies/textures/heal_02.mip2.png",
+            "effects/shinies/textures/heal_02.mip3.png",
+            "effects/shinies/textures/heal_02.mip4.png",
+            "effects/shinies/textures/heal_02.mip5.png",
+            "effects/shinies/textures/heal_02.mip6.png"
+          ]
+        },
+        {
+          "name": "shineni_cp",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              6.666666507720947
+            ],
+            [
+              0.15000000596046448,
+              1.0,
+              6.666666507720947,
+              1.1764706373214722
+            ],
+            [
+              1.0,
+              2.0,
+              1.1764706373214722,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/k_testing_b.png",
+            "effects/shinies/textures/k_testing_b.mip1.png",
+            "effects/shinies/textures/k_testing_b.mip2.png",
+            "effects/shinies/textures/k_testing_b.mip3.png",
+            "effects/shinies/textures/k_testing_b.mip4.png",
+            "effects/shinies/textures/k_testing_b.mip5.png"
+          ]
+        }
+      ],
+      "mesh": "effects/shinies/pickup/shineni_ai.glb"
+    },
+    {
+      "id": 398,
+      "name": "item-idle",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "shineni_fp",
+          "generation": 2,
+          "random_position": 1.0,
+          "random_angle": 0.7540000081062317,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.10000000149011612,
+            0.0
+          ],
+          "generator_plane": [
+            0.30000001192092896,
+            0.5,
+            0.30000001192092896
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.30000001192092896,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.30000001192092896,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 2.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            -0.10000000149011612,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.6000000238418579
+            ],
+            [
+              0.5,
+              0.30000001192092896,
+              0.6000000238418579,
+              -0.6000000238418579
+            ],
+            [
+              1.0,
+              0.0,
+              -0.6000000238418579,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/heal_02.png",
+            "effects/shinies/textures/heal_02.mip1.png",
+            "effects/shinies/textures/heal_02.mip2.png",
+            "effects/shinies/textures/heal_02.mip3.png",
+            "effects/shinies/textures/heal_02.mip4.png",
+            "effects/shinies/textures/heal_02.mip5.png",
+            "effects/shinies/textures/heal_02.mip6.png"
+          ]
+        },
+        {
+          "name": "shineni_gp",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.20000000298023224,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5,
+              1.5,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/k_testing_b.png",
+            "effects/shinies/textures/k_testing_b.mip1.png",
+            "effects/shinies/textures/k_testing_b.mip2.png",
+            "effects/shinies/textures/k_testing_b.mip3.png",
+            "effects/shinies/textures/k_testing_b.mip4.png",
+            "effects/shinies/textures/k_testing_b.mip5.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 401,
+      "name": "buff-idle",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "mushroom_ap",
+          "generation": 2,
+          "random_position": 1.0,
+          "random_angle": 0.7540000081062317,
+          "random_velocity": 0.30000001192092896,
+          "generator_velocity": [
+            -0.0,
+            0.4000000059604645,
+            0.0
+          ],
+          "generator_plane": [
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.4000000059604645,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.4000000059604645,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 3.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.8352941176470589,
+              0.8352941176470589,
+              0.8352941176470589,
+              1.0
+            ],
+            [
+              0.7137254901960784,
+              0.7137254901960784,
+              0.7137254901960784,
+              1.0
+            ],
+            [
+              0.3568627450980392,
+              0.3568627450980392,
+              0.3568627450980392,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.20000000298023224
+            ],
+            [
+              1.0,
+              0.20000000298023224,
+              0.20000000298023224,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/k_resurrection_b.png",
+            "effects/shinies/textures/k_resurrection_b.mip1.png",
+            "effects/shinies/textures/k_resurrection_b.mip2.png",
+            "effects/shinies/textures/k_resurrection_b.mip3.png",
+            "effects/shinies/textures/k_resurrection_b.mip4.png",
+            "effects/shinies/textures/k_resurrection_b.mip5.png",
+            "effects/shinies/textures/k_resurrection_b.mip6.png",
+            "effects/shinies/textures/k_resurrection_b.mip7.png"
+          ]
+        },
+        {
+          "name": "shineni_gp",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.30000001192092896,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.30000001192092896,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5,
+              1.5,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcColorOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/shinies/textures/k_testing_b.png",
+            "effects/shinies/textures/k_testing_b.mip1.png",
+            "effects/shinies/textures/k_testing_b.mip2.png",
+            "effects/shinies/textures/k_testing_b.mip3.png",
+            "effects/shinies/textures/k_testing_b.mip4.png",
+            "effects/shinies/textures/k_testing_b.mip5.png"
+          ]
+        }
+      ],
+      "mesh": null
+    }
+  ]
+}

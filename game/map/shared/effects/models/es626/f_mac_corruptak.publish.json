@@ -1,0 +1,495 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "f_mac_corruptak",
+    "root_node": "f_mac_corruptak",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/f_mac_corruptak.glb",
+    "glb_blake3": "600de5025e39ce64d5b72362573e7a8698be9400edb6f1a79da33f1116ad7ab2",
+    "source": {
+      "nodes": 13,
+      "mesh_parts": 6,
+      "material_slots": 6,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 9,
+      "float_curves": 72,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 29,
+      "cubic_spline_keyframes": 23,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 13,
+      "mesh_parts": 6,
+      "material_slots": 6,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 9,
+      "float_curves": 72,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 29,
+      "cubic_spline_keyframes": 23,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 13,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "ff6f92d50abf6eadffaeb0a527bc1a6364490085633346888dccad8ad2a892ad",
+      "geometrySha256": "80a1b5f349b8a77d7104851c2f01acd388df572372a4e0a080e3de9c157b7f12",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "df4740f2e0d0aa669ad0ffae046d8034821718487188c4b887747907d99d3fcc",
+      "animationMetadataSha256": "f346b1177c07d0905bc557b73f952a60de685932dd3086799c78cca7af6d291a",
+      "materialsSha256": "381d0301b44008b813357ea171e155cad35cde79df7f148548af9dedf4d90e68"
+    },
+    "emitted": {
+      "hierarchySha256": "ff6f92d50abf6eadffaeb0a527bc1a6364490085633346888dccad8ad2a892ad",
+      "geometrySha256": "80a1b5f349b8a77d7104851c2f01acd388df572372a4e0a080e3de9c157b7f12",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "df4740f2e0d0aa669ad0ffae046d8034821718487188c4b887747907d99d3fcc",
+      "animationMetadataSha256": "f346b1177c07d0905bc557b73f952a60de685932dd3086799c78cca7af6d291a",
+      "materialsSha256": "381d0301b44008b813357ea171e155cad35cde79df7f148548af9dedf4d90e68"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.4226190149784088,
+        -0.41497093439102173,
+        -1.2389285757308244e-6
+      ],
+      "max": [
+        0.42261987924575806,
+        0.414969265460968,
+        0.12473326176404953
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.44817957282066345,
+        0.24070268869400024,
+        0.554002583026886
+      ],
+      "max": [
+        0.49924522638320923,
+        1.0706429481506348,
+        0.8047323226928711
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "f_mac_corruptak-21 - default-fusion_mac_corruptak.dds",
+      "f_mac_corruptak-211 - default-f_blossom_megatak01.dds",
+      "f_mac_corruptak-22 - default-fusion_mac_corruptak.dds",
+      "f_mac_corruptak-222 - default-f_blossom_megatak01.dds",
+      "f_mac_corruptak-23 - default-fusion_mac_corruptak.dds",
+      "f_mac_corruptak-233 - default-f_blossom_megatak01.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 6,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "f_mac_corruptak-22 - default-fusion_mac_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_mac_corruptak-211 - default-f_blossom_megatak01.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_mac_corruptak-222 - default-f_blossom_megatak01.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_mac_corruptak-233 - default-f_blossom_megatak01.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_mac_corruptak-21 - default-fusion_mac_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_mac_corruptak-23 - default-fusion_mac_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "fusion_mac_corruptak.dds",
+        "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 13799,
+        "sha256": "15235c24e7f1a25e33df70a4d6247a11ec893972243f831e40a9e323a241694c",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "85e5bd014ccea7ed71ece6dd8de474f7cf163704fec4847cec2f393af833e302",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "89d73cbd3735a6e08facd32659dc9eb573749f475a5868e1cb92941a77322ce8",
+            "pngByteLength": 13799,
+            "pngSha256": "15235c24e7f1a25e33df70a4d6247a11ec893972243f831e40a9e323a241694c"
+          },
+          {
+            "level": 1,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "f72d326dc0d271bc65b8cf49d3ddc1079472875e4a20ad66a7db6c43608d6f09",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "6dd61f9d786dabd0ed93f8ffd61265c2e8a17e172e9b85279be1f590532987b9",
+            "pngByteLength": 4701,
+            "pngSha256": "788715d54a31c84d506327895123b6f56e4455ad4e1d928eaf446894974f2a21"
+          },
+          {
+            "level": 2,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "5a3d870f3d11507566e0e2c1f0d69b8af6acbe4486bae07c06399d72275a9e35",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "488f57713b2d07490555c346fb33ac967875222f3dafd39ddc3fd819cc88fd09",
+            "pngByteLength": 1679,
+            "pngSha256": "80fb4be07ab6dfe1d417749b70de834b2880936d91d4c7eda1cc993483133408"
+          },
+          {
+            "level": 3,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "a49f2fe35da1eaa1c432ca9eae7458ce7813c0dd5bc5852211ca24dfaa75f235",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "f685e51466b55ec3c5f0ce56beb0ff134ba9ceb24fa74e5c8eaf28b882d07164",
+            "pngByteLength": 549,
+            "pngSha256": "48202d988211f288b87c57868ebcc6916aae630145f2290ad60940b481670242"
+          },
+          {
+            "level": 4,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "e092628107a55ac3b06125a8999b7492e47b6649bdd6acffb0ddf71801d59423",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "7a9072ac559255dacce0b6f1b9364bcb979123c99bfbbdf171c3dfa512e07d29",
+            "pngByteLength": 219,
+            "pngSha256": "aaddc9501d97f64b2d3a912081c1ba67839758c9363fc5151e4d3fd2fef622b3"
+          },
+          {
+            "level": 5,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "1ed84fba7788378c6d027cc61490261a789efc70e200e4e3277df52974148699",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "45a439f07dd170db25b871a794dcd9a1c677dffcd2d068c3e3c721dd72789488",
+            "pngByteLength": 136,
+            "pngSha256": "53bbcc830352bf5f571fcf4826aa1dff0e74d84e829e693cde126ba330a0af46"
+          },
+          {
+            "level": 6,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "2b0a50074334cf6335468b1f5837dc9c243700510370e72608ab229e5c1426ee",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "958468aec8c537fec51dfdb45b9f8b6e3a3ea398a96a2a00cc9ab381b06cbcb6",
+            "pngByteLength": 86,
+            "pngSha256": "bbe46e68b713370207545111fc82d469f93cb1b73bbf8505828b831a569dc4bf"
+          },
+          {
+            "level": 7,
+            "uri": "f_mac_corruptak.textures/fusion_mac_corruptak.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "53caadca09db4c7351d9368b20bdb1fdaa2b5d2751238d9ca259187b97c4e450",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "689e46ccb46988976953dcccd8fc283a0ad06377ebf9a6d2dab63913d9aa7e8a",
+            "pngByteLength": 73,
+            "pngSha256": "34ec532c9d0f87cc094d4042fc5c17d86e81860e6ec34a07a355973221db7999"
+          }
+        ]
+      },
+      {
+        "sourceName": "f_blossom_megatak01.dds",
+        "uri": "f_mac_corruptak.textures/f_blossom_megatak01.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 19333,
+        "sha256": "89ae83b5486f6956f82a09bf7fe1c6d4d4782751c39c47d5ae58336db030624c",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "2b9a4ecdade7a269f9aa43d772fff1f9b239240bd0c1d1468cde365cafad1e99",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "42804bdfae75c8a261f19675a0fcb8d81fb92126e7a1407a7d747269fd2e2f97",
+            "pngByteLength": 19333,
+            "pngSha256": "89ae83b5486f6956f82a09bf7fe1c6d4d4782751c39c47d5ae58336db030624c"
+          },
+          {
+            "level": 1,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "ef2e26bfbc3f295bd0789530965a8ce436a13410dc0d11457e948e5cd51d8a5c",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "e2279c383d4cd2afc605d666cd18d85e4b9dd5d087a08a84bc908215c53d3e49",
+            "pngByteLength": 6947,
+            "pngSha256": "e571e4f492b88f656dd24792a155dee8c0d18fcf7d3fbb46ea1359aa25c26f15"
+          },
+          {
+            "level": 2,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "fce5e972918ef72f42711c431fb82c01eb0d9968a1e7f48fe57a278ab53d335b",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "b26cf931da5686501817569b640804069b4fcdde25760fd769d3169cfc1cb9b1",
+            "pngByteLength": 2148,
+            "pngSha256": "e055e2640c20c3e105fa7f2b5a06b93dc1660d087b696e8022eb2c2157560308"
+          },
+          {
+            "level": 3,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "7a97f38b1d2a6afd74d2051f49c1d148e88eb2d9ed3a3b01409ea264fc1246db",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "c535cb84f2fa294751d0ad82eef16728b4eb4c1611419687ed33b362fa342e44",
+            "pngByteLength": 651,
+            "pngSha256": "5a1e8c4a9a4fbfdb582c857491bd0df0513be2d2161d8f57281fea4e42415d7c"
+          },
+          {
+            "level": 4,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "6688c8bccb25429e7985a90ce7598b1b755a57855eb8c656ca77107cd5661a0e",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "9dd6e8c21d53fb173da6be6af84d7e0d3115c2247555dac903bac9668ac9f71c",
+            "pngByteLength": 228,
+            "pngSha256": "b004c48296bdadc433695d2b117b53aa70a8535c67883a15e5687a382a0fb0bb"
+          },
+          {
+            "level": 5,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "0edf615f20b203a5796b71f4cbc890bfd51f2b49ef5efa1dc764a28c842c142f",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "103acc763460980c05b9618c44346b4d3f6d58a1d20395aeec9e6bb53d480ac1",
+            "pngByteLength": 136,
+            "pngSha256": "03a71f92a638ce741ccc2195ebf02bbcf3d03f5d30f86273d36bb2612a69c182"
+          },
+          {
+            "level": 6,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "b579471f55516e1bd9e6e02c2acaa1079600f5ad40f91c69728a3b34a6937a77",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "cde8fc3b2dfc33b8db7177fe0ca79c0cc6ab6587d6c644416fbefc792d6acf97",
+            "pngByteLength": 86,
+            "pngSha256": "b847776000ec7d1fc94d8fe42284be7d05f590a4bf9fa4b4bc803e4d9217d324"
+          },
+          {
+            "level": 7,
+            "uri": "f_mac_corruptak.textures/f_blossom_megatak01.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "4503b41b7628e71ec5f334b1d99168a1b7c9d09b218ab0da82d0f7cb53c3e319",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "f431c60016342558c3113c734e77323fb17abae36de1ba60d443c92a50133619",
+            "pngByteLength": 73,
+            "pngSha256": "bc9b359377d5631751137edf95d99b80074026215a10d9e458620a0dafb3636e"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/f_mac_corruptak.publish.json"
+}

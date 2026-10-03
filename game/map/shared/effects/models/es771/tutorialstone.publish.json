@@ -1,0 +1,342 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "tutorialstone",
+    "root_node": "tutorialstone",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/tutorialstone.glb",
+    "glb_blake3": "986114282ff59f814b368b3bdfb5f9a88ef55f6f59da8cef3182bb3be87234e1",
+    "source": {
+      "nodes": 39,
+      "mesh_parts": 19,
+      "material_slots": 19,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 27,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 689,
+      "cubic_spline_keyframes": 480,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 39,
+      "mesh_parts": 19,
+      "material_slots": 19,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 27,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 689,
+      "cubic_spline_keyframes": 480,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 39,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "601680f424198933c87c9b698e0c6315497ca2896d756266712637dc51c2353d",
+      "geometrySha256": "0c83551b8b0e1127e4a652bb650655fff4039c7ebf6e8373b874c5b7e6b0ab06",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "ddb4f2bdb9075c12d24e1305e3658f6d860a8a2299e3b12e97300e91e22a519b",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "3ea828373a6b542f0a9836cfa1f8a048efbd4402c0470c1ca249cd6baacdd61c"
+    },
+    "emitted": {
+      "hierarchySha256": "601680f424198933c87c9b698e0c6315497ca2896d756266712637dc51c2353d",
+      "geometrySha256": "0c83551b8b0e1127e4a652bb650655fff4039c7ebf6e8373b874c5b7e6b0ab06",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "ddb4f2bdb9075c12d24e1305e3658f6d860a8a2299e3b12e97300e91e22a519b",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "3ea828373a6b542f0a9836cfa1f8a048efbd4402c0470c1ca249cd6baacdd61c"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -3.1941237449645996,
+        -3.421475887298584,
+        -1.4772953987121582
+      ],
+      "max": [
+        3.9865713119506836,
+        3.602193832397461,
+        3.2299675941467285
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -12.904668807983398,
+        32.0473518371582,
+        -17.996850967407227
+      ],
+      "max": [
+        10.77929401397705,
+        61.79096984863281,
+        13.60063648223877
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "tutorialstone-standard_11-wd_wlddc_tile_01.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "tutorialstone-standard_11-wd_wlddc_tile_01.dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "shaderSha256": "290562bc8d56959490861ceddd9adab6f2d298c50e00a73ce4d6e356f2023c3b",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "WD_WLDdC_tile_01.dds",
+        "uri": "tutorialstone.textures/WD_WLDdC_tile_01.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 150210,
+        "sha256": "0202affdeb0e25922ddb1088b419654232b0826adcfb8d631ee8ba1df3b8f71b",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 32768,
+            "sourceByteSha256": "8fe7427ea69791a7104592fb49edb93bd5f7ac8e6ceac43caa67aded0b8be21f",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "135be489590769719c48de29c88bd1bee358a66231c33a99ee20fb1ea7fd985a",
+            "pngByteLength": 150210,
+            "pngSha256": "0202affdeb0e25922ddb1088b419654232b0826adcfb8d631ee8ba1df3b8f71b"
+          },
+          {
+            "level": 1,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 32768,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "16f705c3fae0193457fe8aecb68c3ea4ffb4b66794674785a85867e51f26040e",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "7c597701d642a95ac9ea90f4dd22847c5848f6b98cd4800684bce456ee795a90",
+            "pngByteLength": 36745,
+            "pngSha256": "a947e3c8daf23c8ac9223bc7eba3bf150790fc8b3db2560c4632a547a83c8b89"
+          },
+          {
+            "level": 2,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 40960,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "2a79fa00fe41aa49e52f47cffc100488dcde207249fe6486d7a8d59811ede6c5",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "691a1a3537ca8e7a51cf5ca851a0bf32e638d113a564b1fd3afc63a5513324aa",
+            "pngByteLength": 9017,
+            "pngSha256": "17a73eb30db221ada63bc61857343540062904ea76571fd7a0496ea2bc4b0a64"
+          },
+          {
+            "level": 3,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 43008,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "c91ba8f68e5c00400dce666768339a3d09d7e56c23c76e096ae1c708d1ac59ef",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "e2767de002f860f9dd7292d00ce999860ff9531138aa4b63b9f72bc554fef6af",
+            "pngByteLength": 2395,
+            "pngSha256": "5f859e769871c77284fc1550acffcc1e91bf5a4f43121e8f6b0d73d50e1dedc1"
+          },
+          {
+            "level": 4,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 43520,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "f0ae6a9bd8af0ac8eb2ffb3f06de608805f4a81ad95966d7cd4311ae1c5e65aa",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "e6f9b1befdd8062ab0745be8063bf2b94d1592bae633fc1e62b8ef955fd56684",
+            "pngByteLength": 609,
+            "pngSha256": "09c82493727aedd47ac5d7b214cb952dc968f74d5b5c90a86293f918d38825a8"
+          },
+          {
+            "level": 5,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 43648,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "b1b75199ab96831ffe67ddce274ce42ddc5067ea377612ba4d07fd861deb1341",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "bd28736c6841e6e2288cb6c697be86728671efe8e012e6faf1219e3a475814a7",
+            "pngByteLength": 247,
+            "pngSha256": "49e19c32e9475b736be9ae9599425453d7693ed71293655eb459cd84c7d90430"
+          },
+          {
+            "level": 6,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 43680,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "468370263c96c459a047e50408d26d77da31a165730860d08f830444218d7cfb",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "3a51fa802f15a417ace35adc5f65ad7cd3fe357cef10e1ac07a929541e3de06e",
+            "pngByteLength": 136,
+            "pngSha256": "5a7fac393faa38b556b5e4f85e65d04adea11a01f8a4f630ae6beb95cf4d9a93"
+          },
+          {
+            "level": 7,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 43688,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "d57273c9374a15f9ea9df8ea4ebbe8cd1b178bd195d7de411ce3f42f330b62ad",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "289e984907d24e629cbaf0f8e82c1baa7cca155c45f4e96308ad2df9c0ffe803",
+            "pngByteLength": 86,
+            "pngSha256": "9d6378ea3d3eeea99212b6d7ea6155153298799a20ed6d66b2dd32ed51f31694"
+          },
+          {
+            "level": 8,
+            "uri": "tutorialstone.textures/WD_WLDdC_tile_01.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 43696,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "32dfeb052448b0e458bfc01980d808540abd4c5596a3a443c4e92b26d26d1110",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "8863e24c274d6adab49c6b5a862d4ab470936a4925acbdbb9124c6731e26f62b",
+            "pngByteLength": 73,
+            "pngSha256": "07bd56c4e3d11c3f473033e600d74eb7ed92d90a91a50d4c163eab6801a0aec2"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/tutorialstone.publish.json"
+}

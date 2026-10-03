@@ -1,0 +1,745 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 769,
+  "containerRoute": "prefabs/particle/effectscripts/es[769].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 10266,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1915,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleEmitterController",
+      "canonicalBlake3": "9d0cab4dc9ad89ab1768565cf7f974ec2ba85be11011646528c9dd2f89422a71",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 548,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "twoshield_stone",
+      "canonicalBlake3": "67bae3af28ced0f1821e06a26132065a46aebeadf48f7106de9b12d6a7dfaf98",
+      "value": {
+        "image data": {
+          "base64": "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anuOnFBgQEJqe42cCigRKUpz7IulJIWYansMjECgGKRKe02UWlCgqsuDbpwBAAkAKXOrg5WZpgIJawyMVaqKAMhi64tVoCqqyGpqe1lIWmRKc66kJooCAMhqzIMqQVqki4OOpBpUoICrg26ciBlWWouDbZSaACIpi3tNlBUYJiUJa8yDgVZqVot7rqSliggKantunIoACYUpc8+kiBQAACpzDIxgoGhaSnPMi5kKCEYJawyMgJpVmauDLZQVFJCqKXsNlFlWJQiLgwyUYqIkVipzLZSlJVqZq4MNjJlYlhJqe8+kAGBQIClzz6wAqppg6WqupAgCCBXpaqt7YYVWgOhqLJSaZqKISntNnIWaapIpc7DFAAKJoElzLJSAACWV6Grri1laACnoasuDlSmglQlzTZQAgJiVKXMMlBhWVVWLg22UglaKKipzzqQCqVWqSnOupAAAAokJc6yDIEJaUSp7DIyoKhqZCnOOnIqgpZVKcwyMAlUSSWt77IsmFgAiq4OOnACIkIBqew2UGagBAkp77IskESlCSnsxtQEQIoBqe+yLUGhlWauDr6SCGIACq4MtlABAKgCrg02cJoCghot7DJRWpRkqi3stlClQCoBKey2UhVoKJYt7DIyQJiUqanMMlFRaVlaLg46cCgqYWYuDbpxaqiIBCXNNlBlVmIroaguMJSVWasuD7qwIAAomKXPri6VqQhVJc0yUqopoWKuDLIxAWqoqintMlImgBoJqe86khgqKQeyLbZyKBSkCy4MNjGAEGmXLgy2UAQVEAClz7ItWJYWhKnPsi1iqmaprey2UqiSIpglrbpyWVFSWrIMMjKAkSkVKew2MWaYVJWp7bpygJapISnvLg6QWJkEIcw2UWqmkqmt7DIxqmWpYzIMtlKCmlWirgy2UiaGBYouD7IsVYiYJSnsNlGYlCgioYmp7llVpWAlzDZRqllpGKXMNlCUlaSlKey2UKAhgWcuDLJRgagIAq4NNlGUpqqUJawyMVQoFqelqanthQqJSanstlGhSpaXsi22ciEqpqAlzLJQVpppWSnMMjKAIplVqe+yLkFZFiYuDDIwhkqKlanuNnEGSICDMg02UmmWAIOyLbZQKEIqISnMtlGWWJmUJa6uDKqBllQlz64OqkgoKi3vsi5WSRkRre02UUmiYkIuDDYySimCUinstlKUKVZVrewyM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",
+          "bytes": 10936
+        },
+        "m_CompleteImageSize": 10936,
+        "m_Height": 128,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "twoshield_stone",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 10,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 128
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2213,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "f077277aa075c5e2e4c8773c448abae7e969efa2f0bf4a9d51f816a918f54851",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendZeroInvsrcalpha_zwriteOff_cullOff\" {\nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend Zero OneMinusSrcAlpha \n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2593,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "twoshield_stone.dds Zero Invsrcalpha_zwriteOff_cullOff",
+      "canonicalBlake3": "b1dce333b4e98199f10cfce8cc548b4ad656ffde2097587468a252d27c85cdb1",
+      "value": {
+        "m_Name": "twoshield_stone.dds Zero Invsrcalpha_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 548
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 0,
+          "pathId": 2213
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7018,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "4712116b33a2bb2c1ca35ef2e7b8d674a4e38a63db2a3945afcd4e916fcd6261",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10266
+        },
+        "m_LocalPosition": {
+          "x": 7690.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7019,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "3656174f7515440d8421ba576f2a64a6f4f21f721440a2c1a98ee3421d92fadc",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10709
+        },
+        "m_LocalPosition": {
+          "x": 6730.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10266,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[769]",
+      "canonicalBlake3": "6bcbcf703e32bd1ce16ad2ea19560c7721f338382a48d47d81591c2b8b878417",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7018
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 14587
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[769]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10709,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[673]",
+      "canonicalBlake3": "a131b8ed28e1410b2a8f524b5f116f9f1e14842bd933eeab1616db91cf52466e",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7019
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 16508
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 16509
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 16510
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 16511
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[673]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14587,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "95ba1f81dc3ba758673a0361a93fc38ac0c30856ffffe4b9f38590a4701c89e5",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "npc_building",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 3.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10266
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 2.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "particles": [
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 10709
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": -20.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": -20.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": -10.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": -10.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "priority": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16508,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "60c4f93f6d3ca3cf9fbc710195f0fbd6bccb0d9e5a5f7289a289066500b8c6bb",
+      "value": {
+        "UV Animation": {
+          "cycles": 1.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10709
+        },
+        "m_HeightCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": -0.5,
+              "time": 0.0,
+              "value": 1.0
+            },
+            {
+              "inSlope": -0.5,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 0.5
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2593
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 572.9578247070312,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 572.9578247070312,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 572.9578247070312
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 0,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.5,
+              "time": 0.0,
+              "value": 0.5
+            },
+            {
+              "inSlope": 0.5,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 1.0
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16509,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "b241945afb471f5b4a8a360cb48c45c2dd959981562b05c7db60617ff43f4d73",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[1]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[2]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[3]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[4]": {
+          "rgba": 4294967295
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": -10.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10709
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16510,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "3e6ee59a0b7d28344e651b1c581287243c618e572c7b09b08abb42942295136d",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10709
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16511,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "c7ae7a001ce48d88183a6a8795dd07c92491dfe448e90e18c9843b19929b271a",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 1.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.0,
+        "lifeTime": 3.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10709
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 2,
+        "numberPerGeneration": 5.0,
+        "particleName": "npc_building",
+        "plane": {
+          "x": 30.0,
+          "y": 10.0,
+          "z": 30.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.7540000081062317,
+        "randomPosition": 10.0,
+        "randomTime": 0.10000000149011612,
+        "randomVelocity": 0.30000001192092896,
+        "textureKeys": [],
+        "totalParticleCount": 15.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    }
+  ]
+}

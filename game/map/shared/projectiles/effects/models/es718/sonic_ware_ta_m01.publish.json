@@ -1,0 +1,342 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "sonic_ware_ta_m01",
+    "root_node": "sonic_ware_ta_m01",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/sonic_ware_ta_m01.glb",
+    "glb_blake3": "e055498add1f3a742b12cbaf6d4707cf7580c08cf9610bb255de1dbc3ab75980",
+    "source": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 5,
+      "cubic_spline_keyframes": 5,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 5,
+      "cubic_spline_keyframes": 5,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 3,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "dc852068ca0fe93e642f700c971084e37fdc4e4807f613599df7b09551d151e8",
+      "geometrySha256": "5e385ef4c9c1d9963a50bbe16015297dc385534eb72cb801fe40a0101825a978",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "e0765be5c2280ec0e4b97cde24de17e9b3bded1e5c46442ddebf7ea6a37511a2",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "c8b127c346e64fa5578539a9e79c29e698698c188344bb8216abd37220348bbf"
+    },
+    "emitted": {
+      "hierarchySha256": "dc852068ca0fe93e642f700c971084e37fdc4e4807f613599df7b09551d151e8",
+      "geometrySha256": "5e385ef4c9c1d9963a50bbe16015297dc385534eb72cb801fe40a0101825a978",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "e0765be5c2280ec0e4b97cde24de17e9b3bded1e5c46442ddebf7ea6a37511a2",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "c8b127c346e64fa5578539a9e79c29e698698c188344bb8216abd37220348bbf"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.1801997721195221,
+        -0.1801791787147522,
+        -0.08133742958307266
+      ],
+      "max": [
+        0.18019980192184448,
+        0.1801784634590149,
+        0.051881954073905945
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.1801997870206833,
+        -0.18017955124378204,
+        -0.12579840421676636
+      ],
+      "max": [
+        0.1801997870206833,
+        0.18017809092998505,
+        0.007420975714921951
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "sonic_ware_ta05"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "sonic_ware_ta05",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "sonic_ware_ta05.dds",
+        "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 32124,
+        "sha256": "aeaef71e7751f2dd5280e0513fe289568abf75d28c19022b85016c464d2fa5c0",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "8cfe3166619406b9c89c7895e0d87523c4580801bc8762bb7783e83cd184adc8",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "1afd66b6af110609f529c7dde475b9d08398d05dbd3b58221f515559534edd7a",
+            "pngByteLength": 32124,
+            "pngSha256": "aeaef71e7751f2dd5280e0513fe289568abf75d28c19022b85016c464d2fa5c0"
+          },
+          {
+            "level": 1,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "ece42bc19635a3b985474a601bede60a566180635acec83b36fcaee4a1b27cfd",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "30285abe4fc9514536387fd4361df53fc0ea1a4b985f16f06bb08da2f77a7ea7",
+            "pngByteLength": 10600,
+            "pngSha256": "8713238cddeac107a94a6ff667883ee93905c20ebb66ff85235d2bfcfd2e4ee6"
+          },
+          {
+            "level": 2,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "9048a13f781c82268d88c66ac27f17a51d6331329063fa9efcdfa49ac4a2e5c3",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "a70329a7dca5fff774a2029a2019300f7f5c837dc52cf6ee747d6d0210313863",
+            "pngByteLength": 3535,
+            "pngSha256": "6bdd9c877f3c4eb795de4d9b8b00a4275fd9270f469a40558e924610d6d03061"
+          },
+          {
+            "level": 3,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "b45ffbc37a819ad8905c95157dac8531c22e677581837c6b9d3e51abdb0d38bd",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "f67aeb4daa69431cfebdb0739044d7e00cf90eb6e1bd9d40498bb2029abec990",
+            "pngByteLength": 1341,
+            "pngSha256": "2e0e5c3129a7232e2476b409e605ab8022b8ff7b7f16ad902b6b95b19b37f845"
+          },
+          {
+            "level": 4,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "cb9fea9058f6f2170c4372679f2e652b089c15d7cf72515bdeeb5be885894d1b",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "66a2b696a182369d59e3c1e5eb2278747ecd0b2dab706b05607341a6ea211337",
+            "pngByteLength": 525,
+            "pngSha256": "2908b2ba95f01ca2190fa923b6e1d07feb7f392caefb0aff128a9dae9635ce0f"
+          },
+          {
+            "level": 5,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "4110bd7d35e0ad99afb2b2298179ab179e7b0d67fe018c62349f306f06df1874",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "3d1158dacf8c1e42ecc19617b085d3365eb083952334369354c69f19fe26b4a6",
+            "pngByteLength": 232,
+            "pngSha256": "250a7d4c3ea1883bfdc171712e4dc5a9e6f61676df2d27d174847ec84b101627"
+          },
+          {
+            "level": 6,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "ee341daf6d1cef382d49cc1d25d3cc11f51caed65462db2a0cfd1fc083f9542b",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "21d8d6bf9a56d7ac7d670e19eb0a22dbb068a8374126d368bd8d228249e4fa93",
+            "pngByteLength": 136,
+            "pngSha256": "9bb2f56203be525d23b836bf341417cbc51ffc5a80ef1bb58c3f1960726ea272"
+          },
+          {
+            "level": 7,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "2412c3a9507958035be51be8d25ca5aa83ff8b5052fcaab73e72da008f800b32",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "0bf76cea82678161e3d7757e8de557c2917678e8cf592ed1f454da2a6255943f",
+            "pngByteLength": 86,
+            "pngSha256": "fdf82bc62b59b5c579335b432c4918bcee08db09b7c7be03f3a023b11c752895"
+          },
+          {
+            "level": 8,
+            "uri": "sonic_ware_ta_m01.textures/sonic_ware_ta05.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "cc4ccfa860c4f19412f69a21bb6da53fcab10362a526421fe789db266cc663b4",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "aa32e3c06fa37373196086f43585fc0885b9bf389973c0c0ed0a24922c574386",
+            "pngByteLength": 73,
+            "pngSha256": "9ace67678f3f5c8c0d4985cdb0be96ccbda4717e408b3030867c8b13c2464ad2"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/sonic_ware_ta_m01.publish.json"
+}

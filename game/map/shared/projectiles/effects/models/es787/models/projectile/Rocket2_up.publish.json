@@ -1,0 +1,481 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "Rocket2_up",
+    "root_node": "Rocket2_up",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/Rocket2_up.glb",
+    "glb_blake3": "3d86fc67d0babeec78657ee1ec41b80f43711cb1e58f686a2c9e0b455991e11a",
+    "source": {
+      "nodes": 4,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 8,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 4,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 8,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 4,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "64def31cbe6e60513a26c125f3cef9e73660bea08e7bf8da7918710b66b7eaf8",
+      "geometrySha256": "96b86190309a107a8fd5412e7e4255c104dfc021a9f197eb260960ce6efb3a76",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "f77b95dd510645f63ea14865c4a4f64b91ce8f393a9be4aababb393bad7e40f2",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "ab8040c1ef2e1b5bc7ab9e05c29a8a6f95c17709a4ce09225cadaadc4b181b38"
+    },
+    "emitted": {
+      "hierarchySha256": "64def31cbe6e60513a26c125f3cef9e73660bea08e7bf8da7918710b66b7eaf8",
+      "geometrySha256": "96b86190309a107a8fd5412e7e4255c104dfc021a9f197eb260960ce6efb3a76",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "f77b95dd510645f63ea14865c4a4f64b91ce8f393a9be4aababb393bad7e40f2",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "ab8040c1ef2e1b5bc7ab9e05c29a8a6f95c17709a4ce09225cadaadc4b181b38"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -1.5963398218154907,
+        -0.7422018051147461,
+        -0.7442150115966797
+      ],
+      "max": [
+        0.730751633644104,
+        0.7192997336387634,
+        0.9088716506958008
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.7299802303314209,
+        -0.7167994976043701,
+        -0.11305248737335205
+      ],
+      "max": [
+        0.7315211892127991,
+        0.7447019219398499,
+        1.5400360822677612
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "a_f_corruptak1",
+      "rocket2_up-standard_7-rocket2 .dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 2,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "rocket2_up-standard_7-rocket2 .dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "shaderSha256": "290562bc8d56959490861ceddd9adab6f2d298c50e00a73ce4d6e356f2023c3b",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      },
+      {
+        "name": "a_f_corruptak1",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "shaderSha256": "94cf3af0dd3ecfe6f8f7e0f009a403dc6a8d41bf7eabbab6a0656f541b3f5d23",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "Rocket2 .dds",
+        "uri": "Rocket2_up.textures/Rocket2.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 41974,
+        "sha256": "2e6bb0f068716b49539797149a55ab0220bf22e01ae681b61a3504f53b2c3989",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "Rocket2_up.textures/Rocket2.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 32768,
+            "sourceByteSha256": "e4ca9cbf83468218ae505a838ab72991192cf3196bb2f5997458ad23ac162053",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "00aa9c753630ca4f47b312124545a9b930bca10285e94ed094d08f6022b5e13e",
+            "pngByteLength": 41974,
+            "pngSha256": "2e6bb0f068716b49539797149a55ab0220bf22e01ae681b61a3504f53b2c3989"
+          },
+          {
+            "level": 1,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 32768,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "e694b06851f99403f09f841df4148ab5ec640082aba5ca0d4a9824bad7cd37c2",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "eed551dc094684e2fde5e21d483b19272c66e2ccdf4784f54eb9ca58f65b0402",
+            "pngByteLength": 12843,
+            "pngSha256": "2083e7e3eb50c12ecc7ef2be19bdab11435ddf74267245000ab54012657f3aea"
+          },
+          {
+            "level": 2,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 40960,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "794334142ee87b9bf047ecc437056fc9de2aaf3ed3c1d3496f6611645aa2c082",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "d0ce359c2d9c5d2f3f2d8f7e833418d2429ebce3489f0827a0b77e8ef34a33ac",
+            "pngByteLength": 3686,
+            "pngSha256": "3f95b07849038c24ac5749da562ed3495514d9bc23028bcdc6536239d5e2f14b"
+          },
+          {
+            "level": 3,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 43008,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "c29f48ee49deb988c0d150db74ce606869d00a4dfdc43996fe17279f10122150",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "146f520049d83e980b5daa646da96639fecaaa4d2680bed0f9e6645c69ca9a6b",
+            "pngByteLength": 1256,
+            "pngSha256": "89ae0a2f4164bde831069000ca572d61546353b6e66dcccc1ad568dc4c181474"
+          },
+          {
+            "level": 4,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 43520,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "6dd39becc6048f463dd1754b1426fd15dbac165ee46c7f459f5650a8f7b63e7c",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "273e8597586ec2991580927d9bf477a86488a4bb34a8601c31d5b6e51b9dee18",
+            "pngByteLength": 494,
+            "pngSha256": "6125e9f864eb6980f874f67f627c6d5aee5ba81dd461e7dd7ce63600c641cd4c"
+          },
+          {
+            "level": 5,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 43648,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "997a1ac4624568bc1d0b65f7ce579735e2de20933e74ec38d384b960ea475e28",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "aa7e7203220156bc128ad5ba0803348c2ecdf8997173f7e5c384a2bd8252a972",
+            "pngByteLength": 250,
+            "pngSha256": "5b143383ca5dd4e684825efe9b3e97a269299cd3dd3dc57e8d316b68a7a33f8b"
+          },
+          {
+            "level": 6,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 43680,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "2120158fefe4d856995c79f4c7b51f2b873c0b46c90c03e72eaa6d5faace59c2",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "71cf1849d31d4c1f760ab126a7610a470677a63bddb7b54d06567695e807b85d",
+            "pngByteLength": 136,
+            "pngSha256": "b939e4985b29fe683011250efae76684afaaeb5a41d7a43e3f2057c59f6343d5"
+          },
+          {
+            "level": 7,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 43688,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "17b4984c796ee2b50beb88b1e41a44bea125cdce65b29c806ee6775bf30024a8",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "d8db102b6fa18935088695d0e87079570f8c4094eca2e276a9bff396c1011083",
+            "pngByteLength": 86,
+            "pngSha256": "70f87a7ef3f25dfde0c53cf236ab36596f8d67ef9fee15e7d6c75750a96210b8"
+          },
+          {
+            "level": 8,
+            "uri": "Rocket2_up.textures/Rocket2.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 43696,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "6d9369f681aa5bd92350298abd76ed56c15b3ad2f1543a9f533a4c2cfbfd3b56",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "e4cd0b6bf94bb378df839ba14f7e78be6711ad00f86e31c4a1c3f36006790627",
+            "pngByteLength": 73,
+            "pngSha256": "7a1786c22a664b9a5eb2ceb282efd6de81c7572e7dda11660e3f794733d424c6"
+          }
+        ]
+      },
+      {
+        "sourceName": "a_f_corruptak1.dds",
+        "uri": "Rocket2_up.textures/a_f_corruptak1.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 49398,
+        "sha256": "493f310223fae17858e788ba3ccffb25a0e4a58c0bdd5d1d1416c8c4cd9abe83",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "3588ae0380e4f9bc18a99c46015c00ccb71290192b70d1e788f2c3f251b25c39",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "3a7fce7c0b5c06ef6d84c6012314dadd99f818d5a76d3601def504e08fb44168",
+            "pngByteLength": 49398,
+            "pngSha256": "493f310223fae17858e788ba3ccffb25a0e4a58c0bdd5d1d1416c8c4cd9abe83"
+          },
+          {
+            "level": 1,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "2d6c2670ec2a95306c47ffcb8ba5f9493bbd4cad12e9c706e0294962fdcf15ce",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "209d4c5025f777b373c0cd15746e49d653594c8d4daf171b2d1751a8c77030b9",
+            "pngByteLength": 16839,
+            "pngSha256": "f9edf448b8b1feb4b83f223bff6bf8eb1af392fea341eaad2d786240a1cd4a76"
+          },
+          {
+            "level": 2,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "18a17a66a5bdf91374c5d971bbab75725d4bb1cd79b3032123d11a896b865319",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "c41e6457431aaef95f7763e0be35c19e256b7a3b195decbbacd85ed210d63418",
+            "pngByteLength": 5441,
+            "pngSha256": "956e2c26d48e93861294100086b0e426c04afe38babd61426cb89a32b78f0b46"
+          },
+          {
+            "level": 3,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "e1cbf52ae8fed3d0fa37045bf68ba405e832636f7e98c22607ac9fca8eb503a4",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "26e3827d910f368ee3eb1849612b7a6dae990d3cb1639e2d49d2018e2d7c08c1",
+            "pngByteLength": 1813,
+            "pngSha256": "3d7127bdb24b159e47bd3fddc53484ccc407229a10bacd75959b9973462f4e9b"
+          },
+          {
+            "level": 4,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "0848c5b5131211e41b791abe21adc7086d4586a9a3e5acf6fe07583dc237a77c",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "075cfcd28de999943ff38189c29c7b8de8bce2f808fc5d3be1317cdf338cd045",
+            "pngByteLength": 670,
+            "pngSha256": "cb27789b7aaeea2b9f5bfc2ce82cec2feed3f531af735d45e7145ce31720ec96"
+          },
+          {
+            "level": 5,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "8d5d666756aa5d5bf25a55d09f5cccfd946155a60735cd2368564f8c3a80f25b",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "cd24aa900b5c737600f9e13a0fa2d3d77946e062d56dc161620810ac5dec1510",
+            "pngByteLength": 297,
+            "pngSha256": "3e27757f20746626237627cff9dd6d3a1dafc6cdb33fa9547f58bb13ab0fdd97"
+          },
+          {
+            "level": 6,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "ac4e3a474a9d3f0ad8c9025f1e9ff8ea2e70b65c761fd2adcbd470d1e6c26848",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "db7877da6b9f933b185862360aafbc5c2a891894b6e76d1a6befc3031c6f5ee3",
+            "pngByteLength": 136,
+            "pngSha256": "ac33d89a95cd137511a9e5f6e9ae5537d29ad16e8ff42a73793a772c240a1fa2"
+          },
+          {
+            "level": 7,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "aaddeb781741a4a83d4861f0574018037109470f801b01c496e406eda1c787b8",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "eb3c2ca8102d47fdab677e05ea83032649110ed489b7225305fc714d7f13496d",
+            "pngByteLength": 86,
+            "pngSha256": "eb91c7fcc261c6cdf09ff0cac2dd320a9aab04e364f44414f7ea2d976aeb852e"
+          },
+          {
+            "level": 8,
+            "uri": "Rocket2_up.textures/a_f_corruptak1.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "4e4b90f35f8165398a6dc1e0cc76fe0f15af96937eacf8b399cf336ce5a33084",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "e901da788191852563910078cce3138c64f1fb23198fb8c8de87267ac45f0f31",
+            "pngByteLength": 73,
+            "pngSha256": "5534f4c15f0d496c5f6c9f92187ccc5d4e29279055acfda9a92e4b6e7039ca53"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/Rocket2_up.publish.json"
+}

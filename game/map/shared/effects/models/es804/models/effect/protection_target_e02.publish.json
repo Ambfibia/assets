@@ -1,0 +1,481 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "protection_target_e02",
+    "root_node": "protection_target_e02",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/protection_target_e02.glb",
+    "glb_blake3": "baa4facfdebba933f305b0b9e28503ad4ae2374b9e9713e3ea333f40b33c9eaf",
+    "source": {
+      "nodes": 9,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 2,
+      "float_curves": 48,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 6,
+      "cubic_spline_keyframes": 6,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 9,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 2,
+      "float_curves": 48,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 6,
+      "cubic_spline_keyframes": 6,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 9,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "0eac6fbc712c3d3c2ba4b1954c278f1366d20331bdf5c0585239554f03b95440",
+      "geometrySha256": "5204db3f13ca2219d2451b3f0425bfe25cc447843f9a9d2f27f19fd6c96a67a0",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "b64b9c3abf9a82926dea9e97d4e93a18e8aa1f62fa04197721f873c4b4e885c3",
+      "animationMetadataSha256": "78ee6a12983dfc70ebd5ee8721d87e57b51136b96f8b1197d93cdd98db460818",
+      "materialsSha256": "605d2532616d2a080e2fcbfb89e5bb0aeddbc48ce7fa9893361f63a11be9abd1"
+    },
+    "emitted": {
+      "hierarchySha256": "0eac6fbc712c3d3c2ba4b1954c278f1366d20331bdf5c0585239554f03b95440",
+      "geometrySha256": "5204db3f13ca2219d2451b3f0425bfe25cc447843f9a9d2f27f19fd6c96a67a0",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "b64b9c3abf9a82926dea9e97d4e93a18e8aa1f62fa04197721f873c4b4e885c3",
+      "animationMetadataSha256": "78ee6a12983dfc70ebd5ee8721d87e57b51136b96f8b1197d93cdd98db460818",
+      "materialsSha256": "605d2532616d2a080e2fcbfb89e5bb0aeddbc48ce7fa9893361f63a11be9abd1"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -1.0025312900543213,
+        -1.002534031867981,
+        -2.8285392090765527e-6
+      ],
+      "max": [
+        1.002534031867981,
+        1.0025312900543213,
+        2.005068302154541
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -1.0034538507461548,
+        0.010446044616401196,
+        -1.001127004623413
+      ],
+      "max": [
+        1.001847267150879,
+        2.015516996383667,
+        1.0089031457901
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "protection_target_e02-11 - default-pro_btt_e011.dds",
+      "protection_target_e02-17 - default-pro_btt_l2_e02.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 2,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "protection_target_e02-17 - default-pro_btt_l2_e02.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff",
+        "shaderSha256": "71f92dd1166ea32c2b1ac5e697e0baff1685f7254cbcf03f3f247fa8bba459ff",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "protection_target_e02-11 - default-pro_btt_e011.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "pro_btt_l2_e02.dds",
+        "uri": "protection_target_e02.textures/pro_btt_l2_e02.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 54419,
+        "sha256": "d746d00bf6bdd49fd36ee865cdc752df726a4973924242f4f2150bfdaa3a41df",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "4ff1c9e01ed06ae01f2963bd34ba56afafb2e2d70c4e9eb4aea41f0f5888c109",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "3f62372aa058402abaea3fc9b7de33515df0ddd798d908cd71e7197741174144",
+            "pngByteLength": 54419,
+            "pngSha256": "d746d00bf6bdd49fd36ee865cdc752df726a4973924242f4f2150bfdaa3a41df"
+          },
+          {
+            "level": 1,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "e2701b6b91499998e83c1f0c8ce537f6ac57b575180600a6dbc9c269ce12abe2",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "1c582a50126067d61563741b427edd8769578e8a1c503544818624fc66c5c9cb",
+            "pngByteLength": 17005,
+            "pngSha256": "e6c980451917bb5c8608a6bf4f5e4e990d9f72d863e85ce2fa38bee85230b705"
+          },
+          {
+            "level": 2,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "433fc2099516a41191cb7eb577f10b87ac671fbc0078932d1212bb35f308d19e",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "5dacda969dd8eed9ad1f03cef9a9938df4de0df23c3febe3291a90f1eb88acdd",
+            "pngByteLength": 5786,
+            "pngSha256": "e0abbdf26659987151295d2c646c030b04027a9f0b5cd28ff88c838ede6e62a0"
+          },
+          {
+            "level": 3,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "746661ae612c4a542e5edcd683192982f27e697876d7f713dbfc31afc911fe9f",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "ea90fcc802bc8d5e8c050112cc314f43279a994a0045479b6cbd23e940ae318b",
+            "pngByteLength": 2094,
+            "pngSha256": "7e732b99cd1fe95fa5f4ca205dae592eab391a842ba59bc5ed55d80587febc5a"
+          },
+          {
+            "level": 4,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "98e6ac75f424ae6606a197c514f4a8b8e7e8b2f45e076914aee6574948e0d040",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "6cb4191b32fb7c4e2a0606b59ba1631950aede692af8e933e86ed224288a49c1",
+            "pngByteLength": 772,
+            "pngSha256": "c6e4f0c04f7adfd6e25abe8f4311d87c511670669bc4df8a1a4f6204c593e42a"
+          },
+          {
+            "level": 5,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "cff8fcecd353092fe52db1702ac594710fd5793113444a9a977e68513045286e",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "cf169111ffab50deb4bfc3c08320ef73234c698e229c79062fc41064f7b34ff5",
+            "pngByteLength": 286,
+            "pngSha256": "0d45977d8415f6c4efb8a4a3f3b9a1947c46044a49d131430efc9757c99d9ec9"
+          },
+          {
+            "level": 6,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "e706e03c3de806e5fbad03db701602456f78a40ce4bdee27add34c2b7c0e95a0",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "831dee98c2427002e6031fbd0941b33d8214c61ad92312d834823f1c50cc994d",
+            "pngByteLength": 136,
+            "pngSha256": "97f09f2fa4717fb182d086b872a7a02749e558ce9d4550122575516c8a96dfb1"
+          },
+          {
+            "level": 7,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "22af5151d27775320c986b261cf16f8431a451daf3c23943336f0f10b1741617",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "057b4175a446f54799a601b2073339c3d9c304723d41aab6d7c06e19f3c9063f",
+            "pngByteLength": 86,
+            "pngSha256": "57d42a898cface96424f1a2831f76f64461b3ba79ed9734caca941d64335b3ae"
+          },
+          {
+            "level": 8,
+            "uri": "protection_target_e02.textures/pro_btt_l2_e02.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "17b45fcb0d80705f8357972fc48429d679e7bf295d2f5718a3bf478d0cee1e88",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "94c4e5b7365040d6d78827c66db738b9679e918cc91d92a7e0b106d6af311ae6",
+            "pngByteLength": 73,
+            "pngSha256": "e6a63aee159537f4592f583c841fb4fd5a959ea2d63d0f636911a2ad13f92603"
+          }
+        ]
+      },
+      {
+        "sourceName": "pro_btt_e011.dds",
+        "uri": "protection_target_e02.textures/pro_btt_e011.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 69599,
+        "sha256": "ff1afb7abe8b8392970ea136bc8a04b9fdaf50928b9f7965dd16e90965035ce0",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "protection_target_e02.textures/pro_btt_e011.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "b8b98493ee5b09c981ca83c2bea6e8f4b2143d57fa99b768df40cf934c824683",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "15723f983384e8d942f7a2e7800be9c6e8d151953add78574110807fc437fac4",
+            "pngByteLength": 69599,
+            "pngSha256": "ff1afb7abe8b8392970ea136bc8a04b9fdaf50928b9f7965dd16e90965035ce0"
+          },
+          {
+            "level": 1,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "246eed38729fe1bb769163d0bf7b9dc284e06be89adcfd2e5cca2b7c0dbb4fce",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "4f80379a612ff2d40a4c2371893150384b6d03db69382bfb4043b057d6572ce2",
+            "pngByteLength": 21053,
+            "pngSha256": "e7c21c26c4d1afe909a92e007e8d74cf878b66c6b2d2b815562208d90b46245d"
+          },
+          {
+            "level": 2,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "ffda636f4fb0112913de20a0726d3c561ab20749efb5b9dd9cab2c1aa7e9c47d",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "6e2973fb91881c6528b9bad82a8b1aa9378995c4b66c4e72c93aa0eb0ed39d2c",
+            "pngByteLength": 6357,
+            "pngSha256": "e8d69c0ccdf646d5bb98f8da4911e8ab891831c9b597d7a54bf1a4699faf75e4"
+          },
+          {
+            "level": 3,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "1743f433945589d2b091cbdda4467ed47f1914ee4de25f5264e7db1a0e166417",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "1377e23d40b833f2e958c37738f383aff118fe9489e90055579b26052e6ffc74",
+            "pngByteLength": 1993,
+            "pngSha256": "7456b896815bcb72b5b65074574abb1533d40e30d04041ca8d6f3ff9649b62ae"
+          },
+          {
+            "level": 4,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "f05afd0026ec3d6d745a5cf6abb489ced9ec9598ec59365504ebe93a87337023",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "9b05b324628dff7aba7a975e9fdc7fedf2ff9a692eafea874d876d036c921cdd",
+            "pngByteLength": 625,
+            "pngSha256": "55eb28150f4337eeb34513f1f461c9a843735b8cd9732f0385da4bc68ab34f7c"
+          },
+          {
+            "level": 5,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "620a1696c7a7e5b0205077ef233141029d1775e44145155f8e1f44aed22fac21",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "630c15b50071e64af119cccc985e3aa34ae51c9c96820a59b511330948d65431",
+            "pngByteLength": 274,
+            "pngSha256": "378f32aa2ae8078589f8663268ba3c17a88bfa90c1ea9f77bab1d69f971a0258"
+          },
+          {
+            "level": 6,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "21a402c32767cc22457ad4f357ef2d242202907135474b1a632b7ebabe9a61c0",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "ea38d3ec2fabc94f10304ab427e9d72975f3e25d84536f20d6e1438bcc291a96",
+            "pngByteLength": 136,
+            "pngSha256": "c464c6ddaf000134206685728ee4039386958d71cfeb158b923e4092c8a69148"
+          },
+          {
+            "level": 7,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "121325a8a20b1710912221d488b6a6d1d66fe55ffc997e065f29e37af5d61d36",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "4307d3e7e6d54151322569017bc466a4476786b2ff83d1f9bc3f8a10f2873f51",
+            "pngByteLength": 86,
+            "pngSha256": "d22c7cf93386e6b1a294d91d689b090b8bc2b28950cb7e80fcd5eda036fe0d2b"
+          },
+          {
+            "level": 8,
+            "uri": "protection_target_e02.textures/pro_btt_e011.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "8cc53d93ac659c151121e19c1ca1145b9c3104d47493a871eb9bd2c7fa5e04f7",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "68fc581f279ed4f1040570b1f7b3d549185b3f038e77b6a0f63f93d0cee198e2",
+            "pngByteLength": 73,
+            "pngSha256": "81289a78c67ec1c0864450db481eced5974531504b3a71a7b9c143f20757ba11"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/protection_target_e02.publish.json"
+}

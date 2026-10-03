@@ -1,0 +1,1438 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 391,
+  "containerRoute": "prefabs/particle/effectscripts/es[391].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9282,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1609,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "978d7607add9e93d7d8240d9564922905a2c9a1a6cee7e98b590e3ead27aa1d8",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendOneOne_zwriteOff_cullOff\" {\nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend One One\n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1624,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "88f79d76ef47d841d77ee5a42334b3053d1bf41fee579abcfb02b0997565f1d7",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendOneOne_zwriteOff\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\"=\"Transparent+11\"}\n\n\tBlend One One \n\tColorMask RGB\n\tZWrite Off\n\tFog {Mode Off}\n\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1906,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "VisibleSwitch",
+      "canonicalBlake3": "37e3f54d158b9ba4735854ae949dfb14151f7b7b178ec8d2c71c6481a3ad1e37",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "VisibleSwitch",
+        "m_IsEditorScript": false,
+        "m_Name": "VisibleSwitch",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1913,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "BillboardNode",
+      "canonicalBlake3": "7047c6c71001154fe0b3e7def2769493100bf1ad9cb8701558d054bd079208e6",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "BillboardNode",
+        "m_IsEditorScript": false,
+        "m_Name": "BillboardNode",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1915,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleEmitterController",
+      "canonicalBlake3": "9d0cab4dc9ad89ab1768565cf7f974ec2ba85be11011646528c9dd2f89422a71",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 33,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "tail2",
+      "canonicalBlake3": "d771aceffd6ec82d52e87b8a0f3271c9812929bc37f00756b65eaaf158a7593a",
+      "value": {
+        "image data": {
+          "base64": "AACCEAEBAQEBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAACCEEBAQEAAAIIQAQEBAQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUAAIIQQEBAQAAAghABAQEBAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQAAghBAQEBApTkAAFdXV1cBAAAAVVVVVUAIAABVVVXVQAgAAFVVVf8gCAAAVVX1+iAIAAD1Vf//IAgAANfV1+sgCAAA//9V/yAIAABfX1WvIAgAAFVVVV4BAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVV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VVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAACCEEBAQEAAAIIQAQEBAQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUAAIIQQEBAQAAAghABAQEBAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQAAghBAQEBAAACCEAEBAQEBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAQAAAFVVVVUBAAAAVVVVVQEAAABVVVVVAACCEEBAQEA=",
+          "bytes": 8192
+        },
+        "m_CompleteImageSize": 8192,
+        "m_Height": 64,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": false,
+        "m_Name": "tail2",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 10,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 256
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 415,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "green_light_02.dds",
+      "canonicalBlake3": "c2d55626c8bc10e10d1f979158d4f9b32248309981b056bf00b06c6b1a0618aa",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 2744
+        },
+        "m_CompleteImageSize": 2744,
+        "m_Height": 64,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "green_light_02.dds",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 10,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 1
+        },
+        "m_Touchable": false,
+        "m_Width": 64
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1292,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Poly",
+      "canonicalBlake3": "54be595ee6bdff53b89d346e9f0f1b4ffcd95ce8b252c3336f51c98233f9a95c",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          5,
+          6,
+          3,
+          3,
+          6,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          3,
+          2,
+          4,
+          1,
+          6,
+          7
+        ],
+        "m_CollisionVertexCount": 8,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "/w==",
+              "bytes": 1
+            },
+            "m_NumItems": 8
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "AAAAAAAAAAAAAAAAAAAAAA==",
+              "bytes": 16
+            },
+            "m_NumItems": 16,
+            "m_Range": 0.0,
+            "m_Start": 0.0
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 3,
+            "m_Data": {
+              "base64": "9SJgE5nEBw==",
+              "bytes": 7
+            },
+            "m_NumItems": 17
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "lUgAAMmxAAAAAP9Krk7//wAAurUOsf////+Ms///kk8=",
+              "bytes": 32
+            },
+            "m_NumItems": 16,
+            "m_Range": 1.0,
+            "m_Start": 0.0
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "qnYLAAD//1c1TgAA8P9////v/0r//0dRsf////9///+fu7X//xfxTv////9/AAAQjbP//wcAAC/59P9/",
+              "bytes": 60
+            },
+            "m_NumItems": 24,
+            "m_Range": 1.0,
+            "m_Start": -0.5
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_Extent": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.0
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Poly",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 17,
+            "isTriStrip": 2,
+            "triangleCount": 6
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2002,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "c914671d5abca4a70577dd356fe99bfe426682ab232ee6bb1118204a84c41f9c",
+      "value": {
+        "m_CompressedRotationCurves": [],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_MainTex.rotation",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 35.20000076293945,
+                  "outSlope": 35.20000076293945,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 68.79999542236328,
+                  "outSlope": 68.79999542236328,
+                  "time": 0.03333333507180214,
+                  "value": 1.1733334064483643
+                },
+                {
+                  "inSlope": 452.79974365234375,
+                  "outSlope": 452.79974365234375,
+                  "time": 0.7000001668930054,
+                  "value": 282.24005126953125
+                },
+                {
+                  "inSlope": 102.39981842041016,
+                  "outSlope": 102.39981842041016,
+                  "time": 0.9666670560836792,
+                  "value": 358.82666015625
+                }
+              ],
+              "m_PostInfinity": 1,
+              "m_PreInfinity": 1
+            },
+            "path": "Plane01_BillboardCamera/Editable Poly",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2988,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "tail2.dds One One_zwriteOff_cullOff",
+      "canonicalBlake3": "b7e470197778519e8079a3c669a2ef6dde2067543b784c4a4db44e980a05560e",
+      "value": {
+        "m_Name": "tail2.dds One One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 33
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1609
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3068,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "green_light_02",
+      "canonicalBlake3": "9eeb72230562e23d70114d569f9f03c0cca36273807f810ad425cc6fb1b63a08",
+      "value": {
+        "m_Name": "green_light_02",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.44999998807907104,
+                "g": 0.44999998807907104,
+                "r": 0.44999998807907104
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 415
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1624
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3178,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleTrailController",
+      "canonicalBlake3": "744b48fd4abc1119438646cf28a9f18a7a52e78f60bf272a9a19a21411d1a8d2",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleTrailController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleTrailController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 4403,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "a04636587aac3b270e0ac57a1f23c8383f869455cc8cbac36bfca5a03daa8b6e",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9697
+        },
+        "m_LocalPosition": {
+          "x": 2710.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 4405,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "c32b913caceaa5a821e9dfd44b9f2adc8ff867d038850355f4cf4eb5848c2e61",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 4406
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11448
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 0.3544805347919464,
+          "y": 0.3544805347919464,
+          "z": 0.3544805347919464
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 4406,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "55ff0306e77ca5fde4ce9d51e585d92ad3931882829c1734c69dcf7c29bde732",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 4405
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 4408
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11180
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 8.064091616688529e-10
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 4408,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "b74ee739110090a4d415197e3ebaa38acdb546244733b1580535070dc40f2614",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 4406
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11181
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 4410,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "90d69907f9962b5104952537d6c095224ad402150d8c84b050be133ff8115eae",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9282
+        },
+        "m_LocalPosition": {
+          "x": 3910.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9282,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[391]",
+      "canonicalBlake3": "e50a3f7000dcce54aa4371c306ae249d9217cb23078fc47605c0845a577b8066",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 4410
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15636
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[391]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9697,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[271]",
+      "canonicalBlake3": "54f12a64b6074620c19bcceda1c14e126961a6b9519eb356df9e18211f2caa60",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 4403
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 14925
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 14926
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 14927
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 14928
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[271]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11180,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Plane01_BillboardCamera",
+      "canonicalBlake3": "4f954609a72859f786847613e87136f4585166598427c4f4412f5750347e86ca",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 4406
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15900
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "Plane01_BillboardCamera",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11181,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "tail2",
+      "canonicalBlake3": "424a18b9cc0bd126a666e1a963fd5e3102b35348ed3cf9334c25a6e1e4b6f03d",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 4408
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 14031
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "tail2",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11448,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Poly",
+      "canonicalBlake3": "6d27b84ebbcaa2fcc149f4b15f3ee2e28129a9630b5aec367d3452ef5073703a",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 4405
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 17966
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 17967
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17968
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "Editable Poly",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14031,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "9f9d14d7608254c862ddee332a370f943118ca8e44e44b2c0f231dcad3204b24",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 2002
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 2002
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11181
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 2
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14925,
+      "typeId": -5,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "6a32d734f6e53bac46f9b6b45ea563ebc3d038f482806e06671c5c8d0e6c3a67",
+      "value": {
+        "bUVScroll": 0,
+        "fHeight": 1.0,
+        "fTimes": 0.25,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9697
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 0,
+          "pathId": 3178
+        },
+        "trailLength": 30
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14926,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "45dd8c0a07b887695c732ef7b6f43e682954b0c85de8c822caae27a0fddb3eb0",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9697
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14927,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "37645146d82afd136047c9ea2cf6ed6cb3e3a0082b9ac3b818d88b97393f42c3",
+      "value": {
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9697
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2988
+          }
+        ],
+        "m_ReceiveShadows": false
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14928,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "623ea679922d39b8c4d1f47eaffcc781283600d194d568d2c46036d18380f957",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 1.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 0.30000001192092896,
+        "lifeTime": 1.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9697
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 12,
+        "numberPerGeneration": 16.0,
+        "particleName": "ghostfire",
+        "plane": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.0,
+        "randomPosition": 0.0,
+        "randomTime": 0.0,
+        "randomVelocity": 0.0,
+        "textureKeys": [],
+        "totalParticleCount": 16.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15636,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "0ea697a7f39b6fa5e8515fdc58e7319da331f324e52a10bc8497c7c48d7d3b72",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "ghostfire",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 1.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9282
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": -3.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 11181
+        },
+        "particles": [
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 9697
+            },
+            "scriptKeys": [
+              {
+                "genType": -858993460,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "priority": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15900,
+      "typeId": -4,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "24219daaa89b57f5d831eb7f99b550df0c1470831d3ae86ea9df322e1bd0d9d0",
+      "value": {
+        "m_Enabled": false,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11180
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1913
+        },
+        "mode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17966,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "6148165e7744e2bd4a572c42621342af4262e93c30017c6ab61f6311faeec6d1",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11448
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1292
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17967,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "864d523ac6748f303b105f41321e53fe2cae3e02076554fe39b6a3d4d8c1f6b4",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11448
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3068
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17968,
+      "typeId": -6,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "5726a06bfd96af8c9e17a2a69d0849df10399e19a9f354199b58f5104b0702ee",
+      "value": {
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11448
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1906
+        },
+        "switchable": {
+          "fileId": 0,
+          "pathId": 15900
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4933 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 689,
+  "containerRoute": "prefabs/particle/effectscripts/es[689].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 10392,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1616,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "f9b3db1f3070c066ca4df3ad815f90807ff25e52f1fe5dc97d8eb33bd0657edb",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendSrcalphaOne_zwriteOff_cullOff\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\"=\"Transparent+10\"}\n\tBlend SrcAlpha One \n\tColorMask RGB\n\tZWrite Off\n\tCull Off\n\t\n\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 566,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "MK_fuse_L_e001.dds",
+      "canonicalBlake3": "795563433e8b97b4a5927fa15f99ce9239b4230efa64024b59d58008d8634ef4",
+      "value": {
+        "image data": {
+          "base64": "CAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAIBwACIEACJIEIgQgAAAAABwYAAiAAAiCBCIEIAAAAAAYFQAIkSIIkgQiBCAAAAAAFBAACIAACJIEIgQgAAAAABAQAAAAAAACBCIEIAAAAAAQEAAAAAAAAgQiBCAAAAAAEAwAAAAACJIEIgQgAAAAABANIkiRJkiSBCIEIAAAAAAMCAAIkQIIkgQiBCAAAAAACAgAAAAAAAIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAAAICAAAAAAAAgQiBCAAAAAACAgAAAAAAAIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAAAIBAAAgQIIkgQiBCAAAAAACAUmQBEmSJIEIgQgAAAAAAgEAAAAAACCBCIEIAAAAAAIBAIIkSZIkgQiBCAAAAAABAQAAAAAAAIEIgQgAAAAAAQEAAAAAAACBCIEIAAAAAAIBAZAACZAAgQiBCAAAAAADAkmSJEmSBIEIgQgAAAAACQJJniRJQgBAKGAAVVVVAAkCSZIkSQIlYDBgAFVVVVADAkmQJEmSJIEIgQgAAAAAAwIAAAAAEACBCIEIAAAAAAMDAAAAAAAAgQiBCAAAAAALAkmSJEmSEEAgYABVVVUFCwJJkiRJAidAIGAAVVVVXAICAAAAAAAAgQiBCAAAAAADAkmQJEmSJIEIgQgAAAAAAwIAkABJkCSBCIEIAAAAAAMDAAAAAAAAgQiBCAAAAAADAwAAAAAAAIEIgQgAAAAABANJkCRJkiSBCIEIAAAAAAUDSZAkSZIkgQiBCAAAAAAGBAmQ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CAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgHAAIgAAAAgQiBCAAAAAAIB0mSJEmCJIEIgQgAAAAABwZIAiQAAgCBCIEIAAAAAAYFSYIkQAIggQiBCAAAAAAFBEgCJAACAIEIgQgAAAAABAQAAAAAAACBCIEIAAAAAAQEAAAAAAAAgQiBCAAAAAAEAwACAAAAAIEIgQgAAAAABANJkiRIAiCBCIEIAAAAAAMDAAAAAAAAgQiBCAAAAAADAwAAAAAAAIEIgQgAAAAAAwMAAAAAAACBCIEIAAAAAAMCSAIgAAAAgQiBCAAAAAADAgEAAAAAAIEIgQgAAAAAAwIAAiAAAiSBCIEIAAAAAAICAAAAAAAAgQiBCAAAAAACAgAAAAAAAIEIgQgAAAAAAwJJkiRJkgSBCIEIAAAAAAMCSZIkAAAAgQiBCAAAAAADAkmSJEgCIIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAAAICAAAAAAAAgQiBCAAAAAACAgAAAAAAAIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAAAMCSZAAAQAAgQiBCAAAAAADAwAAAAAAAIEIgQgAAAAAAwMAAAAAAACBCIEIAAAAAAMCSAIAAAAAgQiBCAAAAAADAkkSAAAAAIEIgQgAAAAAAwMAAAAAAACBCIEIAAAAAAMDAAAAAAAAgQiBCAAAAAAEAwmQAAmQAIEIgQgAAAAABAQAAAAAAACBCIEIAAAAAAQEAAAAAAAAgQiBCAAAAAAFBAmQAAEAAIEIgQgAAAAABgVJkAQJkACBCIEIAAAAAAcGARAAAAAAgQiBCAAAAAAIB0mQBEmQAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAZogzZogzaBCIEIAAAAAAYEaNM2bdM2gQiBCAAAAAAEBAAAAAAAAIEIgQgAAAAABANAgiRJkiSBCIEIAAAAAAMCSJIkSZIkgQiBCAAAAAACAQAAAEiCJIEIgQgAAAAAAgEAAAAAAiCBCIEIAAAAAAIBSJIkSZIkgQiBCAAAAAADAW3SJE2SBGAYYAD///8/EgFJkiRJTAEAeGEAVVXVAhUBSZIkAwC1AIhgAFVVAvARAknyPyKTCiBogQhVVWgtFgJJkiQxRw4geGEAVVWtKhkCSZLk1CQOIHBhAFVVAggiAkmSJIC62gCQYQBVVcD8EQJJkiQCw4dAOGAAVVVgnjsCSZIkSeIOIHBgAFVVVQo4A0mSJH6CJiBwYQBVVVdYKwRJkiRJMkFAOGAAVVVVAAgGKZACKZACgQiBCAAAAAAeCEmSJEkCJmAgYABVVVVYCAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAIBm2DNm2DNoEIgQgAAAAABQRAAiAAAiCBCIEIAAAAAAQEAAAAAAAAgQiBCAAAAAADAwAAAAAAAIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAAAIBSIIkSIIkgQiBCAAAAAAbAUmSJEmeDyDTYAhVVVUNIwFJnrw3CQAA2gAYVdWtACELcX/6kgtAANoAiFVVXwAeDmxcPpINACDaAKBVVVUAIBF0YjocCQiA8gCoVVVVACMOv5sTrCRJgPoAoFVVVQAlDU+tOpsgAODpAJBVV/8ALBPcngETIABA8gDIVVVVADYTfz0nGykBAOIAkFVVXwBDEXRMjdwgAQDqAKhVVVUAWyRJebOkNgEA4gCoVVVVAIUeb5tzpTQJ4OEAmFVV9QC0DXbCkuMkAaDZAHhVVf8A1SlJ0vctJQAg2gBgVVX1AOsITpIkYwsAwMEgEFdVqgDaCEmSJE8CMQDTYQhVVVXACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgGaIM2aIu2gQiBCAAAAAAGBG2DNm2LtoEIgQgAAAAABAQAAAAAAACBCIEIAAAAAAQDSAIkQAIggQiBCAAAAAADAkmCJEgCJIEIgQgAAAAAAgIAAAAAAACBCIEIAAAAABECiZEkSZIkAHGBAC1VVVUgAQMQk0meJIDAYAgArVVVIgKAJLXemHRAuCAQAKCLNR4KgAT8G8k9QMgAQABw6nofD5JQ7OLj5EDQAFgAgljXIQsSUAM51ZxAyABIAAotlyYKErCRq9NyQMAAaACgXP8sEwLgCRdWN0DgAGgAA4N/Mw2CoNmrm7RA0ABAAPD45T8OE1AJW9k+QMgAMAACsHpVDROwQe2WmEDIACAAAIq1eyiT8AoJe9dA0ABgAAvlfacFEjBuZWs7QMAgEAAA8n/CBxJAc2STJGDgYQgAr3pVzQgA0CdJkiSA0GEIAF9VVZ4I4JMkSZIkAJlhCHhVVVUICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAdAAiAAAgCBCIEIAAAAAAcFaII2QAuggQiBCAAAAAAGBE3SJG2CNoEIgQgAAAAABAQAAAAAAACBCIEIAAAAAAQDSZIkSAIkgQiBCAAAAAADAwAAAAAAAIEIgQgAAAAAAwJJgiRAAgCBCIEIAAAAAAMCSZIkAQIggQiBCAAAAAACAgAAAAAAAIEIgQgAAAAADQIhkCRJkiQgUIAICVVVVQwBSJIkSZIkIEhgAFRVVVUJAgGTJEmSJEAwgAhhVVVVFQImkSRJkiQAaIAIK1VVVRYDoJ+7SZIkIGiACHj9VVUUAjdGQUmSJEBIYAAPAFVVDgNQYz1JkiRAMGEAYHNVVQQDCZAAARAAgQiBCAAAAAATBEmQJEmSJGAggAgVVVVVBwVJmgRJkQKBCIEIAAAAAAgHSZAACZAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAABwSYgzmYgzmBCIEIAAAAAAQDQAIkQAIkgQiBCAAAAAACAQAAJEACJIEIgQgAAAAAGwFJkiRJngqAuWAIVVVVCR4BSZLc5AhB4MBACFXVigAfAUnC2mMFAMDAIAhV/igAKgJJcrftNAHA2CAIVf0OAD0CSVI/7bgJwNAgCFVeigB3A0mSP2bHCcDIQAhVfSIAugRJkiR1PQkA0UAIVVX+ALsISZIkSQLsgMGAAFVVVeAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAICAAAAAAAAIEIgQgAAAAACAgAAAAAAACBCIEIAAAAAAgE67P9WI+tgQiBCAAAAAAFA23SNm2LtoEIgQgAAAAAAwJJkiQAAACBCIEIAAAAABkBOZEkSZIkYKiBCC1VVVUeAhjmrUmeJCC4YAAAi1VVHwGQMHZJkiQgwGAAAChVVSkCm8Bu+Z8kINBgAAAKdVU6AqPQrveTJCC4YAAAil1VcgPc4HZJkiQguGAAACpVVZ8FglD7SZIkQMBhAAB+VVWICFCTJEmSJGCQgQhwVVVVCAgAAAAAAACBCIEIAAAAAAgIAAAAAAAAgQiBCAAAAAAIBMAKNEADNIEIgQgAAAAABAHAhtmYgzmBCIEIAAAAABYBSZICJ5DkgLCAAFUNCVUlAklCDtvw3GDAYAhVAABXVwNJ4g7lkCRgsGAIVQAAVXkFSSLxgJwkoKCAAFV44FUIAAAAAEmSJIEIAAAAAFVVCACgA/pJkiSBCAAAAABVVRQAp3BSSZIkgHgAAAMrVVU+AB1mqkmSJIBoAADA4FVVCADAniRJkiSBCAAAAFVVVSwA95AkSZIkgGgAAIJVVVUlAI+RJEmSJIBQAAAFVVVVGABHkiRJkiSASAAAUVVVVQ8ASJIkSZIkYCgAAFRVVVU=",
+          "bytes": 11024
+        },
+        "m_CompleteImageSize": 11024,
+        "m_Height": 32,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "MK_fuse_L_e001.dds",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 256
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1431,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Line01",
+      "canonicalBlake3": "8968626fe4d2410ed0284435c1181206c7725dd3035954b5eec27c72480fd96d",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          13,
+          12,
+          11,
+          11,
+          12,
+          10,
+          11,
+          10,
+          9,
+          9,
+          10,
+          8,
+          9,
+          8,
+          7,
+          7,
+          8,
+          6,
+          7,
+          6,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          0,
+          27,
+          27,
+          0,
+          22,
+          27,
+          22,
+          28,
+          28,
+          22,
+          24,
+          28,
+          24,
+          25,
+          25,
+          24,
+          23,
+          25,
+          23,
+          26,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          0,
+          21,
+          0,
+          20,
+          20,
+          0,
+          1,
+          20,
+          1,
+          19,
+          19,
+          1,
+          4,
+          19,
+          4,
+          18,
+          18,
+          4,
+          6,
+          18,
+          6,
+          17,
+          17,
+          6,
+          8,
+          17,
+          8,
+          16,
+          16,
+          8,
+          10,
+          16,
+          10,
+          15,
+          15,
+          10,
+          12,
+          15,
+          12,
+          14,
+          47,
+          49,
+          48,
+          47,
+          48,
+          41,
+          41,
+          48,
+          40,
+          41,
+          40,
+          39,
+          39,
+          40,
+          38,
+          39,
+          38,
+          37,
+          37,
+          38,
+          36,
+          37,
+          36,
+          35,
+          35,
+          36,
+          34,
+          35,
+          34,
+          33,
+          33,
+          34,
+          32,
+          33,
+          32,
+          31,
+          31,
+          32,
+          30,
+          31,
+          30,
+          25,
+          25,
+          30,
+          29,
+          25,
+          29,
+          28,
+          47,
+          41,
+          39,
+          47,
+          39,
+          46,
+          46,
+          39,
+          37,
+          46,
+          37,
+          45,
+          45,
+          37,
+          35,
+          45,
+          35,
+          44,
+          44,
+          35,
+          33,
+          44,
+          33,
+          43,
+          43,
+          33,
+          31,
+          43,
+          31,
+          42,
+          42,
+          31,
+          25,
+          42,
+          25,
+          26,
+          48,
+          49,
+          50,
+          50,
+          49,
+          51,
+          50,
+          51,
+          52,
+          52,
+          51,
+          53,
+          52,
+          53,
+          57,
+          57,
+          53,
+          65,
+          57,
+          65,
+          59,
+          59,
+          65,
+          64,
+          59,
+          64,
+          63,
+          61,
+          60,
+          59,
+          59,
+          60,
+          58,
+          59,
+          58,
+          57,
+          57,
+          58,
+          56,
+          57,
+          56,
+          52,
+          52,
+          56,
+          55,
+          52,
+          55,
+          50,
+          50,
+          55,
+          54,
+          50,
+          54,
+          48,
+          48,
+          54,
+          40,
+          61,
+          59,
+          62,
+          62,
+          59,
+          63
+        ],
+        "m_CollisionVertexCount": 66,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "QNS/BAD8P8oD",
+              "bytes": 9
+            },
+            "m_NumItems": 66
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "uQDFAdma5JjTA+uX4wnzlOkL+I7wEPmM/xf6jHVleGtueXB5dHl4en15h3aiAJZwiQVwC6NryJ6vp5mvjbVXFoa7PyWCvzAyfMIgQnXHElhr0QdzpWqmaaNpnGyebJ9nBH6kYQKQp1wDnKlXXt5U6U3xBaNJ9wipRfo8/yKkrFKsUqpU",
+              "bytes": 132
+            },
+            "m_NumItems": 132,
+            "m_Range": 1.4916932582855225,
+            "m_Start": -0.9910275340080261
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 7,
+            "m_Data": {
+              "base64": "DcZCkUAcDAXCICAAbCwcTOai0WAwF0sFQAlMCBJDBAFRPBgORyz2gqVQJ1OJNBKFQB9PpsPhpFKvk6vUGrFCq48qo9HAYLCYbEar5YI74O/X6/V4O10OR7vJbDAUqtfb+X4=",
+              "bytes": 98
+            },
+            "m_NumItems": 112
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "FmEOfbNlEX0TYQQAqGUHAG1rF31tawkAJnAefRlwDgBudSV9dHUQAFh6Ln1dehAAyH83fcx/DwDIf///Wnr5/3F18v8scO7/d2vq/7Zl5v8YYeT/U1zk/1FcDX1WV+T/V1cOffZQDn33UOb/T1wDAFpXAwD0UAQAiUoBAItKFX0YQwEAF0MRfSk7AAAfOxZ99jMAAPEzE30ALQIA+SwWfZQmBwChJh19mUro/ytD5v8ZO+j/7zPo//cs6v+kJu7/HCASfRkg5P+tGRV9qxnm/1ETGn1PE+r/HiAGAKwZBgBNEwoABQ4hfQIOBwBlCCp9UAgMAPQCEAD1AjN99QL5/10I8/8CDu7/",
+              "bytes": 264
+            },
+            "m_NumItems": 132,
+            "m_Range": 0.9825003743171692,
+            "m_Start": 0.006797611713409424
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "hG6JihO5q2XiprtYwaRfM1LK10OOqTVAtNNZZHxf2mz7txiOVWZhw02HZD1lJG6sjB5juwaG0nzChK9rK0ztnySrKTet4fUHhaZy3x8+VixJnifW8EZUFfZ5PVB/DzogF/j//wikBXKB//+PQFojPCnW8EZURUaM0xpef1BrTwiG0nzCtP99FjbcdEjZeDdAtNNZlMxxM1LK10OQzmYLlrY1ZA9pRG6Y+RLya1X7hUNa1EhnpIpH8hSESUXOY/6nsS1VkTQnd0oagmYLlrY1JL9WtV84pEWKTxVJc3KndNFVFh0W3VKeiyV3TcU0YvFXowZlmF4f0sUFOvIFg1VcHAb0UWygJ2YrKKj5Y8xhriMTOXwggxbAGVX/BMhnD48SY42n25YeDucXdrptoh1ilp3ZOLekB9FId+hzFh0W3VKhsDZqUIbpJXJvHAb0UWyiTOc6MpHDR4J6D48SY42rACjaIWbZyd2FHR6gi4c8rUecHZncariMAAAwWJmuJvi9G8ffu26UOwOwA6vBqYjFG/LivNScxNmRya2Dpve9G8ffix6CWLwhL85HqPjrAd7HG1aTmtOhYd7kNimXBGbbHIecDPoRlO7/ykmBImjsjx2mX7gwkd7YYUqBImjsv224DPoRlO4B8Ko5HRrmfb6l",
+              "bytes": 495
+            },
+            "m_NumItems": 198,
+            "m_Range": 27.9578857421875,
+            "m_Start": -11.692943572998047
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 2.285999298095703,
+            "y": 3.2552809715270996,
+            "z": 2.997176170349121
+          },
+          "m_Extent": {
+            "x": 13.97894287109375,
+            "y": 12.875967025756836,
+            "z": 5.451438903808594
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Line01",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 112,
+            "isTriStrip": 2,
+            "triangleCount": 84
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1432,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Mesh",
+      "canonicalBlake3": "4fcea84cbd231691ce0057e2830ea75daf5bcff065fc9509aa76ee9330701078",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          13,
+          12,
+          11,
+          11,
+          12,
+          10,
+          11,
+          10,
+          9,
+          9,
+          10,
+          8,
+          9,
+          8,
+          7,
+          7,
+          8,
+          6,
+          7,
+          6,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          0,
+          27,
+          27,
+          0,
+          22,
+          27,
+          22,
+          28,
+          28,
+          22,
+          24,
+          28,
+          24,
+          25,
+          25,
+          24,
+          23,
+          25,
+          23,
+          26,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          0,
+          21,
+          0,
+          20,
+          20,
+          0,
+          1,
+          20,
+          1,
+          19,
+          19,
+          1,
+          4,
+          19,
+          4,
+          18,
+          18,
+          4,
+          6,
+          18,
+          6,
+          17,
+          17,
+          6,
+          8,
+          17,
+          8,
+          16,
+          16,
+          8,
+          10,
+          16,
+          10,
+          15,
+          15,
+          10,
+          12,
+          15,
+          12,
+          14,
+          47,
+          49,
+          48,
+          47,
+          48,
+          41,
+          41,
+          48,
+          40,
+          41,
+          40,
+          39,
+          39,
+          40,
+          38,
+          39,
+          38,
+          37,
+          37,
+          38,
+          36,
+          37,
+          36,
+          35,
+          35,
+          36,
+          34,
+          35,
+          34,
+          33,
+          33,
+          34,
+          32,
+          33,
+          32,
+          31,
+          31,
+          32,
+          30,
+          31,
+          30,
+          25,
+          25,
+          30,
+          29,
+          25,
+          29,
+          28,
+          47,
+          41,
+          39,
+          47,
+          39,
+          46,
+          46,
+          39,
+          37,
+          46,
+          37,
+          45,
+          45,
+          37,
+          35,
+          45,
+          35,
+          44,
+          44,
+          35,
+          33,
+          44,
+          33,
+          43,
+          43,
+          33,
+          31,
+          43,
+          31,
+          42,
+          42,
+          31,
+          25,
+          42,
+          25,
+          26,
+          48,
+          49,
+          50,
+          50,
+          49,
+          51,
+          50,
+          51,
+          52,
+          52,
+          51,
+          53,
+          52,
+          53,
+          57,
+          57,
+          53,
+          65,
+          57,
+          65,
+          59,
+          59,
+          65,
+          64,
+          59,
+          64,
+          63,
+          61,
+          60,
+          59,
+          59,
+          60,
+          58,
+          59,
+          58,
+          57,
+          57,
+          58,
+          56,
+          57,
+          56,
+          52,
+          52,
+          56,
+          55,
+          52,
+          55,
+          50,
+          50,
+          55,
+          54,
+          50,
+          54,
+          48,
+          48,
+          54,
+          40,
+          61,
+          59,
+          62,
+          62,
+          59,
+          63
+        ],
+        "m_CollisionVertexCount": 66,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "ANW/BAD8OsgD",
+              "bytes": 9
+            },
+            "m_NumItems": 66
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "tgC/AtaJ4IPMBOp+2QjweeIM+WzyFP9W7RT5UH5QgFB4X3Rpdmt5a3xrhGadApBhgwdnEJZbxpKtoZmvkLlQHIq/PCmIwyw3hccdSYTMEF5+1gV5mFuWW5Nbil+IY4hhAoiGXgCbhFsAqYJbeeB26nbyALJ29wK8dPpx/Qq9flmAWYBZ",
+              "bytes": 132
+            },
+            "m_NumItems": 132,
+            "m_Range": 1.5358681678771973,
+            "m_Start": -0.998850405216217
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 7,
+            "m_Data": {
+              "base64": "DcZCkUAcDAXCICAAbCwcTOai0WAwF0sFQAlMCBJDBAFRPBgORyz2gqVQJ1OJNBKFQB9PpsPhpFKvk6vUGrFCq48qo9HAYLCYbEar5YI74O/X6/V4O10OR7vJbDAUqtfb+X4=",
+              "bytes": 98
+            },
+            "m_NumItems": 112
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "FmEOfbNlEX0TYQQAqGUHAG1rF31tawkAJnAefRlwDgBudSV9dHUQAFh6Ln1dehAAyH83fcx/DwDIf///Wnr5/3F18v8scO7/d2vq/7Zl5v8YYeT/U1zk/1FcDX1WV+T/V1cOffZQDn33UOb/T1wDAFpXAwD0UAQAiUoBAItKFX0YQwEAF0MRfSk7AAAfOxZ99jMAAPEzE30ALQIA+SwWfZQmBwChJh19mUro/ytD5v8ZO+j/7zPo//cs6v+kJu7/HCASfRkg5P+tGRV9qxnm/1ETGn1PE+r/HiAGAKwZBgBNEwoABQ4hfQIOBwBlCCp9UAgMAPQCEAD1AjN99QL5/10I8/8CDu7/",
+              "bytes": 264
+            },
+            "m_NumItems": 132,
+            "m_Range": 0.9825003743171692,
+            "m_Start": 0.006797611713409424
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "GVO5IRNwjQWlo2ZRAaZdh3AaezRRi7XUtXBjg35dtDPLMRi7MyalxPePsyBjwxzcsx1wl+Z40+vJc3BpJBJN0iNrAzdP4vANREJwHu+9Gy2adScn8atYxGp3gsQ+2Dbr6/f//8GmtL5+//8fbErRCikn8atYNFmJ8yQO30AKI+h40+vJ0157Ukp8/zjwULfUtXBj42xvh3AaezQ4qiZBmBRAU95mMljYkxL+TvWGiN9jQyFlMDynFxVJLdUhXyis0WZTZVZHyTtaXyZBmBRA4+9Ub4j4PTYvM1VmdZS8QwdUhj6GwUQBbsWjShVCwhtW4i1VPlAKsyWaN+QOg2hatTKUrl3BBiYfJob9I8JfOltjgWxZYFagF7kKtZ1l19aifXwIt/Y8DHEdhnBryGeCWoxHEldIBpgzh31xhj6GwUTnjCbeUuUDBR9ttTKUrl2oJaezNRbIFvR319aifXzu1Yd8JqjF6BKDex3At4Q9hEdVInHD6ciJAABgJZYm+9eAIDfBClaRKwNwcqd/e0iIIPm+K4+ZVCUSN5yofdeAIDfBqmd/hAiS77sMeqjhAfSIS0OQSx+yy8uvBal+BL2WLEOZ70Sip9uzlhkgJzi4fqai/KFwEtlnKhogJzi43pS070Sip9uZtbr0Ibu8XEmi",
+              "bytes": 495
+            },
+            "m_NumItems": 198,
+            "m_Range": 28.553524017333984,
+            "m_Start": -11.692943572998047
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 2.5838184356689453,
+            "y": 2.477385997772217,
+            "z": 2.997176170349121
+          },
+          "m_Extent": {
+            "x": 14.276762008666992,
+            "y": 12.098249435424805,
+            "z": 5.451438903808594
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Mesh",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 112,
+            "isTriStrip": 2,
+            "triangleCount": 84
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1433,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Mesh1",
+      "canonicalBlake3": "135121b591f75e69a4bc073d4f4d40a3b3171b35f7176c3d22909f8b3596f1eb",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          13,
+          12,
+          11,
+          11,
+          12,
+          10,
+          11,
+          10,
+          9,
+          9,
+          10,
+          8,
+          9,
+          8,
+          7,
+          7,
+          8,
+          6,
+          7,
+          6,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          0,
+          27,
+          27,
+          0,
+          22,
+          27,
+          22,
+          28,
+          28,
+          22,
+          24,
+          28,
+          24,
+          25,
+          25,
+          24,
+          23,
+          25,
+          23,
+          26,
+          23,
+          24,
+          22,
+          23,
+          22,
+          21,
+          21,
+          22,
+          0,
+          21,
+          0,
+          20,
+          20,
+          0,
+          1,
+          20,
+          1,
+          19,
+          19,
+          1,
+          4,
+          19,
+          4,
+          18,
+          18,
+          4,
+          6,
+          18,
+          6,
+          17,
+          17,
+          6,
+          8,
+          17,
+          8,
+          16,
+          16,
+          8,
+          10,
+          16,
+          10,
+          15,
+          15,
+          10,
+          12,
+          15,
+          12,
+          14,
+          47,
+          49,
+          48,
+          47,
+          48,
+          41,
+          41,
+          48,
+          40,
+          41,
+          40,
+          39,
+          39,
+          40,
+          38,
+          39,
+          38,
+          37,
+          37,
+          38,
+          36,
+          37,
+          36,
+          35,
+          35,
+          36,
+          34,
+          35,
+          34,
+          33,
+          33,
+          34,
+          32,
+          33,
+          32,
+          31,
+          31,
+          32,
+          30,
+          31,
+          30,
+          25,
+          25,
+          30,
+          29,
+          25,
+          29,
+          28,
+          47,
+          41,
+          39,
+          47,
+          39,
+          46,
+          46,
+          39,
+          37,
+          46,
+          37,
+          45,
+          45,
+          37,
+          35,
+          45,
+          35,
+          44,
+          44,
+          35,
+          33,
+          44,
+          33,
+          43,
+          43,
+          33,
+          31,
+          43,
+          31,
+          42,
+          42,
+          31,
+          25,
+          42,
+          25,
+          26,
+          48,
+          49,
+          50,
+          50,
+          49,
+          51,
+          50,
+          51,
+          52,
+          52,
+          51,
+          53,
+          52,
+          53,
+          57,
+          57,
+          53,
+          65,
+          57,
+          65,
+          59,
+          59,
+          65,
+          64,
+          59,
+          64,
+          63,
+          61,
+          60,
+          59,
+          59,
+          60,
+          58,
+          59,
+          58,
+          57,
+          57,
+          58,
+          56,
+          57,
+          56,
+          52,
+          52,
+          56,
+          55,
+          52,
+          55,
+          50,
+          50,
+          55,
+          54,
+          50,
+          54,
+          48,
+          48,
+          54,
+          40,
+          61,
+          59,
+          62,
+          62,
+          59,
+          63
+        ],
+        "m_CollisionVertexCount": 66,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "AMC/BAD8KsAD",
+              "bytes": 9
+            },
+            "m_NumItems": 66
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "uALGBNWV4JLVB+eR5AvtjvAQ9ob5Fvx2/Bn5bJ0joCuLP4VKgFF/VIJWhVSjBIxRhQppE5FOxJqspJivjrdRHYi9PCuGwS45g8cfS4LMEGN81QV8j1CMUIZRfFl4XXNdAYtvXQCeal8Ar2NgeOB26nbyAbt2+ALEdvty/wfYVG1dY19j",
+              "bytes": 132
+            },
+            "m_NumItems": 132,
+            "m_Range": 1.5327872037887573,
+            "m_Start": -0.9977861046791077
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 7,
+            "m_Data": {
+              "base64": "DcZCkUAcDAXCICAAbCwcTOai0WAwF0sFQAlMCBJDBAFRPBgORyz2gqVQJ1OJNBKFQB9PpsPhpFKvk6vUGrFCq48qo9HAYLCYbEar5YI74O/X6/V4O10OR7vJbDAUqtfb+X4=",
+              "bytes": 98
+            },
+            "m_NumItems": 112
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "FmEOfbNlEX0TYQQAqGUHAG1rF31tawkAJnAefRlwDgBudSV9dHUQAFh6Ln1dehAAyH83fcx/DwDIf///Wnr5/3F18v8scO7/d2vq/7Zl5v8YYeT/U1zk/1FcDX1WV+T/V1cOffZQDn33UOb/T1wDAFpXAwD0UAQAiUoBAItKFX0YQwEAF0MRfSk7AAAfOxZ99jMAAPEzE30ALQIA+SwWfZQmBwChJh19mUro/ytD5v8ZO+j/7zPo//cs6v+kJu7/HCASfRkg5P+tGRV9qxnm/1ETGn1PE+r/HiAGAKwZBgBNEwoABQ4hfQIOBwBlCCp9UAgMAPQCEAD1AjN99QL5/10I8/8CDu7/",
+              "bytes": 264
+            },
+            "m_NumItems": 132,
+            "m_Range": 0.9825003743171692,
+            "m_Start": 0.006797611713409424
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "cprZiBPDwwXlqSdZQTphIDrqcDCQwRX/st0jMxFhPKErzBhpcHZgwhdSk+pmEZm8hh7t10bF0UKOA3ht4JRtuiUJSLcs4eDUg4x0wnXOQS6VvueV8HciJPt70mKf+jhsOfj//4lzxJaD//+fOEdJY+mV8Hci9JiOyxIOTj2mckjF0UKO0xWAByZ8ITWGmBf/st0jA69zIDrqcDBt6zZKlCf/wsxq566I9RLvghX2g08kw/5oCojnkRXvX+V4YpLAwZZWEwJX/jeznTZKlCf/8i5YYT/4RDIOZjUhcOV/Uz1Xgt9lTkEgo+WETalXMmZZcsSUO03N6hXBOUwsA91drL9TL1u3QfaaJw0kBGtj9N8yk2q9npYaGP8z9X9pFFbyM3u7+NbDDA5YtotvxuIBrIt3V9eFBg5619N1gt9lTkH+zCZHTLnTpEpxrL9TL1uUa0f/LTOppol8FFbyM3uYImgsHsC6SBWInR5AyonHzZfcGT3C+QyPAABQ4ps8SUj2F7XJ+uOWSQOw2K18zgj+FyvRi22fyZ3RI5zyxkf2F7XJGkaE4H+xEr37zAj0Ac/5u8aVhJfhic30XZmqBOkRrR6fmb4BAd6D9FnWHoLnvt2ou7EgTeLbjVrWHoLnnnu7mb4BAd5gHkt4GZ7YLH2o",
+              "bytes": 495
+            },
+            "m_NumItems": 198,
+            "m_Range": 27.502424240112305,
+            "m_Start": -11.692943572998047
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 2.058281898498535,
+            "y": 2.135007858276367,
+            "z": 2.997176170349121
+          },
+          "m_Extent": {
+            "x": 13.751225471496582,
+            "y": 11.791155815124512,
+            "z": 5.451438903808594
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Mesh1",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 112,
+            "isTriStrip": 2,
+            "triangleCount": 84
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2010,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "5d93670b37004c36bab3d556b33be85ab04816012a59b0ff2c5bf3a9d5775b74",
+      "value": {
+        "m_CompressedRotationCurves": [
+          {
+            "m_Path": "Line02",
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_Slopes": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "AAAAAAAA",
+                "bytes": 6
+              },
+              "m_NumItems": 8,
+              "m_Range": 0.0,
+              "m_Start": 0.0
+            },
+            "m_Times": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "wA8=",
+                "bytes": 2
+              },
+              "m_NumItems": 2
+            },
+            "m_Values": {
+              "m_Data": {
+                "base64": "n+3ff5/t338=",
+                "bytes": 8
+              },
+              "m_NumItems": 2
+            }
+          },
+          {
+            "m_Path": "Line03",
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_Slopes": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "AAAAAAAA",
+                "bytes": 6
+              },
+              "m_NumItems": 8,
+              "m_Range": 0.0,
+              "m_Start": 0.0
+            },
+            "m_Times": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "AA0=",
+                "bytes": 2
+              },
+              "m_NumItems": 2
+            },
+            "m_Values": {
+              "m_Data": {
+                "base64": "n+3ff5/t338=",
+                "bytes": 8
+              },
+              "m_NumItems": 2
+            }
+          }
+        ],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.833332061767578,
+                  "outSlope": 5.833332061767578,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.3333333432674408,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.5666667222976685,
+                  "value": 0.11111098527908325
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.23333333432674408,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -3.75,
+                  "outSlope": -3.75,
+                  "time": 0.2666666805744171,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -7.499999523162842,
+                  "outSlope": -7.499999523162842,
+                  "time": 0.30000001192092896,
+                  "value": -0.2499999850988388
+                },
+                {
+                  "inSlope": -7.499999046325684,
+                  "outSlope": -7.499999046325684,
+                  "time": 0.3333333432674408,
+                  "value": -0.4999999403953552
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.2666666805744171,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.3333333432674408,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 5.833333969116211,
+                  "outSlope": 5.833333969116211,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -3.750000238418579,
+                  "outSlope": -3.750000238418579,
+                  "time": 0.3333333432674408,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -7.500000476837158,
+                  "outSlope": -7.500000476837158,
+                  "time": 0.36666667461395264,
+                  "value": -0.25
+                },
+                {
+                  "inSlope": -7.500000476837158,
+                  "outSlope": -7.500000476837158,
+                  "time": 0.4000000059604645,
+                  "value": -0.5
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.20000000298023224,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499999046325684,
+                  "outSlope": 7.499999046325684,
+                  "time": 0.23333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999998092651367,
+                  "outSlope": 14.999998092651367,
+                  "time": 0.2666666805744171,
+                  "value": 0.5000001192092896
+                },
+                {
+                  "inSlope": 5.357141494750977,
+                  "outSlope": 5.357141494750977,
+                  "time": 0.30000001192092896,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.3333333432674408,
+                  "value": 0.8571428656578064
+                },
+                {
+                  "inSlope": -4.285714149475098,
+                  "outSlope": -4.285714149475098,
+                  "time": 0.5333333611488342,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.x",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.23333333432674408,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -3.75,
+                  "outSlope": -3.75,
+                  "time": 0.2666666805744171,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": -7.499999523162842,
+                  "outSlope": -7.499999523162842,
+                  "time": 0.30000001192092896,
+                  "value": -0.2499999850988388
+                },
+                {
+                  "inSlope": -7.499999046325684,
+                  "outSlope": -7.499999046325684,
+                  "time": 0.3333333432674408,
+                  "value": -0.4999999403953552
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.8226044178009033,
+                    "z": 8.752840042114258
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.3333333432674408,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.8226044178009033,
+                    "z": 8.752840042114258
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.215200662612915
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.215200662612915
+                  },
+                  "time": 0.5666667222976685,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.8226044178009033,
+                    "z": 9.395880699157715
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.215214967727661
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.215214967727661
+                  },
+                  "time": 0.6333334445953369,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.8226044178009033,
+                    "z": 9.610227584838867
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02"
+          },
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.14813232421875,
+                    "z": 8.752840042114258
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.30000001192092896,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.14813232421875,
+                    "z": 8.752840042114258
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.5822155475616455
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.5822155475616455
+                  },
+                  "time": 0.3333333432674408,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.14813232421875,
+                    "z": 8.752840042114258
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 7.164445400238037
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 7.164445400238037
+                  },
+                  "time": 0.4000000059604645,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.14813232421875,
+                    "z": 9.230469703674316
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 7.164453029632568
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 7.164453029632568
+                  },
+                  "time": 0.5333333611488342,
+                  "value": {
+                    "x": -3.6734962463378906,
+                    "y": 2.14813232421875,
+                    "z": 10.185729026794434
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03"
+          }
+        ],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.6333334445953369,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line02"
+          },
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "outSlope": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "time": 0.5333333611488342,
+                  "value": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Line03"
+          }
+        ],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2533,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "mk_fues_melee-21 - default-mk_fuse_l_e001.dds",
+      "canonicalBlake3": "e06cb0c3aeedc26254733527d8f5934020b58a8539097ff517b05ee9d4b97385",
+      "value": {
+        "m_Name": "mk_fues_melee-21 - default-mk_fuse_l_e001.dds",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 566
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1616
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2950,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "mk_fues_melee-19 - default-mk_fuse_l_e001.dds",
+      "canonicalBlake3": "96fc1fc3579fcba6d2745b0ff51c4398351e1bed964820b08148b0ca7cf0f871",
+      "value": {
+        "m_Name": "mk_fues_melee-19 - default-mk_fuse_l_e001.dds",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 566
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1616
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2968,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "mk_fues_melee-20 - default-mk_fuse_l_e001.dds",
+      "canonicalBlake3": "4bab86d7cd4aba909f6123cb3e40bcf328ccd9be3d6d922cad055244f7e71958",
+      "value": {
+        "m_Name": "mk_fues_melee-20 - default-mk_fuse_l_e001.dds",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 566
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1616
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6437,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "231cbcada7efd46955d3243fe2656b95d6f1f6efe98641407664668a96a9bdb5",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10392
+        },
+        "m_LocalPosition": {
+          "x": 6890.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6480,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "3988f13f5d4a8f90985584c6c797f2e9ba95ce9e1d08dd12a72a876a27921b02",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6488
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7502
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6486,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "30df970df618bca5b6477865ce7254dd8e2815e9b3f78c7f3b2c84dc5036187f",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6491
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7477
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6488,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "05c1da7e673f598a1a7dd25927a4324b9c3202de1361c0b3727dbc39c4005f4d",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 6480
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6495
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9144
+        },
+        "m_LocalPosition": {
+          "x": -3.6734962463378906,
+          "y": 2.14813232421875,
+          "z": 8.752840042114258
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6491,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "7fa606d1df2b617d0905d229d7eb1956726e5ca9750023491c92962ea073ae54",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 6486
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6495
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9143
+        },
+        "m_LocalPosition": {
+          "x": -3.6734962463378906,
+          "y": 2.8226044178009033,
+          "z": 8.752840042114258
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6494,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "3f7258def4ddf2685a82dab99e2f2528044be9f4038010d50b35fbca7ef73db1",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6495
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9142
+        },
+        "m_LocalPosition": {
+          "x": -3.6734962463378906,
+          "y": 3.854578971862793,
+          "z": 8.752840042114258
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6495,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "5b8feb0bf845103570ad42a84a555ad9f68764a27a10b1f2e3a68e0b79e62013",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 6494
+          },
+          {
+            "fileId": 0,
+            "pathId": 6491
+          },
+          {
+            "fileId": 0,
+            "pathId": 6488
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9197
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7477,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Mesh",
+      "canonicalBlake3": "4373fcc812eebe49268fbea001bde43daa849bffe4728bfd695ef2ed2d9beb6b",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6486
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13206
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13207
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "Editable Mesh",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7502,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Mesh1",
+      "canonicalBlake3": "8098d4d09d1355afb408238cea7ce4166f09645488dd18f165a6c0f28961acdf",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6480
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13208
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13209
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "Editable Mesh1",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9142,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Line01",
+      "canonicalBlake3": "65e9084c6aab39383c5c032b2126989f28d5486920e677e39f5e61f05d1ef746",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6494
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 12008
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 12009
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "Line01",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9143,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Line02",
+      "canonicalBlake3": "4c9ae488e84f13b8580dce8b8e8c1fab07389a713b4062d5bc1450736cd9c104",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6491
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "Line02",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9144,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Line03",
+      "canonicalBlake3": "c6238cdc6db5d80ffe4c3bec1b2c711bd718b0d46f63c520b2b28ef1332da898",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6488
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "Line03",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9197,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "MK_fues_melee",
+      "canonicalBlake3": "a7bc75d37039feca6f4138b6351606724dbbdd7a55eaab06485d8e3284d8696d",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6495
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 14122
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "MK_fues_melee",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10392,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[689]",
+      "canonicalBlake3": "c7eb32d33b90f43fe577434ba5c3090a438ea5cc64065b94acdb5285670479ff",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6437
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 16718
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[689]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 12008,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "05ce5d588fa9fe44fadde2554ce6a23954bb17dba9a8d49042b31eceb1e6988b",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9142
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1431
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 12009,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "5c42181d36f7e9e670e0fe9a7211a96567d5085cc5e37e6ad7dc055c873cf4a4",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9142
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2950
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13206,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "0e590c13ebfff2eefa17fde3327db16178f885695bbe7dc1d4fa98007c9dd7da",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7477
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1432
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13207,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "ab3cddd24f520859224e1c5dcc459d257254e3fc47d265e5a3cb8023c88ffd05",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7477
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2968
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13208,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "0a4774742163fbaccf3a287c2a09fa1e9a69c90de4158d5bda6111748b5cad77",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7502
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1433
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13209,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "d0b5061f0413a585a93e5db9de771c01e60b8157b868f5a4af0f50b9e4ef6ba0",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7502
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2533
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14122,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "2b3bf84be6f46cfcc44692a46331bd462da01abf0495b1621cde80ff148803a4",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 2010
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 2010
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9197
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16718,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "95ba0579e161d07dcec51e3ce082e142cf714b31b8296aa1ab81a9f136e388f5",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "MK_fues_melee_01",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10392
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 1.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 9197
+        },
+        "particles": [],
+        "priority": 0
+      }
+    }
+  ]
+}

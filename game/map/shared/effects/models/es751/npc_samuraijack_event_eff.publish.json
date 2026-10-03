@@ -1,0 +1,329 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "npc_samuraijack_event_eff",
+    "root_node": "npc_samuraijack_event_eff",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/npc_samuraijack_event_eff.glb",
+    "glb_blake3": "7c16ea67bcceebf50246e7f6ef437fd547ed87f885f8f08274a0bc7ce8ee4ae2",
+    "source": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 5,
+      "float_curves": 30,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 24,
+      "cubic_spline_keyframes": 20,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 5,
+      "float_curves": 30,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 24,
+      "cubic_spline_keyframes": 20,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 7,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "62dd87501f8c7d4b0110e2f20b218de70153011c5ff4b0d2b259ab244b80f78a",
+      "geometrySha256": "93444e8cabe18a9190c97784fe545455ac16f9f6066099291b83cce5ab79ca96",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "3922d990b0a8841da7815b3a5b93bd010ae30ddb5c2267ae6e5a69490cd640c3",
+      "animationMetadataSha256": "1ceaeba8f3c9a024046f993c80029501f2f361b7d6171ff474198af886726838",
+      "materialsSha256": "70b8648e0a1fc4977bb1ec7f9aa803e7f0934476fba93ce98a151eab1bc560e0"
+    },
+    "emitted": {
+      "hierarchySha256": "62dd87501f8c7d4b0110e2f20b218de70153011c5ff4b0d2b259ab244b80f78a",
+      "geometrySha256": "93444e8cabe18a9190c97784fe545455ac16f9f6066099291b83cce5ab79ca96",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "3922d990b0a8841da7815b3a5b93bd010ae30ddb5c2267ae6e5a69490cd640c3",
+      "animationMetadataSha256": "1ceaeba8f3c9a024046f993c80029501f2f361b7d6171ff474198af886726838",
+      "materialsSha256": "70b8648e0a1fc4977bb1ec7f9aa803e7f0934476fba93ce98a151eab1bc560e0"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -1.2558610439300537,
+        -1.2558610439300537,
+        0.19884301722049713
+      ],
+      "max": [
+        1.2558610439300537,
+        1.2558610439300537,
+        0.6606937646865845
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -2.3843061923980713,
+        -0.22951841354370117,
+        -1.1845180988311768
+      ],
+      "max": [
+        1.3156154155731201,
+        3.014927864074707,
+        2.508894681930542
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "bubble_win_01"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "bubble_win_01",
+        "serializedShaderName": "normal_blendOneOne_cullOff",
+        "declaredShaderName": "normal_blendOneOne_cullOff",
+        "legacyShaderName": "normal_blendOneOne_cullOff",
+        "shaderSha256": "44916e5c653b2a55839e2365555b4d7b924d6dfba10f0c6d8f7043f695eec84e",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "bubble_win_01.DDS",
+        "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 22765,
+        "sha256": "93fb60b282cc8460c356133505a15fd62cbdc7a471a9c4896f94c25cc343628c",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "a9ee03abe1a5b1e49c4a26e493b55fa9fbc775dc50e35b34f86cbe1263907a5c",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "875c0bbe442758022d17992ecf96b219f4069013639182ed3c02c664b0afc22f",
+            "pngByteLength": 22765,
+            "pngSha256": "93fb60b282cc8460c356133505a15fd62cbdc7a471a9c4896f94c25cc343628c"
+          },
+          {
+            "level": 1,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "896ae27d2101c692a385c51e01ce2a0e62c89d243709b8ed5707d1ede33e12a2",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "722e54cfcfea3abec5df38666e65a6a36c2c81d7636cd651ec793477c95c6c29",
+            "pngByteLength": 6521,
+            "pngSha256": "c7e833a58ac8670e5b8e14cab7026c508aeb0dad19708256e70be28e1e290b0e"
+          },
+          {
+            "level": 2,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "1803fccb65c1c76b7993f756d4318ba19eef603800c1483a021ac339600ebbf7",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "953cd8c0a0abeea1a35ee622c11ef3def27e149f7997b782a1fe0013613d72b8",
+            "pngByteLength": 2031,
+            "pngSha256": "236a7e051088ee1b344f05f9cc38fcac277ce57ba4019ed0eb712ebd38f693a8"
+          },
+          {
+            "level": 3,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "c2cd421b2ab0678bc60d12f1a79aea2c373fdc5057e316296f7aacf497e8d9a3",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "c428ebbff59b42b44f6abf74af476ebda99ffe46d8b8f0aa3cc8c1bb6d4cf545",
+            "pngByteLength": 667,
+            "pngSha256": "3c544f2413d54585663d4bb6ed27a2a52b0f7d58cc01d828eb5ed6676cb5f6af"
+          },
+          {
+            "level": 4,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "8f706bbd91a3ff51a5696411e35ad5f94dfb382fed27a483f635aa5e7e8d89bc",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "c1528e20c1de5f1304fb411c550c40b998ff5fc68f790531d8c30c32b54f0d94",
+            "pngByteLength": 275,
+            "pngSha256": "15c4f253aa1658cfd461baeb84642f247c92291ff5711a201007bcf8f7262eb0"
+          },
+          {
+            "level": 5,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "edec2ceaaa7942cbcb3a944e593108fa7c3827e6aef90573eb4c23c6d895d160",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "9c01778a6aee1d3bd615ed654c86d95fbe734014aaa5bb09f011b791eee83d99",
+            "pngByteLength": 136,
+            "pngSha256": "bec0a8672e815eb4c459baeddde1af8d45e14cc614e7a3108c50a5d22ba58d79"
+          },
+          {
+            "level": 6,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "bd10415fc80530001f7d5c595b33a5afeeef0f0c56fd84f8a0d27c42cf164c87",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "fbd6982ba0f64237f7fa6e7f42ff32aa7f778fe2f4ac83fbec4a7d5f75801878",
+            "pngByteLength": 86,
+            "pngSha256": "2c8fdaeaec4636dbdc35a3b86098d7bb0faf6f4b932c5984b631d1d3e6d156ac"
+          },
+          {
+            "level": 7,
+            "uri": "npc_samuraijack_event_eff.textures/bubble_win_01.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "715c5a17d1f7a239034e55cc28d9e34a99b29c3bcb7323cd0fe7a30f22c8cd69",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "f50bce427c2a9dafc0113b43cf0b02bccfba403ff8e0238607a4d566bb709c3a",
+            "pngByteLength": 73,
+            "pngSha256": "471865e062f0f322ebccd602db0ec320185b453f3279771be702b347e3f68200"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/npc_samuraijack_event_eff.publish.json"
+}

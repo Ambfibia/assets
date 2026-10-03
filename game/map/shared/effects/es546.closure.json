@@ -1,0 +1,4481 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 546,
+  "containerRoute": "prefabs/particle/effectscripts/es[546].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 8675,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1616,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "f9b3db1f3070c066ca4df3ad815f90807ff25e52f1fe5dc97d8eb33bd0657edb",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendSrcalphaOne_zwriteOff_cullOff\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\"=\"Transparent+10\"}\n\tBlend SrcAlpha One \n\tColorMask RGB\n\tZWrite Off\n\tCull Off\n\t\n\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 271,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "f_bubbles_megatak_skill0.dds",
+      "canonicalBlake3": "60318baff9b77b492188ca844d7512f9a7e7dd434d0832302091159426f7f011",
+      "value": {
+        "image data": {
+          "base64": "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/1VVVWkfwA/8QAIksaKxmv9VVVVtOMAP/FIiJbGisZr/XVVVaQvAD/xAAiSxorGa/1VVVWkjwA/8QAIksaKxmv/VVVVpJsAP/EACJLGisZr/VVVVbWYAQJK2nSSxorGa/1VVVQoFANC2SZIkunK6agAAqqoJBQD6/0mSJLpyumoAAKqqCAUAYCdJkiS6crpqAACqqggEQPv/SZIkunK6agAAqqoHBABg20mSJLpyumoAAKqqBwQAYNtJkiS6crpqAACqqgcDAPD3SZIkunK6agAAqqoHA0D7/0mSJLpyumoAAKqqBgQAkCRJkiS6crpqAACqqgYDsJ0kSZIkunK6agAAqqoGA7CdJEmSJLpyumoAAKqqBQMAkCRJkiS6crpqAACqqgUDAJAkSZIkunK6agAAqqoFAwCQAEmSJLpyumoAAKqqBQMAACRJkiS6crpqAACqqgYDAJDYSZIkunK6agAAqqphHD/wAwmQALKasZpVVVWqYQBIgARIgASymrGaVVVVqmEMwA/8QAIkspqxmlVVVaphGAAO4AACILKasZpVVVaqYRgHcAABEACymrGaVVVVqmEAQAIkQAIkspqxmlVVVqphFQAOIAACILKasZpVVVWqYQAHciAHciCymrGaVVVVqmEDARZgARiAspqxmlVVVapkPQdwAJEUSbKasZpVVVWqYQ/AD/xAAiSymrGaVVVVqmEnwA/8QAIkspqxmlVVZaphAEACJEACJLKasZpVVZWqYRLAD/xAAiSymrGaVVVVqmEVwA/8QAIkspqxmlVVVapkXwDQtkmSJLKasZpVVVWqBAIAgCRJkiS8artqVVX//wQBAGDbdpIkvGq7alVV//8EAQBg20mSJLxqu2pVVf//BAIAkiRJkiS8artqVVXf/wMCAJAkSZIkvGq7alVV//8DAgCQJEmSJLxqu2pVVf3/AwIAgCRJkiS8artqVVX//wMBAJAkSZIkvGq7alVV//8DAQCQJEmSJLxqu2pVVf//AwEAkCRJkiS8artqVVX//wMBQJIkSZIkvGq7alVV//8CAQAAAEmSJLxqu2pVVf//AgEAAAABkAC8artqVVX//wICAAAAAAAAvGq7alVV//8CAQAAAACQALxqu2pVVf//AgIAAAAAAAC8artqVVX//1sOP/ADCZAAs5qzkv//VVVdAEiABEiABLOas5L//1VV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iv3g+gCq/1X//QCQAEmSJIr94PoAqv9V//0AAAAJkCSK/eD6AKr/Vf//AAAAAAAAiv3g+gCq/1X//wAAAAAAAIr94PoAqv9V//8AAAAAAACK/eD6AKr/Vf//AAAAAAAAiv3g+gCq/1X//wAAAAAAAIr94PoAqv9V//8AAAAAAACK/eD6AKr/Vf//AAAAAAAAiv3g+gCq/1X//wAAAAAAAIr94PoAqv9V//8AAAAAAACK/eD6AKr/Vf//AAAAAAAAiv3g+gCq/1X//wAAAAAAAIr94PoAqv9VSAAJkAAJkAC2iraC///fVUgASIAESIAEtoq2gv//VVVIAEACJEACJLaKtoL//1VVSAAAAiAAAiC2iraC//93VUgAARAAARAAtoq2gv//31VIAEACJEACJLaKtoL//1dVSAAAAiAAAiC2iraC//9VVUgAARIgARIgtoq2gv//1VVGAAESIAESILaKtoL//9dVRQQHEAABEAC2iraC///XVUgAQAIkQAIktoq2gv//V1VIAEACJEACJLaKtoL//1VVSABAAiRAAiS2iraC//93VUgAQAIkQAIktoq2gv//1VVIAEACJEACJLaKtoL//9VVSEUAYNtJkiS2iraC//9XVffUALBttpskgPKB4gCq/1X31wCwbbadJIDygeIAqv9V99cAsG1umySA8oHiAKr/VfjZALBxtpskgPKB4gCq/1X52ACwbW6bJIDygeIAqv9V+doAsG1tmySA8oHiAKr/VfvbALBttpskgPKB4gCq/1X53AAgSW2bJIDygeIAqv9V+tsAsG1tmz+A8oHiAKr/VfrbALBtbfsngPKC4gCq/1X72wCwbW2bJIDygeIAqv9V+9oAsG1tmySA8oHiAKr/VfvaALBtbZskgPKB4gCq/1X62wCwbW37J4DygeIAqv9V+9oAsG1tmySA8oHiAKr/VfvaALBtbZskgPKB4gCq/1VCAAmQAAmQALeCt4IAAAAAQgBIgARIgAS3greCAAAAAEIAQAIkQAIkt4K3ggAAAABCAAACIAACILeCt4IAAAAAQgABEAABEAC3greCAAAAAEIAQAIkQAIkt4K3ggAAAABCAAACIAACILeCt4IAAAAAQgABEiABEiC3greCAAAAAEIAARIgARIgt4K3ggAAAABCAAEQAAEQALeCt4IAAAAAQgBAAiRAAiS3graC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",
+          "bytes": 21872
+        },
+        "m_CompleteImageSize": 21872,
+        "m_Height": 128,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "f_bubbles_megatak_skill0.dds",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 128
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1066,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "ChamferBox01",
+      "canonicalBlake3": "abcc36b86c0256679712bb0c7372816c791e81842f6648d0eb06868fa02f67de",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          7,
+          6,
+          8,
+          7,
+          8,
+          9,
+          9,
+          8,
+          11,
+          9,
+          11,
+          10,
+          1,
+          2,
+          4,
+          4,
+          2,
+          3,
+          0,
+          6,
+          2,
+          2,
+          6,
+          7,
+          3,
+          9,
+          5,
+          5,
+          9,
+          10,
+          15,
+          13,
+          14,
+          14,
+          13,
+          12,
+          14,
+          12,
+          20,
+          18,
+          17,
+          14,
+          14,
+          17,
+          16,
+          14,
+          16,
+          15,
+          18,
+          14,
+          19,
+          19,
+          14,
+          20,
+          12,
+          13,
+          11,
+          11,
+          13,
+          15,
+          11,
+          15,
+          10,
+          10,
+          15,
+          16,
+          10,
+          16,
+          5,
+          5,
+          16,
+          17,
+          5,
+          17,
+          4,
+          4,
+          17,
+          1,
+          11,
+          8,
+          12,
+          12,
+          8,
+          6,
+          12,
+          6,
+          20,
+          20,
+          6,
+          0,
+          20,
+          0,
+          19,
+          19,
+          0,
+          1,
+          19,
+          1,
+          18,
+          18,
+          1,
+          17
+        ],
+        "m_CollisionVertexCount": 21,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "PwDvAf4B",
+              "bytes": 6
+            },
+            "m_NumItems": 45
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "/762vr76UvpavhK+/76++ra+UvoSvlq+sTFfMYgAJTElMV8xsTHqMeoxUvpavr76tr7/vlL6tr6++l8xJTFavhK+JTESvl8xWr62vrEx6jH/vuox/76xMba+",
+              "bytes": 90
+            },
+            "m_NumItems": 90,
+            "m_Range": 1.8555638790130615,
+            "m_Start": -0.999995231628418
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 6,
+            "m_Data": {
+              "base64": "ASAIBEEMRXEch4EgHMdtyaIoGIZdVlUBQHYdR1VphaI8T+MwFCVJUuRAzyNJkjNR1Lp2nweG4kiW5fexq5qiZ2mO",
+              "bytes": 66
+            },
+            "m_NumItems": 88
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "eYIefr7/Hn7S/7IBeYKeAXyCG37S/xt+eYIeftL/sgG+/x5+///NAX6CIX7q/yF+g2wGARoaCgGuQ7khaWwGAQgaCAF5bAkBFRoJAXhsCAEWGgoB3f+3Ad3/IX5tgrcBbYIhfvP/H35qgr4BbYIhfm2CtAEdAEkDDH9JAx0AOv4Mfzr+DQBJAw0AOv7/fkkD/346/hcAOv4XAEkD9H5JA/R+Ov4AAEkDAAA6/r1+SQO9fjr+",
+              "bytes": 180
+            },
+            "m_NumItems": 90,
+            "m_Range": 0.9871271252632141,
+            "m_Start": 0.005571594927459955
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "dGaYSfm/HOj3fpmUX0mEq/D3//9oHaj6d///j9aB1YCXSfmVRCiecJmU/8uBdGaYSfl/3rcKf///X919fu+XSfmptqf6d///X9194gmXSfl/3lcNeJmUn2p7Ue4HAAAruCcgeAAAsIJ7K7gHAACe/VfZcAAAgPJ9lQ0HAAAVHCggeAAAMDGEUe4HAAATQwgshgAAUMGBwGIIAAAo36f6d///j9aB1YCXSfmVRLgKf///j9aBfu+XSfmVREhnhpmU/+d9qn/3///V3ef3fpmUn2p7q/D3///V3ScgeAAAsIJ7lQ0HAAAo31cNeJmUn2p74gmXSfl/3lfZcAAAUMGB4gmXSfm/HCggeAAAMDGE1YCXSfmVROj3fpmUX0mEUe4HAAATQwgshgAAUMGBdGaYSfm/HAgshgAAgPJ9dGaYSfl/3hflfgAAsIJ7fu+XSfmptgc=",
+              "bytes": 338
+            },
+            "m_NumItems": 135,
+            "m_Range": 7.861300468444824,
+            "m_Start": -3.792790412902832
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.13785982131958008,
+            "z": 0.13330116868019104
+          },
+          "m_Extent": {
+            "x": 0.3344978392124176,
+            "y": 3.930650234222412,
+            "z": 0.13619256019592285
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "ChamferBox01",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 88,
+            "isTriStrip": 2,
+            "triangleCount": 36
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1866,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Object02",
+      "canonicalBlake3": "842445e007c9537f6e099d90916421343555a96c12e86a3f063992562e45e299",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          7,
+          6,
+          8,
+          13,
+          12,
+          14,
+          16,
+          15,
+          17,
+          19,
+          18,
+          20,
+          7,
+          8,
+          9,
+          9,
+          8,
+          11,
+          9,
+          11,
+          10,
+          19,
+          20,
+          21,
+          21,
+          20,
+          23,
+          21,
+          23,
+          22,
+          0,
+          6,
+          2,
+          2,
+          6,
+          7,
+          3,
+          9,
+          5,
+          5,
+          9,
+          10,
+          12,
+          18,
+          14,
+          14,
+          18,
+          19,
+          15,
+          21,
+          17,
+          17,
+          21,
+          22,
+          21,
+          15,
+          14,
+          14,
+          15,
+          16,
+          14,
+          16,
+          13,
+          9,
+          3,
+          2,
+          2,
+          3,
+          4,
+          2,
+          4,
+          1,
+          21,
+          14,
+          19,
+          9,
+          2,
+          7
+        ],
+        "m_CollisionVertexCount": 24,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "P/ADSfI=",
+              "bytes": 5
+            },
+            "m_NumItems": 40
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "9MGmx7zwRvRSyw7Q9MG88KbGRvQOz1LKv/qg5I7/EMNXsABTwPqO/qDjEMIAUlewvPD0wUb0RvSmxrzwjv/A+hDCEMOg447+oORXsKbHUss=",
+              "bytes": 80
+            },
+            "m_NumItems": 80,
+            "m_Range": 1.7765965461730957,
+            "m_Start": -0.876153290271759
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 6,
+            "m_Data": {
+              "base64": "ASAIBEEMRXEch4EgTdMwjgNB0BNF0zRJFNV1HZcsijKOo1hdlgUAQIYdx7ZphaIwzOdNUxiCkWVVVeiVJJkkyYadpllVlTeOSZJgHQ==",
+              "bytes": 76
+            },
+            "m_NumItems": 101
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "noAofff/KH35/xEAnoAAAJ6A/3z5//98noAoffn/EQD3/yh9/v8oAJ6AX337/199noAofff/KH35/xEAnoAAAJ6A/3z5//98noAoffn/EQD3/yh9/v8oAJ6AX337/199nYAdAP3/QH2dgB0A/f8dAJ2AVn2dgBQAnYAdAP3/QH2dgB0A/f8dAJ2AVn2dgBQAnYBYffv/WH2dgFh9+/9YfQ==",
+              "bytes": 160
+            },
+            "m_NumItems": 80,
+            "m_Range": 0.991047739982605,
+            "m_Start": 0.004666268825531006
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "l8yBHdbn0IH2EthhjTEk70Mxifzn0HEbC5PIfw4dLp2AHdYYQwIAANhhfQ4dl8yBHdZ7HvE+FJPIL9IRaC+BHdZMrHAbC5PIL9IRAACAHdZ7HuHSCdhhzcQKP2XTsd/n0LEYLVrFjTEkAOzx///n0JEpFvvNfw4dJEhyNdkYQ+JGG5VdfQ4dP2XTsd97HgHAHv//L9IRi9GiVdxMrJApFvvNL9IRbrRR2dV7HkGCJFeTzcQK70Mxifzn0HHJHNhhvecRt7EwifwiHXEbC5PIfw4daC+BHdZMrPA+FJPIL9IRAOzx///n0PFTNh37vecRmWKx3/wiHZEpFvvNfw4di9GiVdxMrADAHv//L9IRi9GiVdwYQ0KCJFeTjTEkaC+BHdYYQ+LSCdhhjTEk",
+              "bytes": 300
+            },
+            "m_NumItems": 120,
+            "m_Range": 4.467374801635742,
+            "m_Start": -0.27356839179992676
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.20046454668045044,
+            "y": 3.826026678085327,
+            "z": 0.1361941397190094
+          },
+          "m_Extent": {
+            "x": 0.4740329384803772,
+            "y": 0.3677799701690674,
+            "z": 0.22184321284294128
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Object02",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 101,
+            "isTriStrip": 2,
+            "triangleCount": 28
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1867,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Object01",
+      "canonicalBlake3": "2f4cb4497c4f78d7fa58fae6251e64ac9a793f19f41b511b24c6660ed369ebbc",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          1,
+          0,
+          2,
+          4,
+          3,
+          5,
+          7,
+          6,
+          8,
+          7,
+          8,
+          9,
+          9,
+          8,
+          11,
+          9,
+          11,
+          10,
+          0,
+          6,
+          2,
+          2,
+          6,
+          7,
+          3,
+          9,
+          5,
+          5,
+          9,
+          10,
+          9,
+          3,
+          2,
+          2,
+          3,
+          4,
+          2,
+          4,
+          1,
+          9,
+          2,
+          7
+        ],
+        "m_CollisionVertexCount": 12,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "P5AM",
+              "bytes": 3
+            },
+            "m_NumItems": 20
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "xumE6ZT/Mv9B6QDpxumU/oTpMv4A6T/plP/G6TL+Mv+E6ZT+hOlB6Q==",
+              "bytes": 40
+            },
+            "m_NumItems": 40,
+            "m_Range": 1.4964594841003418,
+            "m_Start": -0.5822901129722595
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 5,
+            "m_Data": {
+              "base64": "AQhBCBmlnHMMQjFGmJZSAIDGznnPFaVSemxKmVJiEQ==",
+              "bytes": 31
+            },
+            "m_NumItems": 49
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "IoCffPb/oHz6/wkAIoAAACOAfXz6/3x8IoCffPr/CQD2/6B8//8VACWAznz8/898GIAPAP7/tXwYgA8A/v8PABmAyHwZgAoAGYDIfPr/yHw=",
+              "bytes": 80
+            },
+            "m_NumItems": 40,
+            "m_Range": 0.9796456694602966,
+            "m_Start": 0.01419055461883545
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "JqjzLu6pnLKKJu/ifnowq2jy//+pnKL3E///n8opej/xLu6nBwMAAO/insopJqjzLu599bGKJv//f0Mfq2jyLu5/iqH3E///f0MfAADwLu599aH3E+/i/qcYq2jy//+pnGKCOu/i3lcfej/x//839KH3E///n8opq2jyLu5/irGKJv//f0Mfq2jyLu6nB6P3E+/ifnow",
+              "bytes": 150
+            },
+            "m_NumItems": 60,
+            "m_Range": 4.666652679443359,
+            "m_Start": -0.533287763595581
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 3.9709768295288086,
+            "z": 0.13330116868019104
+          },
+          "m_Extent": {
+            "x": 0.533287763595581,
+            "y": 0.16238772869110107,
+            "z": 0.21713092923164368
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Object01",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 49,
+            "isTriStrip": 2,
+            "triangleCount": 14
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2022,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "8e82000824f215f32a1da9597ab1898a92aaa37dc4b57f31d8d07a07bda6485e",
+      "value": {
+        "m_CompressedRotationCurves": [],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "ChamferBox01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object01",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.4333333373069763,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.499998092651367,
+                  "outSlope": 7.499998092651367,
+                  "time": 0.46666666865348816,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 14.999995231628418,
+                  "outSlope": 14.999995231628418,
+                  "time": 0.5,
+                  "value": 0.49999985098838806
+                },
+                {
+                  "inSlope": 5.999995231628418,
+                  "outSlope": 5.999995231628418,
+                  "time": 0.5333333611488342,
+                  "value": 1.0000001192092896
+                },
+                {
+                  "inSlope": -3.000001907348633,
+                  "outSlope": -3.000001907348633,
+                  "time": 0.5666667222976685,
+                  "value": 0.8999999165534973
+                },
+                {
+                  "inSlope": -2.9999866485595703,
+                  "outSlope": -2.9999866485595703,
+                  "time": 0.8333336114883423,
+                  "value": 0.09999924898147583
+                },
+                {
+                  "inSlope": -1.4999874830245972,
+                  "outSlope": -1.4999874830245972,
+                  "time": 0.8666669726371765,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9000003337860107,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.933333694934845,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.9666670560836792,
+                  "value": 0.0
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Object02",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3079,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "f_bubbles_megatak-15 - default-f_bubbles_megatak_skill0.dds",
+      "canonicalBlake3": "cc467e8f6196b3ba6738a37a065cc92813b6e8416012eb1f2dae1db266f566c5",
+      "value": {
+        "m_Name": "f_bubbles_megatak-15 - default-f_bubbles_megatak_skill0.dds",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 271
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1616
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5478,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "6a7462fd87fa1e59e51b42945cb82b5e2ad3aea162eb6f6ea8adf5b0b573d972",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 8675
+        },
+        "m_LocalPosition": {
+          "x": 5460.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5480,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "bbe63b2a864a763b8f4d1a5abed47ec858908563aab584b1662eaf840bee5c30",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 5481
+          },
+          {
+            "fileId": 0,
+            "pathId": 5482
+          },
+          {
+            "fileId": 0,
+            "pathId": 5483
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11410
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5481,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "2cc06beb4ffa4669a0ee5258995d7bb95fde9a118f56fb7bfbba1619cb209137",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 5480
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11413
+        },
+        "m_LocalPosition": {
+          "x": 0.006662338972091675,
+          "y": 1.096778392791748,
+          "z": 4.494057655334473
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5482,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "4cd6ba6477aa1086cfb81048ecbd66b488edb13443d636286f57778582ca454a",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 5480
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11416
+        },
+        "m_LocalPosition": {
+          "x": -0.01723170280456543,
+          "y": 1.096778392791748,
+          "z": 4.494057655334473
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5483,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "071bc83ca44455ae79364f4c661b2ad161d917327f9547531ef26356f18dcaba",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 5480
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11417
+        },
+        "m_LocalPosition": {
+          "x": -0.8047149777412415,
+          "y": 1.0872176885604858,
+          "z": 4.331498146057129
+        },
+        "m_LocalRotation": {
+          "w": 0.704416036605835,
+          "x": -0.704416036605835,
+          "y": -0.06162843108177185,
+          "z": -0.06162843108177185
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 8675,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[546]",
+      "canonicalBlake3": "8ba3c4bf2bb664291fb82f618a8f2427f211ee87c7cf118b99e997b1a2f282c2",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5478
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17739
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[546]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11410,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "f_bubbles_megatak",
+      "canonicalBlake3": "bb09b9408f209aa90f481d9e2c940be781686dfe397912297fefe66e791bf633",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5480
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 14047
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "f_bubbles_megatak",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11413,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ChamferBox01",
+      "canonicalBlake3": "987484a231b934766f28eee0fcb60ae73b5f77faf7525e3b88a33e401497f108",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5481
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 11784
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 11785
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "ChamferBox01",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11416,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Object01",
+      "canonicalBlake3": "8051a20a64a70377bd13d701c303d52021bf9f9928bb787e393a66b1c7fc26e5",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5482
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 11786
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 11787
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Object01",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11417,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Object02",
+      "canonicalBlake3": "7118b84449ccb80eb6e3a8e7be5fdb2ab99d2e374dfe5fd6519df5b75af1f571",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5483
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 11788
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 11789
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Object02",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11784,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "89e2988d6fbeb16d60243f6e8657ffc14ff45713921d2a3dc6182fa3772cd3de",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11413
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1066
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11785,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "3f04a30970debea9d804007ac0e3b742c597ec815cc5e92ddfdb99b961aa025a",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11413
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3079
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11786,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "d9ab5c915660aa666506e954972bd29bf01e86a6ac98d2523e5a34f206c142a8",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11416
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1867
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11787,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "17bb2b9d0c1dde2980dced76d0a01b24bad75c79a85b73193148587ece61a53a",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11416
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3079
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11788,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "640c012e39849192e76c6da0cd7a5bc2f8a4478d4ac0fbb92743305953bb2f0c",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11417
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1866
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11789,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "c3e691a035b36ea1cbe1db02977cc9819f0c7068384bba309af45fe04ba98459",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11417
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3079
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14047,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "07b2c701100e404f99350068e5e90067322e3651b1b4f9c94b771dd99e8871a5",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 2022
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 2022
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11410
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17739,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "2854ca98af80093ff5be1c392fe8c21f4eac7981a8d93e656046889c452d6868",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "f_bubbles_megatak",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 8675
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 1.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 11410
+        },
+        "particles": [],
+        "priority": 0
+      }
+    }
+  ]
+}

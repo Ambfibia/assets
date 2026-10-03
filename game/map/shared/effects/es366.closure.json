@@ -1,0 +1,1141 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 366,
+  "containerRoute": "prefabs/particle/effectscripts/es[366].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9475,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1609,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "978d7607add9e93d7d8240d9564922905a2c9a1a6cee7e98b590e3ead27aa1d8",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendOneOne_zwriteOff_cullOff\" {\nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend One One\n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1915,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleEmitterController",
+      "canonicalBlake3": "9d0cab4dc9ad89ab1768565cf7f974ec2ba85be11011646528c9dd2f89422a71",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 246,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "star_05",
+      "canonicalBlake3": "877de77150999da26f3817ac549b66b58322c6e95715c92fb66cad3e2a8cd0d4",
+      "value": {
+        "image data": {
+          "base64": "/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAANEMSRIzhkQKWu0hCFVtAwqCxrZt24GdJNnlAABVVVgAcKe2bds2kiS21AAAVVUlAP8VSRI6JEhBPvdBEFV5igL/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA+HkxF1MxF1O99lKrLS0tLf/Nf7L2JMdxXe865l/oAAD/unnctuO2bT3ved3VqgAA/9bvOq7dvNF997vmiYDCwP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAGqetm3btmEjFtQAAFVVlSX/kjmXcz7lah33tMMtLS8L/+zP8zx//jxd933vqqqqqv/sz5/n+fM8Xfd976qqqqr/7PH//Hn8PH33Xe/Dzj/uTeG2Dduxndj75gAAVVdUUP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA+B4JGZIhFEre9mMYpakJCf/Caedu27ZtXe+55SkLAAD/63/y58mf5333Xe9/93/3/+5JkiRJkud991337r/+u/rsef7/+e3bffdd7//uLwj/EhADIYIIIX3vYghgQIBA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAABK2TZi27Zt27reAAA1VVVV/wwQlBBJkiRd9yEIACVVVf+KmqRqnZRWHfdwiwAIAin/x9y2adq2KX33WMYCAABASepJksC0bds87wAAAHBWVY3UgW3btm3bmtYAAFhVVVX/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wCnkEC5leT99iAICQU1VUzySZzAoW3bffcAAEBwWFX/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAP8ASZIkSZIkAAAAAAAAAAD/AEmSJEmSJAAAAAAAAAAA/wBJkiRJkiQAAAAAAAAAAAEGtm3btmE7IQgAAFVV1RUAvAAAABLAlPfMAABVVV+CAMiwDdvAtDa51QAAVVX1CwIMtm3bsB3bYRAAAFVVVVQCWrZhGzZkI2xyAABVVVUV/4XhGEqf1Eld9/S7qQkJA//LCU3O2zqOXe875qWAgAAMobAN27Id2NKcIABVVVdUAN6ACiwGZhud7gAAtTXVVf8NkgBBlZRMHO9iEAAAAiX/AIIAQYIIPV3vAAAAAIBwAOghEAIDYNtd7yAAXFhXVf8ASZIkSZIkAAAAAAAAAAAA18ACYAZg23vmAAA11VVVAOkZMAAAYNt99wAAXFdVVf8ASZIkSZIkAAAAAAAAAAAD9TYAT0BrNF//IQhV9SUlAP8AoAENkArb5gAAVVtQcAD/YAOsBmYD3O4gAAk11VUA/2mRAQMAAJ7/IQhgXFdVA92GrEZIYAlZ1oIQVcFBdUs/35dlWfZ9SUroSZEZuRFPQ3mSPM+TPAlKKEKqqqqq",
+          "bytes": 1392
+        },
+        "m_CompleteImageSize": 1392,
+        "m_Height": 32,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "star_05",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 32
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 439,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "circle",
+      "canonicalBlake3": "967415e55dfc3a0e68a3ae4e1ec25e66416b3c278860f03a471f1a1545ccdba1",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 5488
+        },
+        "m_CompleteImageSize": 5488,
+        "m_Height": 64,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "circle",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 64
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2310,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "circle.dds One One_zwriteOff_cullOff",
+      "canonicalBlake3": "74e0a1ce22040f161c2599d814543cb715f8261091569a811535b4c76883add7",
+      "value": {
+        "m_Name": "circle.dds One One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 439
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1609
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2690,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "star_05.DDS One One_zwriteOff_cullOff",
+      "canonicalBlake3": "1db26b4bebcc86a86f5f6bf3de75853c31d35b6e14473a9e5e7e72c6ab954a40",
+      "value": {
+        "m_Name": "star_05.DDS One One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 246
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1609
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5541,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "71185191b67d458da0c3d0db881ad56ce4b73be0057a353946f8c06ca7a3240f",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9438
+        },
+        "m_LocalPosition": {
+          "x": 2530.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5546,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "50908c9f78e825c0389d47dc76e378c55e6a7b53fde2b58eb1872b5d09270921",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9335
+        },
+        "m_LocalPosition": {
+          "x": 2310.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 5548,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "964915ff1df812ca9e19215f13f7b74caa017787f80007214056d13e62b71dcd",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9475
+        },
+        "m_LocalPosition": {
+          "x": 3660.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9335,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[231]",
+      "canonicalBlake3": "0b12fae9fd99acc36440bf98e5ad20c84a3a26dd541cca3898962e72349a6b06",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5546
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 15559
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 15560
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 15561
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15562
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[231]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9438,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[253]",
+      "canonicalBlake3": "de600b67be657ca774ef518c59ba39c222528a52cac02256b74372ba62af54a0",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5541
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 17567
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 17568
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 17569
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17570
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[253]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9475,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[366]",
+      "canonicalBlake3": "920b14b595ad42dcfa88de3ba817ac39a58570e9a8ab17f451508f959af482cf",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 5548
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17561
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[366]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15559,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "065cb308655568f6d276b297f62746e50566d567656b4e1fd5c2c49c789b45a4",
+      "value": {
+        "UV Animation": {
+          "cycles": 1.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9335
+        },
+        "m_HeightCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2690
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": -343.7746887207031,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": -343.7746887207031,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": -343.7746887207031
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 0,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.5,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 0.5,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 0.5
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15560,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "27e42b0b699fa167cd17954650ad9fb0f92c4085e4521f746ee27a0f0d912bc0",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4293430971
+        },
+        "colorAnimation[1]": {
+          "rgba": 4289620876
+        },
+        "colorAnimation[2]": {
+          "rgba": 4285810526
+        },
+        "colorAnimation[3]": {
+          "rgba": 4282000431
+        },
+        "colorAnimation[4]": {
+          "rgba": 4278190080
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9335
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15561,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "83dc345cf4bd2c8d4f62546835d46e43a0e563472f5a1256d5ba6dc04741784b",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9335
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15562,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "1f35653867e8c7a005b7cf8c82f50f98dcf977f5c5f742a61d7c8d81e486f222",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 2.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.0,
+        "lifeTime": 1.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9335
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 5,
+        "numberPerGeneration": 3.0,
+        "particleName": "nfk_01",
+        "plane": {
+          "x": 0.5,
+          "y": 0.0,
+          "z": 0.5
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.0,
+        "randomPosition": 0.0,
+        "randomTime": 0.0,
+        "randomVelocity": 0.0,
+        "textureKeys": [],
+        "totalParticleCount": 6.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17561,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "6c358154dcd1e16c1deffa29f54640c4c84a7ece4a5a4dc5db6e4b3daf72c7cc",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 1,
+        "effectName": "numbuhfive_knockdown_eff_hit",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 600.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9475
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": -1.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "particles": [
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 9335
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 9438
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "priority": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17567,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "b3861b8dc7208d01072e867b0baa666e27f588d58ec0218862042d261e302aeb",
+      "value": {
+        "UV Animation": {
+          "cycles": 600.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9438
+        },
+        "m_HeightCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2310
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 171887.34375,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 171887.34375,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 171887.34375
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 4,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17568,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "0910e6386bbbfcff05ddde4aafab184db846930357393f331a312117dbbffc60",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4282384512
+        },
+        "colorAnimation[1]": {
+          "rgba": 4281335904
+        },
+        "colorAnimation[2]": {
+          "rgba": 4280287296
+        },
+        "colorAnimation[3]": {
+          "rgba": 4279238688
+        },
+        "colorAnimation[4]": {
+          "rgba": 4278190080
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9438
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17569,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "1adee4404360e0c768528a76627829b0a114a01b06c9551425bbb866813eda49",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9438
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17570,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "46bbb11e136a429e4d83ca8dbbce9285265d440f1a66098e704403b72033eda4",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 0.0016666667070239782,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.2000000476837158,
+        "lifeTime": 600.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9438
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 0,
+        "numberPerGeneration": 1.0,
+        "particleName": "nfk_02",
+        "plane": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.0,
+        "randomPosition": 0.0,
+        "randomTime": 0.0,
+        "randomVelocity": 0.0,
+        "textureKeys": [],
+        "totalParticleCount": 1.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    }
+  ]
+}

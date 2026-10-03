@@ -1,0 +1,329 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "f_bloo_corruptak",
+    "root_node": "f_bloo_corruptak",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/f_bloo_corruptak.glb",
+    "glb_blake3": "da909a9ab7d18288bc5195061c7febc31093fadf5b5bd5edc9f2bbf904282474",
+    "source": {
+      "nodes": 9,
+      "mesh_parts": 4,
+      "material_slots": 4,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 8,
+      "float_curves": 4,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 82,
+      "cubic_spline_keyframes": 45,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 9,
+      "mesh_parts": 4,
+      "material_slots": 4,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 8,
+      "float_curves": 4,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 82,
+      "cubic_spline_keyframes": 45,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 9,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "36b7514de6f5aea2c6fdacef6e8ab39029997660e7b27e87a31bd4b72a02d83c",
+      "geometrySha256": "1e65cfb4d20c873e68bfab4872fc6383b931d802f1e07a53b563e2de75dc5d59",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "95008d8d5c11e5264dca4689f7f188c2be5500c43a4c0d4c6db61221a250c055",
+      "animationMetadataSha256": "a2e7d62723924e963424b9959d9228a68c681d44b2b1ccbc976f2b1f7c8fc661",
+      "materialsSha256": "0b7aef3ef4a5a52f46c9cff66ceecb47db7ca220658a5289cbd544b71baef10a"
+    },
+    "emitted": {
+      "hierarchySha256": "36b7514de6f5aea2c6fdacef6e8ab39029997660e7b27e87a31bd4b72a02d83c",
+      "geometrySha256": "1e65cfb4d20c873e68bfab4872fc6383b931d802f1e07a53b563e2de75dc5d59",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "95008d8d5c11e5264dca4689f7f188c2be5500c43a4c0d4c6db61221a250c055",
+      "animationMetadataSha256": "a2e7d62723924e963424b9959d9228a68c681d44b2b1ccbc976f2b1f7c8fc661",
+      "materialsSha256": "0b7aef3ef4a5a52f46c9cff66ceecb47db7ca220658a5289cbd544b71baef10a"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.1144280731678009,
+        -0.1144285500049591,
+        -2.9733448059232614e-7
+      ],
+      "max": [
+        0.11278671026229858,
+        0.1144280731678009,
+        0.6782009601593018
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.07870364189147949,
+        0.8157366514205933,
+        -0.5319880247116089
+      ],
+      "max": [
+        0.14851114153862,
+        1.078710675239563,
+        0.15237081050872803
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "f_bloo_corruptak-19 - default-f_jack_corruptak.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "f_bloo_corruptak-19 - default-f_jack_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "f_jack_corruptak.dds",
+        "uri": "f_bloo_corruptak.textures/f_jack_corruptak.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 16311,
+        "sha256": "33f997b7396248ef8690a27f3f3394c0dfbb0fa98fb399eb3a723ea4b8efd15b",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "969265a577bab2f2bb9f7223a09028015d4c38079b1a4bc4feefa967e89b6772",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "4f45a69a3f0464980833a4f09c7c565dfd4d54557894d0c1cc0b2256f843f793",
+            "pngByteLength": 16311,
+            "pngSha256": "33f997b7396248ef8690a27f3f3394c0dfbb0fa98fb399eb3a723ea4b8efd15b"
+          },
+          {
+            "level": 1,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "d4389ec7517502799730c86991cb21bffe6eb44be041b3df53e5e62450b05bbb",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "00d1b679e691b29c93b4ed720f05250bc3083d3aeef7d0a10bdf3e15a9a54cd6",
+            "pngByteLength": 4646,
+            "pngSha256": "f28e2a151d6062ffd34c27d29cdedcb232590d9fdd6a1849efbd7edf7acf416c"
+          },
+          {
+            "level": 2,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "8690e304aec8af6a630475c4c08bff18489f978ca7f93c378a96f8a2d2b500aa",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "db6f1bd45d0c2bab66a6b306aeea41d1e3626de265adb0ed034fefe3285f67d5",
+            "pngByteLength": 1576,
+            "pngSha256": "1ce70a708592bb760e1650f35cddcff58139a10bc83995ca2365e9616c20536a"
+          },
+          {
+            "level": 3,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "c71c3bc7a83c68de01fffdb32d675ec380c0f1bab8ca2b4b6387e865b991e647",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "f6ce4bea208aebe0f8c0fe287322ba059dbe61aa030f661e463ea8c3d8c5d7fc",
+            "pngByteLength": 543,
+            "pngSha256": "64931295b4d347cb804a1d38cd021d10677e6442e37a3fca1f8daa13496aab8a"
+          },
+          {
+            "level": 4,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "e02070b06305b3b4f1a5ad34c6f56987042deb6c7daa57b969cfb33952d20a65",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "be141fef9cd19da6e22803f750e26c423e6c5c135f755249dee84e27afa9580c",
+            "pngByteLength": 255,
+            "pngSha256": "2dbb105d7145f2649ed86d143c0a415594f8a07a525d8149c92ec68c7b0fe729"
+          },
+          {
+            "level": 5,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "27385a5c9e404865b119be751ff7f0a159e9869553d7002ee89ebf4f4011dc45",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "8d6c0d1036454da9be1f0a1de324b73312d803d5ee1fc0921b17ef218ee55202",
+            "pngByteLength": 136,
+            "pngSha256": "6f5d442d5f51af818ff9221a4e98c837db96d172967694e3105b897b8ad531d7"
+          },
+          {
+            "level": 6,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "19fe1c7ff06006ca92914c2e394ec19ba98a6c2c985503b1e249e049471bf001",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "94f18617a4a7181a0ca39da1d27c3a585ecc403d9d76ac17eb857a8ba1ee6684",
+            "pngByteLength": 86,
+            "pngSha256": "e803d8b7a2e97b3b9b0ed6cf186f709f1eb25222e4fb6f88ecab155eaa9ec17c"
+          },
+          {
+            "level": 7,
+            "uri": "f_bloo_corruptak.textures/f_jack_corruptak.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "112eaf812e133d1bcf1e13b52b7e797181d4c6ee563fa81487e124216b452e31",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "5d8a67625bea410d98fbd4182f433b9c8ae23242e9a9e6ed98d8a0269b737398",
+            "pngByteLength": 73,
+            "pngSha256": "ca758b889985867a2938f554fe0d2c2045104c5d2bd019ab665100fd2b069179"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/f_bloo_corruptak.publish.json"
+}

@@ -1,0 +1,854 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 688,
+  "containerRoute": "prefabs/particle/effectscripts/es[688].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9417,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1601,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "2f3ede12f59b5ce43fb091dcf8a28e53d87dd8099240f9404227f370bef84eb5",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendSrcalphaOne_zwriteOff_cullOff\" {\nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend SrcAlpha One\n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1915,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleEmitterController",
+      "canonicalBlake3": "9d0cab4dc9ad89ab1768565cf7f974ec2ba85be11011646528c9dd2f89422a71",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 47,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "MK_fuse_L_e006",
+      "canonicalBlake3": "9423a73d81bad64dac7131badd45bfb70610d4ed3a42f6bef4dad07306b2d1cb",
+      "value": {
+        "image data": {
+          "base64": "AAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUFAEmSJEmSEEAIAABVVVW1BQBJkiRJAgBACAAAVVVVqgUASZIkSQIAQAgAAFVVVaoFAEmSJEmCNUAIAABVVVV6AAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVBwBJkiRJklxBCAAAVVVVtQIatm1DELsmoRgAAFXVLQIOLrYNjWOzbUMpAABVrwqqFD22PbZtIgkEQgAAVaoK/0AASSJpgOYnozkAAFUAAFcpAEkCjdCYJCIpAABVoKBVFABJIjpYnySBEAAAVXjgVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAQ0WY0O2bUthEAAAPdVVVQIfbKKxNgAAAiEAAAqvVVUtAts2AXeZ5GMxIAiqCv1VMQlkDUCckN9jMUEI+gAK9T4Ef0LWAtBywzlBCFX6AK89AUniJ9AoAaM5AABVX6AAI0S2bdsAkCTkQQAAVVWqAD8CyZ3bJAtoozkAAPX9qgArFPmfJG2JkUMpoRhVVf/oJhP/n5ubMGkjKaEYVdUKqikUf0IOksC2IimBEH8KAKoxEUkiANvW1oMxgRBVAKr/MAO2DUBb7SdjMSAA/4D6VyEArY/VfpIkAiEAAH/4V1UEAE+yJE+SJCEIAABXVldVAAEAAAAAAAABAAAAVVVVVQgAOZG8SZIkQAgAAC31VVUSAJRkCkmcJIEQAAACC9VVHAAkKQDulPzBGAAAqgAv1S8Jf0KynJC7gzFhEFX/K9U6A0lS+wDACaM5IABVfwAKSgH/nSQbKQAESiAI1VWqABRYAGDbkpQkhVoAAP9V/wBXCP+f5G4JSIVagRBVVf+AQBS5e5fbBo3kQcEY1b2q6DMQkyRJ0Eg/YzGBEAAAoF4wEJIErfXz/0MpoRgA4F9VKQZaXz//37biICAA4H7/qhQAT/L/JAlggRAAAFf/qgAIAEniJ3CiJ0EIAABVV1xWAAEAAAAAAAABAAAAVVVVVQIASZAESZIkIQgAANXVVVUBC2MjbQZg20EIAAAKr1VVFwCU4HLJnyShGAAACq9VVQQebcsmAGTbwhgAAAAC9VUkAGQrAC6X5AIhAAD6AK9VCiEAlJRtC40CIWEQVaCqtSgH5VQ/JMsJIilBCCtf+gouAALwJPUvAEMpAAAAVX8AAS9Ja9uwkSRjMQAAgFVVAD4ArZ/kuSsAxDkgCH9V9QA/CEl+l+UGAMRBQAjVvasARhpJYtstKQnkQcEYVf+qAEcZSWL7JAsABELCGFX/6gBHBfbjJ7UNAARCQAhfV/8APgBJkiS1DY3DOQAAVVX/oBsASZIk9YP5whgAAFVVX3gBELZtQ8ZiiIEQAABV1TW1KADJ706cYNsCIQAA1SsC/0QL+c8J3JQk5EFhEFUKKlVVC/8vAJOUJEVSgRBVAAJVTxJJAo2SlrsESqEYVaAA9ToISTLWgCZJgzFBCFX4AAAFMdooAOWUpIMxIAC/V/qANwGc8N9PwvqDMUAIClVVXkcDEvD/SZLc5EFACABVVdVHBQD027lbkgRCYRAA1fWvPyIAELe33bbkQSIpAPVV/xpBSUKS27YJ5EHiIACq/18/AwCwkaz/JORBQAgA6n5VOwCAVj9PkiSjOQAAgF9VVREhoWDbtm3bAiEAAOhVVVUBDOFg27Zt22EQAAB4VVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQIQxmIbtm3bgRAAADVVVVUwAJxwd0meJGMxAAAKvVVVSgCbxAm/nSTDOQAAAAL9VRVcbdskAGDbZVIAAAAA/1UAYG2bpJIEAGVSAAAAAP9VUQGApLF/kiQkSiAAAKhVVQw6STkJtm3bozkAAID+VVUBHukk2LZt2+IgAAD4V1VVAQBIkiRJkiQgCAAAV1VVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVUAAQAAAAAAAAEAAABVVVVVAAEAAAAAAAABAAAAVVVVVQABAAAAAAAAAQAAAFVVVVU=",
+          "bytes": 2048
+        },
+        "m_CompleteImageSize": 2048,
+        "m_Height": 32,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": false,
+        "m_Name": "MK_fuse_L_e006",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 64
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3013,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "MK_fuse_L_e006.dds Srcalpha One_zwriteOff_cullOff",
+      "canonicalBlake3": "6cc4a624cb3c137a30cd865045f22dfff45a16e4c69328512a625699251a33c0",
+      "value": {
+        "m_Name": "MK_fuse_L_e006.dds Srcalpha One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 47
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1601
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6440,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "3fa3085ce82981146b8ccd6149b1e830c1144f45fe1090dc08ff7874b1933309",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10157
+        },
+        "m_LocalPosition": {
+          "x": 5790.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6442,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "c996a05a000abab8c5a27b7cbe11364ff2106bf3ebf1b090124ca73cf6e06bae",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9417
+        },
+        "m_LocalPosition": {
+          "x": 6880.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9417,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[688]",
+      "canonicalBlake3": "a340ff29d4440b57c0c48a6e2a6c8f2478021dfcf10ce1ed4d9bf4e1effefb43",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6442
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15692
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[688]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10157,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[579]",
+      "canonicalBlake3": "6a11aa5ff9ac27d46e53b9f4ba6f78d691d8317c2bc3bd51330fca4752e0ec83",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6440
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 14752
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 14753
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 14754
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 14755
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[579]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14752,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "dc215bc5d21827d1085c0be5581c8cfea7b91cfec87196c8556410a604a29cae",
+      "value": {
+        "UV Animation": {
+          "cycles": 1.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10157
+        },
+        "m_HeightCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 10.0,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 10.0,
+              "outSlope": -4.285714149475098,
+              "time": 0.30000001192092896,
+              "value": 3.0
+            },
+            {
+              "inSlope": -4.285714149475098,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 0.0
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3013
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 381.97186279296875,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 381.97186279296875,
+              "outSlope": -327.4044494628906,
+              "time": 0.30000001192092896,
+              "value": 114.59156036376953
+            },
+            {
+              "inSlope": -327.4044494628906,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": -114.59156036376953
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 0,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 20.0,
+              "time": 0.0,
+              "value": 0.0
+            },
+            {
+              "inSlope": 20.0,
+              "outSlope": -8.571428298950195,
+              "time": 0.30000001192092896,
+              "value": 6.0
+            },
+            {
+              "inSlope": -8.571428298950195,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 0.0
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14753,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "26682efe881f2486253bbe59612ae0cc2fa4453dfa25c97cbfd4e3635c614c13",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[1]": {
+          "rgba": 4290756543
+        },
+        "colorAnimation[2]": {
+          "rgba": 4286611584
+        },
+        "colorAnimation[3]": {
+          "rgba": 4282400832
+        },
+        "colorAnimation[4]": {
+          "rgba": 4278190080
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10157
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14754,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "80edf821bbf8e14a34a7f65cfc085ac40fdafff8a93a3bb05bd6e03adc4abc10",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10157
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14755,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "b8ee30bfd0b6dc655a68af903db93f607d216307f25050d45fa937988d733dda",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 30.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.0,
+        "lifeTime": 2.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10157
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 0,
+        "numberPerGeneration": 2.0,
+        "particleName": "Mk_fuselord_tail_001",
+        "plane": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.7540000081062317,
+        "randomPosition": 3.0,
+        "randomTime": 0.10000000149011612,
+        "randomVelocity": 0.30000001192092896,
+        "textureKeys": [
+          {
+            "height": 0.0,
+            "width": 0.0,
+            "x": 0.0,
+            "y": 2.0
+          },
+          {
+            "height": 0.05000000074505806,
+            "width": 0.05000000074505806,
+            "x": 0.0,
+            "y": 1.9500000476837158
+          },
+          {
+            "height": 0.10000000149011612,
+            "width": 0.10000000149011612,
+            "x": 0.0,
+            "y": 1.899999976158142
+          },
+          {
+            "height": 0.15000000596046448,
+            "width": 0.15000000596046448,
+            "x": 0.0,
+            "y": 1.850000023841858
+          },
+          {
+            "height": 0.20000000298023224,
+            "width": 0.20000000298023224,
+            "x": 0.0,
+            "y": 1.7999999523162842
+          },
+          {
+            "height": 0.25,
+            "width": 0.25,
+            "x": 0.0,
+            "y": 1.75
+          },
+          {
+            "height": 0.30000001192092896,
+            "width": 0.30000001192092896,
+            "x": 0.0,
+            "y": 1.7000000476837158
+          },
+          {
+            "height": 0.3499999940395355,
+            "width": 0.3499999940395355,
+            "x": 0.0,
+            "y": 1.649999976158142
+          },
+          {
+            "height": 0.4000000059604645,
+            "width": 0.4000000059604645,
+            "x": 0.0,
+            "y": 1.600000023841858
+          },
+          {
+            "height": 0.44999998807907104,
+            "width": 0.44999998807907104,
+            "x": 0.0,
+            "y": 1.5499999523162842
+          },
+          {
+            "height": 0.5,
+            "width": 0.5,
+            "x": 0.0,
+            "y": 1.5
+          },
+          {
+            "height": 0.550000011920929,
+            "width": 0.550000011920929,
+            "x": 0.0,
+            "y": 1.4500000476837158
+          },
+          {
+            "height": 0.6000000238418579,
+            "width": 0.6000000238418579,
+            "x": 0.0,
+            "y": 1.399999976158142
+          },
+          {
+            "height": 0.6499999761581421,
+            "width": 0.6499999761581421,
+            "x": 0.0,
+            "y": 1.350000023841858
+          },
+          {
+            "height": 0.699999988079071,
+            "width": 0.699999988079071,
+            "x": 0.0,
+            "y": 1.2999999523162842
+          },
+          {
+            "height": 0.75,
+            "width": 0.75,
+            "x": 0.0,
+            "y": 1.25
+          },
+          {
+            "height": 0.800000011920929,
+            "width": 0.800000011920929,
+            "x": 0.0,
+            "y": 1.2000000476837158
+          },
+          {
+            "height": 0.8500000238418579,
+            "width": 0.8500000238418579,
+            "x": 0.0,
+            "y": 1.149999976158142
+          },
+          {
+            "height": 0.8999999761581421,
+            "width": 0.8999999761581421,
+            "x": 0.0,
+            "y": 1.100000023841858
+          },
+          {
+            "height": 0.949999988079071,
+            "width": 0.949999988079071,
+            "x": 0.0,
+            "y": 1.0499999523162842
+          }
+        ],
+        "totalParticleCount": 120.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15692,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "e17b59a06af65ecd4e4f949ae99a2803cd1dd2f1cd467d1aedd439ec20772126",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "Mk_fuselord_tail",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 2.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9417
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 1.5,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "particles": [
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 10157
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "priority": 0
+      }
+    }
+  ]
+}

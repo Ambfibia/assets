@@ -1,0 +1,1757 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 634,
+  "containerRoute": "prefabs/particle/effectscripts/es[634].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9420,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1612,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "044c0af6627f4f3086932b48f32149e0fe7772514141e25f4f04bcdaae5ff60c",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendSrcalphaOne\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\"=\"Transparent\"}\n\tBlend SrcAlpha One \n\tColorMask RGB\n\t\n\t\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1906,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "VisibleSwitch",
+      "canonicalBlake3": "37e3f54d158b9ba4735854ae949dfb14151f7b7b178ec8d2c71c6481a3ad1e37",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "VisibleSwitch",
+        "m_IsEditorScript": false,
+        "m_Name": "VisibleSwitch",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1913,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "BillboardNode",
+      "canonicalBlake3": "7047c6c71001154fe0b3e7def2769493100bf1ad9cb8701558d054bd079208e6",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "BillboardNode",
+        "m_IsEditorScript": false,
+        "m_Name": "BillboardNode",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 143,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "dakcho.dds",
+      "canonicalBlake3": "46ce957e225ac60020d6be835ae491a5e28cc12f03b8cda0295b49420d910acf",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 5488
+        },
+        "m_CompleteImageSize": 5488,
+        "m_Height": 64,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "dakcho.dds",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 64
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1325,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Plane",
+      "canonicalBlake3": "33be87cb93359dd3f964713c76f7f2d87e6ad0c8a1affedd42b69f6b14d558eb",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          3,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "m_CollisionVertexCount": 4,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "Dw==",
+              "bytes": 1
+            },
+            "m_NumItems": 4
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "AAAAAAAAAAA=",
+              "bytes": 8
+            },
+            "m_NumItems": 8,
+            "m_Range": 0.0,
+            "m_Start": 0.0
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 2,
+            "m_Data": {
+              "base64": "Jw==",
+              "bytes": 1
+            },
+            "m_NumItems": 4
+          },
+          "m_UV": {
+            "m_BitSize": 16,
+            "m_Data": {
+              "base64": "AAD//wAAAAD///////8AAA==",
+              "bytes": 16
+            },
+            "m_NumItems": 8,
+            "m_Range": 1.0,
+            "m_Start": 0.0
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "//////////f//wAA8P9/AADw/////wcAAAAA8P9/",
+              "bytes": 30
+            },
+            "m_NumItems": 12,
+            "m_Range": 1.0,
+            "m_Start": -0.5
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_Extent": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.0
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Plane",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 4,
+            "isTriStrip": 2,
+            "triangleCount": 2
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2165,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "cb7be8d4c9b470ce87126c4e5874951ba9bfc4626f509aa03578c9cd59aa3d4e",
+      "value": {
+        "m_CompressedRotationCurves": [],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.3333333432674408,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.6666666269302368,
+                  "outSlope": -1.6666666269302368,
+                  "time": 0.36666667461395264,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -3.3333332538604736,
+                  "outSlope": -3.3333332538604736,
+                  "time": 0.4000000059604645,
+                  "value": 0.8888888955116272
+                },
+                {
+                  "inSlope": -3.333333969116211,
+                  "outSlope": -3.333333969116211,
+                  "time": 0.6333334445953369,
+                  "value": 0.11111080646514893
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera/Plane",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [
+          {
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": {
+                    "x": 3.838477373123169,
+                    "y": -1.574184775352478,
+                    "z": -2.680612087249756
+                  },
+                  "outSlope": {
+                    "x": 3.838477373123169,
+                    "y": -1.574184775352478,
+                    "z": -2.680612087249756
+                  },
+                  "time": 0.0,
+                  "value": {
+                    "x": -3.3167367519126856e-8,
+                    "y": 1.7365145683288574,
+                    "z": -0.21408063173294067
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 3.039829730987549,
+                    "y": -0.3812205493450165,
+                    "z": -1.8106157779693604
+                  },
+                  "outSlope": {
+                    "x": 3.039829730987549,
+                    "y": -0.3812205493450165,
+                    "z": -1.8106157779693604
+                  },
+                  "time": 0.03333333507180214,
+                  "value": {
+                    "x": 0.12794922292232513,
+                    "y": 1.6840417385101318,
+                    "z": -0.3034343719482422
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 2.284623384475708,
+                    "y": 1.5185306072235107,
+                    "z": -0.873163104057312
+                  },
+                  "outSlope": {
+                    "x": 2.284623384475708,
+                    "y": 1.5185306072235107,
+                    "z": -0.873163104057312
+                  },
+                  "time": 0.06666667014360428,
+                  "value": {
+                    "x": 0.20265528559684753,
+                    "y": 1.7110998630523682,
+                    "z": -0.33478835225105286
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 1.1640324592590332,
+                    "y": 2.875199317932129,
+                    "z": -1.8020966053009033
+                  },
+                  "outSlope": {
+                    "x": 1.1640324592590332,
+                    "y": 2.875199317932129,
+                    "z": -1.8020966053009033
+                  },
+                  "time": 0.10000000894069672,
+                  "value": {
+                    "x": 0.2802574634552002,
+                    "y": 1.7852771282196045,
+                    "z": -0.36164525151252747
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -1.295242428779602,
+                    "y": 3.544968605041504,
+                    "z": -3.900498390197754
+                  },
+                  "outSlope": {
+                    "x": -1.295242428779602,
+                    "y": 3.544968605041504,
+                    "z": -3.900498390197754
+                  },
+                  "time": 0.13333334028720856,
+                  "value": {
+                    "x": 0.2802574634552002,
+                    "y": 1.9027798175811768,
+                    "z": -0.45492812991142273
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -4.483535289764404,
+                    "y": 2.9113199710845947,
+                    "z": -4.407449722290039
+                  },
+                  "outSlope": {
+                    "x": -4.483535289764404,
+                    "y": 2.9113199710845947,
+                    "z": -4.407449722290039
+                  },
+                  "time": 0.1666666716337204,
+                  "value": {
+                    "x": 0.1939079761505127,
+                    "y": 2.021608352661133,
+                    "z": -0.6216784715652466
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -6.099883556365967,
+                    "y": 1.1288918256759644,
+                    "z": -2.9541494846343994
+                  },
+                  "outSlope": {
+                    "x": -6.099883556365967,
+                    "y": 1.1288918256759644,
+                    "z": -2.9541494846343994
+                  },
+                  "time": 0.20000000298023224,
+                  "value": {
+                    "x": -0.018644867464900017,
+                    "y": 2.096867799758911,
+                    "z": -0.74875807762146
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -3.7580151557922363,
+                    "y": -0.7996127009391785,
+                    "z": -1.7896796464920044
+                  },
+                  "outSlope": {
+                    "x": -3.7580151557922363,
+                    "y": -0.7996127009391785,
+                    "z": -1.7896796464920044
+                  },
+                  "time": 0.23333333432674408,
+                  "value": {
+                    "x": -0.2127508968114853,
+                    "y": 2.096867799758911,
+                    "z": -0.8186217546463013
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 3.0478713512420654,
+                    "y": -0.7996127009391785,
+                    "z": 1.3322125673294067
+                  },
+                  "outSlope": {
+                    "x": 3.0478713512420654,
+                    "y": -0.7996127009391785,
+                    "z": 1.3322125673294067
+                  },
+                  "time": 0.2666666805744171,
+                  "value": {
+                    "x": -0.26917922496795654,
+                    "y": 2.043560266494751,
+                    "z": -0.8680700659751892
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 8.774405479431152,
+                    "y": -1.0038776397705078,
+                    "z": 8.648947715759277
+                  },
+                  "outSlope": {
+                    "x": 8.774405479431152,
+                    "y": -1.0038776397705078,
+                    "z": 8.648947715759277
+                  },
+                  "time": 0.30000001192092896,
+                  "value": {
+                    "x": -0.0095595121383667,
+                    "y": 2.043560266494751,
+                    "z": -0.7298076152801514
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 7.770930290222168,
+                    "y": -1.9341304302215576,
+                    "z": 19.426895141601562
+                  },
+                  "outSlope": {
+                    "x": 7.770930290222168,
+                    "y": -1.9341304302215576,
+                    "z": 19.426895141601562
+                  },
+                  "time": 0.3333333432674408,
+                  "value": {
+                    "x": 0.3157811164855957,
+                    "y": 1.9766350984573364,
+                    "z": -0.2914735972881317
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": 2.8908207416534424,
+                    "y": -0.930252730846405,
+                    "z": 40.820945739746094
+                  },
+                  "outSlope": {
+                    "x": 2.8908207416534424,
+                    "y": -0.930252730846405,
+                    "z": 40.820945739746094
+                  },
+                  "time": 0.36666667461395264,
+                  "value": {
+                    "x": 0.5085024833679199,
+                    "y": 1.9146182537078857,
+                    "z": 0.5653185844421387
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -1.7881394569485565e-6,
+                    "y": 0.0,
+                    "z": 55.93811798095703
+                  },
+                  "outSlope": {
+                    "x": -1.7881394569485565e-6,
+                    "y": 0.0,
+                    "z": 55.93811798095703
+                  },
+                  "time": 0.4000000059604645,
+                  "value": {
+                    "x": 0.5085024833679199,
+                    "y": 1.9146182537078857,
+                    "z": 2.429922580718994
+                  }
+                },
+                {
+                  "inSlope": {
+                    "x": -1.7881378653328284e-6,
+                    "y": 0.0,
+                    "z": 55.93812942504883
+                  },
+                  "outSlope": {
+                    "x": -1.7881378653328284e-6,
+                    "y": 0.0,
+                    "z": 55.93812942504883
+                  },
+                  "time": 0.5333333611488342,
+                  "value": {
+                    "x": 0.5085022449493408,
+                    "y": 1.9146180152893066,
+                    "z": 9.88833999633789
+                  }
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Plane01_BillboardCamera"
+          }
+        ],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2995,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "dakcho",
+      "canonicalBlake3": "4ddfad39e3e1917856ae455689ffce1b651ad39ecf31fea301a16ff0892ac722",
+      "value": {
+        "m_Name": "dakcho",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.44999998807907104,
+                "g": 0.44999998807907104,
+                "r": 0.44999998807907104
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 143
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1612
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6752,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "ccd8d8c097cc7f4c07c49939611a2d1a9ce8d929917c927a217f610fe3ac6ffe",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6753
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7549
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 0.3186565339565277,
+          "y": 0.3186565339565277,
+          "z": 0.3186565339565277
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6753,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "fb6ed3d10f99fe84b091cb4dd489524e24b34128ea269a00865d0555203d745c",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 6752
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 6755
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11061
+        },
+        "m_LocalPosition": {
+          "x": -3.3167367519126856e-8,
+          "y": 1.7365145683288574,
+          "z": -0.21408063173294067
+        },
+        "m_LocalRotation": {
+          "w": -0.7071067690849304,
+          "x": -2.980232594040899e-8,
+          "y": 0.7071068286895752,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6755,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "713f5a8e958c4b65ada4c132a08e3926ac7a0c8fa8a476b02b3e2a24a67a1c7b",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 6753
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11060
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 6756,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "ff19c016be1dae27575d02dc9c66da7d91617d6f71f96ef191c94f13d76b3937",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9420
+        },
+        "m_LocalPosition": {
+          "x": 6340.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7549,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Plane",
+      "canonicalBlake3": "d8b3bf8dcf5d28f7c1f732dd6bfaaa879b4b11ba8cd39484cb201dba046bdd80",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6752
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 18367
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 18368
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 18369
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "Plane",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9420,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[634]",
+      "canonicalBlake3": "9257347abc7ffde8865cb728318916654811ada47876db4c548274a60cf6e994",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6756
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17537
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[634]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11060,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "f_numbuhtwo_corruptak",
+      "canonicalBlake3": "5477405058b441259a04e3736bafda72ff86435de4b99e969eefd98b829f58f3",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6755
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 14111
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "f_numbuhtwo_corruptak",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11061,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Plane01_BillboardCamera",
+      "canonicalBlake3": "0ab2f04dc8f29fc75234426efa7fc7526e91a14dfa493623f27a65397312d13c",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 6753
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 17212
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 16,
+        "m_Name": "Plane01_BillboardCamera",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 14111,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "3d09866b19326e87a1196302947980dbf783bdac0b320e48f4da66ce19f1505d",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 2165
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 2165
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11060
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17212,
+      "typeId": -4,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "d120108dfaa9b892b4e85aab40af2af903b6da99742bccf8a480ea09eb0ad45c",
+      "value": {
+        "m_Enabled": false,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11061
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1913
+        },
+        "mode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 17537,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "31d078ac34f3cd4aef5e5debf28a7ed20f1f2d42805f3b19d63eb75464e1e023",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "f_numbuhtwo_corruptak",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9420
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 1.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 11060
+        },
+        "particles": [],
+        "priority": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 18367,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "c34d7b2bf72da37b3f0d80d66896a1bfb14547a58c040b84b8d5d59fb4f97ed1",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7549
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1325
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 18368,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "609028455ef87e52e4e9947a0a48c8253f7bf348cfff1f00120129458507a4c3",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7549
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2995
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 18369,
+      "typeId": -6,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "921f608d1a359075393a2a09283d3150c5876838e4c78a06cf30cbe5299ec7c4",
+      "value": {
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7549
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1906
+        },
+        "switchable": {
+          "fileId": 0,
+          "pathId": 17212
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "roket_symbol",
+    "root_node": "roket_symbol",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/roket_symbol.glb",
+    "glb_blake3": "16bf90464807c7b39bc72c5580801d855bff82c06c7a044bfc3eb1875ba44a3d",
+    "source": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 6,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 6,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 3,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "4c00355a579efdba7a2798304202a96aa105d246413004f1df0af0b39d082ce4",
+      "geometrySha256": "6988f862eb0937ecee8a507ece03a750112371c6f68dba244f6ea868c9c1f15f",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "2ca43896e905a19c4c1914bd0869407670174f2b494cf6a93137836f8f4ccc41",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "b7d0aebc06a2610c9de2a1c7d95b7700d02a4149b8254a42cfdc38183cbcc881"
+    },
+    "emitted": {
+      "hierarchySha256": "4c00355a579efdba7a2798304202a96aa105d246413004f1df0af0b39d082ce4",
+      "geometrySha256": "6988f862eb0937ecee8a507ece03a750112371c6f68dba244f6ea868c9c1f15f",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "2ca43896e905a19c4c1914bd0869407670174f2b494cf6a93137836f8f4ccc41",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "b7d0aebc06a2610c9de2a1c7d95b7700d02a4149b8254a42cfdc38183cbcc881"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.08909302949905396,
+        -0.08909344673156738,
+        -0.019962061196565628
+      ],
+      "max": [
+        0.08909344673156738,
+        0.08909302949905396,
+        0.3517460525035858
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.07875631749629974,
+        -0.021736767143011093,
+        -0.08596006780862808
+      ],
+      "max": [
+        0.13449378311634064,
+        0.3241381347179413,
+        0.14696654677391052
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "roket_symbol-19 - default-roket1.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "roket_symbol-19 - default-roket1.dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "shaderSha256": "290562bc8d56959490861ceddd9adab6f2d298c50e00a73ce4d6e356f2023c3b",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "roket1.dds",
+        "uri": "roket_symbol.textures/roket1.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 86749,
+        "sha256": "426f38d69fbcc5cdb4f36b3c0c4d5d0c6089e7d6e2ce46ad8dbddbbeb77afa6d",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "roket_symbol.textures/roket1.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 65536,
+            "sourceByteSha256": "51f12547a07458c518a97b754b9455980b75fa31afc655eb639a8be62be69d17",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "496e3805400db8be23434a7ad8ed1a8d13092946564aefab5f2c372c58d850f1",
+            "pngByteLength": 86749,
+            "pngSha256": "426f38d69fbcc5cdb4f36b3c0c4d5d0c6089e7d6e2ce46ad8dbddbbeb77afa6d"
+          },
+          {
+            "level": 1,
+            "uri": "roket_symbol.textures/roket1.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 65536,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "dec677326dbbbb8bfb8b25e5e1f537e761cd185c98414899f7301596a8acc484",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "5d361793953e26a5ef5c14e8fded5ff266fde5504e07dc325b2d899d8d83a82f",
+            "pngByteLength": 24441,
+            "pngSha256": "dbb2be9a8a3430f1dc59bb96868c54dc9af9cad6d4fc96a0f64802f878e37d13"
+          },
+          {
+            "level": 2,
+            "uri": "roket_symbol.textures/roket1.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 81920,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "d3edd5262cfeb33eb694c9f42622ed256d865acd035116fbb878357a9d7850b3",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "257ed47af320a270051661d526cb8e318cedb84230cbca92c532f7f0232712e4",
+            "pngByteLength": 6451,
+            "pngSha256": "10cc50f7a052541d0afbb8faedcee0b10d9895656491e797e575fdfa4812c7e3"
+          },
+          {
+            "level": 3,
+            "uri": "roket_symbol.textures/roket1.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 86016,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "6a290da94678c05c56b7c31d5e2e4cafb517608b0f479acd86d8bc3e275c50bc",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "ed2da777f0b3ba7751c77f281aea7db5948b9c80c6c04847f7e67fd1ed6d5b11",
+            "pngByteLength": 1670,
+            "pngSha256": "de2616e3e68b7c66bf55cca7a2fbaf87217cd9a4984ad50e1449e6f28ec560c0"
+          },
+          {
+            "level": 4,
+            "uri": "roket_symbol.textures/roket1.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 87040,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "0de7c3bb1899113842a815b32eb56250dc81c3d95586a53699480cb12e1ab1b7",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "4f49125aa5f713afecb89aba35dc67e7450450fbbfa62d8bc5998959085a0f0a",
+            "pngByteLength": 492,
+            "pngSha256": "f62cdaabf3043702edeedca4c4712b3d303861bb1ee57d81c55137824a17829a"
+          },
+          {
+            "level": 5,
+            "uri": "roket_symbol.textures/roket1.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 87296,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "7a10aacadc770fe6498688c2aeb748fecb754438f14defd2546797e8a006c1e0",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "0db287d317406755cbe19078780949e74f98679eadef42c1bb54aecff2dfeaa6",
+            "pngByteLength": 251,
+            "pngSha256": "58cefc4719468ba366626d1354a6422d835f5bda7514b1d8ff30fb22f0a2a11e"
+          },
+          {
+            "level": 6,
+            "uri": "roket_symbol.textures/roket1.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 87360,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "3f48939ea4d28953ec25e4bbdc899907674d76589e29391c2763703b14165fed",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "95738d4732805e24e527a669f21c7a889c4b46881b7a5bdaec62ad609bab1336",
+            "pngByteLength": 136,
+            "pngSha256": "6f313b20179c693d003d6a1f3c4a48c17a764483b85a97919af650bd7de1c1b9"
+          },
+          {
+            "level": 7,
+            "uri": "roket_symbol.textures/roket1.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 87376,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "c89873df91f64615906e572de87c1e5def4ae97d4ccc6e18427c3390b4278fe4",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "5362f9407139620d4355d759a1acffe8aa3f2ee5dc8132c170be7c0dfe73b9f3",
+            "pngByteLength": 86,
+            "pngSha256": "32dfca2a852dc8cb4ce3bdd55728be49b88c9e526387534373857e39ccc05a8d"
+          },
+          {
+            "level": 8,
+            "uri": "roket_symbol.textures/roket1.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 87392,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "e8a911dc7eb3352db9467144a9063265ea6e801d45e6bed9a96a19137f64f196",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "8d10f32f2c7514664ff512dbc763c7235a1a963f7643fba1883a839b5e1abe11",
+            "pngByteLength": 73,
+            "pngSha256": "2c0af9c5f0b8b02bafc3da3ba156cb6331269754a0c1e086fc416364ad8a1cc1"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/roket_symbol.publish.json"
+}

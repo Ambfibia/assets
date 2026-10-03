@@ -1,0 +1,136 @@
+{
+  "schema": "ffone.network-transportation-visual.v1",
+  "transportationType": 1,
+  "logicalName": "DT_ETC_Downtownbus_A_00",
+  "glb": "characters/transportation/downtown_bus/DT_ETC_Downtownbus_A_00.glb",
+  "glbBlake3": "981b70d862a605aca79f08f0c64e9542d86a836a7fbf6b837946e08435fc7d3b",
+  "animation": "stand1",
+  "tableScale": 1.0,
+  "textures": {
+    "main": {
+      "trueName": "DT_ETC_DowntownBus01",
+      "path": "characters/transportation/downtown_bus/DT_ETC_DowntownBus01.png",
+      "sha256": "9bd7e95a7c4fdd70d7c354dcc8258acfbaa2606bda49477d1f23849ec4350115",
+      "sourcePathId": 110
+    },
+    "sub": {
+      "trueName": "DT_ETC_DowntownBus05",
+      "path": "characters/transportation/downtown_bus/DT_ETC_DowntownBus05.png",
+      "sha256": "ccecab21e4903b0cd7320bd66033a4e4a8647b225806f96bd9e330e8a5b89a08",
+      "sourcePathId": 330
+    },
+    "sampler": {
+      "legacyFilterMode": 1,
+      "legacyWrapMode": 0,
+      "anisotropyLevel": 1,
+      "mipMapBias": 0.0
+    }
+  },
+  "materialBindings": {
+    "main": {
+      "xdtRole": "Texture1",
+      "materialTrueName": "dt_etc_downtownbus_a_00-01 - default-dt_etc_downtownbus_a_01.dds",
+      "sourceMaterialPathId": 1715,
+      "authoredMainTexPathId": 340,
+      "authoredBumpMapPathId": 269
+    },
+    "sub": {
+      "xdtRole": "Texture2",
+      "materialTrueName": "dt_etc_downtownbus_a_00-02 - default-dt_etc_downtownbus_a_02.dds",
+      "sourceMaterialPathId": 1679,
+      "authoredMainTexPathId": 18,
+      "authoredBumpMapPathId": 58
+    },
+    "shader": {
+      "trueName": "normal_glow_blendSrcalphaInvsrcalpha",
+      "sourceShaderPathId": 1620,
+      "sourceScriptSha256": "6ebaf7007733225536951c3be40e445c643c181c65d71494a678ebb364e87ffe",
+      "blend": "SrcAlpha OneMinusSrcAlpha",
+      "colorMask": "RGB",
+      "depthWrite": true,
+      "cull": "Back",
+      "bumpMapSemantic": "fixedFunctionGlowMask",
+      "rgbCombiner": "MainTex.rgb * lerp(Previous.rgb, Constant0.5, BumpMap.a)",
+      "rgbScale": 1.0,
+      "alphaCombiner": "MainTex.a * Primary.a",
+      "gltfNormalTextureUsage": "loaderHintOnly"
+    }
+  },
+  "collision": {
+    "glb": "characters/transportation/downtown_bus/DT_ETC_Downtownbus_A_00.collision.glb",
+    "sha256": "b4308719d0e6197d5512a5e9b3adb6d163b99239a6ba9267bcab86b938aeffe5",
+    "node": "collision",
+    "mesh": 0,
+    "primitive": 0,
+    "expectedVertexCount": 134,
+    "expectedIndexCount": 531,
+    "isTrigger": false,
+    "convex": false
+  },
+  "source": {
+    "alias": "primary",
+    "rawContainer": {
+      "relativePath": "Tutorial.resourceFile",
+      "byteLength": 27003826,
+      "sha256": "49a684ff4236848d0b882a5d725ffbe99d5cfb5d2090dc8705350e97dd3fd024"
+    },
+    "serializedAsset": {
+      "name": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "byteLength": 103800115,
+      "sha256": "413436cb0ce42c0df87d835a670a3f11ddd674a2f7659f6b299fdcfb2b184556"
+    },
+    "exactContainerRoute": "mob/dt_etc_downtownbus_a_00.kfm",
+    "gameObjectPathId": 5187,
+    "collisionGameObjectPathId": 4728,
+    "meshGameObjectPathId": 5629,
+    "meshFilterPathId": 6976,
+    "meshColliderPathId": 6977,
+    "rigidbodyPathId": 6978,
+    "meshPathId": 674,
+    "animationPathId": 7022,
+    "stand1ClipPathId": 900,
+    "rootTransform": {
+      "translation": [0.0, 0.0, 0.0],
+      "rotation": [0.0, 0.0, 0.0, 1.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    "sourceMeshObjectDumpSha256": "b1b9f965165e5121b1a8b38482604e163970bc33eacf5f70fa617332a41f2651",
+    "meshCollider": {
+      "componentClassId": 64,
+      "isTrigger": false,
+      "convex": false
+    },
+    "rigidbody": {
+      "componentClassId": 54,
+      "isKinematic": true,
+      "useGravity": true,
+      "mass": 1.0
+    },
+    "textureContainer": {
+      "relativePath": "NpcTexture.resourceFile",
+      "byteLength": 10670086,
+      "sha256": "557eb191a8b6c60e535a0d66363dfc994a60d1c2218b31bbdb5fec9133a5d101",
+      "serializedAsset": "CustomAssetBundle-d304c52c4bae348e38c743762c1bd818",
+      "serializedByteLength": 26851393,
+      "serializedSha256": "883659790a9cbc8562f4ad8122066df3e94e55d7a48b36b2b5222e5e05760b94"
+    }
+  },
+  "serverOwnership": {
+    "motionPacket": "P_FE2CL_TRANSPORTATION_MOVE",
+    "appearancePacket": "P_FE2CL_TRANSPORTATION_ENTER",
+    "speedProtocolUnitsPerSecond": 1200,
+    "routeSource": "OpenFusion/tdata/paths.json slider",
+    "routePointCount": 64,
+    "looped": true,
+    "vehicleGapProtocolUnits": 45000,
+    "stopTicks": 16,
+    "clientController": "cnBusMoveController",
+    "clientChangesRotation": false
+  },
+  "conversion": {
+    "modelCommand": "ffone-asset-pipeline publish-logical-model <primary DT_ETC_Downtownbus_A_00.source.json> mob <candidate>",
+    "collisionCommand": "FFClientEditor extract_mesh(primary serialized asset pathId 674), take first m_CollisionVertexCount vertices and m_CollisionTriangles, convert Unity clockwise winding to glTF CCW",
+    "textureCommand": "FFClientEditor decode_texture(primary NpcTexture serialized asset pathIds 110 and 330)",
+    "toolVersion": "FFOne workspace 2026-08-13"
+  }
+}

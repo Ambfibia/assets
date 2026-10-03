@@ -1,0 +1,138 @@
+{
+  "schema": "ffone.quit-menu.v1",
+  "dialogSize": [
+    206.0,
+    188.0
+  ],
+  "referenceHeight": 768.0,
+  "scaleNudge": 1.05,
+  "backdrop": "ui/en/gameplay/quit-menu/quitbackg.png",
+  "dialog": "ui/en/gameplay/quit-menu/quitback.png",
+  "font": "fonts/jeffe.otf",
+  "fontSize": 12.0,
+  "lineHeight": 13.71,
+  "styles": [
+    {
+      "backgroundBox": "border-box",
+      "normal": "ui/en/gameplay/quit-menu/quitbutnor.png",
+      "hover": "ui/en/gameplay/quit-menu/quitbutup.png",
+      "active": "ui/en/gameplay/quit-menu/quitbutnor.png",
+      "border": [
+        6.0,
+        6.0,
+        6.0,
+        4.0
+      ],
+      "padding": [
+        6.0,
+        6.0,
+        3.0,
+        3.0
+      ],
+      "normalColor": [
+        0.7701613,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hoverColor": [
+        0.76209676,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "activeColor": [
+        0.7701613,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "wordWrap": true,
+      "clipsText": true,
+      "contentOffset": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "backgroundBox": "border-box",
+      "normal": "ui/en/character/selection/controls/CancelNormal.png",
+      "hover": "ui/en/gameplay/chat/blue_button_normal.png",
+      "active": "ui/en/gameplay/chat/blue_button_normal.png",
+      "border": [
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "padding": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "normalColor": [
+        0.9837034,
+        0.9837034,
+        0.9837034,
+        1.0
+      ],
+      "hoverColor": [
+        0.9782711,
+        0.9782711,
+        0.9782711,
+        1.0
+      ],
+      "activeColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "wordWrap": false,
+      "clipsText": false,
+      "contentOffset": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "action": "change-character",
+      "localizationKey": "ui.quit_menu.change_character",
+      "fallback": "CHANGE CHARACTER",
+      "rect": [
+        13.0,
+        16.0,
+        175.0,
+        45.0
+      ],
+      "style": 0
+    },
+    {
+      "action": "quit-game",
+      "localizationKey": "ui.quit_menu.quit_game",
+      "fallback": "QUIT GAME",
+      "rect": [
+        13.0,
+        69.0,
+        175.0,
+        45.0
+      ],
+      "style": 0
+    },
+    {
+      "action": "cancel",
+      "localizationKey": "ui.common.cancel",
+      "fallback": "CANCEL",
+      "rect": [
+        13.0,
+        122.0,
+        175.0,
+        45.0
+      ],
+      "style": 1
+    }
+  ]
+}

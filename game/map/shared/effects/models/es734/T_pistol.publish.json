@@ -1,0 +1,594 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "T_pistol",
+    "root_node": "T_pistol",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/T_pistol.glb",
+    "glb_blake3": "9b638fcbb1a7fe6be86364a93cf2bd36b533ff3e3886da9b7d866c8d978cbf01",
+    "source": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 2,
+      "float_curves": 32,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 15,
+      "cubic_spline_keyframes": 5,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 7,
+      "mesh_parts": 3,
+      "material_slots": 3,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 2,
+      "float_curves": 32,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 15,
+      "cubic_spline_keyframes": 5,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 7,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "7c7976142714168fa21d338e2d486fd7b78eaf3ecb12f0a3ca5377d83365f68f",
+      "geometrySha256": "80662e6b24ddea08d03a29f0f910692576e0c8ec47372405f434be992c6da680",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "642ec07818e24c4e4477d709aab1c37cad95d207709d5e1b372358ae4e73315e",
+      "animationMetadataSha256": "ee69d01c55d4a57722e2bbd85454407082c9454aa9e7308be8cb6d4bc5434ff7",
+      "materialsSha256": "7e31ab1fbfbf30be8ae11e743b5f7b85433f1082f8a19b3e53fa0e85864ffcf3"
+    },
+    "emitted": {
+      "hierarchySha256": "7c7976142714168fa21d338e2d486fd7b78eaf3ecb12f0a3ca5377d83365f68f",
+      "geometrySha256": "80662e6b24ddea08d03a29f0f910692576e0c8ec47372405f434be992c6da680",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "642ec07818e24c4e4477d709aab1c37cad95d207709d5e1b372358ae4e73315e",
+      "animationMetadataSha256": "ee69d01c55d4a57722e2bbd85454407082c9454aa9e7308be8cb6d4bc5434ff7",
+      "materialsSha256": "7e31ab1fbfbf30be8ae11e743b5f7b85433f1082f8a19b3e53fa0e85864ffcf3"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -18.539915084838867,
+        -19.004491806030273,
+        -99.5322265625
+      ],
+      "max": [
+        20.441776275634766,
+        20.224119186401367,
+        43.199005126953125
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.09724429994821548,
+        -0.1009344756603241,
+        -0.00026428699493408203
+      ],
+      "max": [
+        0.10721974074840546,
+        0.10482468456029892,
+        0.7483798265457153
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "jump_01",
+      "projectile_03",
+      "t_pistol-01 - default-ice_l.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 3,
+    "textureCount": 3,
+    "samplerCount": 3,
+    "materials": [
+      {
+        "name": "jump_01",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "shaderSha256": "94cf3af0dd3ecfe6f8f7e0f009a403dc6a8d41bf7eabbab6a0656f541b3f5d23",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      },
+      {
+        "name": "projectile_03",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff_cullOff",
+        "shaderSha256": "94cf3af0dd3ecfe6f8f7e0f009a403dc6a8d41bf7eabbab6a0656f541b3f5d23",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      },
+      {
+        "name": "t_pistol-01 - default-ice_l.dds",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "jump_01.DDS",
+        "uri": "T_pistol.textures/jump_01.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 24737,
+        "sha256": "affd50b29cddc417ab509ecdd2c25891c33cb5fe9865cf4889e26da85209f975",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "T_pistol.textures/jump_01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "b618e4cb1dcb4f21c7dcc05d71453fb09dace85be9be858243a46a27aba9ead2",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "68736dbfa0863cc9ba627abed6e6142f4432c37c186f563d6c44ee1bacb107f8",
+            "pngByteLength": 24737,
+            "pngSha256": "affd50b29cddc417ab509ecdd2c25891c33cb5fe9865cf4889e26da85209f975"
+          },
+          {
+            "level": 1,
+            "uri": "T_pistol.textures/jump_01.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "eab0caf360f8b491840eee281f40bdf5f87a5efb942aa5468ea586493d0d56d9",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "944748205fdf1960853aad286fd294998162b9a80ca7afc51889990ffa1fd880",
+            "pngByteLength": 7212,
+            "pngSha256": "164b2d30241cbb7456ff9573fa42f3fb93acbda76311ea78d23f34ddc351f77f"
+          },
+          {
+            "level": 2,
+            "uri": "T_pistol.textures/jump_01.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "6b30b82d7cf3416a5a7def51f3abc6318c2215db1dce489e587109c6e7013507",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "8de5de5b088f198642347f03c201eded0ea4cefd9c3cbb29ee0defe185be504f",
+            "pngByteLength": 2209,
+            "pngSha256": "cace78f49a9efbf46b5af66d1bae15bc1333c9dece59a40e1ed219c83c93644a"
+          },
+          {
+            "level": 3,
+            "uri": "T_pistol.textures/jump_01.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "6cdcea7cdc348fc48b0f033a1bf68ac79838a3becc672e4868db15f08e057daf",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "3bfa69cf62d9e7696031fff8cdc422d6c5abaecea9169d12980aef5f00d75bbe",
+            "pngByteLength": 747,
+            "pngSha256": "32d9608a6ce02985c0b7c693540e61565aa5d5a93f43daea679d4ecbf7b9f75b"
+          },
+          {
+            "level": 4,
+            "uri": "T_pistol.textures/jump_01.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "773e7fca9d9eda6b445e1f16cf77fae4b77ea7e620c727f5efcae9669613a346",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "03277355b3b6be5a87127e63cb940e3ba12cacf1c76da624eb32df76bbf2b4e3",
+            "pngByteLength": 270,
+            "pngSha256": "0754047a738e72f9118c973be96081200e3584892c4d26c6bbf7e011ae9c6c48"
+          },
+          {
+            "level": 5,
+            "uri": "T_pistol.textures/jump_01.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "748dc36916ceec2a3734e49b1594c62a74c80ddbb695b281589ce4d7da5d5fee",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "cb2c052edc1b76639dbf46b1a520c5c829190340f07275db65372e4df7b48a04",
+            "pngByteLength": 136,
+            "pngSha256": "62450141cbd28447c1c537d964a1c57d045f45f9f31204fa3bc5d5f07027d1be"
+          },
+          {
+            "level": 6,
+            "uri": "T_pistol.textures/jump_01.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "ca88bf34a5968ac51a79fff43ff334af4c6dac0f0e2c4cd721dc4362dbc0aa17",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "e57da715c023ab343bead1aac29db9d90b3791ef89cb9e7ac892461cd8fec59f",
+            "pngByteLength": 86,
+            "pngSha256": "01aad4800450a7239ed45e319324f68425fddbb62337e65d3f37a3ef21050734"
+          },
+          {
+            "level": 7,
+            "uri": "T_pistol.textures/jump_01.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "93a243f94f1c73368dd4ad5236f77b767e5e44fbec21baaaf040e57cf0decac1",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "84d133d968520db52e04cb76484e442b6d86a128557f2db2ab3fd28bc2a07d90",
+            "pngByteLength": 73,
+            "pngSha256": "52659713be5071b4de122afe148e9b5dd81a7ee7a546f22c690261cb88e5fca0"
+          }
+        ]
+      },
+      {
+        "sourceName": "projectile_03.dds",
+        "uri": "T_pistol.textures/projectile_03.png",
+        "width": 128,
+        "height": 32,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 1737,
+        "sha256": "a7025bedb6c0aec03d64152893ce91f13135bb9819fb131f47bb9493c2e30d14",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "T_pistol.textures/projectile_03.png",
+            "width": 128,
+            "height": 32,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "6ec1bcf39fef0b945ab12236f078c5aa21dcba44d0704a408701f592e84a9ac1",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "b6eaf0911f932defef6a34114aaa4d1443beff82ef16bfad29c73c2babed67c9",
+            "pngByteLength": 1737,
+            "pngSha256": "a7025bedb6c0aec03d64152893ce91f13135bb9819fb131f47bb9493c2e30d14"
+          },
+          {
+            "level": 1,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-01.png",
+            "width": 64,
+            "height": 16,
+            "sourceByteOffset": 2048,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "5cc724eb7b43fc7f477957b73e187dd1a40fc5fefb5d1dd6129ca1c4dac416bc",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "e95df704cfb13090c1ef514681c8a451862bfe3bf2ae65713ee2c0a3c92424d3",
+            "pngByteLength": 652,
+            "pngSha256": "42b075a5391e4e93a49bd55d21aa66bff8ddab95c9e314a680480717504abf5c"
+          },
+          {
+            "level": 2,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-02.png",
+            "width": 32,
+            "height": 8,
+            "sourceByteOffset": 2560,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "59ac52d846193bd07b364a574ca912f90f62c0d1063683ef03dec8295378bfdf",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "9436db3345daf244c5841c786feb596917f288a41d01470167d3f2e518ff8dcf",
+            "pngByteLength": 241,
+            "pngSha256": "9a668f8444a39827a3a22f997f086e8567426a3079149d41b7a9d96fc13a72e0"
+          },
+          {
+            "level": 3,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-03.png",
+            "width": 16,
+            "height": 4,
+            "sourceByteOffset": 2688,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "e14d3123993bce8f5393c7458346e4f02510614d2ccf77b89b8ef07926fe2e06",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "fb3ada1c99ba9caa3c0a2135a46842cfbf7c684766ca76987ab0722c48bdd353",
+            "pngByteLength": 167,
+            "pngSha256": "b34e7614acd7482ccad7018153859fefd33c4aadd4b3d857bf6348e96ac8f72a"
+          },
+          {
+            "level": 4,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-04.png",
+            "width": 8,
+            "height": 2,
+            "sourceByteOffset": 2720,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "eb387499ff76b827969387a67a9b86e96bbe3148f9a73b3353eef23182ee5cbd",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "3e6c20a1e9793ef6847a184fc69393b38a413a083d02d2ac8ea94e241e690c4f",
+            "pngByteLength": 133,
+            "pngSha256": "c8c092c18d6afff4000912e6183145441aea95b2420a1f5e968ce566c02888b8"
+          },
+          {
+            "level": 5,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-05.png",
+            "width": 4,
+            "height": 1,
+            "sourceByteOffset": 2736,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "764be020815e7b168891c34b629a9ee2e6b525174769c2b425b16ceeb4cb54ca",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "1e5720096f0015511e3ead71c46a30c5a2bbfc697ca02a367afd4d57b7286d06",
+            "pngByteLength": 85,
+            "pngSha256": "4e4274e279e3e529680b2bc44e7fe64ca05ec5007b8c28dc106a3d8e9fad4507"
+          },
+          {
+            "level": 6,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-06.png",
+            "width": 2,
+            "height": 1,
+            "sourceByteOffset": 2744,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "ddb8fc5ec22ffeafe28316532061613672805bcab81fba8c4fdfa240afde6758",
+            "decodedRgba8ByteLength": 8,
+            "decodedRgba8Sha256": "e04cc855ec40fc57983ce5d6d8de6972965ee3c5e3d6ab5d1e0fa9c39e0d9dc3",
+            "pngByteLength": 77,
+            "pngSha256": "0c6248d055187756257ddf6f22df829106ecad1b49001b6c71cc66ae827f285e"
+          },
+          {
+            "level": 7,
+            "uri": "T_pistol.textures/projectile_03.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 2752,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "332b4f5d4646e7593fa1ecdb67669bd41b656c6299d95f527a0f6b0eb32ddd42",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "a27cacfaa0042cbe760b568f29a7b6584e504d8252d0624cc020466de2501cf8",
+            "pngByteLength": 73,
+            "pngSha256": "8909e8d54e767bb979abaab4f837aa635e7098f2a5c21e5603dbcadf044472e5"
+          }
+        ]
+      },
+      {
+        "sourceName": "Ice_L.dds",
+        "uri": "T_pistol.textures/Ice_L.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 96069,
+        "sha256": "917f7df07879837b2f227c65214635b1031ac582060c273c155626122772f4f3",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "T_pistol.textures/Ice_L.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 32768,
+            "sourceByteSha256": "a0bce0089b46fe85ff4d2415909b06a81bd1cff81bfb42a706f506bc41e72929",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "3abb6f88d2181b54f7029e3cd8fdd13596e4da4f717d5a409066798b2f1c471d",
+            "pngByteLength": 96069,
+            "pngSha256": "917f7df07879837b2f227c65214635b1031ac582060c273c155626122772f4f3"
+          },
+          {
+            "level": 1,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 32768,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "6863b1bdd3041be9edeb1cb7261c746da0701af120b525bd09a597be2b703c2a",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "8fc9a872cf872f83d9d79e6de38abd7b7e7838f56bb64fd3120bafb6e639c4f5",
+            "pngByteLength": 27091,
+            "pngSha256": "b801e6418bfc0f6cc722428a29ef63f79c905b80192e11049ef1728aea9f5c9f"
+          },
+          {
+            "level": 2,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 40960,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "343c0d98ab7803a08da4dd003dddd0e0dbe2cd616d8079c1cbc508060981cd3c",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "66a25672804097558ee9ff13c5ac2ddcfd366df9601b6c0c641da7d9ddb462f2",
+            "pngByteLength": 7461,
+            "pngSha256": "7e8dcbb0a2b217fcf26ee94358c3dd14418bd9858793e11468a58e56562e5216"
+          },
+          {
+            "level": 3,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 43008,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "77befa504e8c4647960ebab1dd2ab1fe4034101ab6a2d86836af407950efc5e6",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "e88aff609e6e3d4cfeff064c6f5e07248b4965b144c710c385211d607a3bfd30",
+            "pngByteLength": 2182,
+            "pngSha256": "4bb98059a6070912f9f4884ff64a065115e5fa15817e35c5280b63f2fb7ec97f"
+          },
+          {
+            "level": 4,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 43520,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "f2b61ee22daaff720a1f481874c56111a946a7a8f89d43c7c41470c4b5a52ecb",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "96874967d59105da23858e1a5060aa30c995c63527904249aa04349ae05ceaf8",
+            "pngByteLength": 692,
+            "pngSha256": "b105b442a063ab6d458adf2ffad56101d601c2bfbcac61a29e55f2a7ad1e5592"
+          },
+          {
+            "level": 5,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 43648,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "c2b61310526ff900382bb5a5193ce539fa1a68ed2d3038d7ff688626051d66bf",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "3e2691c50381ebe49c21942dfa05f4c7cc01d5459bdf35a5b57e741cce81a8b2",
+            "pngByteLength": 252,
+            "pngSha256": "ac9f94fcaf80bd77f85debc9410e387895636cc41ff69737e7b7b7773c753c17"
+          },
+          {
+            "level": 6,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 43680,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "fbb0c620094d2d7da4259a4c80275600186b687d07ba5fee7fda3e362781320c",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "21f15df184fa41b714929e12a9f40e12292b366c52c5e135a15c2590268ffeda",
+            "pngByteLength": 136,
+            "pngSha256": "670ba9b1cc2938c9e675f350725f1ffc38497cf96daed15514488f76197b044f"
+          },
+          {
+            "level": 7,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 43688,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "71d5025fee9df7cd16b93089e33c8c4cab9a2aa7abbef1165e9c2e884a1b8bc9",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "6280ce6c4b3ba3503728db9c410989fff071d12bf5c2b197092c0ee4271f31c1",
+            "pngByteLength": 86,
+            "pngSha256": "c0a518a3379eae4ba716b7944183cc0c8257421903601f576aa77673d711b85c"
+          },
+          {
+            "level": 8,
+            "uri": "T_pistol.textures/Ice_L.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 43696,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "739cd9d749df1e71467cd266cc95df476798d9aca4549df4aa1bae9e88514834",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "70fcd8ae4b11399cfe8e96489c7327b6e5d3af5c8c20d6501d31b7755f5d7a64",
+            "pngByteLength": 73,
+            "pngSha256": "c32964a62767d6903e3a96bd9f079d81156d30cc1a982b9bdc99b9159ab26bfd"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/T_pistol.publish.json"
+}

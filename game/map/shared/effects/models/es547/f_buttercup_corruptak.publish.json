@@ -1,0 +1,369 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "f_buttercup_corruptak",
+    "root_node": "f_buttercup_corruptak",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/f_buttercup_corruptak.glb",
+    "glb_blake3": "6942063ecae096c1c063ae79de73ed82d7950d7f8ff5d64ab07398fc661cf10d",
+    "source": {
+      "nodes": 19,
+      "mesh_parts": 14,
+      "material_slots": 14,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 8,
+      "float_curves": 168,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 140,
+      "cubic_spline_keyframes": 20,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 19,
+      "mesh_parts": 14,
+      "material_slots": 14,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 8,
+      "float_curves": 168,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 140,
+      "cubic_spline_keyframes": 20,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 19,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "0cfeea5f67de71e47eb8707b39024e3326d8f711461e69ff0434399f8e047067",
+      "geometrySha256": "17f18c381078eea8e70089183b791f6cf23536d013ef8c42d4b6be489f7b073b",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "3e94cc58078e9fa07d0b7782357bdb397e2ec53070e5e5d44d53c52ffb41c13d",
+      "animationMetadataSha256": "9dd1baffd6ea9bc5c9779e951109020110c75b4890e7fca64a43c439bf675eb9",
+      "materialsSha256": "5fa9b37bbe22cd284caf0ec623774e5f601f5862a9c1628834f9a3f200c47ef9"
+    },
+    "emitted": {
+      "hierarchySha256": "0cfeea5f67de71e47eb8707b39024e3326d8f711461e69ff0434399f8e047067",
+      "geometrySha256": "17f18c381078eea8e70089183b791f6cf23536d013ef8c42d4b6be489f7b073b",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "3e94cc58078e9fa07d0b7782357bdb397e2ec53070e5e5d44d53c52ffb41c13d",
+      "animationMetadataSha256": "9dd1baffd6ea9bc5c9779e951109020110c75b4890e7fca64a43c439bf675eb9",
+      "materialsSha256": "5fa9b37bbe22cd284caf0ec623774e5f601f5862a9c1628834f9a3f200c47ef9"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.8466672897338867,
+        -0.7584112286567688,
+        -0.3131202161312103
+      ],
+      "max": [
+        0.8466674089431763,
+        0.7584112286567688,
+        0.7168487906455994
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.7679450511932373,
+        0.24457687139511108,
+        -0.04974919557571411
+      ],
+      "max": [
+        0.7488774061203003,
+        1.8243615627288818,
+        7.039535999298096
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "f_buttercup_corruptak-a - default-f_buttercup_corruptak.dds",
+      "f_buttercup_corruptak-b - default-f_buttercup_corruptak.dds",
+      "f_buttercup_corruptak-c - default-f_buttercup_corruptak.dds",
+      "f_buttercup_corruptak-d - default-f_buttercup_corruptak.dds",
+      "f_buttercup_corruptak-e - default-f_buttercup_corruptak.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 5,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "f_buttercup_corruptak-d - default-f_buttercup_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_buttercup_corruptak-b - default-f_buttercup_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_buttercup_corruptak-e - default-f_buttercup_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_buttercup_corruptak-c - default-f_buttercup_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      },
+      {
+        "name": "f_buttercup_corruptak-a - default-f_buttercup_corruptak.dds",
+        "serializedShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "declaredShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "legacyShaderName": "normal_blendSrcalphaOne_zwriteOff_cullOff",
+        "shaderSha256": "70fc44ad7628b4791d774f2ce72dbe8fbe72c5b643cb8676066d7466bfc0b2b1",
+        "effectiveRenderQueue": 3010,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "f_buttercup_corruptak.dds",
+        "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.png",
+        "width": 128,
+        "height": 32,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 2927,
+        "sha256": "71b7f70b5bccbed2231d093eb5fe4a16f5104c2c1e551c81b272b112035c6f8b",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.png",
+            "width": 128,
+            "height": 32,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "03525902cd76dcaf4b79d1babf2c79538b8559682774786857103b8e6bd337a9",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "b4d5786dc7570b73ce2d3ad8afb1f1f03ab94bcc3a9770c1b1291fd8f2374560",
+            "pngByteLength": 2927,
+            "pngSha256": "71b7f70b5bccbed2231d093eb5fe4a16f5104c2c1e551c81b272b112035c6f8b"
+          },
+          {
+            "level": 1,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-01.png",
+            "width": 64,
+            "height": 16,
+            "sourceByteOffset": 4096,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "070b45091d151787758214eabf77c8448d9d981589293fdcdab0a3026c8273f1",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "f2f9ce156f68dd9d1533702626edd4136d944ebf62dc939ee86aefcee8a1e911",
+            "pngByteLength": 1085,
+            "pngSha256": "dfdab08ea47a16a7828c0d5d90253515fcfe26d1e43e4b09c2889e91b2f099e6"
+          },
+          {
+            "level": 2,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-02.png",
+            "width": 32,
+            "height": 8,
+            "sourceByteOffset": 5120,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "607039ea169dfc83c7e735ded34352456f251ef690ea1193fc24d646489fa37d",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "e2ef6a54696c21acfeb48b81af3ddbd16d4061932c04c4c68bd2d2635253fec9",
+            "pngByteLength": 505,
+            "pngSha256": "9d9f4973f0b7efaea1aa2ee0dbae0fa8d0956486f5e118e4c6bed8ee22692da4"
+          },
+          {
+            "level": 3,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-03.png",
+            "width": 16,
+            "height": 4,
+            "sourceByteOffset": 5376,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "c8a8dbd43d9a707ba560c0dbfa15fbc4659cb9ee352f7b10972e0672fb5add45",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "f6f0234795b95fb76dfff2b018c8fab32e01568b286a43c9c3030109272c0c87",
+            "pngByteLength": 255,
+            "pngSha256": "96bb7c8a5c4ccc01121382c9ec935d98f1a2ece062361e27223408eab8f2ab19"
+          },
+          {
+            "level": 4,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-04.png",
+            "width": 8,
+            "height": 2,
+            "sourceByteOffset": 5440,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "5a3c7af30055cb852493ae70e885ce9f2bdffe3a3e51180b0f42f3a954c83692",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "a971d0ad4127b59a40ff8c114e2574e5beb92988410c6702e10edda9b698e053",
+            "pngByteLength": 134,
+            "pngSha256": "9c087cd72bdfb8daa2f08c7753356faf4563211a3dc14880978f9818bd158713"
+          },
+          {
+            "level": 5,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-05.png",
+            "width": 4,
+            "height": 1,
+            "sourceByteOffset": 5472,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "13c204a5f7eb00cb84e2ce4414177cdc1d5b124cb1a3d7b464a13b75393f88b7",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "7baaf1a75713f5993e9c319f69e9351fc4875a71ee37a26f403db5dfbaef27ad",
+            "pngByteLength": 85,
+            "pngSha256": "6c4ec368a7bfb80baa20dc5aa37a3258ba01accf6056ea0009db8d5aaadf8d4e"
+          },
+          {
+            "level": 6,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-06.png",
+            "width": 2,
+            "height": 1,
+            "sourceByteOffset": 5488,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "ca5378eaf9fcb3142a6c80ed64febc7cbd170856a60db50ace80de3dd13cdffc",
+            "decodedRgba8ByteLength": 8,
+            "decodedRgba8Sha256": "d8e88a992da3eddd99834badad91ccff0b71e9f39a6cb6f2e1dfc207e8138110",
+            "pngByteLength": 77,
+            "pngSha256": "b0dc64b0b04077b289170b2a72ac0b1027efc9324d1dbc769be0d974603dc1c1"
+          },
+          {
+            "level": 7,
+            "uri": "f_buttercup_corruptak.textures/f_buttercup_corruptak.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 5504,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "116e0ebcc2ef16802bf67c86ce64afaa9dee47a9d9d04fc2c7a13942f863f5f9",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "13bbf991d479518a0e7937ac0d3588487087ef89483a7ee541b8794758902e09",
+            "pngByteLength": 73,
+            "pngSha256": "08100aac742dc93e5a691efcdd8ad5ce8789bf5392828d3bec7bddd61cbb4f15"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/f_buttercup_corruptak.publish.json"
+}

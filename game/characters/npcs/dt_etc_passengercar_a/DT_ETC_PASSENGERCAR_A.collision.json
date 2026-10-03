@@ -1,0 +1,78 @@
+{
+  "schema": "ffone.native-character-collision.v1",
+  "glb": "characters/npcs/dt_etc_passengercar_a/DT_ETC_PASSENGERCAR_A.glb",
+  "glbBlake3": "4a5dff562c691da8e3cd89f666bc168230b5b84cfa065c376ba1c0a73c01609a",
+  "colliderGlb": "characters/npcs/dt_etc_passengercar_a/DT_ETC_PASSENGERCAR_A.collision.glb",
+  "colliderGlbBlake3": "0ee9a51cddbba8826443f6143e0bac09d936ab96e8da0a49a6762849920da99c",
+  "source": {
+    "alias": "primary",
+    "rawContainer": {
+      "relativePath": "World_shared_part1.resourceFile",
+      "bytes": 4140098,
+      "sha256": "5e4625d4bd8f7718aa4a682ce1f02709fec70973144c1e91a08c8052cb9f6562"
+    },
+    "serializedAsset": {
+      "name": "CustomAssetBundle-eb037efed74f34db2b2bcdf47626cb76",
+      "bytes": 11262544,
+      "sha256": "87ceb02aa562358467c66f1181d4b99c64fa888957fe49c9cf7517475db40570"
+    },
+    "exactContainerRoute": "mob/dt_etc_passengercar_a.kfm",
+    "sourceGeometrySha256": "f530b18f425e6a9d056d4eda9d7bb10f76bc1a1d3af2b76379dc1acbc501bde0",
+    "meshObjectDumpSha256": "c87dca17807fb2cb3d4a553e063c88267d2e5c3d4729a25184b8b541c9f4300c",
+    "ownerSelection": {
+      "ownerCount": 27,
+      "policy": "canonical primary World_shared owner selected by the existing semantic character install"
+    },
+    "meshCollider": {
+      "gameObjectPathId": 1582,
+      "transformPathId": 1148,
+      "meshFilterPathId": 2662,
+      "componentPathId": 2663,
+      "componentClassId": 64,
+      "meshFileId": 0,
+      "meshPathId": 210,
+      "convex": false,
+      "isTrigger": false,
+      "ownerLocalTransformDumpSha256": "b1aa1c3272e5553d08fe62e885999c8ca3a4851ac587f19716b94456cc8ed294",
+      "ownerLocalTransform": {
+        "translation": [0.0, 0.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0, 1.0],
+        "scale": [1.0, 1.0, 1.0]
+      },
+      "geometrySpace": "Mesh vertices are local to child GO1582/Transform1148. That child is identity below collision GO1590/Transform1375, so the exact vertex bytes are also collision-node local and runtime Transform::IDENTITY preserves placement."
+    },
+    "rigidbody": {
+      "componentPathId": 2664,
+      "componentClassId": 54,
+      "isKinematic": true,
+      "useGravity": true,
+      "mass": 1.0
+    },
+    "collisionNode": {
+      "gameObjectPathId": 1590,
+      "transformPathId": 1375,
+      "translation": [-3.009336069226265e-8, -1.5, -0.8857340812683105],
+      "rotation": [-8.742277657347553e-8, 0.0, 0.0, 0.9999999999999962],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    "intentionalDivergence": "None. The separate non-rendering GLB contains the exact primary MeshCollider mesh because the validated visual GLB retains the collision node but intentionally excludes non-rendering MeshFilter geometry."
+  },
+  "conversion": {
+    "toolVersion": "FFClientEditor 0.1.0 workspace 2026-08-13",
+    "command": "FFClientEditor extract_mesh(primary serialized asset pathId 210), retain first m_CollisionVertexCount vertices and m_CollisionTriangles, convert Unity clockwise winding to glTF CCW",
+    "nativeRepresentation": "Adjacent collider-only GLB decoded by Bevy into AuthoredTriMeshCollider and attached to the exact preserved collision node."
+  },
+  "colliders": [
+    {
+      "id": "body",
+      "name": "Passenger car source MeshCollider",
+      "node": "collision",
+      "mesh": 0,
+      "primitive": 0,
+      "expectedVertexCount": 226,
+      "expectedIndexCount": 1200,
+      "isTrigger": false,
+      "convex": false
+    }
+  ]
+}

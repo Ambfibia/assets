@@ -1,0 +1,1202 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 809,
+  "containerRoute": "prefabs/particle/effectscripts/es[809].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 10973,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1609,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "978d7607add9e93d7d8240d9564922905a2c9a1a6cee7e98b590e3ead27aa1d8",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendOneOne_zwriteOff_cullOff\" {\nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend One One\n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1618,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "733845dc9a73d0a7a1bb5089e53589caf446b1d71b3320205b8c383af7b260a5",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"particle_blendSrccolorOne_zwriteOff_cullOff\" { \nProperties {\n\t_TintColor (\"Tint Color\", Color) = (0.5,0.5,0.5,0.5)\n\t_MainTex (\"Particle Texture\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags { \"Queue\" = \"Transparent+3\" }\n\tBlend SrcColor One\n\tAlphaTest Greater .01\n\tColorMask RGB\n\tCull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }\n\tBindChannels {\n\t\tBind \"Color\", color\n\t\tBind \"Vertex\", vertex\n\t\tBind \"TexCoord\", texcoord\n\t}\n\t\n\t// ---- Dual texture cards\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tconstantColor [_TintColor]\n\t\t\t\tcombine constant * primary\n\t\t\t}\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * previous DOUBLE\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// ---- Single texture cards (does not do color tint)\n\tSubShader {\n\t\tPass {\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tcombine texture * primary\n\t\t\t}\n\t\t}\n\t}\n}\n}\n",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1915,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "ParticleEmitterController",
+      "canonicalBlake3": "9d0cab4dc9ad89ab1768565cf7f974ec2ba85be11011646528c9dd2f89422a71",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "ParticleEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "ParticleEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 440,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "g_fi_f1_shock",
+      "canonicalBlake3": "39485619d72dd32ce0ddbd31e22f293d039c12fa8e9f35bb500f6f741139405f",
+      "value": {
+        "image data": {
+          "base64": "//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAAgCAAAdfX9////AAAAAAAAIAgAAP//r6v//wAAAAAAACAIAACv66qq//8AAAAAAAAgCAAAqqoiAv//AAAAAAAAIAgAAKoCAAD//wAAAAAAAEAIIAj1//////8AAAAAAABAECAIVff/qv//AAAAAAAAQBAgCN//r6r//wAAAAAAAEAQIAj/+6qq//8AAAAAAABAGCAI74+Pj///AAAAAAAAQBAgCP+uqqr//wAAAAAAAEAQIAj/6uqq//8AAAAAAABAECAIV/+qqv//AAAAAAAAQAggCP///qr//wAAAAAAAEAIIAhXX/////8AAAAAAAAgCAAAqqAAAP//AAAAAAAAIAgAAKqqoAD//wAAAAAAACAIAAD6qqqq//8AAAAAAAAgCAAA///6u///AAAAAAAAIAgAAFVf/////wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAAACAAAVVVV9f//AAAAAAAAIAgAAPX//6///wAAAAAAACAIAACvq6qq//8AAAAAAAAgCAAAu6oKAv//AAAAAAAAQAggCFX1/////wAAAAAAAEAQIAjV9f+r//8AAAAAAABAECAI/6+qqv//AAAAAAAAYBAgCP//q6r//wAAAAAAAGAQIAj/r6qq//8AAAAAAABAEEAIq6oAAP//AAAAAAAAYBBAEFf/df///wAAAAAAAGAYQBB15cXF//8AAAAAAABgEEAQffX//v//AAAAAAAAYBBAEHVfXf///wAAAAAAAEAQQAj6qgAA//8AAAAAAABgECAI//qqqv//AAAAAAAAYBAgCP//6qr//wAAAAAAAEAQIAj//qqq//8AAAAAAABAECAIV//+qv//AAAAAAAAQAggCFVXf////wAAAAAAACAIAACqqqiA//8AAAAAAAAgCAAA/vqqqv//AAAAAAAAIAgAAH///vr//wAAAAAAAAAIAABVVVVX//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAAgAAFVVVdX//wAAAAAAACAIAAD//6+r//8AAAAAAAAgCAAAq6qqKv//AAAAAAAAIAgAACoCAAD//wAAAAAAAEAQIAjV/b+v//8AAAAAAABgECAI9f//r///AAAAAAAAYBAgCP+vqqr//wAAAAAAAGAQQBB1f1+///8AAAAAAABgEEAQ1/2ri///AAAAAAAAYBhAEJWmqqr//wAAAAAAAIAYQBD9//+u//8AAAAAAACAGEAQ///7qv//AAAAAAAAgDBgEKWlBQX//wAAAAAAAIAYQBD//rqo//8AAAAAAACAGEAQ///uqv//AAAAAAAAgBhAEP//7+r//wAAAAAAAGAQQBD//6qq//8AAAAAAABgEEAQ9V//6v//AAAAAAAAYBBAEFf93X///wAAAAAAAGAQIAj/+qqq//8AAAAAAABAECAI/uqqqv//AAAAAAAAQAggCH///vr//wAAAAAAACAIAACooAAA//8AAAAAAAAgCAAA6qrqqv//AAAAAAAAIAgAAP///vr//wAAAAAAAAAIAABVVV9f//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAAIAABVVdX1//8AAAAAAAAgCAAA/7+vq///AAAAAAAAIAgAAKqqKir//wAAAAAAAEAIIAjV/f3///8AAAAAAABAECAI9b+vqv//AAAAAAAAYBAgCP+/r6v//wAAAAAAAGAQQBD1Xdf9//8AAAAAAACAGEAQ9f39v///AAAAAAAAgBhAEP//q6r//wAAAAAAAIAgYBD9/7+///8AAAAAAACAIGAQ///7q///AAAAAAAAgCBgEP/+qqr//wAAAAAAAIAgYBD766qq//8AAAAAAAABSWAY5eWFhf//AAAAAAAAoCBgGNf+/r7//wAAAAAAAIAgYBD/6qqq//8AAAAAAACAIGAQ//vqqv//AAAAAAAAgBhgGFX/+qr//wAAAAAAAIAYQBD//qqq//8AAAAAAACAGEAQf//+6v//AAAAAAAAgBhAEFV/f/7//wAAAAAAAEAQYAiqqoAA//8AAAAAAABgECAI//7qqv//AAAAAAAAQBAgCFpaaqr//wAAAAAAAEAIIAhXX3////8AAAAAAAAgCAAA6rqqoP//AAAAAAAAIAgAAH/++uv//wAAAAAAAAAIAABVVVVf//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAAACAAAVVVV1f//AAAAAAAAIAgAAP//r6///wAAAAAAACAIAAC6qioK//8AAAAAAABACCAI9f39////AAAAAAAAQBAgCL2vq6r//wAAAAAAAGAQIAi/r6qq//8AAAAAAABgEEAQV/e9rf//AAAAAAAAgBhAEP3//6v//wAAAAAAAIAYQBCvq6qq//8AAAAAAACAIGAQ/6uqqv//AAAAAAAAYCCAGP/3/////wAAAAAAAKAgYBj/7q6o//8AAAAAAACgIGAY//urov//AAAAAAAAoCBgGO/qior//wAAAAAAAIJhgCClpaWN//8AAAAAAADAMIAgVtbc2P//AAAAAAAAoCBgGPvqoqD//wAAAAAAAKAgYBj7+qio//8AAAAAAACgIGAY////qv//AAAAAAAAgCBgEPqqqqr//wAAAAAAAIAgYBD//7qq//8AAAAAAACAGEAQ/uqqqv//AAAAAAAAgBhAEH//vqr//wAAAAAAAGAYQBBVXl76//8AAAAAAABgECAI/urqqv//AAAAAAAAQBAgCP766qr//wAAAAAAAEAIIAhfX3////8AAAAAAAAgCAAA6rqqoP//AAAAAAAAIAgAAP//+vr//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAACAIAAD9/7+///8AAAAAAAAgCAAAq6oqKv//AAAAAAAAQAggCNX1/f///wAAAAAAAEAQIAi/r6uq//8AAAAAAABgECAIv6uqqv//AAAAAAAAYBhAENX1rav//wAAAAAAAIAYQBD/v6+r//8AAAAAAACAGGAYvb+v6v//AAAAAAAAgCBgGP///6///wAAAAAAAKAgYBitrS8q//8AAAAAAACgKIAY//vqqP//AAAAAAAAoCiAIJuxA4P//wAAAAAAAKAogCDpy4oI//8AAAAAAACgKIAgrwoKCv//AAAAAAAA5HGgMIWFBQ3//wAAAAAAAMFAgCD2/Pz4//8AAAAAAADAMIAg3/+6uv//AAAAAAAAoCiAIFb8qKj//wAAAAAAAKAogBj//qqq//8AAAAAAACgKGAY//7qqv//AAAAAAAAgCBgGOvioID//wAAAAAAAIAgYBh////6//8AAAAAAACAIGAQ//v6uv//AAAAAAAAgBhAEP/6+ur//wAAAAAAAGAYQBBVf3r6//8AAAAAAABAEEAI7uqogP//AAAAAAAAYBAgCF////7//wAAAAAAAEAIIAhXX3////8AAAAAAAAgCAAA6qqqqP//AAAAAAAAIAgAAH///v7//wAAAAAAAAEAAABVVVVV//8AAAAAAAAACAAAVdX19f//AAAAAAAAIAgAAK+rq6r//wAAAAAAACAIAAAqCgIA//8AAAAAAABAECAIva+vq///AAAAAAAAYBAgCK+vq6r//wAAAAAAAGAYQBDV9b2v//8AAAAAAACAGEAQv6+vq///AAAAAAAAgBhgGL+v6vr//wAAAAAAAIAgYBj/v68r//8AAAAAAACgKGAY//+vq///AAAAAAAAoCiAIJX9q6v//wAAAAAAAMAwoChVXfmt//8AAAAAAADAOKAodeW1P///AAAAAAAAwDigKPf/ujr//wAAAAAAAMA4oCj1v78u//8AAAAAAABKm8A45e2Fjf//AAAAAAAAAUmgMFZc/Pj//wAAAAAAAMA4oCjXvq6s//8AAAAAAACgMKAoVV+qqv//AAAAAAAAoDCgKFVVf+r//wAAAAAAAKAogCC+KggA//8AAAAAAACgKIAgVn7++v//AAAAAAAAwCiAIFX1fXv//wAAAAAAAIAgYBj+7uLg//8AAAAAAACAIGAQ/+/r6v//AAAAAAAAgBhAEP7+6qr//wAAAAAAAGAYQBBXXnrq//8AAAAAAABAEEAI/urgoP//AAAAAAAAQBAgCH7++ur//wAAAAAAACAIAACgoIAA//8AAAAAAAAgCAAA/ur6qv//AAAAAAAAIAgAAFdff////wAAAAAAACAIAAC/v6+v//8AAAAAAAAgCAAAqioKCv//AAAAAAAAQAggCP3/v7///wAAAAAAAGAQIAi/r6+r//8AAAAAAABgEEAQ3/2vr///AAAAAAAAgBhAEP+/r6r//wAAAAAAAIAYYBitq+v6//8AAAAAAACAIGAYv68vC///AAAAAAAAoChgGP+vq6r//wAAAAAAAKAogCD9r64K//8AAAAAAACgMKAoVdW9q///AAAAAAAAwDiAKK8vLyr//wAAAAAAAMBAoCi/vrqg//8AAAAAAADhSMA4VVd+6v//AAAAAAAAwEihMLe+uij//wAAAAAAAE60wECljY2N//8AAAAAAABCUcBAVFZ0+P//AAAAAAAAwEChMO7OiID//wAAAAAAAMFAoDBV//6q//8AAAAAAADAOKAwVV//+P//AAAAAAAAwDigKH97+vj//wAAAAAAAMAwgCD/viqK//8AAAAAAACgKIAg0KiIgP//AAAAAAAAoCiAIFb1b1r//wAAAAAAAIAgYBj++vro//8AAAAAAACAGGAY/vqrr///AAAAAAAAgBhAEOrq+ur//wAAAAAAAGAQQBD3317+//8AAAAAAABgECAI/vr66v//AAAAAAAAQAggCP///vr//wAAAAAAACAIAACqqOCA//8AAAAAAAAgCAAA/v7++///AAAAAAAAIAgAAKurqqr//wAAAAAAAEAIAAivr6ur//8AAAAAAABgECAI/f+/v///AAAAAAAAYBBAEF1d3/f//wAAAAAAAIAYQBC9v/+///8AAAAAAACAIGAQ/6+rr///AAAAAAAAgCBgGP+vLgP//wAAAAAAAKAogCBV1fX9//8AAAAAAACgKIAgv68rCv//AAAAAAAAoDCgKLW9Lyr//wAAAAAAAMFAoDBV1fW9//8AAAAAAACgQMEw/6uqAv//AAAAAAAA4VjAQFV/6Yn//wAAAAAAAAFhwEhdfemN//8AAAAAAADBYMBIVd/7ov//AAAAAAAAON7gWK2FjY3//wAAAAAAAINpwFBcfPz8//8AAAAAAADhYKBAf//6ov//AAAAAAAAwVCgOP/6qoD//wAAAAAAAMFIoDjfv66I//8AAAAAAADAQKAwXv76OP//AAAAAAAA4ECgMH1b3O7//wAAAAAAAMA4oChf1n97//8AAAAAAACgKIAg+OiqoP//AAAAAAAAoCiAIFVXv+v//wAAAAAAAIAgYBjq8Pj6//8AAAAAAACAIGAQ//7++v//AAAAAAAAgBhAEP/++v7//wAAAAAAAGAQQBBVV9ff//8AAAAAAABgECAIf//+/v//AAAAAAAAQAggCF9ff3///wAAAAAAACAIAADq7qqq//8AAAAAAAAgCAAAKisKCv//AAAAAAAAQBAgCP39ta///wAAAAAAAGAQIAivr6uq//8AAAAAAABgGEAQtbWtrf//AAAAAAAAgCBgEP//v7///wAAAAAAAIAgYBj9/b+r//8AAAAAAACgKIAYr6+vv///AAAAAAAAoCiAIK2qogD//wAAAAAAAKAwoCi1rSsK//8AAAAAAADBQKAw1fX9r///AAAAAAAAwUigOPX9vyv//wAAAAAAAMFYoEDVv68q//8AAAAAAADhaKBIrS8vKv//AAAAAAAAAYHBWPW3Pjr//wAAAAAAAOGAwWBVf+qI//8AAAAAAABc78BojY2Njf//AAAAAAAAxIkBaXR+bGz//wAAAAAAAMF4wWBVX/Dw//8AAAAAAAChaMFQX/7ooP//AAAAAAAA4WigQH/7+uj//wAAAAAAAOFYoEC3T+Ow//8AAAAAAADASKAwe7qswv//AAAAAAAAwDigMFxUf/j//wAAAAAAAMA4oChX1+9i//8AAAAAAACgKIAgcPjqKP//AAAAAAAAoCiAGP/v6ur//wAAAAAAAIAgYBju+v7+//8AAAAAAACAGEAQ6urqqv//AAAAAAAAYBBAEF5++vr//wAAAAAAAGAQIAj6+urq//8AAAAAAABACCAI/v7+/v//AAAAAAAAIAgAAKqgoKD//wAAAAAAACAIAAAKAgIA//8AAAAAAABAECAIr6+rq///AAAAAAAAYBBAEH29t////wAAAAAAAIAYQBD9v6ur//8AAAAAAACAIGAQv6+vqv//AAAAAAAAgCBgGAsPKwv//wAAAAAAAKAogCC1v4sv//8AAAAAAACgMKAoLTW1L///AAAAAAAAwECgMNX9rw3//wAAAAAAAOBQoDj1tS0v//8AAAAAAADAWKFAva8KAv//AAAAAAAAwGihUL2rKgP//wAAAAAAAOCAoWD1vysK//8AAAAAAABAmcF41//rg///AAAAAAAAoqHhgFVfuiL//wAAAAAAAP/3AIGNjY2N//8AAAAAAABuqyGRf19aUv//AAAAAAAAAZnBcFf+6ID//wAAAAAAAOGIwWjVv6qA//8AAAAAAAABgcFgV5evyv//AAAAAAAA4WjBUHx+uMj//wAAAAAAAMFQoDj6+Oig//8AAAAAAADhSKA4169jeP//AAAAAAAAwDiAKPj+qgD//wAAAAAAAMAwoCh9alpW//8AAAAAAACgKIAgXl56+v//AAAAAAAAgCBgGP74oID//wAAAAAAAIAgYBD/6urq//8AAAAAAACAGEAQ/vr6+v//AAAAAAAAYBBAEHd3f9///wAAAAAAAEAQIAj6+urq//8AAAAAAAAgCAAAoICAgP//AAAAAAAAQAggCP39/f3//wAAAAAAAGAQIAi/r6+v//8AAAAAAABgEEAQ/7e9rf//AAAAAAAAgBhAEK+vq6r//wAAAAAAAKAgYBirLf////8AAAAAAADAKIAgVf8vtf//AAAAAAAAwDCAIP///oD//wAAAAAAAMA4gCirL6+v//8AAAAAAADASKAwvb+qC///AAAAAAAA4WDASP2tJbX//wAAAAAAAIB54GBdaQU///8AAAAAAAChicBwVdWeoP//AAAAAAAAoZkAiVX1rQv//wAAAAAAAGG6IZH9tT8q//8AAAAAAADo26Gp1bUvD///AAAAAAAA3/dooo0NDwL//wAAAAAAAJ/fRLpfXlxU//8AAAAAAAAj0yGZVV/6+P//AAAAAAAAwakBkVV/+ij//wAAAAAAAGGh4YBdevj4//8AAAAAAADheMFgenj4AP//AAAAAAAAAXHBWNVtWtT//wAAAAAAAOFYwEBX/+pw//8AAAAAAADAQKAwYPj66v//AAAAAAAAwDigKH9f/qD//wAAAAAAAMAwgCD/6ur6//8AAAAAAACgKIAY6vj+/v//AAAAAAAAgCCAGP///////wAAAAAAAIAYQBD66ujo//8AAAAAAABgEEAQ//h+/v//AAAAAAAAYBAgCP7++vr//wAAAAAAAEAIIAh/f39///8AAAAAAABACCAIv7+/v///AAAAAAAAYBAgCK+rq6v//wAAAAAAAGAYQBClqamp//8AAAAAAACAIGAQv7+/v///AAAAAAAAoCBgGL+vv7///wAAAAAAAKAogCD1vYov//8AAAAAAADAOKAoLZXV////AAAAAAAA4UigMP+qLfX//wAAAAAAAAFhoEDV1foL//8AAAAAAADBaMBQvy0tDv//AAAAAAAAIYnAYCktrwv//wAAAAAAAIKrgZF9rSW1//8AAAAAAACju0GZ9f+6gP//AAAAAAAAY8NCqtX9rwv//wAAAAAAAJX+IdO1PS0t//8AAAAAAAD//573AwEBAP//AAAAAAAAN/fH41S0rAj//wAAAAAAAObsYbpeXPzo//8AAAAAAADD2yKyVX374P//AAAAAAAAgsJBmVdf/oD//wAAAAAAAKGh4YB9W9zu//8AAAAAAAABgcFg/Xpcev//AAAAAAAA4WCgQH7+qoD//wAAAAAAAOFQoDj/6vh+//8AAAAAAADhQKAwel5X////AAAAAAAAwDigKFdVfl7//wAAAAAAAKAogCC+aF6q//8AAAAAAACgIGAY/v7q+v//AAAAAAAAgCBgEP/q/v7//wAAAAAAAIAYQBB/f3/+//8AAAAAAABgECAI+vrq6v//AAAAAAAAQBAgCH5+fn7//wAAAAAAAEAQIAi9v62v//8AAAAAAABAEEAIKwsKCv//AAAAAAAAgBhAEL2/v7///wAAAAAAAIAYYBivr68q//8AAAAAAACAIGAYLysrCv//AAAAAAAAoCiAIK2tLy///wAAAAAAAMA4oCgt/f29//8AAAAAAADAQKEwqgsvK///AAAAAAAA4WCgSCX9ry3//wAAAAAAACGJwGD+LZW///8AAAAAAAChocB4tf+KLf//AAAAAAAAgrKBmZ29LSr//wAAAAAAAEjV4brrDSW1//8AAAAAAADQ9qLLVd/qAv//AAAAAAAAVf8A5CUlLyr//wAAAAAAAOD/3/9VVVVV//8AAAAAAAD+/yz+4GB4WP//AAAAAAAA6/5D7FffLgL//wAAAAAAAKz+gtt/+ojA//8AAAAAAABk7AKyWlx+Xv//AAAAAAAA4bHhiHp8/uD//wAAAAAAACGRwXD/6lj+//8AAAAAAADhcMFQeF7q8P//AAAAAAAAwVjAQF96/nj//wAAAAAAAOFIoDB+/3r+//8AAAAAAADAOKAo/3p/ov//AAAAAAAAwDCAIH7/6vj//wAAAAAAAKAgYBj+qOj6//8AAAAAAACAIGAQ6ur6+v//AAAAAAAAgBhAEP7+//r//wAAAAAAAEAQQAigqKCg//8AAAAAAABgECAIX19/fv//AAAAAAAAQBAgCK+vr6v//wAAAAAAAEAQQAgKCgIK//8AAAAAAACAGEAQv7+/v///AAAAAAAAgCBgEK+vq6v//wAAAAAAAKAoYBirv7+q//8AAAAAAACgKIAgAAorAv//AAAAAAAAwDiAKK8CL6///wAAAAAAAMFIoDi1qwut//8AAAAAAADBaMFQ9bUvLf//AAAAAAAA4IChYA+trwv//wAAAAAAAKGh4IC9LS8v//8AAAAAAADiwuGpDSUtLf//AAAAAAAAiPUhy/X/CS3//wAAAAAAAJb/g+wJLS8q//8AAAAAAADd/xD/NSY8MP//AAAAAAAA4P/f/1VVVVX//wAAAAAAAP//tP5wYOCw//8AAAAAAABP/4v+o5y2C///AAAAAAAA7v7i62B4+Oj//wAAAAAAACTsosJXenjg//8AAAAAAAChwiGZXn54oP//AAAAAAAAAKrhgFdXf2D//wAAAAAAAECJwWBfX/hY//8AAAAAAAABYcBIV/pe+v//AAAAAAAA4EjAOOhe/uD//wAAAAAAAMA4oCh4+qDo//8AAAAAAADAMIAg/+rofv//AAAAAAAAoCiAGP76+v7//wAAAAAAAIAgYBDqqvr6//8AAAAAAACAGEAQ+vr+/v//AAAAAAAAYBBAEHd3f1///wAAAAAAAEAQIAj++vr6//8AAAAAAABgECAI/f39K///AAAAAAAAgBhAENVVVa///wAAAAAAAKAgQBD///UK//8AAAAAAADAKGAYVf1VAv//AAAAAAAAADmAINVVVQr//wAAAAAAAABBgCD/9XUA//8AAAAAAABBUaAw9VVVAP//AAAAAAAAYWmAOP/99wD//wAAAAAAAIKBwVjV9dUA//8AAAAAAACDmcBo9a+/AP//AAAAAAAARroAkbX/LQr//wAAAAAAAP3mQrr19f8t//8AAAAAAAAW9yPktQstAP//AAAAAAAA/f+s/qmvwwL//wAAAAAAAP//ef+/LQMA//8AAAAAAADg/9//VVVVVf//AAAAAAAA//+b/2DAAAD//wAAAAAAAP7/Ef/vXsAA//8AAAAAAAC7/wn+V68CAP//AAAAAAAAMv/l7F+A4OD//wAAAAAAAGf1oanq6F76//8AAAAAAABCusB44thfoP//AAAAAAAAoqHBaH5XVYD//wAAAAAAAIGBwVBXVVUA//8AAAAAAACBaaA4VVVVgP//AAAAAAAAQFGgMFVVVQD//wAAAAAAACBJoChVVVWg//8AAAAAAAAAOYAgVVVVoP//AAAAAAAAwChgGF1/V4D//wAAAAAAAKAgQBD///+g//8AAAAAAACAGEAQVVdX+P//AAAAAAAAYBAgCH9+/+j//wAAAAAAAGAQIAgr/f29//8AAAAAAACAGEAQL1XV1f//AAAAAAAAoCBAEAr9/////wAAAAAAAMAwYBgCK311//8AAAAAAAABQYAgCgpVVf//AAAAAAAAo2mgKK8qVVX//wAAAAAAAGaCwDirClVV//8AAAAAAABqm+BIqwL1Vf//AAAAAAAAE71CaasCdVX//wAAAAAAANvewHCqAP9V//8AAAAAAACe7wSiqgBVVf//AAAAAAAAv/fmugoA9fX//wAAAAAAAP//vN4AAAGp//8AAAAAAADf/973AAAAAv//AAAAAAAA4P/f/1VVVVX//wAAAAAAAOD/3/9VVVVV//8AAAAAAAD//7//AAAAQP//AAAAAAAA//99/wAAAAX//wAAAAAAAP//FPaAAFh4//8AAAAAAAC//2bTgABfX///AAAAAAAAvvdksqoAVVX//wAAAAAAAPrmYpH6gFVV//8AAAAAAACvtCFx/oBVVf//AAAAAAAAKJPhUKoAVVX//wAAAAAAAIaCwDiqAFVV//8AAAAAAAAleqA4qoBXVf//AAAAAAAAw2mgMOqgVVX//wAAAAAAACFZgCCqgFVV//8AAAAAAADAMGAYoOBfX///AAAAAAAAoCBAEKBf/////wAAAAAAAIAYQBD4VVdX//8AAAAAAABgECAI6H9/f///AAAAAAAAQBAgCKurr6///wAAAAAAAGAQQBDV3d31//8AAAAAAACAGEAQv7+vv///AAAAAAAAgCBgEK8qqq///wAAAAAAAKAoYBivKq+///8AAAAAAADAMIAgK6r/////AAAAAAAA4ECgMCv9VdX//wAAAAAAAMFIoDgALa2t//8AAAAAAADBaMFQLyU1Nf//AAAAAAAAYJHBcJ09tfX//wAAAAAAAIGiAZEvr/VV//8AAAAAAADGwyCpIqq/tf//AAAAAAAAs/6C0y8t/VX//wAAAAAAAJn/4OMAqv/1//8AAAAAAADb/2/+AqktCf//AAAAAAAA//99/wIBAwD//wAAAAAAAP//2f+AEFBQ//8AAAAAAACY//D+cEPOrP//AAAAAAAA7/5k5ACqXl7//wAAAAAAAAj+Yst44OtV//8AAAAAAAAiy8GhXlx4eP//AAAAAAAAgZnAePpeXHj//wAAAAAAAMF4wWB4el9f//8AAAAAAADhYKBA+uj+fv//AAAAAAAA4UigOOpf+l///wAAAAAAAMA4oCjo6nrq//8AAAAAAACgKIAg4ADq4P//AAAAAAAAoCBgGOqgqPr//wAAAAAAAIAgYBD66qr6//8AAAAAAACAGEAQ/v76+v//AAAAAAAAYBBAEPd3d1f//wAAAAAAAEAQIAj6+vr6//8AAAAAAABAECAIr6+vrf//AAAAAAAAQBBACAoKCgr//wAAAAAAAIAYQBC/v7/9//8AAAAAAACAGGAYq6urr///AAAAAAAAgCBgGAsLLy///wAAAAAAAKAogCAvL6+v//8AAAAAAACgMKAoCwkJDf//AAAAAAAAwEihMK+vK6v//wAAAAAAAMFgwEgtLb+1//8AAAAAAADBgMFgD6/1tf//AAAAAAAAAZnBeC0tDa///wAAAAAAAAG6AZkLr639//8AAAAAAAAiy6KpCyovrf//AAAAAAAAJe2D0y0tPTX//wAAAAAAAJP/bPUDAqpv//8AAAAAAAD//zr1AAAIDf//AAAAAAAAu/8E7QCg+Fj//wAAAAAAAFP/JO0AgIul//8AAAAAAADz9kTUWHDq////AAAAAAAARcxhsn56fnj//wAAAAAAAKG6gZHg+l5W//8AAAAAAABhmeB4flxi/f//AAAAAAAA4XihUHjq/3j//wAAAAAAAOFYoEB+fnj///8AAAAAAADBQKAw+v5+eP//AAAAAAAAoDCgKOh4eHr//wAAAAAAAKAogCCg+np6//8AAAAAAACgIGAYqKr6+v//AAAAAAAAgCBgEPrq+v7//wAAAAAAAIAYQBD+/v7///8AAAAAAABAEEAIoKigoP//AAAAAAAAQBAgCPr6+v7//wAAAAAAAEAQIAi9vb29//8AAAAAAABgECAIq6urr///AAAAAAAAYBhAEKmpqan//wAAAAAAAIAgYBC/v/+///8AAAAAAACgIGAYr7+v////AAAAAAAAoCiAIC0Lv7X//wAAAAAAAKAwoCgLJbW1//8AAAAAAADBQKAwv739tf//AAAAAAAAwVCgQC8tCbv//wAAAAAAAOFwoVALq7+t//8AAAAAAADhkMFwDan99f//AAAAAAAAobHBiL89rf3//wAAAAAAAGK6YaEKj72V//8AAAAAAADD7GK6Lb31Vf//AAAAAAAAh/WCwoLje1///wAAAAAAAJ//RssJCQ0N//8AAAAAAAAY/2LL+HxeVv//AAAAAAAARvUBwyq/31X//wAAAAAAAKXcQLoI+Hp///8AAAAAAACGvEGqcOKr9f//AAAAAAAAgaIhiXpeVlz//wAAAAAAAAGBwGBqflh6//8AAAAAAAABaaBIgK9ff///AAAAAAAAAVmgQF946vf//wAAAAAAAOBAoDDrX154//8AAAAAAACgMKAoWHh/V///AAAAAAAAoCiAIHp+eKr//wAAAAAAAKAgYBj+/v/+//8AAAAAAACAGGAY+n5+fv//AAAAAAAAYBBAEPr6enr//wAAAAAAAGAQIAjq6ur6//8AAAAAAABACCAI/v7+/v//AAAAAAAAQAgACKqrq6v//wAAAAAAAEAQIAgqKiqr//8AAAAAAABgEEAQPS29t///AAAAAAAAgBhAEKqrr6///wAAAAAAAIAggBj///////8AAAAAAACgKGAYq6uvr///AAAAAAAAwDCAIL+/q////wAAAAAAAMA4gCgLqq8v//8AAAAAAADBSKA4Ly2p3///AAAAAAAAwVigSAIuPTX//wAAAAAAAOGAwWA9Je3V//8AAAAAAAAhmcF4Lo35V///AAAAAAAAYaHhkAvt3dX//wAAAAAAAEHCIaEvvfVV//8AAAAAAADCwiGhqL73Vf//AAAAAAAA3/+GugWFhYX//wAAAAAAAGXk4an83lZX//8AAAAAAACCsqGhAMpvVf//AAAAAAAAgbqhmYC631X//wAAAAAAAAGiAIEo6n5e//8AAAAAAACBiuBw8OPt9f//AAAAAAAAYHHAWH9WWHD//wAAAAAAAOFYoED+eHr///8AAAAAAADBQKAw+Pj4/v//AAAAAAAAwDigKICuf3///wAAAAAAAMAwgCD64Kq///8AAAAAAADAKIAgV1deXv//AAAAAAAAoCBgGPr//3///wAAAAAAAIAYQBDq6Or6//8AAAAAAABgEEAQen7+////AAAAAAAAYBAgCPr6/v7//wAAAAAAAEAIIAj/f39///8AAAAAAAAgCAAAAgICAv//AAAAAAAAIBBACP////7//wAAAAAAAGAQQBD339V9//8AAAAAAACAGEAQr7+/v///AAAAAAAAgCBgEK+vq7///wAAAAAAAIAgYBgDCi8v//8AAAAAAACgKIAgr60tq///AAAAAAAAoTigKK3/9dX//wAAAAAAAMFAoDC9/fUV//8AAAAAAADhWKA4L6v79///AAAAAAAA4WjBUC+t/VX//wAAAAAAAOF4oVgqD639//8AAAAAAADhkMFwL639Vf//AAAAAAAA4ZjBeCqr/1X//wAAAAAAAAGZoXgAiq+9//8AAAAAAABb92GZjYWFhf//AAAAAAAA4bHhkLzWVlf//wAAAAAAAGGZwIAiOtdV//8AAAAAAACBmcBwiu7/3///AAAAAAAAQYngcFB6d1X//wAAAAAAAABpoFg482v3//8AAAAAAAAgYcBI8srvVf//AAAAAAAAwEigOLjwavb//wAAAAAAAMFAoDBcendV//8AAAAAAACgMKAoel5WXv//AAAAAAAAoCiAIPp6e37//wAAAAAAAKAgYBiAqv7e//8AAAAAAACAIGAQ6ujq////AAAAAAAAgBhAEPr++vr//wAAAAAAAGAQQBDX9/d3//8AAAAAAABAECAI6urq+v//AAAAAAAAIAgAAICAgKD//wAAAAAAACAIAAAKCioq//8AAAAAAABAECAIrb299f//AAAAAAAAQBBACCsrq6v//wAAAAAAAIAYQBC9/fX1//8AAAAAAACAGEAQqqurr///AAAAAAAAgCBgGD+v+v///wAAAAAAAKAoYBiqq7////8AAAAAAACgKIAgCi8vD///AAAAAAAAwDigKA/r/tX//wAAAAAAAMBAoDAPCev///8AAAAAAADBUKA4Ki+v7f//AAAAAAAAwVigQAAqK63//wAAAAAAAMFooVAAKr/1//8AAAAAAACheMFYCqr//f//AAAAAAAA4YihYCoqv7X//wAAAAAAAJfeAYGFheXl//8AAAAAAAAgkaFouLzWVv//AAAAAAAAwYDBYKjq/1f//wAAAAAAAMF4wViw+Htf//8AAAAAAADgcMFQKO5/Xf//AAAAAAAA4VigQKj4WHP//wAAAAAAAMFIoDj4+Hpv//8AAAAAAADBQKAw/n5fVf//AAAAAAAAwDCAKPji67///wAAAAAAAKAogCCAKPp8//8AAAAAAACgKGAY+v766///AAAAAAAAgCBgGP7+/3///wAAAAAAAIAYQBCq6urq//8AAAAAAACAGEAQ/v9fX///AAAAAAAAQBBACODo6Pr//wAAAAAAAEAQIAj6fn5///8AAAAAAAAgCAAAoKDo6P//AAAAAAAAIAgAAK6qq6///wAAAAAAAEAIAAirq6+v//8AAAAAAABAECAIqqurr///AAAAAAAAYBBAEPXd3VX//wAAAAAAAIAYQBCrv/39//8AAAAAAACAIGAQv7//////AAAAAAAAgCBgGCsvL4v//wAAAAAAAKAogCCD+tfV//8AAAAAAADAMIAgL6/r////AAAAAAAAoDCgKAALLSX//wAAAAAAAMFAoDCy/9XV//8AAAAAAADBSKA4C6n71///AAAAAAAAoVDAOAoqr////wAAAAAAAMFYoEgCr/1V//8AAAAAAAABcaFQL7+19f//AAAAAAAAbrzhYMWF5eX//wAAAAAAAOFwoVCo/lZX//8AAAAAAADhaKBI6P7/X///AAAAAAAAwVjASMDqdVX//wAAAAAAAOFQoECq7/XV//8AAAAAAADhSKA4yq6bXf//AAAAAAAAwUCgMK/fV1b//wAAAAAAAKAwoCio6Hha//8AAAAAAACgKIAgoOjq7v//AAAAAAAAoCiAIHBrV1X//wAAAAAAAIAgYBio+v7+//8AAAAAAACAIGAQ/vr/////AAAAAAAAgBhAEP7+/3///wAAAAAAAGAQQBD/93dV//8AAAAAAABgECAI/v5/f///AAAAAAAAQAggCH9/X1///wAAAAAAACAIAAC4qurq//8AAAAAAAAgCAAAr6+/////AAAAAAAAIAgAAAoqKir//wAAAAAAAEAIIAivv//9//8AAAAAAABgECAIq6+/v///AAAAAAAAYBBAEL+999f//wAAAAAAAIAYQBCqr6vr//8AAAAAAACAGGAY6urvvf//AAAAAAAAgCBgGAsLi////wAAAAAAAKAogCDv9dXV//8AAAAAAACgKIAgAoKqv///AAAAAAAAwDigKL219XX//wAAAAAAAKA4oCgKqq/9//8AAAAAAAChQKAwqq/9Vf//AAAAAAAAwUigOKqpVVX//wAAAAAAAOFQoDiPj+1t//8AAAAAAADnksBAjYWFhf//AAAAAAAA4VCgOKz+/lb//wAAAAAAAMFIoDig8vtZ//8AAAAAAADAQKEwICr6f///AAAAAAAAwUCgMLr+Xlb//wAAAAAAAMA4oCjI7Lrb//8AAAAAAADAOKAoeHt9d///AAAAAAAAoCiAIIAquvv//wAAAAAAAKAogCD/X1ZX//8AAAAAAACAIGAYoOj6/v//AAAAAAAAgCBgEOrr/v///wAAAAAAAIAYQBDq+v7+//8AAAAAAABgGEAQen9XV///AAAAAAAAYBAgCOr6+v7//wAAAAAAAEAIIAj6/v////8AAAAAAAAgCAAAoKCoqv//AAAAAAAAIAgAAPr+/v///wAAAAAAACAIAAD///X1//8AAAAAAAAgCAAAqqu/r///AAAAAAAAIAgAAAACAgr//wAAAAAAAEAQIAiqqqWl//8AAAAAAABgECAIqquvv///AAAAAAAAYBhAEK6v9dX//wAAAAAAAIAYQBCrq6v7//8AAAAAAACAGGAY+uqvv///AAAAAAAAgCBgGAuLu////wAAAAAAAKAoYBirq6+///8AAAAAAACgKIAgIqr+1f//AAAAAAAAoCiAIAIiqq///wAAAAAAAKAwoCgKr9VV//8AAAAAAACgMKAoAAKv1f//AAAAAAAAwDigMMPBaVn//wAAAAAAAIaCwDiFhYWF//8AAAAAAADAOKAw/HRUVv//AAAAAAAAwDiAKKKi6+///wAAAAAAAKAwoCgAqP5X//8AAAAAAACgMKAooPJ5df//AAAAAAAAwDCAIOrv/////wAAAAAAAKAogCAouvtv//8AAAAAAACgKGAYqvz4+v//AAAAAAAAgCBgGODi/////wAAAAAAAIAYYBivq/r+//8AAAAAAACAGEAQqur+////AAAAAAAAYBhAEGr+X1f//wAAAAAAAGAQIAiq6vr6//8AAAAAAABAECAI6vr+/v//AAAAAAAAIAgAAACAoKj//wAAAAAAACAIAACq6vr6//8AAAAAAAAgCAAA/19fX///AAAAAAAAAQAAAFVVVVX//wAAAAAAACAIAAC///39//8AAAAAAAAgCAAAKqqqq///AAAAAAAAQAgACKqrr7///wAAAAAAAEAQIAiqq6+9//8AAAAAAABAEEAICgqrr///AAAAAAAAYBhAEK699VX//wAAAAAAAIAYQBCqr6////8AAAAAAACAGGAY6qut/f//AAAAAAAAgCBgGA+v+////wAAAAAAAIAgYBgCAqu///8AAAAAAACgKIAg/91VVf//AAAAAAAAoCiAIKr//1X//wAAAAAAAKAogCAKqv/3//8AAAAAAADAMIAg4vr7////AAAAAAAABHKgMA2FjYX//wAAAAAAAMAwgCDs/v7+//8AAAAAAACgKIAgAIqK7///AAAAAAAAoCiAIKqq/////wAAAAAAAKAogCCKr7+X//8AAAAAAACgKGAYqqr+////AAAAAAAAoCBgGIio+vv//wAAAAAAAKAgYBhr7/f///8AAAAAAACAGGAYq+r6Xv//AAAAAAAAgBhAEOrq6v7//wAAAAAAAGAYQBD6fl9V//8AAAAAAABAEEAIoKjq+v//AAAAAAAAYBAgCP7/f1///wAAAAAAAEAIIAj/f19X//8AAAAAAAAgCAAAqKiq6v//AAAAAAAAIAgAAP7//3///wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAAgAANVVVVX//wAAAAAAACAIAACvv7/9//8AAAAAAAAgCAAACiquqv//AAAAAAAAQAggCP/9/dX//wAAAAAAAEAQIAiqq6+///8AAAAAAABAEEAICiqvv///AAAAAAAAYBhAEK+1VVX//wAAAAAAAIAYQBCvr7/9//8AAAAAAACAGEAQKqqrr///AAAAAAAAgCBgEKqrv////wAAAAAAAIAgYBCqqqq///8AAAAAAACAIGAYCqv/+///AAAAAAAAgCBgGAACq7///wAAAAAAAKAoYBiguvr+//8AAAAAAADDaYAohYWl5f//AAAAAAAAoChgGKis/v7//wAAAAAAAKAoYBiqr7+///8AAAAAAACAIGAYAKCq////AAAAAAAAoCBgGKr//////wAAAAAAAIAgYBCoqKrq//8AAAAAAACAGGAYqqq+////AAAAAAAAgBhAEKCq6u7//wAAAAAAAIAYQBD4+vt///8AAAAAAABgEEAQ/v/X9f//AAAAAAAAYBAgCKrq+v7//wAAAAAAAEAQIAiq6vr+//8AAAAAAABACCAI/39/V///AAAAAAAAIAgAAKCoqqr//wAAAAAAACAIAAD6/v9///8AAAAAAAAACAAAV1VVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAACAIAACrr7////8AAAAAAAAgCAAACqqqq///AAAAAAAAQAggCP/99dX//wAAAAAAAEAQIAiqq7/9//8AAAAAAABgECAIqq+/////AAAAAAAAYBBAEO3fX/X//wAAAAAAAGAQQBCrr//V//8AAAAAAACAGEAQq7//////AAAAAAAAgBhAEKqqq////wAAAAAAAIAgYBCr//////8AAAAAAACAIGAQqr+/////AAAAAAAAgCBgEKqq+v///wAAAAAAAEFhYCCNjaWl//8AAAAAAACAIGAQqKqq/v//AAAAAAAAgCBgEKqqvv///wAAAAAAAIAYYBiqqq7+//8AAAAAAACAIGAQ6v//////AAAAAAAAgBhAEKKq6v///wAAAAAAAIAYQBCq+v9///8AAAAAAACAGEAQ/v9fXf//AAAAAAAAYBBAEP9fX1///wAAAAAAAGAQIAiq+v7///8AAAAAAABAECAIqvp+X///AAAAAAAAQAggCP9/X1f//wAAAAAAACAIAACoqKqq//8AAAAAAAAgCAAA+/r+////AAAAAAAAAAgAAF9VVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAAgAANXVVVX//wAAAAAAACAIAADrv7////8AAAAAAAAgCAAAqqqqr///AAAAAAAAIAgAAAACAqr//wAAAAAAAEAQIAirvf1V//8AAAAAAABAECAIKqqvr///AAAAAAAAYBAgCKqqv////wAAAAAAAGAQQBD9V3f1//8AAAAAAABgEEAQqv/9Xf//AAAAAAAAYBhAEKqqqlX//wAAAAAAAIAYQBCvv//1//8AAAAAAACAGEAQqv7/////AAAAAAAAwDhgGAWFpfX//wAAAAAAAIAYQBCq/v////8AAAAAAACAGEAQqv//////AAAAAAAAgBhAELr//3///wAAAAAAAGAYQBCqqqpV//8AAAAAAABgEEAQqv/f9f//AAAAAAAAYBBAEH9X/X///wAAAAAAAGAQIAiqqvr///8AAAAAAAAgEEAI////v///AAAAAAAAQAggCPr//3///wAAAAAAACAIAAAAAICg//8AAAAAAAAgCAAAqKqq6///AAAAAAAAIAgAAOr6/////wAAAAAAAAAIAABfVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAAgAANVVVVX//wAAAAAAACAIAAC////1//8AAAAAAAAgCAAAqrqrv///AAAAAAAAIAgAAAAKKqr//wAAAAAAAEAIIAj///VV//8AAAAAAABAECAIq7//Vf//AAAAAAAAQBAgCKqqr////wAAAAAAAGAQIAiqrv////8AAAAAAABAEEAIAKqq////AAAAAAAAQBBACAACKur//wAAAAAAAGAQQBD/9f9f//8AAAAAAACAKEAQBfX1df//AAAAAAAAYBBAEP/V11///wAAAAAAAEAQYAgAoKqq//8AAAAAAABAEEAIAICquv//AAAAAAAAQBBACICq6v7//wAAAAAAAGAQIAiq+v////8AAAAAAABgECAI/v7/V///AAAAAAAAQBAgCPr/31f//wAAAAAAAEAIIAj//19X//8AAAAAAAAgCAAAgKCorv//AAAAAAAAIAgAAKqu6v7//wAAAAAAACAIAAD+//9f//8AAAAAAAAACAAAV1VVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAACAIAAD///VV//8AAAAAAAAgCAAAq6//////AAAAAAAAIAgAAKqqrq///wAAAAAAACAIAAAAKqqu//8AAAAAAAAgCAAAAAAAqv//AAAAAAAAQAggCP///1X//wAAAAAAAEAQIAiq//VV//8AAAAAAABAECAIqq//df//AAAAAAAAQBAgCKqqqlX//wAAAAAAAEAQIAgqqj////8AAAAAAABAECAIqqr+////AAAAAAAAQBAgCKqq/////wAAAAAAAEAQIAiqqmpV//8AAAAAAABAECAIqv//Vf//AAAAAAAAQAggCP///13//wAAAAAAAEAIAAiqqv7///8AAAAAAAAgCAAAgIiq6v//AAAAAAAAIAgAAKiqqvr//wAAAAAAACAIAADq+v////8AAAAAAAAgCAAA//9fVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVf//AAAAAAAAAQAAAFVVVVX//wAAAAAAAAEAAABVVVVV//8AAAAAAAABAAAAVVVVVQ==",
+          "bytes": 16384
+        },
+        "m_CompleteImageSize": 16384,
+        "m_Height": 128,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": false,
+        "m_Name": "g_fi_f1_shock",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 128
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 521,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "green_light_02",
+      "canonicalBlake3": "7c83738d52acfacdca3b2763921e8c70a34fac06a2d6f3e9d33a9dfd424a7b3f",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 2048
+        },
+        "m_CompleteImageSize": 2048,
+        "m_Height": 64,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": false,
+        "m_Name": "green_light_02",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 10,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 64
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2569,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "g_fi_f1_shock.dds Srccolor One_zwriteOff_cullOff",
+      "canonicalBlake3": "99562730cba35951e34175994c4da53fb9a8d78816de4a635a9a8d53bff1da29",
+      "value": {
+        "m_Name": "g_fi_f1_shock.dds Srccolor One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 440
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1618
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3177,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "green_light_02.dds One One_zwriteOff_cullOff",
+      "canonicalBlake3": "2f90f3e79c12469bd811d92fb45839df3df518b5e34d11a9de414b5369d6f01a",
+      "value": {
+        "m_Name": "green_light_02.dds One One_zwriteOff_cullOff",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_TintColor"
+              },
+              {
+                "a": 0.5,
+                "b": 0.5,
+                "g": 0.5,
+                "r": 0.5
+              }
+            ]
+          ],
+          "m_Floats": [],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 521
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1609
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3930,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "6f354119350621ab9a9555d9c418dd4321b2b3f8abffffa5d9c6255af7ad5f62",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10973
+        },
+        "m_LocalPosition": {
+          "x": 8090.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3932,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "d77f857f0e1600680af51087bc0dc833c061997a4d636a3aee1dafe4f2d0aaf5",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11333
+        },
+        "m_LocalPosition": {
+          "x": 7190.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 3933,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "a6de9b96327a53c71e1fb3fb942091d19c9cebde34b919213e9d7b86b6f3099c",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9089
+        },
+        "m_LocalPosition": {
+          "x": 7260.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9089,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[726]",
+      "canonicalBlake3": "5abf175464291e62af6bc574880434b5ae0577082f3339b94733138cef987654",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 3933
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 15721
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 15722
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 15723
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15724
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[726]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10973,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[809]",
+      "canonicalBlake3": "e268a4a6e5777729e209861598579d6f4e334dbb334dcceca36dc3f567404a2c",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 3930
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 16618
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[809]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 11333,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "PS[719]",
+      "canonicalBlake3": "407630dc1c34e8da233e8e089ba1cb8016b4f112bf1b7e6c39c9fd06316f4f0e",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 3932
+            }
+          ],
+          [
+            26,
+            {
+              "fileId": 0,
+              "pathId": 16953
+            }
+          ],
+          [
+            12,
+            {
+              "fileId": 0,
+              "pathId": 16954
+            }
+          ],
+          [
+            15,
+            {
+              "fileId": 0,
+              "pathId": 16955
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 16956
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "PS[719]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15721,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "281a88d4a877831539af593f5ec7bd8cae21ed66ac4d4981605fb14f37462299",
+      "value": {
+        "UV Animation": {
+          "cycles": 1.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9089
+        },
+        "m_HeightCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 3177
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 0,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.699999988079071,
+              "time": 0.0,
+              "value": 0.30000001192092896
+            },
+            {
+              "inSlope": 0.699999988079071,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 1.0
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15722,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "cac7b9546e2a229ac6b311dceb6d25721aa3d788263ee51067753a1271279fb7",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[1]": {
+          "rgba": 4290756543
+        },
+        "colorAnimation[2]": {
+          "rgba": 4286611584
+        },
+        "colorAnimation[3]": {
+          "rgba": 4282400832
+        },
+        "colorAnimation[4]": {
+          "rgba": 4278190080
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9089
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15723,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "53c73b54666853ea2311e89790b4767198ba298b3fa748bab608c6fbe57f15d5",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9089
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15724,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "c77b8bc6b61e466f3508f58727e0d85bd96fe40457e5d0b3b5142e808a36b25b",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 1.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.0,
+        "lifeTime": 0.10000000149011612,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9089
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 0,
+        "numberPerGeneration": 1.0,
+        "particleName": "Laser_1_fire",
+        "plane": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.0,
+        "randomPosition": 0.0,
+        "randomTime": 0.10000000149011612,
+        "randomVelocity": 0.0,
+        "textureKeys": [],
+        "totalParticleCount": 0.10000000149011612,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16618,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "af8d982ee58c506d43cf0e775ced0b5554c946add07c1c3c99f17ed0b50324d6",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "Laser_1_fire",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.20000000298023224,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10973
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 0.20000000298023224,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "particles": [
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 11333
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "particle": {
+              "fileId": 0,
+              "pathId": 0
+            },
+            "particlePrefab": {
+              "fileId": 0,
+              "pathId": 9089
+            },
+            "scriptKeys": [
+              {
+                "genType": 1,
+                "time": 0.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              {
+                "genType": 1,
+                "time": 1.0,
+                "translate": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "priority": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16953,
+      "typeId": 26,
+      "classId": 26,
+      "objectType": "ParticleRenderer",
+      "name": "",
+      "canonicalBlake3": "e8050e923e7bf1cadaed532dc40cb5ed644815c97577931918723f4153110d18",
+      "value": {
+        "UV Animation": {
+          "cycles": 1.0,
+          "x Tile": 1,
+          "y Tile": 1
+        },
+        "m_CameraVelocityScale": 0.0,
+        "m_CastShadows": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11333
+        },
+        "m_HeightCurve": {
+          "m_Curve": [],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_LengthScale": 2.0,
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2569
+          }
+        ],
+        "m_MaxParticleSize": 10.0,
+        "m_ReceiveShadows": false,
+        "m_RotationCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "time": 0.0,
+              "value": 2578.31005859375
+            },
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 2578.31005859375
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        },
+        "m_StretchParticles": 0,
+        "m_VelocityScale": 0.0,
+        "m_WidthCurve": {
+          "m_Curve": [
+            {
+              "inSlope": 0.0,
+              "outSlope": 0.699999988079071,
+              "time": 0.0,
+              "value": 0.30000001192092896
+            },
+            {
+              "inSlope": 0.699999988079071,
+              "outSlope": 0.0,
+              "time": 1.0,
+              "value": 1.0
+            }
+          ],
+          "m_PostInfinity": 2,
+          "m_PreInfinity": 2
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16954,
+      "typeId": 12,
+      "classId": 12,
+      "objectType": "ParticleAnimator",
+      "name": "",
+      "canonicalBlake3": "597e9839b276f1c3aea645b287b9dff241374578c9315b46c12a6283eca8fe3a",
+      "value": {
+        "Does Animate Color?": true,
+        "autodestruct": false,
+        "colorAnimation[0]": {
+          "rgba": 4294967295
+        },
+        "colorAnimation[1]": {
+          "rgba": 4290756543
+        },
+        "colorAnimation[2]": {
+          "rgba": 4286611584
+        },
+        "colorAnimation[3]": {
+          "rgba": 4282400832
+        },
+        "colorAnimation[4]": {
+          "rgba": 4278190080
+        },
+        "damping": 1.0,
+        "force": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11333
+        },
+        "rndForce": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "sizeGrow": 0.0,
+        "stopSimulation": false,
+        "worldRotationAxis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16955,
+      "typeId": 15,
+      "classId": 15,
+      "objectType": "EllipsoidParticleEmitter",
+      "name": "",
+      "canonicalBlake3": "119efdaff235fff647bda1f969b9462228b46e7a207a96b796031b27a23fdac5",
+      "value": {
+        "Simulate in Worldspace?": true,
+        "emitterVelocityScale": 0.05000000074505806,
+        "localVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_Ellipsoid": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Emit": false,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11333
+        },
+        "m_MinEmitterRange": 0.0,
+        "m_OneShot": false,
+        "maxEmission": 50.0,
+        "maxEnergy": 3.0,
+        "maxSize": 0.10000000149011612,
+        "minEmission": 50.0,
+        "minEnergy": 3.0,
+        "minSize": 0.10000000149011612,
+        "rndVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tangentVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "worldVelocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 16956,
+      "typeId": -2,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "f11604da15df27e3a981c65ce01a94f9f7b28bdf90380288eefcc4d91971aa68",
+      "value": {
+        "bTimer": 0,
+        "emit": 1,
+        "generationsPerSecond": 1.0,
+        "initVelocity": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "initialSize": 1.0,
+        "lifeTime": 0.20000000298023224,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 11333
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1915
+        },
+        "m_iGenType": 1,
+        "numberPerGeneration": 1.0,
+        "particleName": "test2",
+        "plane": {
+          "x": 0.10000000149011612,
+          "y": 0.10000000149011612,
+          "z": 0.10000000149011612
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "priority": 0,
+        "randomAngle": 0.0,
+        "randomPosition": 0.0,
+        "randomTime": 0.0,
+        "randomVelocity": 0.0,
+        "textureKeys": [],
+        "totalParticleCount": 0.20000000298023224,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2308 @@
+{
+  "schema": "ffone.native-particle-effects.v1",
+  "effects": [
+    {
+      "id": 54,
+      "name": "healing-tick",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "Health_self_01",
+          "generation": 0,
+          "random_position": 0.5,
+          "random_angle": 1.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -1.0,
+            -0.30000001192092896,
+            1.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 10.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            -5.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              1.0,
+              0.5,
+              0.5,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              458.3662414550781
+            ],
+            [
+              1.0,
+              458.3662414550781,
+              458.3662414550781,
+              0.0
+            ]
+          ],
+          "render_mode": 0,
+          "blend_mode": "OneOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/candy.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 407,
+      "name": "healing-impact",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "k_heal_t_01",
+          "generation": 0,
+          "random_position": 0.10000000149011612,
+          "random_angle": 0.7540000081062317,
+          "random_velocity": 0.30000001192092896,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 2.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.8196078431372549,
+              0.8196078431372549,
+              0.8196078431372549,
+              1.0
+            ],
+            [
+              0.36470588235294116,
+              0.36470588235294116,
+              0.36470588235294116,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.6000000238418579,
+              0.0,
+              1.3333332538604736
+            ],
+            [
+              0.15000000596046448,
+              0.800000011920929,
+              1.3333332538604736,
+              -0.8823529481887817
+            ],
+            [
+              1.0,
+              0.05000000074505806,
+              -0.8823529481887817,
+              0.0
+            ]
+          ],
+          "height_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              33.33333206176758
+            ],
+            [
+              0.15000000596046448,
+              5.0,
+              33.33333206176758,
+              1.1764706373214722
+            ],
+            [
+              1.0,
+              6.0,
+              1.1764706373214722,
+              0.0
+            ]
+          ],
+          "rotation_curve": [],
+          "render_mode": 5,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/k_heal_t_01.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip1.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip2.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip3.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip4.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip5.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip6.png",
+            "effects/skill-hits/textures/k_heal_t_01.mip7.png"
+          ]
+        },
+        {
+          "name": "k_heal_t_02",
+          "generation": 0,
+          "random_position": 0.10000000149011612,
+          "random_angle": 0.7540000081062317,
+          "random_velocity": 0.699999988079071,
+          "generator_velocity": [
+            -0.0,
+            -0.10000000149011612,
+            0.0
+          ],
+          "generator_plane": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 5.0,
+          "number_per_generation": 5.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            1.2000000476837158,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ],
+            [
+              0.25,
+              0.5,
+              2.0,
+              0.4000000059604645
+            ],
+            [
+              1.0,
+              0.800000011920929,
+              0.4000000059604645,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.25,
+              0.0,
+              0.0,
+              229.18312072753906
+            ],
+            [
+              1.0,
+              171.88734436035156,
+              229.18312072753906,
+              0.0
+            ]
+          ],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/k_health_area_05.png"
+          ]
+        },
+        {
+          "name": "k_health_area_04",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.8352941176470589,
+              0.8352941176470589,
+              0.8352941176470589,
+              1.0
+            ],
+            [
+              0.7137254901960784,
+              0.7137254901960784,
+              0.7137254901960784,
+              1.0
+            ],
+            [
+              0.3568627450980392,
+              0.3568627450980392,
+              0.3568627450980392,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              6.666666507720947
+            ],
+            [
+              0.15000000596046448,
+              1.0,
+              6.666666507720947,
+              0.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 4,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/k_testing_b.png",
+            "effects/skill-hits/textures/k_testing_b.mip1.png",
+            "effects/skill-hits/textures/k_testing_b.mip2.png",
+            "effects/skill-hits/textures/k_testing_b.mip3.png",
+            "effects/skill-hits/textures/k_testing_b.mip4.png",
+            "effects/skill-hits/textures/k_testing_b.mip5.png"
+          ]
+        },
+        {
+          "name": "k_health_area_03",
+          "generation": 5,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.10000000149011612,
+            0.0
+          ],
+          "generator_plane": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 7.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.44313725490196076,
+              0.8823529411764706,
+              0.8823529411764706,
+              1.0
+            ],
+            [
+              0.29411764705882354,
+              0.5882352941176471,
+              0.5882352941176471,
+              1.0
+            ],
+            [
+              0.14901960784313725,
+              0.29411764705882354,
+              0.29411764705882354,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.05000000074505806,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.05000000074505806,
+              0.0,
+              0.0
+            ]
+          ],
+          "height_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              3.0
+            ],
+            [
+              1.0,
+              3.0,
+              3.0,
+              0.0
+            ]
+          ],
+          "rotation_curve": [],
+          "render_mode": 5,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/k_resurrection_c.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip1.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip2.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip3.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip4.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip5.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip6.png",
+            "effects/skill-hits/textures/k_resurrection_c.mip7.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 827,
+      "name": "nano-healing-projectile",
+      "maximum_timer": 0.5,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "nanoskill_pro2",
+          "generation": 0,
+          "random_position": 0.10000000149011612,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 30.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.30000001192092896,
+              0.0,
+              0.19999998807907104
+            ],
+            [
+              1.0,
+              0.5,
+              0.19999998807907104,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              2864.7890625
+            ],
+            [
+              1.0,
+              2864.7890625,
+              2864.7890625,
+              0.0
+            ]
+          ],
+          "render_mode": 0,
+          "blend_mode": "OneOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/a00.png",
+            "effects/skill-hits/textures/a00.mip1.png",
+            "effects/skill-hits/textures/a00.mip2.png",
+            "effects/skill-hits/textures/a00.mip3.png",
+            "effects/skill-hits/textures/a00.mip4.png",
+            "effects/skill-hits/textures/a00.mip5.png",
+            "effects/skill-hits/textures/a00.mip6.png",
+            "effects/skill-hits/textures/a00.mip7.png",
+            "effects/skill-hits/textures/a00.mip8.png",
+            "effects/skill-hits/textures/a00.mip9.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 828,
+      "name": "nano-debuff-projectile",
+      "maximum_timer": 0.5,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "nanoskill_pro3",
+          "generation": 0,
+          "random_position": 0.15000000596046448,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 30.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            4,
+            4
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.30000001192092896,
+              0.0,
+              0.19999998807907104
+            ],
+            [
+              1.0,
+              0.5,
+              0.19999998807907104,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "OneOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/fluid_01.png",
+            "effects/skill-hits/textures/fluid_01.mip1.png",
+            "effects/skill-hits/textures/fluid_01.mip2.png",
+            "effects/skill-hits/textures/fluid_01.mip3.png",
+            "effects/skill-hits/textures/fluid_01.mip4.png",
+            "effects/skill-hits/textures/fluid_01.mip5.png",
+            "effects/skill-hits/textures/fluid_01.mip6.png",
+            "effects/skill-hits/textures/fluid_01.mip7.png",
+            "effects/skill-hits/textures/fluid_01.mip8.png",
+            "effects/skill-hits/textures/fluid_01.mip9.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 438,
+      "name": "debuff-impact",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 0.6000000238418579,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "BloodSucking_target_e01",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 3.0,
+          "lifetime": 0.5,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.6862745098039216,
+              0.6862745098039216,
+              0.6862745098039216,
+              1.0
+            ],
+            [
+              0.3764705882352941,
+              0.3764705882352941,
+              0.3764705882352941,
+              1.0
+            ],
+            [
+              0.06274509803921569,
+              0.06274509803921569,
+              0.06274509803921569,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              6.666666507720947
+            ],
+            [
+              0.15000000596046448,
+              1.0,
+              6.666666507720947,
+              0.2352941781282425
+            ],
+            [
+              1.0,
+              1.2000000476837158,
+              0.2352941781282425,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "OneMinusSrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/bloodsucking_target_e04.png"
+          ]
+        },
+        {
+          "name": "BloodSucking_target_e03",
+          "generation": 0,
+          "random_position": 0.5,
+          "random_angle": 0.30000001192092896,
+          "random_velocity": 2.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 5.0,
+          "lifetime": 0.6000000238418579,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.7490196078431373,
+              0.7490196078431373,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              3.3333332538604736
+            ],
+            [
+              0.15000000596046448,
+              0.5,
+              3.3333332538604736,
+              0.5882353186607361
+            ],
+            [
+              1.0,
+              1.0,
+              0.5882353186607361,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/bloodsucking_target_e03.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip1.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip2.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip3.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip4.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip5.png",
+            "effects/skill-hits/textures/bloodsucking_target_e03.mip6.png"
+          ]
+        },
+        {
+          "name": "bloodSucking_target_e04",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.20000000298023224,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 2.0,
+          "lifetime": 0.6000000238418579,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.4196078431372549,
+              0.0,
+              1.0
+            ],
+            [
+              0.7137254901960784,
+              0.3568627450980392,
+              0.0,
+              1.0
+            ],
+            [
+              0.3568627450980392,
+              0.1803921568627451,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.5,
+              0.0,
+              3.3333332538604736
+            ],
+            [
+              0.30000001192092896,
+              1.5,
+              3.3333332538604736,
+              0.7142857313156128
+            ],
+            [
+              1.0,
+              2.0,
+              0.7142857313156128,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 4,
+          "blend_mode": "OneOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/hit_04.png",
+            "effects/skill-hits/textures/hit_04.mip1.png",
+            "effects/skill-hits/textures/hit_04.mip2.png",
+            "effects/skill-hits/textures/hit_04.mip3.png",
+            "effects/skill-hits/textures/hit_04.mip4.png",
+            "effects/skill-hits/textures/hit_04.mip5.png",
+            "effects/skill-hits/textures/hit_04.mip6.png",
+            "effects/skill-hits/textures/hit_04.mip7.png"
+          ]
+        },
+        {
+          "name": "BloodSucking_target_e02",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.20000000298023224,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 0.6000000238418579,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.8352941176470589,
+              0.4196078431372549,
+              1.0
+            ],
+            [
+              0.6666666666666666,
+              0.6666666666666666,
+              0.3333333333333333,
+              1.0
+            ],
+            [
+              0.25098039215686274,
+              0.25098039215686274,
+              0.12549019607843137,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              5.3333330154418945
+            ],
+            [
+              0.15000000596046448,
+              0.800000011920929,
+              5.3333330154418945,
+              0.8235294222831726
+            ],
+            [
+              1.0,
+              1.5,
+              0.8235294222831726,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/shotgun_e01.png",
+            "effects/skill-hits/textures/shotgun_e01.mip1.png",
+            "effects/skill-hits/textures/shotgun_e01.mip2.png",
+            "effects/skill-hits/textures/shotgun_e01.mip3.png",
+            "effects/skill-hits/textures/shotgun_e01.mip4.png",
+            "effects/skill-hits/textures/shotgun_e01.mip5.png",
+            "effects/skill-hits/textures/shotgun_e01.mip6.png",
+            "effects/skill-hits/textures/shotgun_e01.mip7.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 502,
+      "name": "egg-damage-projectile",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.0,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "mega_afn_e09",
+          "generation": 0,
+          "random_position": 0.012000000104308128,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 50.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.7490196078431373,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.5019607843137255,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.5
+            ],
+            [
+              1.0,
+              0.0,
+              -0.5,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/shotgun_e01.png",
+            "effects/skill-hits/textures/shotgun_e01.mip1.png",
+            "effects/skill-hits/textures/shotgun_e01.mip2.png",
+            "effects/skill-hits/textures/shotgun_e01.mip3.png",
+            "effects/skill-hits/textures/shotgun_e01.mip4.png",
+            "effects/skill-hits/textures/shotgun_e01.mip5.png",
+            "effects/skill-hits/textures/shotgun_e01.mip6.png",
+            "effects/skill-hits/textures/shotgun_e01.mip7.png"
+          ]
+        }
+      ],
+      "mesh": null
+    },
+    {
+      "id": 500,
+      "name": "egg-damage-impact",
+      "maximum_timer": 1.0,
+      "longest_lifetime": 1.5,
+      "disable_update": false,
+      "emitters": [
+        {
+          "name": "mega_afn_e02",
+          "generation": 0,
+          "random_position": 0.012000000104308128,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 3.0,
+          "lifetime": 0.5,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.5019607843137255,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.3764705882352941,
+              0.7490196078431373,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.0,
+              0.12549019607843137,
+              0.25098039215686274,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.2000000476837158
+            ],
+            [
+              1.0,
+              2.200000047683716,
+              1.2000000476837158,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/mega_area_e01_6.png"
+          ]
+        },
+        {
+          "name": "mega_afn_e03",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 1.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.4196078431372549,
+              0.8352941176470589,
+              1.0
+            ],
+            [
+              0.0,
+              0.2784313725490196,
+              0.5568627450980392,
+              1.0
+            ],
+            [
+              0.0,
+              0.1411764705882353,
+              0.2784313725490196,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              5.0
+            ],
+            [
+              1.0,
+              5.0,
+              5.0,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              20626.48046875
+            ],
+            [
+              1.0,
+              20626.48046875,
+              20626.48046875,
+              0.0
+            ]
+          ],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/attack_hit_11.png",
+            "effects/skill-hits/textures/attack_hit_11.mip1.png",
+            "effects/skill-hits/textures/attack_hit_11.mip2.png",
+            "effects/skill-hits/textures/attack_hit_11.mip3.png",
+            "effects/skill-hits/textures/attack_hit_11.mip4.png",
+            "effects/skill-hits/textures/attack_hit_11.mip5.png",
+            "effects/skill-hits/textures/attack_hit_11.mip6.png",
+            "effects/skill-hits/textures/attack_hit_11.mip7.png"
+          ]
+        },
+        {
+          "name": "mega_afn_e04",
+          "generation": 0,
+          "random_position": 0.5,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                1.0,
+                -0.11999999731779099
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              1.0,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              6.666666507720947
+            ],
+            [
+              0.15000000596046448,
+              2.0,
+              6.666666507720947,
+              0.5882353186607361
+            ],
+            [
+              1.0,
+              2.5,
+              0.5882353186607361,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/green_boom_01.png",
+            "effects/skill-hits/textures/green_boom_01.mip1.png",
+            "effects/skill-hits/textures/green_boom_01.mip2.png",
+            "effects/skill-hits/textures/green_boom_01.mip3.png",
+            "effects/skill-hits/textures/green_boom_01.mip4.png",
+            "effects/skill-hits/textures/green_boom_01.mip5.png",
+            "effects/skill-hits/textures/green_boom_01.mip6.png"
+          ]
+        },
+        {
+          "name": "mega_afn_e05",
+          "generation": 0,
+          "random_position": 0.0,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 1.0,
+          "number_per_generation": 2.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.7490196078431373,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.5019607843137255,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.30000001192092896,
+              0.0,
+              1.7000000476837158
+            ],
+            [
+              1.0,
+              2.0,
+              1.7000000476837158,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/wus001.png",
+            "effects/skill-hits/textures/wus001.mip1.png",
+            "effects/skill-hits/textures/wus001.mip2.png",
+            "effects/skill-hits/textures/wus001.mip3.png",
+            "effects/skill-hits/textures/wus001.mip4.png",
+            "effects/skill-hits/textures/wus001.mip5.png",
+            "effects/skill-hits/textures/wus001.mip6.png",
+            "effects/skill-hits/textures/wus001.mip7.png"
+          ]
+        },
+        {
+          "name": "mega_afn_e01",
+          "generation": 2,
+          "random_position": 0.30000001192092896,
+          "random_angle": 0.0,
+          "random_velocity": 0.0,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            0.5,
+            1.0,
+            0.5
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 6.0,
+          "number_per_generation": 6.0,
+          "lifetime": 1.0,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            0.20000000298023224,
+            0.0
+          ],
+          "colors": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.3764705882352941,
+              1.0
+            ],
+            [
+              0.0,
+              0.5019607843137255,
+              0.7529411764705882,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.3764705882352941,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            1,
+            1
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.30000001192092896,
+              0.0,
+              0.0,
+              1.4285714626312256
+            ],
+            [
+              1.0,
+              1.0,
+              1.4285714626312256,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/nano_fire_stm.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip1.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip2.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip3.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip4.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip5.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip6.png",
+            "effects/skill-hits/textures/nano_fire_stm.mip7.png"
+          ]
+        },
+        {
+          "name": "remega",
+          "generation": 0,
+          "random_position": 0.699999988079071,
+          "random_angle": 0.7540000081062317,
+          "random_velocity": 0.10000000149011612,
+          "generator_velocity": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "generator_plane": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "script_keys": [
+            {
+              "time": 0.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            },
+            {
+              "time": 1.0,
+              "translation": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "emit": true
+            }
+          ],
+          "generations_per_second": 3.0,
+          "number_per_generation": 3.0,
+          "lifetime": 1.5,
+          "initial_size": 1.0,
+          "force": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "colors": [
+            [
+              1.0,
+              1.0,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.5019607843137255,
+              0.7529411764705882,
+              0.7529411764705882,
+              1.0
+            ],
+            [
+              0.0,
+              0.5019607843137255,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.25098039215686274,
+              0.5019607843137255,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "animate_color": true,
+          "uv_tiles": [
+            4,
+            2
+          ],
+          "uv_cycles": 1.0,
+          "width_curve": [
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.5
+            ],
+            [
+              1.0,
+              0.0,
+              -0.5,
+              0.0
+            ]
+          ],
+          "height_curve": [],
+          "rotation_curve": [],
+          "render_mode": 0,
+          "blend_mode": "SrcAlphaOne",
+          "material_tint": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "texture": [
+            "effects/skill-hits/textures/mega.png"
+          ]
+        }
+      ],
+      "mesh": null
+    }
+  ]
+}

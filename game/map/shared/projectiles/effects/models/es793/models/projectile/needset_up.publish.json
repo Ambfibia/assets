@@ -1,0 +1,455 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "needset_up",
+    "root_node": "needset_up",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/needset_up.glb",
+    "glb_blake3": "6bedb556e4c8511d0c22a2abc38690fa13430cc49a473af3d31ad031fbf98a01",
+    "source": {
+      "nodes": 5,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 0,
+      "float_curves": 2,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 5,
+      "mesh_parts": 2,
+      "material_slots": 2,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 0,
+      "float_curves": 2,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 5,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "216bbe9b288aff2d2e16a87db13206811efd0670ab0ef41a15c778901c28f419",
+      "geometrySha256": "3a85d4af08ff178a6b5ad7267c7aea19feafe7ccc1e339d271e428f0bfa93a47",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "e37a4c1fbf3ff5c99c3905c07ec9a8abde8e1b55be9b66acccee3528c1cad53c",
+      "materialsSha256": "d82248410f5ce397d7fb7ef33f67cb349024dd95a0affa4acaa605b0e8393445"
+    },
+    "emitted": {
+      "hierarchySha256": "216bbe9b288aff2d2e16a87db13206811efd0670ab0ef41a15c778901c28f419",
+      "geometrySha256": "3a85d4af08ff178a6b5ad7267c7aea19feafe7ccc1e339d271e428f0bfa93a47",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "e37a4c1fbf3ff5c99c3905c07ec9a8abde8e1b55be9b66acccee3528c1cad53c",
+      "materialsSha256": "d82248410f5ce397d7fb7ef33f67cb349024dd95a0affa4acaa605b0e8393445"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.10000000149011612,
+        -0.10000000149011612,
+        -9.536752543226612e-8
+      ],
+      "max": [
+        0.10000000149011612,
+        0.10000000149011612,
+        -9.536752543226612e-8
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.45493683218955994,
+        -0.45612356066703796,
+        0.0010028310352936387
+      ],
+      "max": [
+        0.45590320229530334,
+        0.4547164738178253,
+        0.0010030746925622225
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "attack_hit_14",
+      "needset_up-standard_2-needset.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 2,
+    "textureCount": 2,
+    "samplerCount": 2,
+    "materials": [
+      {
+        "name": "needset_up-standard_2-needset.dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalphaTest_zwriteOff",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalphaTest_zwriteOff",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalphaTest_zwriteOff",
+        "shaderSha256": "40c277dda0cd761f41fea088f235f513c477b806ce4f8dfabd2ca8e0cc8924b8",
+        "effectiveRenderQueue": 2900,
+        "renderPassCount": 1
+      },
+      {
+        "name": "attack_hit_14",
+        "serializedShaderName": "normal_blendOneOne_zwriteOff",
+        "declaredShaderName": "normal_blendOneOne_zwriteOff",
+        "legacyShaderName": "normal_blendOneOne_zwriteOff",
+        "shaderSha256": "62560b7eaf853158c925a3c4e207878d7a2870140452a1abf64da830a6eceb22",
+        "effectiveRenderQueue": 3011,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "needset.dds",
+        "uri": "needset_up.textures/needset.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 32656,
+        "sha256": "5366f7c9b69af4ac37a01e53412ab5c9d61c92764f2c91faa35cfc2ba34f2a9b",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "needset_up.textures/needset.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "7f9f282018829b56d7abb0acef429578c32767856718f3e30fc0acfe838647cb",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "281462f83a1d11ae036e0be852ecb235b432b3d04369bb73cb189e7d063fddba",
+            "pngByteLength": 32656,
+            "pngSha256": "5366f7c9b69af4ac37a01e53412ab5c9d61c92764f2c91faa35cfc2ba34f2a9b"
+          },
+          {
+            "level": 1,
+            "uri": "needset_up.textures/needset.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "50205881294e61ece314919137a1d375bee21a9ee67ddf5b6b9592aa35cd907e",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "8431df67f65ea2d6b6d9c47c842c71abdb9e4cff48c16c211c67bbc4d2d53ebb",
+            "pngByteLength": 8723,
+            "pngSha256": "761770b3aa836e2bd3224009fc0c2c35b2e37bf8067886da05436f8b750725ea"
+          },
+          {
+            "level": 2,
+            "uri": "needset_up.textures/needset.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "7a3a7e11472370297d3e89cea5a834544aaf68b354c6b2442069a08dcd1677b9",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "101d716c6cb926a3334d019d1a112dbd27ef903bb36de771ff93a1c70aeebc01",
+            "pngByteLength": 2315,
+            "pngSha256": "00a050a645d5010774070f1bad363b9cd2a40127c4e5d61951abbb0fbaed2714"
+          },
+          {
+            "level": 3,
+            "uri": "needset_up.textures/needset.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "882a3983c28b9498c3c9160708150f6a5f4359aeaa9bcc9c36cb4cefe7471bbe",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "d443e3813807616324cbb7b18efb7addbae07aa26b6cc1577584f646b1c33c4f",
+            "pngByteLength": 723,
+            "pngSha256": "4fb42a18e6878b1ba3a277fe50b7732d77aef5485fda03aa80b8f2087cd1bea0"
+          },
+          {
+            "level": 4,
+            "uri": "needset_up.textures/needset.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "42c67dc44f40799de75235413fd98925be48acb6305a61748cff425a828925ce",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "9dd016cfd03da6c76526bc82b71787fa4cff62e51fa8823bdaf3a7f1ce1061ed",
+            "pngByteLength": 321,
+            "pngSha256": "17f471b36844f241e83cfa4fd3b5df64244a057b543b28a777331cd07811260b"
+          },
+          {
+            "level": 5,
+            "uri": "needset_up.textures/needset.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "ad14299f0959ae5a401f8d88da73da9c5feba1fc9d6ece3eefbc7d19fef3dd3d",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "d097251e1c005836909347fe977f8269e64997ca556df4714c2b6cf7b7be1cad",
+            "pngByteLength": 136,
+            "pngSha256": "20ffd707c8f0a3664bb7b36b036bf95cf077cf016c1e30b0f87185bf512a5bcb"
+          },
+          {
+            "level": 6,
+            "uri": "needset_up.textures/needset.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "b3e2c6a4296745df02304ac51ea4bd7d7960ff7b85bba1a9869c612daf991d30",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "c0988aa32351b003e2f9afd14a13c081827138f92dc25c5f5d51b7af8abd542e",
+            "pngByteLength": 86,
+            "pngSha256": "e37a8ca44339429e82b7fb929ec866ca5f8b823ac0189dbc7dbaa9246f65f79e"
+          },
+          {
+            "level": 7,
+            "uri": "needset_up.textures/needset.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "96f994168a406520d9ae6e56317eadd33599e525934dfd57f080232aa87919c4",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "0f01b2cdeefe108ec08b0657b99eb35db4da7517a6f8ea03e279f9c8b2ffc1ac",
+            "pngByteLength": 73,
+            "pngSha256": "9e8d0fb0bf8b69e3ee0a9973bd9a486521e85f1ac0a4f76a2ed11f755095377e"
+          }
+        ]
+      },
+      {
+        "sourceName": "attack_hit_14.dds",
+        "uri": "needset_up.textures/attack_hit_14.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 25581,
+        "sha256": "73efb3e88ddc0299d28262d2e25cf88cca15ac0774bfed846b13f2441456ee92",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "needset_up.textures/attack_hit_14.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "b9c340a35637e727d3c23f987e17174e4366bd924b26ca2e06a137c15f64b70e",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "356ba95628538eae0e8a91faf235dae29c6bebfb81c4eeb999ecf149143ae9a2",
+            "pngByteLength": 25581,
+            "pngSha256": "73efb3e88ddc0299d28262d2e25cf88cca15ac0774bfed846b13f2441456ee92"
+          },
+          {
+            "level": 1,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "b8a606542d3f4bbd7bd15d78ab4403dc77c4fc0123af9637f72884f617ae8bc5",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "729eb7ef95e8af58c4d53ac6cd7534d32db19d3e9428cf550f3fa0d387c99f38",
+            "pngByteLength": 7545,
+            "pngSha256": "3a04fee549622d70983da9f4aa3656b69886c9bb81a7d0f8d1de653d3ec88394"
+          },
+          {
+            "level": 2,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "135c4462946b7008262e567709c82e13b4d2ece6eb8483bf17358092b80664b2",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "2788304743188bcf8c572ca105c98beedcf57af02464a336d54934737bd04b50",
+            "pngByteLength": 2247,
+            "pngSha256": "198578a36ca371254e18c04b9770ce0da8a306f7924f1e18ac6d0b64e8ea15e2"
+          },
+          {
+            "level": 3,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "17757558aa4fa8a4ac7eb08c2667f29c519f992d2eb7cbc9aeefec55a470f90c",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "f8e2f87411130fe9969de2a5b094a6ad5d4c771fd3139e578cd0d8360f992cbc",
+            "pngByteLength": 713,
+            "pngSha256": "a0be09372d083d1b5bc7731eabc0654470d6df2954f3c5fcb2cfed0f94fc558c"
+          },
+          {
+            "level": 4,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "e559c6b236668fa9e39ad8c2e04fba6da3e7a189584a135dd226401fd2efead9",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "58c9c4a62adf2eb26f25c8f484a05b7b873fd6b07b23a089df4ee80f7adbfc42",
+            "pngByteLength": 320,
+            "pngSha256": "9c430998c4753698a8687f31842be124e18e6b0b191d30f4baab5611e4df0b50"
+          },
+          {
+            "level": 5,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "27569b6fe7b0b77a0ff3cec4a5b993197dab4d2192829db1294e4932e0bab7a1",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "6a5ffe10085beb05de4506a6d962b456559b4ec6099dfa23850b94b4a51c4c0b",
+            "pngByteLength": 136,
+            "pngSha256": "b70120ec057e74f7d34c6b67ea88075102c13e054b2e191e21384e4412bd05ce"
+          },
+          {
+            "level": 6,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "a24d9c97f951200d0c96ffec34edddff90c9df033a4a17b2fda3280d8d62c9e6",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "839a26a23a6ecd29fb7d1087ed7a45334a822766ba3351c730841e1834ea8cc4",
+            "pngByteLength": 86,
+            "pngSha256": "85acfa13dee42fe116b079b7e894e3eab34854e1bd700afa282910df0aaab6a7"
+          },
+          {
+            "level": 7,
+            "uri": "needset_up.textures/attack_hit_14.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "66d67584a40aebd2e2beb232383582f2c1b73fee388dc9735082da33477361b6",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "8eaf706242acf4f1cba4440956243a4da4f5e90ede6cee8ca6a539bdd9965d44",
+            "pngByteLength": 73,
+            "pngSha256": "625861903e597d1aaf58ecd6d455835e91b5a8b9eca970f02175ff5f5c8416ca"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/needset_up.publish.json"
+}

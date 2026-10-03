@@ -1,0 +1,78 @@
+{
+  "schema": "ffone.native-character-collision.v1",
+  "glb": "characters/npcs/dt_etc_pickupcar_a/DT_ETC_PICKUPCAR_A.glb",
+  "glbBlake3": "214bf89da26e5cc2ac140ddee55958855a8600781b5a5571b495e60c7062bee2",
+  "colliderGlb": "characters/npcs/dt_etc_pickupcar_a/DT_ETC_PICKUPCAR_A.collision.glb",
+  "colliderGlbBlake3": "3469b65cf3c9eafb513880d3acbe01ebbd77914f0b3bb040dc6fa20299c78bb4",
+  "source": {
+    "alias": "primary",
+    "rawContainer": {
+      "relativePath": "World_shared_part1.resourceFile",
+      "bytes": 4140098,
+      "sha256": "5e4625d4bd8f7718aa4a682ce1f02709fec70973144c1e91a08c8052cb9f6562"
+    },
+    "serializedAsset": {
+      "name": "CustomAssetBundle-eb037efed74f34db2b2bcdf47626cb76",
+      "bytes": 11262544,
+      "sha256": "87ceb02aa562358467c66f1181d4b99c64fa888957fe49c9cf7517475db40570"
+    },
+    "exactContainerRoute": "mob/dt_etc_pickupcar_a.kfm",
+    "sourceGeometrySha256": "0ce57c2736c32f87370110cd1100089a83fb691d0379691cfa18394afda5e36b",
+    "meshObjectDumpSha256": "f7dc05ce79ed44d2a99f7d3955097d5f9ac732c594ac3ce8046b9fabf67fa3c3",
+    "ownerSelection": {
+      "ownerCount": 28,
+      "policy": "canonical primary World_shared owner selected by the existing semantic character install"
+    },
+    "meshCollider": {
+      "gameObjectPathId": 1669,
+      "transformPathId": 1113,
+      "meshFilterPathId": 2659,
+      "componentPathId": 2660,
+      "componentClassId": 64,
+      "meshFileId": 0,
+      "meshPathId": 316,
+      "convex": false,
+      "isTrigger": false,
+      "ownerLocalTransformDumpSha256": "c691eb5e152e59b19a63b1ef427fb16ad0b77193930c1b9e9921a8489bd050e1",
+      "ownerLocalTransform": {
+        "translation": [0.0, 0.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0, 1.0],
+        "scale": [1.0, 1.0, 1.0]
+      },
+      "geometrySpace": "Mesh vertices are local to child GO1669/Transform1113. That child is identity below collision GO1670/Transform975, so the exact vertex bytes are also collision-node local and runtime Transform::IDENTITY preserves placement."
+    },
+    "rigidbody": {
+      "componentPathId": 2661,
+      "componentClassId": 54,
+      "isKinematic": true,
+      "useGravity": true,
+      "mass": 1.0
+    },
+    "collisionNode": {
+      "gameObjectPathId": 1670,
+      "transformPathId": 975,
+      "translation": [0.0, 4.946202381006515e-8, -1.2315592765808105],
+      "rotation": [0.0, 0.0, 0.0, 1.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    "intentionalDivergence": "None. The separate non-rendering GLB contains the exact primary MeshCollider mesh because the validated visual GLB retains the collision node but intentionally excludes non-rendering MeshFilter geometry."
+  },
+  "conversion": {
+    "toolVersion": "FFClientEditor 0.1.0 workspace 2026-08-13",
+    "command": "FFClientEditor extract_mesh(primary serialized asset pathId 316), retain first m_CollisionVertexCount vertices and m_CollisionTriangles, convert Unity clockwise winding to glTF CCW",
+    "nativeRepresentation": "Adjacent collider-only GLB decoded by Bevy into AuthoredTriMeshCollider and attached to the exact preserved collision node."
+  },
+  "colliders": [
+    {
+      "id": "body",
+      "name": "Pickup car source MeshCollider",
+      "node": "collision",
+      "mesh": 0,
+      "primitive": 0,
+      "expectedVertexCount": 194,
+      "expectedIndexCount": 942,
+      "isTrigger": false,
+      "convex": false
+    }
+  ]
+}

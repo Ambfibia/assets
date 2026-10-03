@@ -1,0 +1,342 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "T_electric gun",
+    "root_node": "T_electric gun",
+    "family": "effect",
+    "semantic_directories": [],
+    "output_glb": "models/effect/T_electric gun.glb",
+    "glb_blake3": "67b986f965cd2ba01549645bdd3b469749f5998a14799536f012e3f90ff49880",
+    "source": {
+      "nodes": 2,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 2,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 0,
+      "animation_channels": 0,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 0,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 2,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty and identical duplicate TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "03e9149944d4b844be80b19ee7c5b70ae0a5897d6ae7225918ef68f0a8f9312a",
+      "geometrySha256": "8a85bdab1cd9c2e2825650b0903bf62d2324ffb9e21966b4138488ee2078a380",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "26b95f81bf99e541bdbbb4551e82fad50442cf9056aa84ccc879b632ec0642a1"
+    },
+    "emitted": {
+      "hierarchySha256": "03e9149944d4b844be80b19ee7c5b70ae0a5897d6ae7225918ef68f0a8f9312a",
+      "geometrySha256": "8a85bdab1cd9c2e2825650b0903bf62d2324ffb9e21966b4138488ee2078a380",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "c6c49a5e2003d2b2cc58cf2c93b374531c4cda4cd82bad65b46b7a029851ec7d",
+      "animationMetadataSha256": "3d793be280a0563f6bd4ba46704d933dead2070b656603b2840fdd984a252e77",
+      "materialsSha256": "26b95f81bf99e541bdbbb4551e82fad50442cf9056aa84ccc879b632ec0642a1"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.05927535891532898,
+        -0.4233769178390503,
+        -0.13857144117355347
+      ],
+      "max": [
+        0.05927703529596329,
+        0.42337605357170105,
+        0.1385689675807953
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.2386263906955719,
+        -0.2586795389652252,
+        -0.09299211204051971
+      ],
+      "max": [
+        0.5242568254470825,
+        0.22536048293113708,
+        0.02642497420310974
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "t_electric gun-2lt-rifle_electricgun.dds"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "t_electric gun-2lt-rifle_electricgun.dds",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "shaderSha256": "290562bc8d56959490861ceddd9adab6f2d298c50e00a73ce4d6e356f2023c3b",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "rifle_electricgun.dds",
+        "uri": "T_electric gun.textures/rifle_electricgun.png",
+        "width": 256,
+        "height": 256,
+        "sourceMipCount": 9,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 56321,
+        "sha256": "a2d2b1a3058b891e89c183304f306f5441975d82c3c33d9ce99eafbc88717a97",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "T_electric gun.textures/rifle_electricgun.png",
+            "width": 256,
+            "height": 256,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 32768,
+            "sourceByteSha256": "73056431b692d96e7590c06dea857c598be28f955d4cfcde51002fb24fed80da",
+            "decodedRgba8ByteLength": 262144,
+            "decodedRgba8Sha256": "f36de24c05de4526b8f51d338a124a70d6cd33b2a24d9753697f80739d7c233f",
+            "pngByteLength": 56321,
+            "pngSha256": "a2d2b1a3058b891e89c183304f306f5441975d82c3c33d9ce99eafbc88717a97"
+          },
+          {
+            "level": 1,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 32768,
+            "sourceByteLength": 8192,
+            "sourceByteSha256": "0463bd7c0de70a2b6e44758b1b393e355e0752be1e0f72f1ce1ab7b4fa453649",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "cfda65030e1d41b0db6dfaf3a88795544dd5143653153cb451b63e9d546fc372",
+            "pngByteLength": 21264,
+            "pngSha256": "362533fd6db72eee1ce4415c44c61c4705f320f748bf7a42dcb1bbd13fbf8f7b"
+          },
+          {
+            "level": 2,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-02.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 40960,
+            "sourceByteLength": 2048,
+            "sourceByteSha256": "c688323b86d272ca48988787a62fa370a0564cf742312177b2b6a0a0d0bf3a71",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "d37b9a9598c30badbb8ab224d12249d938935fb6abb2cfd0c2c9d288d3a9685b",
+            "pngByteLength": 7585,
+            "pngSha256": "c762a968aa05c029dfe300bc3b5e350511fc29427f24413e6d77d6c2207ea27e"
+          },
+          {
+            "level": 3,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-03.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 43008,
+            "sourceByteLength": 512,
+            "sourceByteSha256": "387262a02c07a7b801b8000e8c31bd761538ca9d119fa6dc10fc769fedddf76a",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "f0b8ea0ad624e56f321cafe906d460f535d635f09b6c6a00839243cdf4931728",
+            "pngByteLength": 2306,
+            "pngSha256": "d9c0f82c20c0b99bfae9ef986dc01edd822362d45e987cc3c6aec1fdb94ce183"
+          },
+          {
+            "level": 4,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-04.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 43520,
+            "sourceByteLength": 128,
+            "sourceByteSha256": "50ab027bf44e0a4c402c239a4baff13cea2404cddb7525575bdb918923b511b6",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "987b27d6e5be351afab0b4729d6cbb3b98d15eedf2676b7260393d2b0927c1c7",
+            "pngByteLength": 715,
+            "pngSha256": "b90eeeb092d73eecbc044515c830a03916b4ae8bbb32235f76649772781dcabc"
+          },
+          {
+            "level": 5,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-05.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 43648,
+            "sourceByteLength": 32,
+            "sourceByteSha256": "5ba64871752c6df4a3f9601951bf3e20a0ac919854d5962ff79fa6ffc6bb8cbd",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "007a9b9ab2acdf1b2daafb88b82eb69460244757a122f7c978133d284b9e507a",
+            "pngByteLength": 289,
+            "pngSha256": "c3fb6e7709f2acfcd14ccea9904193459bf9b6a0709a2cd110d39af58326c063"
+          },
+          {
+            "level": 6,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-06.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 43680,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "14432f65212f949d067eb28f8349e54936f5a67ce2cadc72c24839f935d3b60c",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "36281bfbd646814956a7626b1eb47c3925f70b1d3ba01378c6b560c8798c0f11",
+            "pngByteLength": 136,
+            "pngSha256": "8682b1a242a75955ae223fda7961ad5a3d7fb587b7bd64d6a6915c93ebca33a5"
+          },
+          {
+            "level": 7,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-07.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 43688,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "6d8e68c6a73cc60aa59c96138a96088df30b8d73f1ec333a163978f81a62f3b4",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "9f3d06ef653f333b510c68f6d0a6b63d0989351994b1b758b5b9652db78d577f",
+            "pngByteLength": 86,
+            "pngSha256": "e049a9cd096edbeb7aefa21771b173d279c7dbc79d5dde141285bdea73052db2"
+          },
+          {
+            "level": 8,
+            "uri": "T_electric gun.textures/rifle_electricgun.mips/mip-08.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 43696,
+            "sourceByteLength": 8,
+            "sourceByteSha256": "19bef3aae1bb00ab221af408ed2545bd7ee18a8c81da6e70b3cbb9066b09252c",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "7ce9bd6b5c43ce6bcac28ba37a273499ab654fed30a6cefb5a5550372de0960e",
+            "pngByteLength": 73,
+            "pngSha256": "81e8cd2a0d6b9567cd93ba7d9d84481a3e5685e2d567fa1bb215e20891b2b780"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/effect/T_electric gun.publish.json"
+}

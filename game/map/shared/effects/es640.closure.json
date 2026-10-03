@@ -1,0 +1,3754 @@
+{
+  "schema": "ffone.tutorial-effect-closure.v1",
+  "effectId": 640,
+  "containerRoute": "prefabs/particle/effectscripts/es[640].prefab",
+  "rootAsset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+  "rootPathId": 9291,
+  "sourceBundleBlake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988",
+  "sourceDumpBlake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d",
+  "sourceAssets": [
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/serialized-asset",
+        "bytes": 33024451,
+        "blake3": "9a1918eef69dce97e99b093f2de1ea590e00c8d6051ba559c4e24b1a789ab988"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918/fusionforge-dump-object-all.json",
+        "bytes": 88850403,
+        "blake3": "de91e3f957cb7eb7039544625bc04f1e9abfffa3d0fa656388c18ed2b954a23d"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/serialized-asset",
+        "bytes": 134712750,
+        "blake3": "80a80c9bae83b2a67263ce87c033fe173cc26dd2944e3edc25f751d5c42bc678"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a/fusionforge-dump-object-all.json",
+        "bytes": 394346191,
+        "blake3": "b4b05dfa6095ff8381ca8ddc865842ef74388adde132adb3a7b60a31b10befb8"
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8",
+      "serializedAsset": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/serialized-asset",
+        "bytes": 39189500,
+        "blake3": "8293c7b0cd3d193d4c464ff7eff1dd70aaa930d27f2dd5eb64cc437cbcabb073"
+      },
+      "objectDump": {
+        "logicalName": "CustomAssetBundle-bd5f53480423447d7bcaed95cb2a96c8/fusionforge-dump-object-all.json",
+        "bytes": 203122345,
+        "blake3": "48c0121573a834c089c1e0407bfa834456e212aad5173d0018f3ab92d04e571d"
+      }
+    }
+  ],
+  "objects": [
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1616,
+      "typeId": 48,
+      "classId": 48,
+      "objectType": "Shader",
+      "name": "",
+      "canonicalBlake3": "f9b3db1f3070c066ca4df3ad815f90807ff25e52f1fe5dc97d8eb33bd0657edb",
+      "value": {
+        "m_DefaultProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.699999988079071
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 0
+                }
+              }
+            ]
+          ]
+        },
+        "m_Name": "",
+        "m_PathName": "",
+        "m_Script": "Shader \"normal_blendSrcalphaOne_zwriteOff_cullOff\" {\nProperties {\n\t_Color (\"Main Color\", Color) = (1,1,1,1)\n\t_SpecColor (\"Spec Color\", Color) = (1,1,1,1)\n\t_AmbColor (\"Ambient Color\", Color) = (1,1,1,1)\n\t_Emission (\"Emmisive Color\", Color) = (0,0,0,0)\n\t_Shininess (\"Shininess\", Range (0.01, 1)) = 0.7\n\t_MainTex (\"Base (RGB)\", 2D) = \"white\" {}\n}\n\nCategory {\n\tTags {\"Queue\"=\"Transparent+10\"}\n\tBlend SrcAlpha One \n\tColorMask RGB\n\tZWrite Off\n\tCull Off\n\t\n\n\tSubShader {\n\t\tPass {\n\t\t\tMaterial {\n\t\t\t\tDiffuse [_Color]\n\t\t\t\tAmbient [_AmbColor]\n\t\t\t\tShininess [_Shininess]\n\t\t\t\t//\tSpecular [_SpecColor]\n\t\t\t\tEmission [_Emission]\n\t\t\t} \n\t\t\tLighting On\n\t\t\tSetTexture [_MainTex] {\n\t\t\t\tCombine texture * primary DOUBLE , texture\n\t\t\t} \n\t\t}\n\t}\n}\n}",
+        "m_StaticProperties": {
+          "m_Colors": [],
+          "m_Floats": [],
+          "m_TexEnvs": []
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-b4f543c102ded400fbc6f1da25d9679a",
+      "pathId": 1914,
+      "typeId": 115,
+      "classId": 115,
+      "objectType": "MonoScript",
+      "name": "EffectEmitterController",
+      "canonicalBlake3": "885d0232e11c6e33f97a3d6ee7a837aa054e3f9992182557e4be600cd7097120",
+      "value": {
+        "m_AssemblyIdentifier": "CSharp - first pass",
+        "m_ClassName": "EffectEmitterController",
+        "m_IsEditorScript": false,
+        "m_Name": "EffectEmitterController",
+        "m_PathName": ""
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 517,
+      "typeId": 28,
+      "classId": 28,
+      "objectType": "Texture2D",
+      "name": "f_buttercup_corruptak_1.dds",
+      "canonicalBlake3": "84e93294acd5afb63cf3e3f88330cb06a0691fdf73c669c004607599c4508646",
+      "value": {
+        "image data": {
+          "base64": "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",
+          "bytes": 5520
+        },
+        "m_CompleteImageSize": 5520,
+        "m_Height": 32,
+        "m_ImageCount": 1,
+        "m_Limit": -1,
+        "m_MipMap": true,
+        "m_Name": "f_buttercup_corruptak_1.dds",
+        "m_TextureDimension": 2,
+        "m_TextureFormat": 12,
+        "m_TextureSettings": {
+          "m_Aniso": 1,
+          "m_FilterMode": 1,
+          "m_MipBias": 0.0,
+          "m_WrapMode": 0
+        },
+        "m_Touchable": false,
+        "m_Width": 128
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1410,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Mesh",
+      "canonicalBlake3": "ee8be0aa1aa1cfc5ccc791ee065e61cf34ee1d7f2a60f1675ea42e73ccb49735",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          2,
+          0,
+          72,
+          72,
+          0,
+          71,
+          72,
+          71,
+          66,
+          66,
+          71,
+          65,
+          66,
+          65,
+          60,
+          60,
+          65,
+          59,
+          60,
+          59,
+          53,
+          53,
+          59,
+          52,
+          53,
+          52,
+          48,
+          48,
+          52,
+          47,
+          48,
+          47,
+          43,
+          43,
+          47,
+          42,
+          43,
+          42,
+          38,
+          38,
+          42,
+          37,
+          38,
+          37,
+          32,
+          32,
+          37,
+          31,
+          32,
+          31,
+          28,
+          28,
+          31,
+          27,
+          28,
+          27,
+          24,
+          24,
+          27,
+          23,
+          24,
+          23,
+          19,
+          19,
+          23,
+          18,
+          19,
+          18,
+          16,
+          16,
+          18,
+          15,
+          16,
+          15,
+          13,
+          13,
+          15,
+          12,
+          13,
+          12,
+          9,
+          9,
+          12,
+          8,
+          9,
+          8,
+          7,
+          7,
+          8,
+          6,
+          7,
+          6,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          51,
+          57,
+          56,
+          56,
+          57,
+          58,
+          56,
+          58,
+          63,
+          63,
+          58,
+          64,
+          63,
+          64,
+          69,
+          69,
+          64,
+          70,
+          69,
+          70,
+          75,
+          75,
+          70,
+          76,
+          75,
+          76,
+          79,
+          79,
+          76,
+          80,
+          79,
+          80,
+          83,
+          83,
+          80,
+          84,
+          83,
+          84,
+          87,
+          87,
+          84,
+          88,
+          87,
+          88,
+          90,
+          90,
+          88,
+          91,
+          90,
+          91,
+          93,
+          93,
+          91,
+          94,
+          93,
+          94,
+          96,
+          96,
+          94,
+          97,
+          96,
+          97,
+          98,
+          98,
+          97,
+          99,
+          98,
+          99,
+          100,
+          100,
+          99,
+          101,
+          100,
+          101,
+          102,
+          102,
+          101,
+          103,
+          102,
+          103,
+          35,
+          35,
+          103,
+          104,
+          35,
+          104,
+          36,
+          36,
+          104,
+          105,
+          36,
+          105,
+          41,
+          41,
+          105,
+          106,
+          41,
+          106,
+          46,
+          46,
+          106,
+          107,
+          46,
+          107,
+          51,
+          51,
+          107,
+          57,
+          10,
+          7,
+          85,
+          85,
+          7,
+          5,
+          85,
+          5,
+          81,
+          81,
+          5,
+          3,
+          81,
+          3,
+          77,
+          77,
+          3,
+          2,
+          77,
+          2,
+          73,
+          73,
+          2,
+          72,
+          73,
+          72,
+          67,
+          67,
+          72,
+          66,
+          67,
+          66,
+          61,
+          61,
+          66,
+          60,
+          61,
+          60,
+          54,
+          54,
+          60,
+          53,
+          54,
+          53,
+          49,
+          49,
+          53,
+          48,
+          49,
+          48,
+          44,
+          44,
+          48,
+          43,
+          44,
+          43,
+          39,
+          39,
+          43,
+          38,
+          39,
+          38,
+          33,
+          33,
+          38,
+          32,
+          33,
+          32,
+          29,
+          29,
+          32,
+          28,
+          29,
+          28,
+          25,
+          25,
+          28,
+          24,
+          25,
+          24,
+          20,
+          20,
+          24,
+          19,
+          20,
+          19,
+          17,
+          17,
+          19,
+          16,
+          17,
+          16,
+          14,
+          14,
+          16,
+          13,
+          14,
+          13,
+          11,
+          11,
+          13,
+          9,
+          11,
+          9,
+          10,
+          10,
+          9,
+          7,
+          21,
+          17,
+          95,
+          95,
+          17,
+          14,
+          95,
+          14,
+          92,
+          92,
+          14,
+          11,
+          92,
+          11,
+          89,
+          89,
+          11,
+          10,
+          89,
+          10,
+          86,
+          86,
+          10,
+          85,
+          86,
+          85,
+          82,
+          82,
+          85,
+          81,
+          82,
+          81,
+          78,
+          78,
+          81,
+          77,
+          78,
+          77,
+          74,
+          74,
+          77,
+          73,
+          74,
+          73,
+          68,
+          68,
+          73,
+          67,
+          68,
+          67,
+          62,
+          62,
+          67,
+          61,
+          62,
+          61,
+          55,
+          55,
+          61,
+          54,
+          55,
+          54,
+          50,
+          50,
+          54,
+          49,
+          50,
+          49,
+          45,
+          45,
+          49,
+          44,
+          45,
+          44,
+          40,
+          40,
+          44,
+          39,
+          40,
+          39,
+          34,
+          34,
+          39,
+          33,
+          34,
+          33,
+          30,
+          30,
+          33,
+          29,
+          30,
+          29,
+          26,
+          26,
+          29,
+          25,
+          26,
+          25,
+          22,
+          22,
+          25,
+          20,
+          22,
+          20,
+          21,
+          21,
+          20,
+          17,
+          35,
+          30,
+          102,
+          102,
+          30,
+          26,
+          102,
+          26,
+          100,
+          100,
+          26,
+          22,
+          100,
+          22,
+          98,
+          98,
+          22,
+          21,
+          98,
+          21,
+          96,
+          96,
+          21,
+          95,
+          96,
+          95,
+          93,
+          93,
+          95,
+          92,
+          93,
+          92,
+          90,
+          90,
+          92,
+          89,
+          90,
+          89,
+          87,
+          87,
+          89,
+          86,
+          87,
+          86,
+          83,
+          83,
+          86,
+          82,
+          83,
+          82,
+          79,
+          79,
+          82,
+          78,
+          79,
+          78,
+          75,
+          75,
+          78,
+          74,
+          75,
+          74,
+          69,
+          69,
+          74,
+          68,
+          69,
+          68,
+          63,
+          63,
+          68,
+          62,
+          63,
+          62,
+          56,
+          56,
+          62,
+          55,
+          56,
+          55,
+          51,
+          51,
+          55,
+          50,
+          51,
+          50,
+          46,
+          46,
+          50,
+          45,
+          46,
+          45,
+          41,
+          41,
+          45,
+          40,
+          41,
+          40,
+          36,
+          36,
+          40,
+          34,
+          36,
+          34,
+          35,
+          35,
+          34,
+          30
+        ],
+        "m_CollisionVertexCount": 108,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "/7ONmWGMMRiGAQAAAPABAA==",
+              "bytes": 16
+            },
+            "m_NumItems": 127
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "ctiR1xjJOOiuy2D6xbeM/dSbtvE051z62Xza14j/0l7zs7P0wkP9iNjbWvaF/Kow+Vzyt6/yjCbmNf+M1NttJ8YW+2DuuYL2qu5QM54D6Tf7j83YOUdyAMoX+WTnuCpjSA2iBOg89JElgiQndgDLHPNonq2soCygC0tLCqQI5EK0jzy7AHYmI3kBySO2e1TOBaIMR08MpQ+yaQByKiN8CKdZA54QRVQQmE0VxwJvMSaFSAWaF0ZySRbCCm1gUTPiC5ZSXhq8Sm8120iDWe9MlVelZrF5toy1ctgYyTjoYPqM/TTnXPqI/7P0WvaF/K/y1NuC9qruzdjnuJ6t9JE=",
+              "bytes": 254
+            },
+            "m_NumItems": 254,
+            "m_Range": 1.9867992401123047,
+            "m_Start": -0.9972356557846069
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 7,
+            "m_Data": {
+              "base64": "bTbyKAzydjUa7LVSmUqgD2eDuUwkkEeDkUAcDAXCICAAAGazHE73AxaNS+YTOqVesdpt1wsOi8fksvmcR+vTezV/7e/343F49R11N9tJ5FDY49lqMRhrdTKFQB1OBkOZRCCOxiKhOBzqdfp3zpVn49aqNOpsKpPEoa93s8liLRbqJAp5OpqMhVKJRPJ5vPlOtovr4G+Xq81erVPp07lUFok/H+42k7laKRRJNPIA",
+              "bytes": 174
+            },
+            "m_NumItems": 198
+          },
+          "m_UV": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "oF2AagimcfDsBYkh8BA8jDSAKTs9huCVA85H8LE5WJtwrQFpW5DXN9qwoG4AbG+Q0zXHHgD6amoycEBqlMYAAADZgzDkMytGAP5oTtygbgClmEBFMhdakFln0PFwrQG5rbAoMS5u0IVl2RuQBZs+MOBRmuwG4ZUD9sLwsDBrgjC7Y5xEUP6Yghvx7AU62FDsMMSWEDFi7FjgM5eJL4FqCGDtwNMxLqvgFmEibcAplYkYwJPMZi3QxssFQ6HBCkcCUUszoL/AjmA1gQAfkyhCQBjKDlYRqgzWFrElNRTUAKlgIJWwUpG6VtC7x8Ro0egN/iqxKTeE6KBiYeaoQPyPC2uA+sRPe4FXDrs+ERk56vwQpWKRvCBFjxB/YCnC+ilgC//XPlC7/NqN0egNGVIBuDo7EYFJZDPQQEOPyZJgn7+AUzBX+ZCgEaoMLmWR1DttJUEdZt3j8PaPP6YAq73jZ6BH9ZmzocEKGXhhTDx2OdHnZ6P3gEqRhrlwiLzyeyAK8VRNAXJpjQsBFZO5zOBavKyPgCHtCmExjGqfHxEflfXf0Ce9G6NwBuqndFEUa9Uz0SmXV/Ng1r5UtvAY6CRIIfaY9gbRMsFyyYCU54JckUya4Boh9MOU3ACJ6OdwwQObFi9Bxcbb7xDZ6pJDMU/JXwMxPe5FWKFDyzIXwUzyG20xZsxbK1GK9tQ/8XL6j1Txjf14aXF7/3V+8f//FceBagj+ivEQPAGegSk7RLHxsTnfxJHXNzyIAfpq35txQGqhrwH+aIzDkVlnToWRBZu0meFRmhKuUf6YYcLhM5f/gcGTzNyW0cbLnqtBGMowwNG7x2+TYQv/gNSB+sQ=",
+              "bytes": 635
+            },
+            "m_NumItems": 254,
+            "m_Range": 11.331811904907227,
+            "m_Start": -0.29938554763793945
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "caajxWbcEGS0R1psxg1BE4TCvVPic0YkMImxJT5nQkMVOWLcEIQROvX0JT5nTOZFrFncEHTWRPv9JT5ntVAmJ07cEJQmT4nLJT5nugZj8lfp1ghBORTElW6NqnXGDUHcEHTDV7FjJT5ncTBESF3p1lgLZUM/ww1BMNq1L03icyaQTHmulW6NTOZFbyjcECQQYNwqJD5nX0u1aFXp1ritNvfyBZ+zwhm06mDwOSs0VCf+wQ1B+uuV+Tfic8Z8WlXXlG6NlccEzl7wOWu0R1y1wQ1BpZ21XS7iczYyXS5AlG6NYF/VGlnwORtnOly1wQ1BdB/lAific7aCXFKjk26N0M7lgFDwOTuIP+rJds/ZZOhEg2r3nE3nLSf+wQ1BnoAkzCLic2aDWK0Tk26NdwjmCUbwOWvkW3w2ds/ZaztCbyjcEPREPbojIj5n/BoFKSrp1ghWYJCvA5+zW2B2J1j3nB0QHUM/ww1BTC/jYiXic4baSKNdkm6N6cX1ozDwOauxa+ChdM/ZDKzBDUHcEPRXKgW+Ij5nRvEj0yTp1sgbVZmEAp+zjcOm/Dr3nG2CZrxo9///vGhngmb//x8QHXPixA1BhUei6zTic0aLNT1zkm6N3LYU7CLwOTuLZ2nJcs/ZFwJ49FH//7+2I8SaxQ1BtiCibT/ic4ZlLSvLkm6N9QfUMCHwOQs5XocKcs/ZuCGoXDv//1/nLZEjxg1BvDXiIUric6aeJ2JKk26NIVpjTSPwOTtiUSmKcc/ZzMO3dCX//0/pJIfhk26NWMKyACnwOTuTQs1Xcc/ZqvPG4BL//8+YJWR+lG6N51KSmjHwOSuVM4J5cc/ZbMql3gX//x+YKQkOlW6NQBmCETzwORs3Jjzrcc/Z7GsEAAD//4/FISZyBJ+zXMEB9Cn3nP0mMKAf8P//zVuCd1HwOetpFtd/c8/ZkLmhjwv//5//LB2dBZ+zKV7hHkf3nJ2PC5C58f//BanxhFX3nA36AXAC8///Jz4Cc2H3nA0AAOxr9P//kwvTeGn3nK3eBWzK9f//DC6xOm///790JczD9///zLWDG4L//3/0URcC+P//caajxWbcEDRBKNw7JT5nRAKTGFvic4YROvX0JT5nZ02031/ic6ZrMCZ/lW6NEJRDQVzp1hgHQ4TUlW6NAsmU51rp1ritNvfyBZ+zwhm06mDwOVt5TODsBZ+zYF/VGlnwOTuIP+rJds/ZZOhEg2r3nG3kW3w2ds/ZW2B2J1j3nG2CZrxo9///GrsGHkr3nA0=",
+              "bytes": 953
+            },
+            "m_NumItems": 381,
+            "m_Range": 4.696105480194092,
+            "m_Start": -1.1933584213256836
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.0,
+            "y": -5.960464477539063e-8,
+            "z": 1.7513734102249146
+          },
+          "m_Extent": {
+            "x": 1.193358302116394,
+            "y": 1.1933584213256836,
+            "z": 1.7513734102249146
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Mesh",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 198,
+            "isTriStrip": 2,
+            "triangleCount": 180
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1428,
+      "typeId": 43,
+      "classId": 43,
+      "objectType": "Mesh",
+      "name": "Editable Mesh1",
+      "canonicalBlake3": "5a68c81e3857fbe5f51d1fa41144889ec7b5d1712a0a6f08dcc75d10140f42f3",
+      "value": {
+        "m_BindPose": [],
+        "m_CollisionTriangles": [
+          2,
+          0,
+          72,
+          72,
+          0,
+          71,
+          72,
+          71,
+          66,
+          66,
+          71,
+          65,
+          66,
+          65,
+          60,
+          60,
+          65,
+          59,
+          60,
+          59,
+          53,
+          53,
+          59,
+          52,
+          53,
+          52,
+          48,
+          48,
+          52,
+          47,
+          48,
+          47,
+          43,
+          43,
+          47,
+          42,
+          43,
+          42,
+          38,
+          38,
+          42,
+          37,
+          38,
+          37,
+          32,
+          32,
+          37,
+          31,
+          32,
+          31,
+          28,
+          28,
+          31,
+          27,
+          28,
+          27,
+          24,
+          24,
+          27,
+          23,
+          24,
+          23,
+          19,
+          19,
+          23,
+          18,
+          19,
+          18,
+          16,
+          16,
+          18,
+          15,
+          16,
+          15,
+          13,
+          13,
+          15,
+          12,
+          13,
+          12,
+          9,
+          9,
+          12,
+          8,
+          9,
+          8,
+          7,
+          7,
+          8,
+          6,
+          7,
+          6,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          3,
+          3,
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          0,
+          51,
+          57,
+          56,
+          56,
+          57,
+          58,
+          56,
+          58,
+          63,
+          63,
+          58,
+          64,
+          63,
+          64,
+          69,
+          69,
+          64,
+          70,
+          69,
+          70,
+          75,
+          75,
+          70,
+          76,
+          75,
+          76,
+          79,
+          79,
+          76,
+          80,
+          79,
+          80,
+          83,
+          83,
+          80,
+          84,
+          83,
+          84,
+          87,
+          87,
+          84,
+          88,
+          87,
+          88,
+          90,
+          90,
+          88,
+          91,
+          90,
+          91,
+          93,
+          93,
+          91,
+          94,
+          93,
+          94,
+          96,
+          96,
+          94,
+          97,
+          96,
+          97,
+          98,
+          98,
+          97,
+          99,
+          98,
+          99,
+          100,
+          100,
+          99,
+          101,
+          100,
+          101,
+          102,
+          102,
+          101,
+          103,
+          102,
+          103,
+          35,
+          35,
+          103,
+          104,
+          35,
+          104,
+          36,
+          36,
+          104,
+          105,
+          36,
+          105,
+          41,
+          41,
+          105,
+          106,
+          41,
+          106,
+          46,
+          46,
+          106,
+          107,
+          46,
+          107,
+          51,
+          51,
+          107,
+          57,
+          10,
+          7,
+          85,
+          85,
+          7,
+          5,
+          85,
+          5,
+          81,
+          81,
+          5,
+          3,
+          81,
+          3,
+          77,
+          77,
+          3,
+          2,
+          77,
+          2,
+          73,
+          73,
+          2,
+          72,
+          73,
+          72,
+          67,
+          67,
+          72,
+          66,
+          67,
+          66,
+          61,
+          61,
+          66,
+          60,
+          61,
+          60,
+          54,
+          54,
+          60,
+          53,
+          54,
+          53,
+          49,
+          49,
+          53,
+          48,
+          49,
+          48,
+          44,
+          44,
+          48,
+          43,
+          44,
+          43,
+          39,
+          39,
+          43,
+          38,
+          39,
+          38,
+          33,
+          33,
+          38,
+          32,
+          33,
+          32,
+          29,
+          29,
+          32,
+          28,
+          29,
+          28,
+          25,
+          25,
+          28,
+          24,
+          25,
+          24,
+          20,
+          20,
+          24,
+          19,
+          20,
+          19,
+          17,
+          17,
+          19,
+          16,
+          17,
+          16,
+          14,
+          14,
+          16,
+          13,
+          14,
+          13,
+          11,
+          11,
+          13,
+          9,
+          11,
+          9,
+          10,
+          10,
+          9,
+          7,
+          21,
+          17,
+          95,
+          95,
+          17,
+          14,
+          95,
+          14,
+          92,
+          92,
+          14,
+          11,
+          92,
+          11,
+          89,
+          89,
+          11,
+          10,
+          89,
+          10,
+          86,
+          86,
+          10,
+          85,
+          86,
+          85,
+          82,
+          82,
+          85,
+          81,
+          82,
+          81,
+          78,
+          78,
+          81,
+          77,
+          78,
+          77,
+          74,
+          74,
+          77,
+          73,
+          74,
+          73,
+          68,
+          68,
+          73,
+          67,
+          68,
+          67,
+          62,
+          62,
+          67,
+          61,
+          62,
+          61,
+          55,
+          55,
+          61,
+          54,
+          55,
+          54,
+          50,
+          50,
+          54,
+          49,
+          50,
+          49,
+          45,
+          45,
+          49,
+          44,
+          45,
+          44,
+          40,
+          40,
+          44,
+          39,
+          40,
+          39,
+          34,
+          34,
+          39,
+          33,
+          34,
+          33,
+          30,
+          30,
+          33,
+          29,
+          30,
+          29,
+          26,
+          26,
+          29,
+          25,
+          26,
+          25,
+          22,
+          22,
+          25,
+          20,
+          22,
+          20,
+          21,
+          21,
+          20,
+          17,
+          35,
+          30,
+          102,
+          102,
+          30,
+          26,
+          102,
+          26,
+          100,
+          100,
+          26,
+          22,
+          100,
+          22,
+          98,
+          98,
+          22,
+          21,
+          98,
+          21,
+          96,
+          96,
+          21,
+          95,
+          96,
+          95,
+          93,
+          93,
+          95,
+          92,
+          93,
+          92,
+          90,
+          90,
+          92,
+          89,
+          90,
+          89,
+          87,
+          87,
+          89,
+          86,
+          87,
+          86,
+          83,
+          83,
+          86,
+          82,
+          83,
+          82,
+          79,
+          79,
+          82,
+          78,
+          79,
+          78,
+          75,
+          75,
+          78,
+          74,
+          75,
+          74,
+          69,
+          69,
+          74,
+          68,
+          69,
+          68,
+          63,
+          63,
+          68,
+          62,
+          63,
+          62,
+          56,
+          56,
+          62,
+          55,
+          56,
+          55,
+          51,
+          51,
+          55,
+          50,
+          51,
+          50,
+          46,
+          46,
+          50,
+          45,
+          46,
+          45,
+          41,
+          41,
+          45,
+          40,
+          41,
+          40,
+          36,
+          36,
+          40,
+          34,
+          36,
+          34,
+          35,
+          35,
+          34,
+          30
+        ],
+        "m_CollisionVertexCount": 108,
+        "m_Colors": [],
+        "m_CompressedMesh": {
+          "m_BindPoses": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 4.775470911484024e-37,
+            "m_Start": 1.836695910175181e-40
+          },
+          "m_BoneIndices": {
+            "m_BitSize": 180,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_NormalSigns": {
+            "m_BitSize": 1,
+            "m_Data": {
+              "base64": "U5GEmGCUEAiCAAAAABAAAA==",
+              "bytes": 16
+            },
+            "m_NumItems": 127
+          },
+          "m_Normals": {
+            "m_BitSize": 8,
+            "m_Data": {
+              "base64": "ceqX6BjKN+m52WD7076M/uKctvIy5Vn55Hnb2IX+2lf0srD1xjv/h9XcU/Z+/asn+Vrwuan1iRzlMv2Ozt5oHMMT+2LqvXv9pPVGKJoD6Tj5ksjgKz9tAcoY+WfjvxlgQw+gBOo+8pgVhCAqdADNG/Rth8abtByoCU9IDKUF6USomjDIAHkkJngA0CGtfU7fBaMLSksLrAmoXwBzJyOAAJlEA50NRlQHgzQUxQBvLR5pLAKYEEBQMRLBAWk6Pi3hAZMqUQ+8IGkr3xyDUPUgnSy2P8hY0XDQceoYyjfpYPuM/jLlWfmF/rD1U/Z+/an1zt57/aT1yODjv4fG8pg=",
+              "bytes": 254
+            },
+            "m_NumItems": 254,
+            "m_Range": 1.9949265718460083,
+            "m_Start": -0.9991856217384338
+          },
+          "m_TangentSigns": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          },
+          "m_Tangents": {
+            "m_BitSize": 0,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0,
+            "m_Range": 8.435816755235399e-40,
+            "m_Start": 0.0067468732595443726
+          },
+          "m_Triangles": {
+            "m_BitSize": 7,
+            "m_Data": {
+              "base64": "bTbyKAzydjUa7LVSmUqgD2eDuUwkkEeDkUAcDAXCICAAAGazHE73AxaNS+YTOqVesdpt1wsOi8fksvmcR+vTezV/7e/343F49R11N9tJ5FDY49lqMRhrdTKFQB1OBkOZRCCOxiKhOBzqdfp3zpVn49aqNOpsKpPEoa93s8liLRbqJAp5OpqMhVKJRPJ5vPlOtovr4G+Xq81erVPp07lUFok/H+42k7laKRRJNPIA",
+              "bytes": 174
+            },
+            "m_NumItems": 198
+          },
+          "m_UV": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "oF2AagimcfDsBYkh8BA8jDSAKTs9huCVA85H8LE5WJtwrQFpW5DXN9qwoG4AbG+Q0zXHHgD6amoycEBqlMYAAADZgzDkMytGAP5oTtygbgClmEBFMhdakFln0PFwrQG5rbAoMS5u0IVl2RuQBZs+MOBRmuwG4ZUD9sLwsDBrgjC7Y5xEUP6Yghvx7AU62FDsMMSWEDFi7FjgM5eJL4FqCGDtwNMxLqvgFmEibcAplYkYwJPMZi3QxssFQ6HBCkcCUUszoL/AjmA1gQAfkyhCQBjKDlYRqgzWFrElNRTUAKlgIJWwUpG6VtC7x8Ro0egN/iqxKTeE6KBiYeaoQPyPC2uA+sRPe4FXDrs+ERk56vwQpWKRvCBFjxB/YCnC+ilgC//XPlC7/NqN0egNGVIBuDo7EYFJZDPQQEOPyZJgn7+AUzBX+ZCgEaoMLmWR1DttJUEdZt3j8PaPP6YAq73jZ6BH9ZmzocEKGXhhTDx2OdHnZ6P3gEqRhrlwiLzyeyAK8VRNAXJpjQsBFZO5zOBavKyPgCHtCmExjGqfHxEflfXf0Ce9G6NwBuqndFEUa9Uz0SmXV/Ng1r5UtvAY6CRIIfaY9gbRMsFyyYCU54JckUya4Boh9MOU3ACJ6OdwwQObFi9Bxcbb7xDZ6pJDMU/JXwMxPe5FWKFDyzIXwUzyG20xZsxbK1GK9tQ/8XL6j1Txjf14aXF7/3V+8f//FceBagj+ivEQPAGegSk7RLHxsTnfxJHXNzyIAfpq35txQGqhrwH+aIzDkVlnToWRBZu0meFRmhKuUf6YYcLhM5f/gcGTzNyW0cbLnqtBGMowwNG7x2+TYQv/gNSB+sQ=",
+              "bytes": 635
+            },
+            "m_NumItems": 254,
+            "m_Range": 11.331811904907227,
+            "m_Start": -0.29938554763793945
+          },
+          "m_Vertices": {
+            "m_BitSize": 20,
+            "m_Data": {
+              "base64": "ZQ1Fbpe0tiUAZuR2SWtbqaYy1ID1fkfwOVn+6Bp3NJ5HMZC0tvXBTSqOCeZ1mKG4loK0thWbYy2p6WF050rJQnC0tmXbeCRJublypZJj34wfQBnPS/toGXyRtIVJa1u0tiXYikN3iC9xkApmN5n95XiulDxpRGtbunNpwnTaAPc0dfNFOQSLmKHIPzS0ttVgnBzt5ZBve25If4hOflhxSJGheQqvgeOV4J0aokrjeVRqQmtba5kpcUhN/WaGk8pvB4qFIT2HmZnaTCoAZoT2QWtb1vP4fzSmDFd2mQwg9mSE0GlIwI23/FnWUIT2QWtbZOvHgSXOI2f1l/3CtK+EnEW5xXuYvsn9XEGjut3HYWD3zaVv/UvzPFRqQmtbrqK2Qx09Psc0j7eEY1uG7rZp3GVknRmzi42IiTm4z8vCPzS0ttU2VE/KcXh1IwUo0ShJkdgNm+vqFPOZtLoZOIRDIxsoIjxpRGtbbfhziSOAbNcwbTD6YVyMGDTJDDmow0lspLK1NsCutOdBa1u0tjWCLjQP47l3YYMlyh29+sjthIh5AkKgs1NqwVDS5grDlKIrykrR8WUazotAlhwoIiwER2tbpjBCNUOwhGf0Q9A10pOS7Bs3dBxcVeoHngp1c0ixJANrz3BBTPy8LGspSGtbZeXBLlgliEfUMsL4As+UEcAl+hhuqhppjwIectu2fCJLP1Q0PUzzPBQDSWtbIA6ihG1LhgfMJtYMBECWwWWkjB3H99q2el4wwT6+UsRaMTggavwvIWBR1eKWdTcTjClMNcsgYv/L4EjGPeip4R6hz9yaIlmhRrqW4VmydTvTXsuRSPcAsdLN2pMYHgskY+3lKsjWR8WVcufhHlEWc5tQMSfLwfnT490GAACKEE7ZHrN/ViC3UPeBITEChE1PT0sA8NPrjmuyYH2fW3tjFfCsZH3aixvDEgxYUH8pNZrsGACzK0fxiWYVq02hGe4vsp77LMxB5YDLje3eCgUchEb/jdPSm5bVTw3MBzhB9v//EDoE96T68kzlEClTiNH9i0uCgqDgin8bQFwkG7Tw+uvFUriwaK4rfK4oK4PbZQ1Fbpe0tpVqKkMNWO93BJ+T5Y+ucffBTSqOCeZ1sTnWkpoeRlcqOfbN+AGU8by0j5bBFwmpYHaT2V+OT1M3X5RDsFhxSJGheQqvgeOV4J0aohrSc5iZqc2k0GlIwI23/Mn9XEGjut3HYWD3zaVv/Ruzi42IiTm4tLoZOIRDIwvDlKIrykrRxEYqW2sD7Ao=",
+              "bytes": 953
+            },
+            "m_NumItems": 381,
+            "m_Range": 3.671431303024292,
+            "m_Start": -1.3110911846160889
+          },
+          "m_Weights": {
+            "m_BitSize": 76,
+            "m_Data": {
+              "base64": "",
+              "bytes": 0
+            },
+            "m_NumItems": 0
+          }
+        },
+        "m_IndexBuffer": {
+          "base64": "",
+          "bytes": 0
+        },
+        "m_LocalAABB": {
+          "m_Center": {
+            "x": 0.022331655025482178,
+            "y": 0.010650455951690674,
+            "z": 1.1801717281341553
+          },
+          "m_Extent": {
+            "x": 1.221602439880371,
+            "y": 1.3217415809631348,
+            "z": 1.1801717281341553
+          }
+        },
+        "m_MeshCompression": 2,
+        "m_MeshUsageFlags": 0,
+        "m_Name": "Editable Mesh1",
+        "m_Normals": [],
+        "m_Skin": [],
+        "m_SubMeshes": [
+          {
+            "firstByte": 0,
+            "indexCount": 198,
+            "isTriStrip": 2,
+            "triangleCount": 180
+          }
+        ],
+        "m_Tangents": [],
+        "m_UV": [],
+        "m_UV1": [],
+        "m_Use16BitIndices": 1,
+        "m_Vertices": []
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 1982,
+      "typeId": 74,
+      "classId": 74,
+      "objectType": "AnimationClip",
+      "name": "nif-default",
+      "canonicalBlake3": "712e062bad6996c7a765bb7f4a640649691ecea2109efac10be93adf0a28eeeb",
+      "value": {
+        "m_CompressedRotationCurves": [
+          {
+            "m_Path": "Cylinder01",
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_Slopes": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "FgCgD0HAQhTtgCj6hizjE8+vpO9r9H0rPYoC/nUB9XEkJgBgFQCkx7LcwLb5AsvyTZ7Hne+H7r5D+vsSv+cBueMQrCBIGwCMjGHIAEX1QFn6B03bV9+faN9bNk0fflkCPEUJsmEwKwBM",
+                "bytes": 105
+              },
+              "m_NumItems": 140,
+              "m_Range": 22.21683692932129,
+              "m_Start": -11.110915184020996
+            },
+            "m_Times": {
+              "m_BitSize": 3,
+              "m_Data": {
+                "base64": "2Lhx48aNIjdu3Lhx6gA=",
+                "bytes": 14
+              },
+              "m_NumItems": 35
+            },
+            "m_Values": {
+              "m_Data": {
+                "base64": "n+3ff8cMlFAOtZdWDu8Sh06pG7XcdZfT7Lgj2bTbLsSRbPWawdK1aQ+s775/zaSTT41YYi5XHUaGURNzbqsWpFsDU0ysxx7arMpqz1mK86xRcDZ9MdYyTmCaKS6XbZ11bwwSSO6TFWDOrRORTggfvXTm2daMOebWWWjwvNkN9pD5E/VfaMttOJdNYok=",
+                "bytes": 140
+              },
+              "m_NumItems": 35
+            }
+          },
+          {
+            "m_Path": "Cylinder02",
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_Slopes": {
+              "m_BitSize": 6,
+              "m_Data": {
+                "base64": "FgCgD0HAQhTtgCj6hizjE8+vpO9r9H0rPYoC/nUB9XEkJgBgFQCkx7LcwLb5AsvyTZ7Hne+H7r5D+vsSv+cBueMQrCBIGwCMjGHIAEX1QFn6B03bV9+faN9bNk0fflkCPEUJsmEwKwBM",
+                "bytes": 105
+              },
+              "m_NumItems": 140,
+              "m_Range": 22.21683692932129,
+              "m_Start": -11.110915184020996
+            },
+            "m_Times": {
+              "m_BitSize": 3,
+              "m_Data": {
+                "base64": "2Lhx48aNIjdu3Lhx6gA=",
+                "bytes": 14
+              },
+              "m_NumItems": 35
+            },
+            "m_Values": {
+              "m_Data": {
+                "base64": "n+3ff8cMlFAOtZdWDu8Sh06pG7XcdZfT7Lgj2bTbLsSRbPWawdK1aQ+s775/zaSTT41YYi5XHUaGURNzbqsWpFsDU0ysxx7arMpqz1mK86xRcDZ9MdYyTmCaKS6XbZ11bwwSSO6TFWDOrRORTggfvXTm2daMOebWWWjwvNkN9pD5E/VfaMttOJdNYok=",
+                "bytes": 140
+              },
+              "m_NumItems": 35
+            }
+          }
+        ],
+        "m_Events": [],
+        "m_FloatCurves": [
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.y",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 1.7142858505249023,
+                  "outSlope": 1.7142858505249023,
+                  "time": 0.0,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": 1.7142837047576904,
+                  "outSlope": 1.7142837047576904,
+                  "time": 1.1333335638046265,
+                  "value": 1.9428571462631226
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder01/Editable Mesh",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Emission.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_SpecColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_Color.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.r",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.g",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_AmbColor.b",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.0,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 0.0,
+                  "outSlope": 0.0,
+                  "time": 0.30000001192092896,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 7.500000476837158,
+                  "outSlope": 7.500000476837158,
+                  "time": 0.3333333432674408,
+                  "value": 0.0
+                },
+                {
+                  "inSlope": 15.000000953674316,
+                  "outSlope": 15.000000953674316,
+                  "time": 0.36666667461395264,
+                  "value": 0.5
+                },
+                {
+                  "inSlope": 6.75,
+                  "outSlope": 6.75,
+                  "time": 0.4000000059604645,
+                  "value": 1.0
+                },
+                {
+                  "inSlope": -1.5000004768371582,
+                  "outSlope": -1.5000004768371582,
+                  "time": 0.4333333373069763,
+                  "value": 0.949999988079071
+                },
+                {
+                  "inSlope": -1.5,
+                  "outSlope": -1.5,
+                  "time": 1.033333659172058,
+                  "value": 0.04999971389770508
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          },
+          {
+            "attribute": "_MainTex.offset.y",
+            "classID": 21,
+            "curve": {
+              "m_Curve": [
+                {
+                  "inSlope": 1.7142858505249023,
+                  "outSlope": 1.7142858505249023,
+                  "time": 0.0,
+                  "value": -0.0
+                },
+                {
+                  "inSlope": 1.7142837047576904,
+                  "outSlope": 1.7142837047576904,
+                  "time": 1.1333335638046265,
+                  "value": 1.9428571462631226
+                }
+              ],
+              "m_PostInfinity": 2,
+              "m_PreInfinity": 2
+            },
+            "path": "Cylinder02/Editable Mesh1",
+            "script": {
+              "fileId": 0,
+              "pathId": 0
+            }
+          }
+        ],
+        "m_Name": "nif-default",
+        "m_PositionCurves": [],
+        "m_RotationCurves": [],
+        "m_SampleRate": 30.0,
+        "m_ScaleCurves": [],
+        "m_UseCompression": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 2977,
+      "typeId": 21,
+      "classId": 21,
+      "objectType": "Material",
+      "name": "f_toiletnator_megatak-19 - default-f_buttercup_corruptak_1.dds",
+      "canonicalBlake3": "c562fc705bb17ff5bcf27f5cdc12a82adeec58e31ddbad75bd21440b24818136",
+      "value": {
+        "m_Name": "f_toiletnator_megatak-19 - default-f_buttercup_corruptak_1.dds",
+        "m_SavedProperties": {
+          "m_Colors": [
+            [
+              {
+                "name": "_Color"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_SpecColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_Emission"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ],
+            [
+              {
+                "name": "_AmbColor"
+              },
+              {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              }
+            ]
+          ],
+          "m_Floats": [
+            [
+              {
+                "name": "_Shininess"
+              },
+              0.078125
+            ]
+          ],
+          "m_TexEnvs": [
+            [
+              {
+                "name": "_MainTex"
+              },
+              {
+                "m_Offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "m_Pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "m_Rotation": 0.0,
+                "m_Scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "m_Texture": {
+                  "fileId": 0,
+                  "pathId": 517
+                }
+              }
+            ]
+          ]
+        },
+        "m_Shader": {
+          "fileId": 1,
+          "pathId": 1616
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7128,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "bba7bfd9f6b83a51c45e0af390382cc4d200e14c69add2d5d72dc48f49e1a54e",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7137
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7511
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7134,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "2825928bc270bc04ab22f8aa2f75321fc5e9f03748f227ef85f2c72125c867ee",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7139
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7573
+        },
+        "m_LocalPosition": {
+          "x": -0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": -0.0,
+          "z": -0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7137,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "5611461a4dac4d4b79221e1633cf397eade3cc9fba979417634c3091028e94ea",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7128
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7146
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10139
+        },
+        "m_LocalPosition": {
+          "x": 0.031553685665130615,
+          "y": 0.0,
+          "z": 2.0020570755004883
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7139,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "1a14b92fee226c69066d8897a7995a26aed1a18ee965aa479ed7043344edd62d",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7134
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 7146
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10138
+        },
+        "m_LocalPosition": {
+          "x": 0.031553685665130615,
+          "y": 0.0,
+          "z": 2.0020570755004883
+        },
+        "m_LocalRotation": {
+          "w": 0.7071068286895752,
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7146,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "b1e8865b77f4ce96eee69f246dfae7d6708b676fde4cb6f69ac34c34b122c4f4",
+      "value": {
+        "m_Children": [
+          {
+            "fileId": 0,
+            "pathId": 7139
+          },
+          {
+            "fileId": 0,
+            "pathId": 7137
+          }
+        ],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10137
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7150,
+      "typeId": 4,
+      "classId": 4,
+      "objectType": "Transform",
+      "name": "",
+      "canonicalBlake3": "bb72f73cd3a9ed21648845e0cd64012c9a7b8bbd5fd21b1af28a84d2346625da",
+      "value": {
+        "m_Children": [],
+        "m_Father": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9291
+        },
+        "m_LocalPosition": {
+          "x": 6400.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalRotation": {
+          "w": 1.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7511,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Mesh1",
+      "canonicalBlake3": "aa49cfe91c166bf1dbf1f66fb050363ebce3f7e36a17bb819123301988f6f402",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7128
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13114
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13115
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Editable Mesh1",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 7573,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Editable Mesh",
+      "canonicalBlake3": "f5cae134c40551a41b3963109095db946f834876f22deb00886f1f8af57ecec3",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7134
+            }
+          ],
+          [
+            33,
+            {
+              "fileId": 0,
+              "pathId": 13112
+            }
+          ],
+          [
+            23,
+            {
+              "fileId": 0,
+              "pathId": 13113
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Editable Mesh",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 9291,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "ES[640]",
+      "canonicalBlake3": "3240688e06771af9e8229676b5fc8209fbaaadadec1c3e979d0415fc84e30dda",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7150
+            }
+          ],
+          [
+            114,
+            {
+              "fileId": 0,
+              "pathId": 15633
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 0,
+        "m_Name": "ES[640]",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10137,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "f_toiletnator_megatak",
+      "canonicalBlake3": "e55bfedecf7621b94108174e17424a613188683b68d1f9bd9391c6fc46af3e81",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7146
+            }
+          ],
+          [
+            111,
+            {
+              "fileId": 0,
+              "pathId": 13955
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "f_toiletnator_megatak",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10138,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Cylinder01",
+      "canonicalBlake3": "fe2637dffb9b17abb47518d28307d5dedba52fc99c4b9efb6ef80bc489b17795",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7139
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Cylinder01",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 10139,
+      "typeId": 1,
+      "classId": 1,
+      "objectType": "GameObject",
+      "name": "Cylinder02",
+      "canonicalBlake3": "8192ab143df165fda58b6c175a3f205590a5ef2ec84a24ae08b4fae2248b5c25",
+      "value": {
+        "m_Component": [
+          [
+            4,
+            {
+              "fileId": 0,
+              "pathId": 7137
+            }
+          ]
+        ],
+        "m_IsActive": 0,
+        "m_Layer": 12,
+        "m_Name": "Cylinder02",
+        "m_Tag": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13112,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "14004765e46d79d4fd0cc8df51b755aeae724b77b086a7b1cefe7173c422e48c",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7573
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1410
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13113,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "8c92e30a3d3f643658d16beec129b7bda5bd6dcb2f87f94d124ca82c896cdfd7",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7573
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2977
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13114,
+      "typeId": 33,
+      "classId": 33,
+      "objectType": "MeshFilter",
+      "name": "",
+      "canonicalBlake3": "7263e8e35e17238158fb689b1202c5330c6910e7a46930e6e6f9b60780a95374",
+      "value": {
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7511
+        },
+        "m_Mesh": {
+          "fileId": 0,
+          "pathId": 1428
+        }
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13115,
+      "typeId": 23,
+      "classId": 23,
+      "objectType": "MeshRenderer",
+      "name": "",
+      "canonicalBlake3": "17d0de4a28573c32b09d631b548df3aa8149e90f233c46cb1f545281365a390c",
+      "value": {
+        "m_CastShadows": true,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 7511
+        },
+        "m_LightmapIndex": 255,
+        "m_LightmapTilingOffset": {
+          "w": 0.0,
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "m_Materials": [
+          {
+            "fileId": 0,
+            "pathId": 2977
+          }
+        ],
+        "m_ReceiveShadows": true
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 13955,
+      "typeId": 111,
+      "classId": 111,
+      "objectType": "Animation",
+      "name": "",
+      "canonicalBlake3": "e712ff591bcfecbdf0d2f37db3ddfa6187dde98fe2bde50b23d83e55dabb8353",
+      "value": {
+        "m_AnimateIfVisible": true,
+        "m_AnimatePhysics": false,
+        "m_Animation": {
+          "fileId": 0,
+          "pathId": 1982
+        },
+        "m_Animations": [
+          {
+            "fileId": 0,
+            "pathId": 1982
+          }
+        ],
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 10137
+        },
+        "m_PlayAutomatically": true,
+        "m_WrapMode": 0
+      }
+    },
+    {
+      "asset": "CustomAssetBundle-fa9dbcf4604f64024b06ff1d5e375918",
+      "pathId": 15633,
+      "typeId": -3,
+      "classId": 114,
+      "objectType": "MonoBehaviour",
+      "name": "",
+      "canonicalBlake3": "722cb48ecd6e45d2cc0ebd349867a3198b9969e88de89ad4d281ca3b00f7e016",
+      "value": {
+        "TrailTimes": 0.25,
+        "conformToScale": 0,
+        "disableUpdate": 0,
+        "effectName": "f_toiletnator_megatak",
+        "go": {
+          "fileId": 0,
+          "pathId": 0
+        },
+        "longestLifeTime": 0.0,
+        "m_Enabled": true,
+        "m_GameObject": {
+          "fileId": 0,
+          "pathId": 9291
+        },
+        "m_Name": "",
+        "m_Script": {
+          "fileId": 1,
+          "pathId": 1914
+        },
+        "maxTimer": 1.0,
+        "nifObject": {
+          "fileId": 0,
+          "pathId": 10137
+        },
+        "particles": [],
+        "priority": 0
+      }
+    }
+  ]
+}

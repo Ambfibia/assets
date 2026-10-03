@@ -1,0 +1,329 @@
+{
+  "schema": "ffone.logical-model-publish-report.v2",
+  "status": "staged-incomplete",
+  "publishable": false,
+  "contract": {
+    "schema": "ffone.logical-model.v1",
+    "legacy_name": "EnergyGrenades_e01",
+    "root_node": "EnergyGrenades_e01",
+    "family": "projectile",
+    "semantic_directories": [],
+    "output_glb": "models/projectile/EnergyGrenades_e01.glb",
+    "glb_blake3": "4089e7039ee472055eac149a5bb73f5e3831d487edf00684c30fc97bde47adaf",
+    "source": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 7,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "published": {
+      "nodes": 3,
+      "mesh_parts": 1,
+      "material_slots": 1,
+      "skinned_meshes": 0,
+      "joints": 0,
+      "inverse_bind_matrices": 0,
+      "weighted_vertices": 0,
+      "animation_clips": 1,
+      "animation_channels": 1,
+      "float_curves": 0,
+      "empty_trs_bindings": 0,
+      "duplicate_trs_bindings": 0,
+      "duplicate_trs_keyframes": 0,
+      "duplicate_same_time_keys": 0,
+      "animation_time_recoveries": 0,
+      "recovered_animation_keyframes": 0,
+      "animation_curve_recoveries": 0,
+      "rejected_conflicting_trs_bindings": 0,
+      "rejected_conflicting_trs_keyframes": 0,
+      "animation_keyframes": 7,
+      "cubic_spline_keyframes": 0,
+      "animation_events": 0,
+      "animation_event_null_object_pointers": 0,
+      "object_reference_keys": 0,
+      "colliders": 0,
+      "lod_levels": 0
+    },
+    "unresolved_source_features": []
+  },
+  "sourceGeometryFilter": {
+    "policy": "exclude-3ds-max-biped-display-meshes-v1",
+    "reason": "Rigid MeshFilter geometry named `Biped Object` (including exporter collision suffixes `@#N`) is a 3ds Max Biped viewport helper, not game geometry. Its Transform nodes remain in the hierarchy so bones, skin palettes and animation targets are unchanged.",
+    "excludedRigidMeshBindings": 0,
+    "excludedMeshParts": 0,
+    "excludedSourceMeshIds": [],
+    "preservedTransformNodes": 3,
+    "preservedSkinnedMeshBindings": 0
+  },
+  "semanticProof": {
+    "schema": "ffone.semantic-roundtrip-proof.v1",
+    "status": "native-model-matches-redecoded-glb",
+    "matched": true,
+    "canonicalEncoding": "ffone-semantic-le-v1-length-prefixed-ieee754-bits",
+    "floatingPointContract": "NativeModel numeric values are compared as the exact IEEE-754 f32 bits emitted by glTF accessors/TRS; JSON-only clip settings retain IEEE-754 f64 bits",
+    "coveredScopes": [
+      "hierarchy and coordinates: exact native coordinate contract, logical/node names and order, roots, parents, TRS, mesh/skin bindings",
+      "geometry: exact mesh/primitive order, positions, normals, UV0, indices, JOINTS_0 and WEIGHTS_0",
+      "skins: exact skin names/order, skeleton roots, joint palettes and inverse bind matrices",
+      "standard animations: exact clip/channel order and names, clip settings, targets, interpolation, times, values, in/out tangents and legacy tangent modes",
+      "animation metadata: exact empty, identical duplicate, and serialized-last-write TRS bindings, identical same-time keys, typed non-strict-time recoveries and sibling-proof provenance, float curves, object-reference curves, events, unsupported-binding list and metadata-only clips, including all source curve/key indices, encodings, paths, original/recovered times, sample rates, tangent and object-reference values",
+      "materials: exact native material records, ordered ShaderLab texture defaults, and texture-binding transform presence, including absent versus explicit-zero pivot and rotation"
+    ],
+    "excludedScopes": [
+      "GPU rendering and runtime playback parity require the separate Bevy acceptance gate"
+    ],
+    "source": {
+      "hierarchySha256": "bf2f666ebac7419e7b3e21edcd3ac615ce76f17276ef8d130dfd893bba467a12",
+      "geometrySha256": "038d8662ff8011ef9ba6f876147d5f56a502cf9681062de3e9a87104b35fdd2b",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "98ee8ebee358199f822e45342c94a730f0aa7efa9303d0867d7e31a490067130",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "d22a31e17b862986c5244e4963c512811a2b87795f8ab009e6a54238148aff61"
+    },
+    "emitted": {
+      "hierarchySha256": "bf2f666ebac7419e7b3e21edcd3ac615ce76f17276ef8d130dfd893bba467a12",
+      "geometrySha256": "038d8662ff8011ef9ba6f876147d5f56a502cf9681062de3e9a87104b35fdd2b",
+      "skinsSha256": "dee64a713f4211315e60688651ea0672619c68a26cdbdcbf56b4d707f77ec4e4",
+      "standardAnimationsSha256": "98ee8ebee358199f822e45342c94a730f0aa7efa9303d0867d7e31a490067130",
+      "animationMetadataSha256": "cc47f942bb3c8043a9b7fcdb3062e22f0459fa0734ed18159cc8e7f263c5e6cc",
+      "materialsSha256": "d22a31e17b862986c5244e4963c512811a2b87795f8ab009e6a54238148aff61"
+    }
+  },
+  "coordinateContract": {
+    "schema": "ffone.native-coordinate-contract.v1",
+    "publishedSpace": "gltf-right-handed-y-up",
+    "position": "[-unity.x,unity.y,unity.z]",
+    "normal": "[-unity.x,unity.y,unity.z]",
+    "translation": "[-unity.x,unity.y,unity.z]",
+    "rotation": "[unity.x,-unity.y,-unity.z,unity.w]",
+    "scale": "unchanged",
+    "uv": "[unity.u,1-unity.v]",
+    "inverseBindMatrix": "H*unity*H where H=diag(-1,1,1,1)",
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "swap-index-1-and-2-for-gltf-counter-clockwise",
+    "windingConversionOwner": "ffone-asset-pipeline",
+    "unitScale": "1-unity-unit-equals-1-bevy-unit",
+    "originPolicy": "source-root-trs-unchanged-no-auto-centering",
+    "autoCentered": false,
+    "autoScaled": false
+  },
+  "coordinateAudit": {
+    "status": "artifact-space-proven-runtime-spawn-policy-pending",
+    "runtimeSpawnPolicy": "runtime-archetype-dependent-pending",
+    "runtimeSpawnPolicyNote": "The model artifact preserves authored root TRS exactly. Legacy NPC spawning may replace root position/rotation/scale, while Nano spawning may retain authored scale; runtime archetype policy is a separate acceptance gate.",
+    "rootTranslation": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "rootRotation": [
+      0.0,
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "rootScale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unitScale": 1.0,
+    "autoCentered": false,
+    "autoScaled": false,
+    "rawLocalBounds": {
+      "min": [
+        -0.09999974817037582,
+        -0.08660262823104858,
+        0.07246742397546768
+      ],
+      "max": [
+        0.10000000149011612,
+        0.08660237491130829,
+        0.38764744997024536
+      ]
+    },
+    "staticRestWorldBounds": {
+      "min": [
+        -0.07582873851060867,
+        -0.07219743728637695,
+        -0.06566964834928513
+      ],
+      "max": [
+        0.0758289322257042,
+        0.16680018603801727,
+        0.06566984951496124
+      ]
+    },
+    "sourceTriangleWinding": "unity-clockwise-preserved",
+    "publishedTriangleWinding": "gltf-counter-clockwise",
+    "windingSwapAppliedPerTriangle": true,
+    "inverseBindMatrices": 0,
+    "skinningBasisParityStatus": "not-applicable-rigid",
+    "skinningBasisParityMaxError": null,
+    "currentPoseBindIdentityDeviationMax": null,
+    "currentPoseBindIdentityDeviationWorst": null
+  },
+  "materialPublish": {
+    "status": "native-data-complete-runtime-validation-pending",
+    "reason": "Exact renderer slot bindings, ordered material properties, effective legacy render states and external PNG textures are published natively. GPU visual parity is a separate runtime acceptance gate and is not asserted by this per-model publication report.",
+    "preservedSlotNames": [
+      "energygrenades_e01"
+    ],
+    "explicitNullSlots": 0,
+    "materialCount": 1,
+    "textureCount": 1,
+    "samplerCount": 1,
+    "materials": [
+      {
+        "name": "energygrenades_e01",
+        "serializedShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "declaredShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "legacyShaderName": "normal_blendSrcalphaInvsrcalpha",
+        "shaderSha256": "290562bc8d56959490861ceddd9adab6f2d298c50e00a73ce4d6e356f2023c3b",
+        "effectiveRenderQueue": 3000,
+        "renderPassCount": 1
+      }
+    ],
+    "textures": [
+      {
+        "sourceName": "EnergyGrenades_e01.dds",
+        "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.png",
+        "width": 128,
+        "height": 128,
+        "sourceMipCount": 8,
+        "publishedPolicy": "exactSourceLevels",
+        "byteLength": 15084,
+        "sha256": "2fa74e574edf84a72592afe59186829e20e91a67d8d3d354437794639863d5c8",
+        "mipLevels": [
+          {
+            "level": 0,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.png",
+            "width": 128,
+            "height": 128,
+            "sourceByteOffset": 0,
+            "sourceByteLength": 16384,
+            "sourceByteSha256": "2cedf373d1bf93b5c5cbf2af087babda74f92fc08ca60b6f708db37c2f30966d",
+            "decodedRgba8ByteLength": 65536,
+            "decodedRgba8Sha256": "7c289a6cfddaa898a88c507774d61e1a080f424eefe2d4eff231233d873e568b",
+            "pngByteLength": 15084,
+            "pngSha256": "2fa74e574edf84a72592afe59186829e20e91a67d8d3d354437794639863d5c8"
+          },
+          {
+            "level": 1,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-01.png",
+            "width": 64,
+            "height": 64,
+            "sourceByteOffset": 16384,
+            "sourceByteLength": 4096,
+            "sourceByteSha256": "a4c442f8d860fb9c83697d0d216dd0dda37031f7902af96af2b964cbb6a78557",
+            "decodedRgba8ByteLength": 16384,
+            "decodedRgba8Sha256": "6af87afa1301812dc31a0cd6e585831a6962f2f1b2de0e1c976378af969b07ae",
+            "pngByteLength": 4642,
+            "pngSha256": "0699973b96f7345d241c56a6ce178dcbead2b0da9d701c21021d6e196309ac8f"
+          },
+          {
+            "level": 2,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-02.png",
+            "width": 32,
+            "height": 32,
+            "sourceByteOffset": 20480,
+            "sourceByteLength": 1024,
+            "sourceByteSha256": "73ed74cb0cead26e7f54ae127efaf6dd19874745782d7ebfe9b0b20d753e606a",
+            "decodedRgba8ByteLength": 4096,
+            "decodedRgba8Sha256": "9426e6e7cbaf09042f73abfec835547699c91ca70dcc7cb4caa6532c771d5e0c",
+            "pngByteLength": 1609,
+            "pngSha256": "0693263b722a4b5316c95b0550a1997eab3a77d2fbac7014d65a661345eb3f5b"
+          },
+          {
+            "level": 3,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-03.png",
+            "width": 16,
+            "height": 16,
+            "sourceByteOffset": 21504,
+            "sourceByteLength": 256,
+            "sourceByteSha256": "ffe471af9fa9c12d3c4720afb7da7b9144aba3fbe3d76a13b956a2f26880841b",
+            "decodedRgba8ByteLength": 1024,
+            "decodedRgba8Sha256": "85916053f442852803446acaf5a1e441be68227d36d475632249c4293ea7515d",
+            "pngByteLength": 588,
+            "pngSha256": "5f207f6bd67b4cecf19c6626113d5eb253b1f13dbaac80d696cd29792bc734b6"
+          },
+          {
+            "level": 4,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-04.png",
+            "width": 8,
+            "height": 8,
+            "sourceByteOffset": 21760,
+            "sourceByteLength": 64,
+            "sourceByteSha256": "bd0a792bc51bc96b000e8bcf824c866be8cc84eb6470c68d6808a46d63fe739b",
+            "decodedRgba8ByteLength": 256,
+            "decodedRgba8Sha256": "a80533b762fbc35cf3d131eb0fc09b6fab4fdb14ed0f29bc8d13b6f39c75b579",
+            "pngByteLength": 263,
+            "pngSha256": "b01b73febdfaf6f99da8322a6d955cc4584f66e4ea8e56eea76fa32e4ec9c38e"
+          },
+          {
+            "level": 5,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-05.png",
+            "width": 4,
+            "height": 4,
+            "sourceByteOffset": 21824,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "9f5422e477f0041fb0f162858d4bf1523db0322f437cb1dec7b0e363a894b86f",
+            "decodedRgba8ByteLength": 64,
+            "decodedRgba8Sha256": "f7786ea13a7e0b39d6d7d4a5dd66f33818b4c1f2dc465fc914db24ad6a6c73f6",
+            "pngByteLength": 136,
+            "pngSha256": "ccbd38cd58da25c2795de2c461885c206b82dc13782a8d3456597d0e1bf267f3"
+          },
+          {
+            "level": 6,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-06.png",
+            "width": 2,
+            "height": 2,
+            "sourceByteOffset": 21840,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "4aea0f76575bfd796f7d178014e761099b3b6ffc9881d64615b5bb0200ce9cd5",
+            "decodedRgba8ByteLength": 16,
+            "decodedRgba8Sha256": "3d1e8b003e4ec623ea7f926a9a84dd60d396d2ba181e4df172d84c98e447f224",
+            "pngByteLength": 86,
+            "pngSha256": "26fbf42e76a41475a7aa21d2a6c03dc77b91b6955621372f2453d2be0f9bc600"
+          },
+          {
+            "level": 7,
+            "uri": "EnergyGrenades_e01.textures/EnergyGrenades_e01.mips/mip-07.png",
+            "width": 1,
+            "height": 1,
+            "sourceByteOffset": 21856,
+            "sourceByteLength": 16,
+            "sourceByteSha256": "0c80fa08f93900b9c6f3c142b9220c63a5b359e70f3326a4184ebedba6f25a5d",
+            "decodedRgba8ByteLength": 4,
+            "decodedRgba8Sha256": "accad19745ebe8edcd0ca433005dcb8fdc64019b0e3cab956774fd0c90738bbb",
+            "pngByteLength": 73,
+            "pngSha256": "fbedf85fa14ecfbd2ebd3926e28d3e6232f0a861ab20429bd47eeba956c67e1e"
+          }
+        ]
+      }
+    ]
+  },
+  "reportPath": "models/projectile/EnergyGrenades_e01.publish.json"
+}
